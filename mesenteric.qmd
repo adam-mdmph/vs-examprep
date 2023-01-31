@@ -6,7 +6,7 @@ Authors: *Matt Chia, MD and Nick Mouawad, MD*
 
 library(embedr)
 
-embed_audio("https://traffic.libsyn.com/audiblebleeding/Mesenteric_Ischemia.mp3")
+embed_audio("https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Mesentericau.mp3")
 
 ```
 
@@ -130,7 +130,7 @@ Yeah, so again, because the field is frequently contaminated or dirty, a good co
 
 [Short retrograde aorto-SMA bypass:]{.underline}
 
-This bypass takes is origin off of the aorta just below the SMA, anastomosing typically end-side onto the SMA just below its origin in order to bypass ostial or very proximal disease. This is a relatively quick bypass, with only one field of dissection directly from the aorta below the SMA onto the proximal-mid SMA. The length of the bypass is very short, limiting concerns with kinking or twisting of the bypass. However, this may not always be feasible, as SMA disease often coexists with significant aortic disease. Additionally, the other bypasses described have better reported patency. (new reference: @scalisalvatore2019 https://doi.org/10.1016/j.jvs.2018.04.063)
+This bypass takes is origin off of the aorta just below the SMA, anastomosing typically end-side onto the SMA just below its origin in order to bypass ostial or very proximal disease. This is a relatively quick bypass, with only one field of dissection directly from the aorta below the SMA onto the proximal-mid SMA. The length of the bypass is very short, limiting concerns with kinking or twisting of the bypass. However, this may not always be feasible, as SMA disease often coexists with significant aortic disease. Additionally, the other bypasses described have better reported patency.[@scali2019]
 
 [Long retrograde R iliac-SMA bypass ("C-loop"):]{.underline}
 
@@ -144,11 +144,11 @@ This bypass originates from the supraceliac aorta. If revascularization of both 
 
 [Retrograde open mesenteric stenting (ROMS)]{.underline}
 
-So ROMS is a hybrid procedure involving an upper mid-line laparotomy that is used to evaluate the bowel. Through this incision, SMA exposure is obtained just as in a traditional open fashion at the root of the mesentery. The mid-SMA is then punctured under direct vision, and the area of disease is attempted to be treated from a retrograde approach back into the aorta. If bowel ischemia is found, the upper mid-line is easily lengthened into a traditional vertical laparotomy incision. (new reference: @milnerross2004 https://doi.org/10.1177/153857440403800112) (new reference: @blauwjuliette2014 https://doi.org/10.1016/j.jvs.2014.04.001) (new reference: @oderichgustavo2017 https://doi.org/10.1016/j.jvs.2017.11.086)
+So ROMS is a hybrid procedure involving an upper mid-line laparotomy that is used to evaluate the bowel. Through this incision, SMA exposure is obtained just as in a traditional open fashion at the root of the mesentery. The mid-SMA is then punctured under direct vision, and the area of disease is attempted to be treated from a retrograde approach back into the aorta. If bowel ischemia is found, the upper mid-line is easily lengthened into a traditional vertical laparotomy incision.[@milner2004; @blauw2014; @oderich2018]
 
 [Endovascular treatment (percutaneous thrombectomy / thrombolysis / pharmacomechanical thrombectomy)]{.underline}
 
-Some authors have described completely endovascular approaches to treatment of acute mesenteric ischemia. However, the major limitation is the inability to assess the bowel. These patients are frequently those who are deemed to be lower-risk for frank bowel ischemia or perforation, but the rates of laparotomy and bowel resection after these treatments have been described very high rates. Probably not your first answer for oral boards.  (new reference: @limsungho2018 https://doi.org/10.1177/1538574418805228)
+Some authors have described completely endovascular approaches to treatment of acute mesenteric ischemia. However, the major limitation is the inability to assess the bowel. These patients are frequently those who are deemed to be lower-risk for frank bowel ischemia or perforation, but the rates of laparotomy and bowel resection after these treatments have been described very high rates. Probably not your first answer for oral boards.[@lim2019]
 
 ### Other Etiologies
 
@@ -222,11 +222,9 @@ So we talked a lot about open revascularization earlier in the acute mesenteric 
 
 ## Visceral Aneurysms
 
-Aneurysms can occur in a diverse range of vascular beds in the visceral vessels.  Size criteria for repair is dependent on the location and the etiology, with some aneurysms mandating repair at any size (gastric, gastroepiploic, gastroduodenal, pancreaticoduodenal, SMA, colic), and others considered appropriate to observe in asymptomatic patients until certain size thresholds are met.   The SVS clinical practice guidelines are the optimal resource to review these criteria.
+Aneurysms can occur in a diverse range of vascular beds in the visceral vessels. Size criteria for repair is dependent on the location and the etiology, with some aneurysms mandating repair at any size (gastric, gastroepiploic, gastroduodenal, pancreaticoduodenal, SMA, colic), and others considered appropriate to observe in asymptomatic patients until certain size thresholds are met. The SVS clinical practice guidelines are the optimal resource to review these criteria.[@chaer2020]
 
-![fx1_lrg](https://user-images.githubusercontent.com/116117039/214932687-2793d78b-71e0-499e-ab00-bccafc45771b.jpg)
-
-(new reference: @chaerrabih2020 https://doi.org/10.1016/j.jvs.2020.01.039)
+![](images/mesenteric.jpg){fig-align="center"}
 
 ### SMA Aneurysm
 
@@ -234,7 +232,7 @@ If symptomatic, most SMA aneurysms are mycotic in nature and require treatment. 
 
 ### Splenic Aneurysm
 
-Repair all pseudoaneurysms, or if size > 3cm, or at any size if of childbearing age.  Consider splenectomy vaccines pre-treatment (covers encapsulated organisms Shigella, Haemophilus influenzae, and Neisseria). 
+Repair all pseudoaneurysms, or if size \> 3cm, or at any size if of childbearing age. Consider splenectomy vaccines pre-treatment (covers encapsulated organisms Shigella, Haemophilus influenzae, and Neisseria).
 
 Post splenic aneurysm embolization, L flank pain in stable patients likely represents splenic infarction. Treat with hydration and analgesia. Rates are lower in stented patients.[@kwong85SplanchnicArtery; @piffarettiSplenicArteryAneurysms2007; @zhuEndovascularSurgicalManagement2019]
 

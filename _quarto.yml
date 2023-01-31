@@ -4,7 +4,7 @@ project:
 book:
   title: "Vascular Surgery Exam Prep"
   author: "Audible Bleeding"
-  date: "01/24/2023"
+  date: "01/30/2023"
   description: "eBook Companion for Audible Bleeding Podcast Series"
   cover-image: images/ab_examprep_cover.jpg
   chapters:
