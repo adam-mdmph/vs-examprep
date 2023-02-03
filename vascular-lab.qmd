@@ -14,13 +14,13 @@ embed_audio("https://traffic.libsyn.com/audiblebleeding/E7_-_Carotid_VSITE.mp3")
 
 So let's start with an overview of ultrasound modalities, waveforms, and changes proximal and distal to flow-limiting stenosis.
 
-## **Overview**
+## **Overview** {#sec-lab-overview}
 
 **Brief overview of ultrasound:** Ultrasonography uses [sound waves](https://en.wikipedia.org/wiki/Sound_wave) with [frequencies](https://en.wikipedia.org/wiki/Frequency) higher than those audible to humans. Ultrasound images are created by sending pulses of ultrasound into [tissue](https://en.wikipedia.org/wiki/Tissue_(biology)) using a [probe](https://en.wikipedia.org/wiki/Ultrasound_transducer#Use_in_medicine). Reflected pulses are recorded and displayed as an image. There are many types of ultrasound images, but two modes commonly seen in vascular ultrasonography are B-mode and doppler:
 
-**B-mode (Brightness) imaging** is a 2-D, black and white display of tissue [acoustic impedance](https://en.wikipedia.org/wiki/Acoustic_impedance)s.
+**B-mode (Brightness) imaging** is a 2-D, black and white display of tissue [acoustic impedance](https://en.wikipedia.org/wiki/Acoustic_impedance)s.
 
-**Doppler mode** uses the Doppler effect to measure and visualize blood flow.
+**Doppler mode** uses the Doppler effect to measure and visualize blood flow.
 
 **Spectral Doppler** converts frequency shifts from moving blood to velocities using the Doppler equation and displays a "spectrum" of these frequencies as Doppler waveforms.
 
@@ -34,25 +34,35 @@ So let's start with an overview of ultrasound modalities, waveforms, and changes
 
 [Normal spectral waveforms]{.underline} have a brisk upstroke, sharp peak, rapid downstroke. A "spectral window" under the waveform, that is the black space between the spectral waveform and the 0 velocity axis, represents the absence of lower velocities - indicative of laminar flow within the vessel (Image 1: normal spectrum waveform)
 
-![](images/vasc_lab2/Slide2.png){fig-align="center"} **How can we differentiate low vs high resistance waveforms?**
+![](images/vasc_lab2/Slide2.png){fig-align="center"}
+
+**How can we differentiate low vs high resistance waveforms?**
 
 Waveform profiles change depending upon the nature of the distal vascular bed being supplied. Organs like the brain, kidneys, liver, spleen, peripheral muscle during exercise, and postprandial SMA have constant high metabolic demand, and are therefore low resistance vascular beds. [Low resistance waveforms]{.underline} for arteries supplying these organs demonstrate constant forward flow throughout the cardiac cycle because the distal bed being supplied has low resistance leading to high end-diastolic flow.
 
-![](images/vasc_lab2/Slide3.png){fig-align="center"} In contrast, [high resistance waveforms]{.underline} are seen for arteries supplying resting peripheral muscles, fasted mesenteric beds (such as the fasting SMA), and the external carotid artery. High resistance waveforms are characterized by triphasic morphology, with a sharp peak, early diastolic flow reversal, brief forward flow (elastic recoil of the artery, and then no flow during the remainder of the diastolic phase.
+![](images/vasc_lab2/Slide3.png){fig-align="center"}
 
-![](images/vasc_lab2/Slide4.png){fig-align="\"center"} **How does flow-limiting stenosis change the waveform?**
+In contrast, [high resistance waveforms]{.underline} are seen for arteries supplying resting peripheral muscles, fasted mesenteric beds (such as the fasting SMA), and the external carotid artery. High resistance waveforms are characterized by triphasic morphology, with a sharp peak, early diastolic flow reversal, brief forward flow (elastic recoil of the artery, and then no flow during the remainder of the diastolic phase.
 
-First let's define [Stenosis:]{.underline} A hemodynamically significant stenosis (area reduction \>50%) will result in a doubling of velocity from the inflow segment to the area of maximal stenosis (velocity ratio \>2).
+![](images/vasc_lab2/Slide4.png){fig-align="\"center"}
+
+**How does flow-limiting stenosis change the waveform?**
+
+First let's define [Stenosis:]{.underline} A hemodynamically significant stenosis (area reduction \>50%) will result in a doubling of velocity from the inflow segment to the area of maximal stenosis (velocity ratio \>2).
 
 **Now what do waveforms look like AFTER a flow-limiting stenosis?**
 
 [Tardus et parvus]{.underline} refers to a pattern of Doppler ultrasound spectral waveform resulting from arterial stenosis. The tardus et parvus waveform is delayed with prolonged systolic acceleration (tardus) and diminished with a small systolic amplitude and rounded systolic peak (parvus). This phenomenon is observed downstream from the site of stenosis. Tardus parvus in the CFA represents upstream (iliac) stenosis. Tardus parvus in the brachial artery likely represents upstream (subclavian or axillary) stenosis.[@hwang2017; @pellerito2019]
 
-![](images/vasc_lab2/Slide5.png){fig-align="center"} **So what will the waveform look like BEFORE a flow-limiting stenosis?**
+![](images/vasc_lab2/Slide5.png){fig-align="center"}
+
+**So what will the waveform look like BEFORE a flow-limiting stenosis?**
 
 [Distal stenosis:]{.underline} Distal occlusive disease will result in a high resistance waveform, with absent diastolic flow. (Image 5: Distal stenosis with absent diastolic flow)
 
-![](images/vasc_lab2/Slide6.png){fig-align="center"} **Are there any considerations we need to understand when assessing a stented vessel with ultrasound?**
+![](images/vasc_lab2/Slide6.png){fig-align="center"}
+
+**Are there any considerations we need to understand when assessing a stented vessel with ultrasound?**
 
 Stenting decreases vessel compliance and increases observed velocities. There is no defined consensus, but [in-stent restenosis]{.underline} is classified by some as follows:
 
@@ -90,7 +100,9 @@ Examine CCA (2 views), ICA (2 views), ECA, vertebral arteries
 
 [Normal ECA vs ICA waveform:]{.underline} The external carotid artery waveform reflects a high resistance vascular bed. This means minimal diastolic flow. Conversely, the ICA waveform reflects a low resistance vascular bed with antegrade diastolic flow.
 
-![](images/vasc_lab2/Slide7.png){fig-align="center"} This makes sense, as the ICA is supplying the brain while the ECA is supplying the face. Intuitively, the common carotid artery is a mixture of the ICA and ECA waveform morphologies - like the ICA with forward flow throughout diastole, but less as compared to the ICA due to the high-resistance influence of the ECA.
+![](images/vasc_lab2/Slide7.png){fig-align="center"}
+
+This makes sense, as the ICA is supplying the brain while the ECA is supplying the face. Intuitively, the common carotid artery is a mixture of the ICA and ECA waveform morphologies - like the ICA with forward flow throughout diastole, but less as compared to the ICA due to the high-resistance influence of the ECA.
 
 Another way of differentiating the external and internal carotid arteries is the "temporal tap". Tapping on the superficial temporal artery (a branch of the ECA) will be transmitted as small pulsations in the diastolic component of the external carotid artery.[@pellerito2019; @size2013]
 
@@ -118,7 +130,7 @@ For more see @sec-cerebrovascular.
 
 FMD is frequently encountered on the VSITE/RPVI. How would this appear on the exams?
 
-[Fibromuscular dysplasia]{.underline} of the internal carotid arteries affects women more commonly than men. Duplex findings show a "chain of lakes" appearance, demonstrative of multiple septa and small aneurysms. Velocity elevations and increased turbulence in the waveform patterns is typically found on Doppler interrogation.[@olin2012]
+[Fibromuscular dysplasia]{.underline} of the internal carotid arteries affects women more commonly than men. Duplex findings show a "chain of lakes" appearance, demonstrative of multiple septa and small aneurysms. Velocity elevations and increased turbulence in the waveform patterns is typically found on Doppler interrogation.[@olin2012]
 
 ![](images/vasc_lab2/Slide10.png){fig-align="center"}
 
@@ -130,7 +142,7 @@ Aspirin if asymptomatic, POBA if symptomatic.
 
 **Are there other frequently tested pathologies demonstrated on extracranial exam?**
 
-[Subclavian steal:]{.underline} Subclavian steal occurs when a proximal subclavian stenosis or occlusion leads to reversal of vertebral artery flow. This causes "stealing" of blood from the posterior cerebral circulation, and presents as vertebrobasilar insufficiency.
+[Subclavian steal:]{.underline} Subclavian steal occurs when a proximal subclavian stenosis or occlusion leads to reversal of vertebral artery flow. This causes "stealing" of blood from the posterior cerebral circulation, and presents as vertebrobasilar insufficiency.
 
 **How does this look on duplex?**
 
@@ -138,7 +150,7 @@ Normal vertebral flow looks very similar to ICA: antegrade low resistance wavefo
 
 ![](images/vasc_lab2/Slide11.png){fig-align="center"}
 
-[Innominate stenosis:]{.underline} A phenomenon that is related to this, is innominate stenosis. Here again the patient will present with vertebrobasilar insufficiency, indicative of diminished vertebral antegrade flow, but additionally will experience right hemispheric insufficiency secondary to diminished R ICA antegrade flow. The right-side duplex will demonstrate flow reversal in the vertebral artery, abnormal waveforms in the subclavian, as well as steal pattern waveforms in the common and internal carotid arteries. The common denominator for all of these findings is significant disease in the innominate artery.
+[Innominate stenosis:]{.underline} A phenomenon that is related to this, is innominate stenosis. Here again the patient will present with vertebrobasilar insufficiency, indicative of diminished vertebral antegrade flow, but additionally will experience right hemispheric insufficiency secondary to diminished R ICA antegrade flow. The right-side duplex will demonstrate flow reversal in the vertebral artery, abnormal waveforms in the subclavian, as well as steal pattern waveforms in the common and internal carotid arteries. The common denominator for all of these findings is significant disease in the innominate artery.
 
 **What other extracranial arteries of the head and neck can be evaluated separately?**
 
@@ -318,7 +330,7 @@ Anastomotic pseudoaneurysms develop in around 3% of femoral anastomoses and can 
 
 #### Dissections
 
-Characteristic ultrasound findings on color Doppler include a parallel blood-flow channel that separates the true and false lumen, with diminished blood flow distally.[@ge2015; @kobayashi2018] Traumatic intimal flaps after knee dislocation can have a normal ABI and be asymptomatic, but they should be followed as they can progress.[@gaitini2008] Of note, if the false lumen is filled by a thrombus, it may not distinguishable from an intramural hematoma or noncalcified plaque.
+Characteristic ultrasound findings on color Doppler include a parallel blood-flow channel that separates the true and false lumen, with diminished blood flow distally.[@ge2015; @kobayashi2018] Traumatic intimal flaps after knee dislocation can have a normal ABI and be asymptomatic, but they should be followed as they can progress.[@gaitini2008] Of note, if the false lumen is filled by a thrombus, it may not distinguishable from an intramural hematoma or non-calcified plaque.
 
 ![](images/vasc_lab2/Slide15.png){fig-align="center"}
 
@@ -334,13 +346,17 @@ For more see @sec-buergers-disease
 
 This is a rare (but often tested) pathology. Adventitial cystic disease is a non-atherosclerotic etiology of claudication, most often affecting the popliteal artery in the lower extremity and leading to stenosis or occlusion. Duplex imaging of the popliteal artery will demonstrate an anechoic or hypoechoic *intraluminal* region with a smooth contour and stenosis documented by velocity increase on spectral doppler. Angiography will often show a classic "scimitar" sign - a smooth well-defined crescent-shaped defect.[@shaw2007; @winn2015]
 
-![](images/vasc_lab2/Slide16.png){fig-align="center"} For more on adventitial cystic disease, see @sec-cystic-adventitial-disease This is not to be confused with:
+![](images/vasc_lab2/Slide16.png){fig-align="center"}
+
+For more on adventitial cystic disease, see @sec-cystic-adventitial-disease. This is not to be confused with:
 
 #### Bakers Cyst
 
 A benign, cystic structure found in the popliteal fossa and arising from the joint capsule. Flexion of the knee may result in compression of the popliteal artery by the cyst. On b-mode ultrasound, a well-defined, anechoic cystic structure with a 'neck' extending into the joint space between the semimembranosus tendon and the medial head of the gastrocnemius will be identified.
 
-![](images/vasc_lab2/Slide17.png){fig-align="center"} [Popliteal entrapment syndrome:]{.underline} decrease in ABI or loss of distal pulses with passive dorsiflexion or active plantar flexion of the foot caused by compression of the popliteal artery by the gastrocnemius.
+![](images/vasc_lab2/Slide17.png){fig-align="center"}
+
+[Popliteal entrapment syndrome:]{.underline} decrease in ABI or loss of distal pulses with passive dorsiflexion or active plantar flexion of the foot caused by compression of the popliteal artery by the gastrocnemius.
 
 ## Abdominal
 
@@ -410,7 +426,7 @@ Mesenteric duplex is still valid even if the patient has not fasted. The images 
 
 Normal portal venous flow is hepatopetal (toward the liver), whereas abnormal portal venous flow is hepatofugal (away from the liver). (The root "fugua" means to flee, or flight). Flow should be in the same direction as the hepatic artery.
 
-Other abnormalities that may be visualized are portal vein thrombosis - often associated with portal venous hypertension in patients with chronic cirrhosis, hepatitis, or hepatocellular carcinoma. Acute portal vein thrombosis on ultrasound demonstrates dilatation of the portal vein with hypoechoic intraluminal thrombus. Chronic portal vein thrombosis is characterized by a contracted vein with heterogeneous/hyperechoic echoes and may be associated with collateral formation.[@chawla2015; @nouvini2013]
+Other abnormalities that may be visualized are portal vein thrombosis - often associated with portal venous hypertension in patients with chronic cirrhosis, hepatitis, or hepatocellular carcinoma. Acute portal vein thrombosis on ultrasound demonstrates dilatation of the portal vein with hypoechoic intraluminal thrombus. Chronic portal vein thrombosis is characterized by a contracted vein with heterogeneous/hyper-echoic echoes and may be associated with collateral formation.[@chawla2015; @nouvini2013]
 
 Mesenteric duplex can also assess for functioning of TIPS (transjugular intrahepatic portosystemic shunt). A sign of a failing TIPS is portal vein peak systolic velocity less than 30cm/s.
 
@@ -420,7 +436,7 @@ Mesenteric duplex can also assess for functioning of TIPS (transjugular intrahep
 
 [Renal Pathologies:]{.underline} ostial (atherosclerotic) vs mid-artery (FMD)
 
-[Atherosclerotic stenosis:]{.underline} PSV \> 200 cm/s and Renal-aortic ratio (RAR) \>3.5, suggest \>60% stenosis, however some labs use higher PSV criteria (250-285 cm/s).[@schäberle2016;@rickey2019] Of note, for RAR, the aortic PSV needs to be within normal range (40-100) to be appropriately interpreted.
+[Atherosclerotic stenosis:]{.underline} PSV \> 200 cm/s and Renal-aortic ratio (RAR) \>3.5, suggest \>60% stenosis, however some labs use higher PSV criteria (250-285 cm/s).[@schäberle2016; @rickey2019] Of note, for RAR, the aortic PSV needs to be within normal range (40-100) to be appropriately interpreted.
 
 The renal resistive index (RRI) is calculated as the RA (PSV-EDV)/PSV. The RRI (\>0.8) is an indicator of intrinsic parenchymal renal disease. RRI has been used for assessment of transplant renal allograft rejection, decision making for treatment of renal artery stenosis and to evaluate progression of CKD.[@radermacher2001] Diabetic nephropathy will demonstrate elevated RRI, signifying parenchymal disease.[@viazzi2014] One study showed it was associated with poor renal and overall outcome in critically ill patients.[@ledorze2012]
 
@@ -448,7 +464,9 @@ This is an abnormal finding in the lower extremity veins, and may be a sign of p
 
 **Phasicity:** (also called respiratory phasicity) is variation in the waveform with respiration. This results from increasing and decreasing intrathoracic pressures secondary to respiration. Phasicity is an indicator of a patency proximal to the point of measurement. So if we see lack of phasicity (continuous flow) in the left femoral vein but normal phasicity in the right, we would be concerned for left iliac vein occlusion or stenosis. If we saw absence of phasicity (continuous flow) in the bilateral femoral veins, we would be concerned for IVC obstruction or stenosis.
 
-![](images/vasc_lab2/Slide19.png){fig-align="center"} **Augmentation:** Distal compression that augments forward flow. For example, if we are measuring flow at the femoral vein and we squeeze the calf and we see augmentation in the waveform, this indicates lack of occlusion in the venous system from the knee to the probe.
+![](images/vasc_lab2/Slide19.png){fig-align="center"}
+
+**Augmentation:** Distal compression that augments forward flow. For example, if we are measuring flow at the femoral vein and we squeeze the calf and we see augmentation in the waveform, this indicates lack of occlusion in the venous system from the knee to the probe.
 
 ![](images/vasc_lab2/Slide20.png){fig-align="center"}
 
@@ -458,7 +476,9 @@ This is an abnormal finding in the lower extremity veins, and may be a sign of p
 
 Venous reflux due to valvular incompetence is best assessed with duplex scanning in the upright position. Reflux in the common femoral vein and the saphenofemoral junction may be elicited with a Valsalva maneuver (which increases intra-abdominal pressure), but release of a pneumatic cuff compression is a more reproducible method. Reflux is identified as reverse flow - that is, away from the heart - following valsalva or release of the compression cuff.
 
-![](images/vasc_lab2/Slide21.png){fig-align="center"} Consensus guidelines suggest a cutoff value of 1 second for abnormally reversed flow (reflux) in the femoral and popliteal veins and of 0.5 seconds for the great saphenous vein, small saphenous vein, tibial, and deep femoral veins.[@gloviczki2011; @lurie2012; @labropoulos2003]
+![](images/vasc_lab2/Slide21.png){fig-align="center"}
+
+Consensus guidelines suggest a cutoff value of 1 second for abnormally reversed flow (reflux) in the femoral and popliteal veins and of 0.5 seconds for the great saphenous vein, small saphenous vein, tibial, and deep femoral veins.[@gloviczki2011; @lurie2012; @labropoulos2003]
 
 [Perforator veins:]{.underline} Perforator veins connect the deep and superficial venous systems, penetrating the deep fascia overlying the muscle. Size \>3.5 mm and reflux \>350 ms (deep to superficial) is associated with perforator reflux.[@min2003; @odonnell2014; @sandri1999] Pathological perforators are found in association with a healed or non-healed ulcer.
 
@@ -480,7 +500,9 @@ Nutcracker syndrome is most often diagnosed based on IVUS, venogram or renal vei
 
 [Thrombosis:]{.underline} Characteristics of acute thrombus are an echolucent and incompressible thrombus in a thin-walled vein with significant distension.
 
-![](images/vasc_lab2/Slide22.png){fig-align="center"} Acute thrombus typically causes the vein to dilate with a diameter greater than the diameter of the adjacent artery. Venous wall thickening/scarring, a contracted vein, recanalization, and collaterals are found in chronic thrombosis.
+![](images/vasc_lab2/Slide22.png){fig-align="center"}
+
+Acute thrombus typically causes the vein to dilate with a diameter greater than the diameter of the adjacent artery. Venous wall thickening/scarring, a contracted vein, recanalization, and collaterals are found in chronic thrombosis.
 
 Components of a lower extremity DVT study include doppler waveforms in response to provocative maneuvers in the common femoral, femoral and popliteal veins. When performing a DVT scan, the technician should evaluate the contralateral femoral vein flow to compare flow patterns.[@needleman2018; @societyforvascularultrasound2019] Transverse views are used for compression and compressibility testing every 3-5cm is the most reliable evaluation for thrombus.[@malgor2013]
 
@@ -490,7 +512,9 @@ Components of a lower extremity DVT study include doppler waveforms in response 
 
 **EHIT or Endovenous Heat Induced Thrombosis:** S/p endovenous thermal ablations (RFA or laser ablation) of the GSV. 4 Grades: Grade 1 is thrombus in the GSV up to the level of the CFV. If \< 50% of the CFV lumen is involved this is EHIT grade 2. EHIT grade 3 is extension into the CFV occupying \>50% of the lumen and grade 4 is occlusion of the CFV.
 
-![](images/vasc_lab2/Slide23.png){fig-align="center"} EHIT grades 3-4 are typically treated with anticoagulation to reduce risk of PE. To minimize the risk of EHIT, the catheter should be positioned at least 2 cm from the saphenofemoral junction.
+![](images/vasc_lab2/Slide23.png){fig-align="center"}
+
+EHIT grades 3-4 are typically treated with anticoagulation to reduce risk of PE. To minimize the risk of EHIT, the catheter should be positioned at least 2 cm from the saphenofemoral junction.
 
 **Superficial vein thrombosis:** when scanning for superficial vein thrombosis, pornographers should scan superficial and deep veins of the ipsilateral leg and the contralateral central veins with doppler wave form, because the incidence of concomitant thrombosis is not insignificant.[@decousus2010; @iac2021; @societyforvascularultrasound2019] This is discussed more in our venous chapter: @sec-superficial-vein-thrombosis
 
@@ -506,13 +530,17 @@ Finally, let's wrap up this episode with a discussion of imaging artifacts. Thes
 
 **Acoustic shadowing:** Shadowing on an ultrasound image is characterized by a signal void behind structures that strongly absorb, reflect, or refract ultrasonic waves.
 
-![](images/vasc_lab2/Slide24.png){fig-align="center"} Practically speaking, this most typically occurs deep to strongly reflective surfaces such as calcified plaques, and appears as a "dark area" beneath the plaque. Subcutaneous air can result in shadowing and loss of imaging information, which can be seen in some soft tissue necrotising infections.[@thom2017]
+![](images/vasc_lab2/Slide24.png){fig-align="center"}
+
+Practically speaking, this most typically occurs deep to strongly reflective surfaces such as calcified plaques, and appears as a "dark area" beneath the plaque. Subcutaneous air can result in shadowing and loss of imaging information, which can be seen in some soft tissue necrotising infections.[@thom2017]
 
 **Acoustic enhancement** is essentially the inverse situation, and appears as a "bright area" deep to structures that transmit ultrasound waves exceptionally well. This can happen deep to fluid-filled structures such as cysts.
 
 **Mirroring**: A mirror-image artifact is caused by reverberation of ultrasound and shows structures that exist on one side of a strong reflector as also being present on the other side of the reflector.
 
-![](images/vasc_lab2/Slide25.png){fig-align="center"} This is often seen around the pleura and the diaphragm, due to the strong reflection of ultrasound from the air-filled lung. These artifacts can occur in both B-mode imaging where you see the mirrored image and Doppler, in which you see the mirrored waveform. The clavicle is also a strong spectral reflector, and thus can result in a mirror effect and a duplicate subclavian artery.[@rubin2010]
+![](images/vasc_lab2/Slide25.png){fig-align="center"}
+
+This is often seen around the pleura and the diaphragm, due to the strong reflection of ultrasound from the air-filled lung. These artifacts can occur in both B-mode imaging where you see the mirrored image and Doppler, in which you see the mirrored waveform. The clavicle is also a strong spectral reflector, and thus can result in a mirror effect and a duplicate subclavian artery.[@rubin2010]
 
 **Refraction:** A refraction artifact is the result of ultrasound waves passing through tissues with different propagation velocities (such as air and water) and causes a structure to be improperly positioned laterally in the image. This is the phenomenon that results in a straw appearing bent when in a glass of water.
 
@@ -520,15 +548,21 @@ Finally, let's wrap up this episode with a discussion of imaging artifacts. Thes
 
 **Inappropriate color gain:** Overly gained images will show "speckling" in areas in which no flow is present (such as in soft tissue). Increasing the gain, increases both the signal and the noise.[@kremkau2021] The noise added to the spectral waveform can result in PSV overestimation.
 
-![](images/vasc_lab2/Slide26.png){fig-align="center"} Under-gaining will result in reduced sensitivity to low velocity flow.
+![](images/vasc_lab2/Slide26.png){fig-align="center"}
+
+Under-gaining will result in reduced sensitivity to low velocity flow.
 
 **Inappropriate angle correction:** Make sure the angle correction cursor is centered in the vessel and parallel to the walls, otherwise the Doppler velocity measurement will be incorrect. Increasing the doppler angle will increase the velocity measurement (if no change to angle correction is made).
 
-![](images/vasc_lab2/Slide27.png){fig-align="center"} Finally, can we talk about aliasing, as I feel like this comes up a lot on exams:
+![](images/vasc_lab2/Slide27.png){fig-align="center"}
+
+Finally, can we talk about aliasing, as I feel like this comes up a lot on exams:
 
 **Aliasing:** Unlike [continuous wave Doppler](https://radiopaedia.org/articles/continuous-wave-doppler?lang=us), pulsed wave and color flow Doppler are characterized by rapid pulses of ultrasound waves (at a rate called the pulse repetition frequency). The [Nyquist limit](https://radiopaedia.org/articles/nyquist-limit?lang=us) defines the frequency at which aliasing will occur, as equal to the PRF/2. So what does this mean practically? In pulsed wave doppler, if the velocity of blood is greater than ½ the PRF, the peak velocity will be cut off, and wrapped around to the bottom of the scale.
 
-![](images/vasc_lab2/Slide28.png){fig-align="center"} This results in inaccurate measurement of peak velocities, and may be remedied by increasing the PRF and hence the scale. In color flow doppler, aliasing appears as red to blue hues without separation of a black region indicating no flow. This occurs in areas of high velocity (such as immediately post-stenosis). This can be remedied with an increase in the color scale. Of note, if asked to determine the direction of blood flow in a vessel demonstrating aliasing, one should assess the flow in low-velocity areas of blood flow, as seen along vessel walls.
+![](images/vasc_lab2/Slide28.png){fig-align="center"}
+
+This results in inaccurate measurement of peak velocities, and may be remedied by increasing the PRF and hence the scale. In color flow doppler, aliasing appears as red to blue hues without separation of a black region indicating no flow. This occurs in areas of high velocity (such as immediately post-stenosis). This can be remedied with an increase in the color scale. Of note, if asked to determine the direction of blood flow in a vessel demonstrating aliasing, one should assess the flow in low-velocity areas of blood flow, as seen along vessel walls.
 
 ## Accreditation and Credentialing
 

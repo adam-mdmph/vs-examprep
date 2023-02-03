@@ -4,7 +4,7 @@ project:
 book:
   title: "Vascular Surgery Exam Prep"
   author: "Audible Bleeding"
-  date: "01/30/2023"
+  date: "02/01/2023"
   description: "eBook Companion for Audible Bleeding Podcast Series"
   cover-image: images/ab_examprep_cover.jpg
   chapters:
@@ -56,9 +56,6 @@ book:
   repo-url: https://github.com/adam-mdmph/vs-examprep.git
   google-analytics: "G-T4DWNE55D1"
   cookie-consent: true
-  number-sections: true
-  crossref:
-    chapters: true
   open-graph: true
   twitter-card:
     image: "https://raw.githubusercontent.com/adam-mdmph/vs-examprep/main/images/ab_examprep_cover.png"

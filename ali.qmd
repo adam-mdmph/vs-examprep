@@ -290,7 +290,7 @@ If no obvious source of embolism can be identified, further investigation for un
 
 **Specific Thrombogenic Arterial Lesion**: Medical management with anticoagulation. Recurrent symptoms on anticoagulation may require stent coverage or, in a young patient, thrombectomy. [@reyesvaldiviaAnticoagulationAloneAortic2017; @jeyabalanEndovascularStrategiesTreatment2014; @vermaContemporaryManagementSymptomatic2014]
 
-## Non-atheromatous Popliteal Artery Disease
+## Non-atheromatous Popliteal Artery Disease {#sec-pop-disease}
 
 ### Popliteal Artery Entrapment Syndrome (PAES) {#sec-paes}
 

@@ -1,4 +1,4 @@
-# Venous Disease
+# Venous Disease {#sec-venous}
 
 Authors: *Leanna Erete, Andrew Nickinson, Aminder Singh and Manj Gohel*
 
@@ -38,7 +38,7 @@ So if you have a patient that comes into your clinic with a venous problem, it's
 
 So it is purely a descriptive classification system. And the most commonly used part is the clinical bit, which is C1 to C6. CEAP was just recently revised last year, a 25 year revision, which again, I would urge trainees to have a look at, Dr. Fedor Lurie was the lead author, and th is was a useful revision of CEAP.[@lurie2020]
 
-![](images/ceap.jpeg)
+![](images/ceap.jpeg){fig-align="center"}
 
 Now in response to the limitations of CEAP, the Venous Clinical Severity Score (VCSS) was created. So this is a 10 item scoring system, each item scores between zero and three. So you get a maximum score of 30. Now this is designed to be responsive to treatment and complimentary to CEAP.[@vasquez2010]
 

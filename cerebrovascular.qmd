@@ -412,7 +412,7 @@ What if the patient has severe vertebrobasilar insufficiency and carotid artery 
 -   Should undergo carotid revascularization first to improve flow. Then reassess for vertebrobasilar insufficiency.
 -   Vertebrobasilar insufficiency characterized by dizziness, ataxia, nausea, vertigo and bilateral weakness. [@limanetoPathophysiologyDiagnosisVertebrobasilar2017; @nouh2014]
 
-### Vertebrobasilar Disease
+### Vertebrobasilar Disease {#sec-vertebrobasilar-disease}
 
 Most common etiology is atherosclerosis, but can also be caused by embolism, dissection or migraines.[@limaneto2017]
 

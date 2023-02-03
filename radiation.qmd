@@ -2,11 +2,13 @@
 
 **Authors:** *Adam P Johnson and Melissa Kirkwood*
 
-::: callout-tip
-## Take a Listen
+```{r echo=FALSE}
 
-Check out our [previous episode with a panel with Drs. Kirkwood, Wohlauer, and Chandra discussing occupation hazards for the vascular surgeon](https://www.audiblebleeding.com/occupational-hazards/), of which an important hazard includes radiation safety.
-:::
+library(embedr)
+
+embed_audio("https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Radiation_Safetyau.mp3")
+
+```
 
 ## Important Terms
 
@@ -29,7 +31,7 @@ Check out our [previous episode with a panel with Drs. Kirkwood, Wohlauer, and C
 The effects can impact both patients and clinicians. Patients often receive a higher dose during a single procedure, where as clinician doses, even with proper shielding, accumulate over multiple procedures throughout their careers. The effects of radiation are defined as either deterministic or stochastic.
 
 |  Dose   | Effect                                                                                             |
-|:---------------:|------------------------------------------------------|
+|:------------------:|----------------------------------------------------|
 |  0-2Gy  | No observable effects                                                                              |
 |  2-5Gy  | Transient skin erythema and dermatitis, full recovery 6w-1yr[@guesnier-dopagne2019; @kirkwood2014] |
 | 5-10Gy  | Erythema and epilation (hair loss), prolonged erythema up to 1y                                    |
@@ -180,3 +182,9 @@ CO2 angiography is often utilized in place of iodinated contrast during fluorosc
     -   Cardiac/pulmonary vapor lock can occur with venography. Mimics a PE with hypoxia and hypotension. Initial management is to place patient in the left lateral decubitus/trendelenberg position.[@caridi1997; @sharafuddin2017]
 
     -   Mesenteric vapor lock presents with significant unrelenting abdominal pain. Fluoroscopy can confirm a retained bubble. Initial management includes ongoing heparinization to prevent down stream thrombosis and maneuvers to break up the bubble by rotating the patient side-to-side or deep abdominal massage. Catheter aspiration may be needed.[@caridi1997; @sharafuddin2017]
+
+::: callout-tip
+## Take a Listen
+
+Check out our [previous episode with a panel with Drs. Kirkwood, Wohlauer, and Chandra discussing occupation hazards for the vascular surgeon](https://www.audiblebleeding.com/occupational-hazards/), of which an important hazard includes radiation safety.
+:::
