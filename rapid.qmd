@@ -234,13 +234,13 @@ For more, see @sec-pop-disease
 
 -   4 Ts
 
-    -   Platelets fall \> 50% and are less than 20k
+    -   **T**hrombocytopenia - Platelets fall \> 50% and are less than 20k
 
-    -   Clear onset between 5-10 days or \> 1 day w/ previous heparin exposure
+    -   **T**iming - Clear onset between 5-10 days or \> 1 day w/ previous heparin exposure
 
-    -   New thrombosis
+    -   New **T**hrombosis
 
-    -   No other cause for thrombocytopenia
+    -   No other cause for **T**hrombocytopenia
 
 -   Bivalirudin if hepatic failure
 
