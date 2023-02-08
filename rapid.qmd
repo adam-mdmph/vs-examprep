@@ -6,9 +6,11 @@ Authors: Matthew Chia and Maggie Reilly
 
 library(embedr)
 
-# embed_audio("")
+embed_audio("https://traffic.libsyn.com/audiblebleeding/On_the_Way_to_the_VSITEau.mp3")
 
 ```
+
+In this chapter we discuss a number of disparate topics that are often seen on the VSITE examination in the US, and often just require rote memorization. We have included links to the relevant chapters for you to see the information in more context if needed. This chapter is not meant as a stand a lone review.
 
 ## Venous Disease
 
