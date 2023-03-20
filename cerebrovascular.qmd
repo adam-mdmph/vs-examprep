@@ -2,7 +2,7 @@
 
 Authors: *Adam P Johnson, Nicole Rich, and Kevin Kniery*
 
-Contributors: *Eilidh Gunn*
+Contributors: *Eilidh Gunn, Ronnachai Buppanharun*
 
 ```{r echo=FALSE}
 
@@ -20,9 +20,9 @@ embed_audio("https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Cerebro
 
 1.  **What is the definition of crescendo TIAs?**
 
-    The presenting symptoms of extracranial carotid disease is of the utmost importance to understand because it is a major factor in determining treatment and prognosis. Focal neurologic symptoms that occur suddenly and then resolve within 24 hours are called a transient ischemic attach (TIA). If the deficit persists beyond 24 hours, then it is considered a stroke. Strokes are then graded according to the National Institute of Health Stroke Scale (NIHSS).[@fischer2010]
+    The presenting symptoms of extracranial carotid disease is of the utmost importance to understand because it is a major factor in determining treatment and prognosis. Focal neurologic symptoms that occur suddenly and then resolve within 24 hours are called a transient ischemic attack (TIA). If the deficit persists beyond 24 hours, then it is considered a stroke. Strokes are then graded according to the National Institute of Health Stroke Scale (NIHSS).[@fischer2010]
 
-    A particularly confusing distinction is between a crescendo TIA and a stroke in evolution. A crescendo TIA is frequent repetitive neurological attacks without complete resolution of the deficit between the episodes, usually over a 24 hour period. The result of which is the same neurological deficit. If the patient exhibits progressive deterioration in neurological function between TIA episodes this is classified as a stroke in evolution not a crescendo TIA.[@ricotta2019] These are both particularly concerning findings and may be an indication for an emergent intervention.
+    A particularly confusing distinction is between a crescendo TIA and a stroke in evolution. A crescendo TIA is frequent repetitive neurological attacks with complete resolution of the deficit between the episodes, usually over a 24 hour period. The result of which is the same neurological deficit.[@naylor2023] If the patient exhibits progressive deterioration in neurological function between TIA episodes this is classified as a stroke in evolution not a crescendo TIA.[@ricotta2019] These are both particularly concerning findings and may be an indication for an emergent intervention.
 
 2.  **Who needs to be screened for carotid disease?**
 
