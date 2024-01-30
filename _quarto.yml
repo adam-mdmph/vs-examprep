@@ -65,17 +65,20 @@ book:
 bibliography: references.bib
 
 format:
-  html:
-    theme: cosmo
-#  pdf:
-#    documentclass: scrreprt
-#    include-in-header: 
-#      text: |
-#        \usepackage{makeidx}
-#        \makeindex
-#    include-after-body: 
-#      text: |
-#        \printindex
+ html:
+   theme: cosmo
+
+ pdf:
+    documentclass: scrreprt
+    include-in-header: 
+      text: |
+        \usepackage{enumitem}
+        \setlistdepth{9}
+        \renewlist{itemize}{itemize}{9}
+        \setlist[itemize]{label=\textbullet}
+    include-after-body: 
+      text: |
+        \printindex
 
 editor: visual
 
