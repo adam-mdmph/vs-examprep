@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,15 +12,21 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -34,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -119,11 +124,16 @@ cookieconsent.run({
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cerebrovascular.html">Head and Neck</a></li><li class="breadcrumb-item"><a href="./cerebrovascular.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -131,239 +141,272 @@ cookieconsent.run({
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Vascular Surgery Exam Prep</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./authors.html" class="sidebar-item-text sidebar-link">Authors and Contributors</a>
+  <a href="./authors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authors and Contributors</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Head and Neck</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Head and Neck</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></a>
+  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></a>
+  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Upper Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Upper Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></a>
+  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tos.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></a>
+  <a href="./tos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></a>
+  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Thorax</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Thorax</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dissection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></a>
+  <a href="./dissection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taaa.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></a>
+  <a href="./taaa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></a>
+  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></a>
+  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Abdomen</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Abdomen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></a>
+  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></a>
+  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./renal.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></a>
+  <a href="./renal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></a>
+  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></a>
+  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Lower Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Lower Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./claudication.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></a>
+  <a href="./claudication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clti.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></a>
+  <a href="./clti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ali.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></a>
+  <a href="./ali.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></a>
+  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></a>
+  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">General</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">General</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></a>
+  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./radiation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></a>
+  <a href="./radiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></a>
+  <a href="./endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rapid.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></a>
+  <a href="./rapid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#available-guidelines" id="toc-available-guidelines" class="nav-link active" data-scroll-target="#available-guidelines"> <span class="header-section-number">1.1</span> Available Guidelines</a></li>
-  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation"> <span class="header-section-number">1.2</span> Presentation</a></li>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"> <span class="header-section-number">1.3</span> Evaluation</a></li>
-  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"> <span class="header-section-number">1.4</span> Management</a>
+  <li><a href="#available-guidelines" id="toc-available-guidelines" class="nav-link active" data-scroll-target="#available-guidelines"><span class="header-section-number">1.1</span> Available Guidelines</a></li>
+  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation"><span class="header-section-number">1.2</span> Presentation</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"><span class="header-section-number">1.3</span> Evaluation</a></li>
+  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"><span class="header-section-number">1.4</span> Management</a>
   <ul class="collapse">
-  <li><a href="#medical---asymptomatic-patients" id="toc-medical---asymptomatic-patients" class="nav-link" data-scroll-target="#medical---asymptomatic-patients"> <span class="header-section-number">1.4.1</span> Medical - Asymptomatic Patients</a></li>
-  <li><a href="#medical---symptomatic-patients" id="toc-medical---symptomatic-patients" class="nav-link" data-scroll-target="#medical---symptomatic-patients"> <span class="header-section-number">1.4.2</span> Medical - Symptomatic Patients</a></li>
-  <li><a href="#surgical---carotid-endarterectomy" id="toc-surgical---carotid-endarterectomy" class="nav-link" data-scroll-target="#surgical---carotid-endarterectomy"> <span class="header-section-number">1.4.3</span> Surgical - Carotid Endarterectomy</a></li>
-  <li><a href="#endovascular---carotid-artery-stenting" id="toc-endovascular---carotid-artery-stenting" class="nav-link" data-scroll-target="#endovascular---carotid-artery-stenting"> <span class="header-section-number">1.4.4</span> Endovascular - Carotid Artery Stenting</a></li>
-  <li><a href="#summary-of-prospective-trials" id="toc-summary-of-prospective-trials" class="nav-link" data-scroll-target="#summary-of-prospective-trials"> <span class="header-section-number">1.4.5</span> Summary of Prospective Trials</a></li>
+  <li><a href="#medical---asymptomatic-patients" id="toc-medical---asymptomatic-patients" class="nav-link" data-scroll-target="#medical---asymptomatic-patients"><span class="header-section-number">1.4.1</span> Medical - Asymptomatic Patients</a></li>
+  <li><a href="#medical---symptomatic-patients" id="toc-medical---symptomatic-patients" class="nav-link" data-scroll-target="#medical---symptomatic-patients"><span class="header-section-number">1.4.2</span> Medical - Symptomatic Patients</a></li>
+  <li><a href="#surgical---carotid-endarterectomy" id="toc-surgical---carotid-endarterectomy" class="nav-link" data-scroll-target="#surgical---carotid-endarterectomy"><span class="header-section-number">1.4.3</span> Surgical - Carotid Endarterectomy</a></li>
+  <li><a href="#endovascular---carotid-artery-stenting" id="toc-endovascular---carotid-artery-stenting" class="nav-link" data-scroll-target="#endovascular---carotid-artery-stenting"><span class="header-section-number">1.4.4</span> Endovascular - Carotid Artery Stenting</a></li>
+  <li><a href="#summary-of-prospective-trials" id="toc-summary-of-prospective-trials" class="nav-link" data-scroll-target="#summary-of-prospective-trials"><span class="header-section-number">1.4.5</span> Summary of Prospective Trials</a></li>
   </ul></li>
-  <li><a href="#uncommon-carotid-disease" id="toc-uncommon-carotid-disease" class="nav-link" data-scroll-target="#uncommon-carotid-disease"> <span class="header-section-number">1.5</span> Uncommon Carotid Disease</a>
+  <li><a href="#uncommon-carotid-disease" id="toc-uncommon-carotid-disease" class="nav-link" data-scroll-target="#uncommon-carotid-disease"><span class="header-section-number">1.5</span> Uncommon Carotid Disease</a>
   <ul class="collapse">
-  <li><a href="#complicated-extracranial-occlusive-disease" id="toc-complicated-extracranial-occlusive-disease" class="nav-link" data-scroll-target="#complicated-extracranial-occlusive-disease"> <span class="header-section-number">1.5.1</span> Complicated Extracranial Occlusive Disease</a></li>
-  <li><a href="#sec-vertebrobasilar-disease" id="toc-sec-vertebrobasilar-disease" class="nav-link" data-scroll-target="#sec-vertebrobasilar-disease"> <span class="header-section-number">1.5.2</span> Vertebrobasilar Disease</a></li>
-  <li><a href="#carotid-artery-dissection" id="toc-carotid-artery-dissection" class="nav-link" data-scroll-target="#carotid-artery-dissection"> <span class="header-section-number">1.5.3</span> Carotid artery dissection</a></li>
-  <li><a href="#internal-carotid-artery-aneurysms" id="toc-internal-carotid-artery-aneurysms" class="nav-link" data-scroll-target="#internal-carotid-artery-aneurysms"> <span class="header-section-number">1.5.4</span> Internal Carotid Artery Aneurysms</a></li>
-  <li><a href="#carotid-body-tumors-cbt" id="toc-carotid-body-tumors-cbt" class="nav-link" data-scroll-target="#carotid-body-tumors-cbt"> <span class="header-section-number">1.5.5</span> Carotid Body Tumors (CBT)</a></li>
+  <li><a href="#complicated-extracranial-occlusive-disease" id="toc-complicated-extracranial-occlusive-disease" class="nav-link" data-scroll-target="#complicated-extracranial-occlusive-disease"><span class="header-section-number">1.5.1</span> Complicated Extracranial Occlusive Disease</a></li>
+  <li><a href="#sec-vertebrobasilar-disease" id="toc-sec-vertebrobasilar-disease" class="nav-link" data-scroll-target="#sec-vertebrobasilar-disease"><span class="header-section-number">1.5.2</span> Vertebrobasilar Disease</a></li>
+  <li><a href="#carotid-artery-dissection" id="toc-carotid-artery-dissection" class="nav-link" data-scroll-target="#carotid-artery-dissection"><span class="header-section-number">1.5.3</span> Carotid artery dissection</a></li>
+  <li><a href="#internal-carotid-artery-aneurysms" id="toc-internal-carotid-artery-aneurysms" class="nav-link" data-scroll-target="#internal-carotid-artery-aneurysms"><span class="header-section-number">1.5.4</span> Internal Carotid Artery Aneurysms</a></li>
+  <li><a href="#carotid-body-tumors-cbt" id="toc-carotid-body-tumors-cbt" class="nav-link" data-scroll-target="#carotid-body-tumors-cbt"><span class="header-section-number">1.5.5</span> Carotid Body Tumors (CBT)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -373,19 +416,15 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-cerebrovascular" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></span></h1>
+<h1 class="title"><span id="sec-cerebrovascular" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></span></h1>
 </div>
 
-<div>
-  <div class="description">
-    eBook Companion for Audible Bleeding Podcast Series
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -476,12 +515,12 @@ cookieconsent.run({
 <section id="medical---asymptomatic-patients" class="level3" data-number="1.4.1">
 <h3 data-number="1.4.1" class="anchored" data-anchor-id="medical---asymptomatic-patients"><span class="header-section-number">1.4.1</span> Medical - Asymptomatic Patients</h3>
 <p>First line management for asymptomatic patients with carotid stenosis is medical optimization of risk factors. The benefit of prophylactic intervention (CEA/CAS) of even high grade stenosis is estimated at a 1-2% stroke reduction risk per year. <span class="citation" data-cites="naylorWhyManagementAsymptomatic2015">(<a href="references.html#ref-naylorWhyManagementAsymptomatic2015" role="doc-biblioref">A. Ross Naylor 2015</a>)</span> In addition, keep in mind that intervention (CEA/CAS) has only demonstrated a benefit in asymptomatic patient with life expectancy greater than 3 years. <span class="citation" data-cites="bulbuliaAsymptomaticCarotidSurgery2017 halliday10yearStrokePrevention2010 rosenfieldRandomizedTrialStent2016">(<a href="references.html#ref-bulbuliaAsymptomaticCarotidSurgery2017" role="doc-biblioref">Bulbulia and Halliday 2017</a>; <a href="references.html#ref-halliday10yearStrokePrevention2010" role="doc-biblioref">Halliday et al. 2010</a>; <a href="references.html#ref-rosenfieldRandomizedTrialStent2016" role="doc-biblioref">Rosenfield et al. 2016</a>)</span></p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -663,12 +702,12 @@ Take a Listen
 <li>Studies with TCD have shown that there may be reduced embolization rates with TCAR over transfemoral stenting.<span class="citation" data-cites="plessers2016">(<a href="references.html#ref-plessers2016" role="doc-biblioref">Plessers et al. 2016</a>)</span>Complications</li>
 </ul>
 <p>Post stenting ICA thrombosis should first be treated with abciximab and catheter directed thrombolysis, followed by endo-salvage with suction thrombectomy, repeat angioplasty or stenting. May require eventual conversion to CEA.<span class="citation" data-cites="coelho2019 naylor2018">(<a href="references.html#ref-coelho2019" role="doc-biblioref">Coelho et al. 2019</a>; <a href="references.html#ref-naylor2018" role="doc-biblioref">A. R. Naylor et al. 2018</a>)</span></p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Look
 </div>
 </div>
@@ -713,12 +752,12 @@ Take a Look
 </ul></li>
 </ul></li>
 </ol>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -746,12 +785,12 @@ Take a Listen
 <li><p>Recent multi-institutional post market surveillance study demonstrated found TCAR outcomes to be “broadly similar” to carotid endarterectomy.<span class="citation" data-cites="kashyap2019">(<a href="references.html#ref-kashyap2019" role="doc-biblioref">Kashyap et al. 2019</a>)</span></p></li>
 </ul></li>
 </ol>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -847,296 +886,296 @@ Take a Listen
 <p>Embolization if tumor arterial inflow may help reduce risk of perioperative blood loss but is not associated with reduced cranial nerve injury. Resection should take place 24-36hrs after embolization.<span class="citation" data-cites="power2012">(<a href="references.html#ref-power2012" role="doc-biblioref">Power et al. 2012</a>)</span></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-abou-chebl2004" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-abou-chebl2004" class="csl-entry" role="listitem">
 Abou-Chebl, Alex, Jay S Yadav, Joel P Reginelli, Christopher Bajzer, Deepak Bhatt, and Derk W Krieger. 2004. <span>“Intracranial Hemorrhage and Hyperperfusion Syndrome Following Carotid Artery Stenting: Risk Factors, Prevention, and Treatment.”</span> <em>Journal of the American College of Cardiology</em> 43 (9): 1596–1601. <a href="https://doi.org/10.1016/j.jacc.2003.12.039">https://doi.org/10.1016/j.jacc.2003.12.039</a>.
 </div>
-<div id="ref-aburahmaSocietyVascularSurgery2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-aburahmaSocietyVascularSurgery2022" class="csl-entry" role="listitem">
 AbuRahma, Ali F., Efthymios D. Avgerinos, Robert W. Chang, R. Clement Darling, Audra A. Duncan, Thomas L. Forbes, Mahmoud B. Malas, et al. 2022. <span>“Society for <span>Vascular Surgery</span> Clinical Practice Guidelines for Management of Extracranial Cerebrovascular Disease.”</span> <em>Journal of Vascular Surgery</em> 75 (1): 4S–22S. <a href="https://doi.org/10.1016/j.jvs.2021.04.073">https://doi.org/10.1016/j.jvs.2021.04.073</a>.
 </div>
-<div id="ref-aburahma2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-aburahma2022" class="csl-entry" role="listitem">
 Aburahma, Ali F., and Bruce A. Perler. 2022. <em>Noninvasive Vascular Diagnosis: A Practical Textbook for Clinicians</em>.
 </div>
-<div id="ref-aiyagari2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-aiyagari2009" class="csl-entry" role="listitem">
 Aiyagari, Venkatesh, and Philip B. Gorelick. 2009. <span>“Management of Blood Pressure for Acute and Recurrent Stroke.”</span> <em>Stroke</em> 40 (6): 2251–56. <a href="https://doi.org/10.1161/STROKEAHA.108.531574">https://doi.org/10.1161/STROKEAHA.108.531574</a>.
 </div>
-<div id="ref-antoniou2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-antoniou2012" class="csl-entry" role="listitem">
 Antoniou, George A., David Murray, George S. Georgiadis, Stavros A. Antoniou, Andrew Schiro, Ferdinand Serracino-Inglott, and J. Vincent Smyth. 2012. <span>“Percutaneous Transluminal Angioplasty and Stenting in Patients with Proximal Vertebral Artery Stenosis.”</span> <em>Journal of Vascular Surgery</em> 55 (4): 1167–77. <a href="https://doi.org/10.1016/j.jvs.2011.09.084">https://doi.org/10.1016/j.jvs.2011.09.084</a>.
 </div>
-<div id="ref-arhuidese2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-arhuidese2017" class="csl-entry" role="listitem">
 Arhuidese, Isibor J., Besma Nejim, Susruth Chavali, Satinderjit Locham, Tammam Obeid, Caitlin W. Hicks, and Mahmoud B. Malas. 2017. <span>“Endarterectomy Versus Stenting in Patients with Prior Ipsilateral Carotid Artery Stenting.”</span> <em>Journal of Vascular Surgery</em> 65 (5): 1418–28. <a href="https://doi.org/10.1016/j.jvs.2016.11.041">https://doi.org/10.1016/j.jvs.2016.11.041</a>.
 </div>
-<div id="ref-arnold2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-arnold2019" class="csl-entry" role="listitem">
 Arnold, Maggie, and Bruce A. Perler. 2019. <span>“91. Carotid Endarterectomy.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>. Elsevier Inc.
 </div>
-<div id="ref-ascher2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ascher2004" class="csl-entry" role="listitem">
 Ascher, Enrico, Natalia Markevich, Sreedhar Kallakuri, Richard W. Schutzer, and Anil P. Hingorani. 2004. <span>“Intraoperative Carotid Artery Duplex Scanning in a Modern Series of 650 Consecutive Primary Endarterectomy Procedures.”</span> <em>Journal of Vascular Surgery</em> 39 (2): 416–20. <a href="https://doi.org/10.1016/j.jvs.2003.09.019">https://doi.org/10.1016/j.jvs.2003.09.019</a>.
 </div>
-<div id="ref-ballotta2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ballotta2005" class="csl-entry" role="listitem">
 Ballotta, Enzo, Gaetano Thiene, Claudio Baracchini, Mario Ermani, Carmelo Militello, Giuseppe Da Giau, Bruno Barbon, and Annalisa Angelini. 2005. <span>“Surgical Vs Medical Treatment for Isolated Internal Carotid Artery Elongation with Coiling or Kinking in Symptomatic Patients: A Prospective Randomized Clinical Study.”</span> <em>Journal of Vascular Surgery</em> 42 (5): 838–46. <a href="https://doi.org/10.1016/j.jvs.2005.07.034">https://doi.org/10.1016/j.jvs.2005.07.034</a>.
 </div>
-<div id="ref-beretta2006" class="csl-entry" role="doc-biblioentry">
+<div id="ref-beretta2006" class="csl-entry" role="listitem">
 Beretta, Federica, Salah A. Hemida, Norberto Andaluz, Mario Zuccarello, and Jeffrey T. Keller. 2006. <span>“Exposure of the Cervical Internal Carotid Artery: Surgical Steps to the Cranial Base and Morphometric Study.”</span> <em>Neurosurgery</em> 59 (1 Suppl 1): ONS25-34; discussion ONS25-34. <a href="https://doi.org/10.1227/01.NEU.0000219877.43072.49">https://doi.org/10.1227/01.NEU.0000219877.43072.49</a>.
 </div>
-<div id="ref-berguer1985" class="csl-entry" role="doc-biblioentry">
+<div id="ref-berguer1985" class="csl-entry" role="listitem">
 Berguer, R. 1985. <span>“Distal Vertebral Artery Bypass: Technique, the <span>‘Occipital Connection,’</span> and Potential Uses.”</span> <em>Journal of Vascular Surgery</em> 2 (4): 621–26.
 </div>
-<div id="ref-berguer1998" class="csl-entry" role="doc-biblioentry">
+<div id="ref-berguer1998" class="csl-entry" role="listitem">
 Berguer, R., M. D. Morasch, and R. A. Kline. 1998. <span>“Transthoracic Repair of Innominate and Common Carotid Artery Disease: Immediate and Long-Term Outcome for 100 Consecutive Surgical Reconstructions.”</span> <em>Journal of Vascular Surgery</em> 27 (1): 34–41; discussion 42. <a href="https://doi.org/10.1016/s0741-5214(98)70289-7">https://doi.org/10.1016/s0741-5214(98)70289-7</a>.
 </div>
-<div id="ref-brott2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-brott2010" class="csl-entry" role="listitem">
 Brott, Thomas G., Robert W. Hobson, George Howard, Gary S. Roubin, Wayne M. Clark, William Brooks, Ariane Mackey, et al. 2010. <span>“Stenting Versus Endarterectomy for Treatment of Carotid-Artery Stenosis.”</span> <em>The New England Journal of Medicine</em> 363 (1): 11–23. <a href="https://doi.org/10.1056/NEJMoa0912321">https://doi.org/10.1056/NEJMoa0912321</a>.
 </div>
-<div id="ref-brottLongTermResultsStenting2016b" class="csl-entry" role="doc-biblioentry">
+<div id="ref-brottLongTermResultsStenting2016b" class="csl-entry" role="listitem">
 Brott, Thomas G., George Howard, Gary S. Roubin, James F. Meschia, Ariane Mackey, William Brooks, Wesley S. Moore, et al. 2016. <span>“Long-<span>Term Results</span> of <span>Stenting</span> Versus <span>Endarterectomy</span> for <span>Carotid-Artery Stenosis</span>.”</span> <em>The New England Journal of Medicine</em> 374 (11): 1021–31. <a href="https://doi.org/10.1056/NEJMoa1505215">https://doi.org/10.1056/NEJMoa1505215</a>.
 </div>
-<div id="ref-bulbuliaAsymptomaticCarotidSurgery2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bulbuliaAsymptomaticCarotidSurgery2017" class="csl-entry" role="listitem">
 Bulbulia, Richard, and Alison Halliday. 2017. <span>“The <span>Asymptomatic Carotid Surgery Trial-2</span> (<span>ACST-2</span>): An Ongoing Randomised Controlled Trial Comparing Carotid Endarterectomy with Carotid Artery Stenting to Prevent Stroke.”</span> <em>Health Technology Assessment</em> 21 (57): 1–40. <a href="https://doi.org/10.3310/hta21570">https://doi.org/10.3310/hta21570</a>.
 </div>
-<div id="ref-bush2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bush2019" class="csl-entry" role="listitem">
 Bush, Ruth L, Paul Long, and Marvin D Atkins. 2019. <span>“94. Carotid Artery Aneurysms.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy, 2-Volume Set</em>, 1242–1254e. Elsevier Inc. <a href="https://doi.org/10.1016/B978-0-323-42791-3.00094-3">https://doi.org/10.1016/B978-0-323-42791-3.00094-3</a>.
 </div>
-<div id="ref-chia2020" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chia2020" class="csl-entry" role="listitem">
 Chia, Matthew C., Gabriel A. Wallace, Brian T. Cheng, Karen J. Ho, and Mark K. Eskandari. 2020. <span>“Identifying a Safe Carotid Stump Pressure Threshold for Selective Shunting During Carotid Endarterectomy.”</span> <em>Annals of Vascular Surgery</em> 69 (November): 158–62. <a href="https://doi.org/10.1016/j.avsg.2020.06.002">https://doi.org/10.1016/j.avsg.2020.06.002</a>.
 </div>
-<div id="ref-chimowitz2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chimowitz2011" class="csl-entry" role="listitem">
 Chimowitz, Marc I., Michael J. Lynn, Colin P. Derdeyn, Tanya N. Turan, David Fiorella, Bethany F. Lane, L. Scott Janis, et al. 2011. <span>“Stenting Versus Aggressive Medical Therapy for Intracranial Arterial Stenosis.”</span> <em>The New England Journal of Medicine</em> 365 (11): 993–1003. <a href="https://doi.org/10.1056/NEJMoa1105335">https://doi.org/10.1056/NEJMoa1105335</a>.
 </div>
-<div id="ref-chongruksut2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chongruksut2014" class="csl-entry" role="listitem">
 Chongruksut, Wilaiwan, Tanat Vaniyapong, and Kittipan Rerkasem. 2014. <span>“Routine or Selective Carotid Artery Shunting for Carotid Endarterectomy (and Different Methods of Monitoring in Selective Shunting).”</span> <em>The Cochrane Database of Systematic Reviews</em> 2014 (6): CD000190. <a href="https://doi.org/10.1002/14651858.CD000190.pub3">https://doi.org/10.1002/14651858.CD000190.pub3</a>.
 </div>
-<div id="ref-chow2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chow2019" class="csl-entry" role="listitem">
 Chow, Warren B., Wesley S Moore, and Glenn M. Lamuraglia. 2019. <span>“95. Carotid Body Tumors.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 1255–64. Elsevier Inc. <a href="https://doi.org/10.1016/B978-0-323-42791-3.00095-5">https://doi.org/10.1016/B978-0-323-42791-3.00095-5</a>.
 </div>
-<div id="ref-chungPercutaneousInterventionCarotid2016a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chungPercutaneousInterventionCarotid2016a" class="csl-entry" role="listitem">
 Chung, Jayer, Wilmer Valentine, Sherene E. Sharath, Amita Pathak, Neal R. Barshes, George Pisimisis, Panagiotis Kougias, and Joseph L. Mills. 2016. <span>“Percutaneous Intervention for Carotid in-Stent Restenosis Does Not Improve Outcomes Compared with Nonoperative Management.”</span> <em>Journal of Vascular Surgery</em> 64 (5): 1286–1294.e1. <a href="https://doi.org/10.1016/j.jvs.2016.05.086">https://doi.org/10.1016/j.jvs.2016.05.086</a>.
 </div>
-<div id="ref-clavel2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-clavel2019" class="csl-entry" role="listitem">
 Clavel, Pierre, Solène Hebert, Suzana Saleme, Charbel Mounayer, Aymeric Rouchaud, and Benoit Marin. 2019. <span>“Cumulative Incidence of Restenosis in the Endovascular Treatment of Extracranial Carotid Artery Stenosis: A Meta-Analysis.”</span> <em>Journal of Neurointerventional Surgery</em> 11 (9): 916–23. <a href="https://doi.org/10.1136/neurintsurg-2018-014534">https://doi.org/10.1136/neurintsurg-2018-014534</a>.
 </div>
-<div id="ref-coelho2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-coelho2019" class="csl-entry" role="listitem">
 Coelho, Andreia Pires, Miguel Lobo, Clara Nogueira, Ricardo Gouveia, Jacinta Campos, Rita Augusto, Nuno Coelho, Ana Carolina Semião, and Alexandra Canedo. 2019. <span>“Overview of Evidence on Risk Factors and Early Management of Acute Carotid Stent Thrombosis During the Last Two Decades.”</span> <em>Journal of Vascular Surgery</em> 69 (3): 952–64. <a href="https://doi.org/10.1016/j.jvs.2018.09.053">https://doi.org/10.1016/j.jvs.2018.09.053</a>.
 </div>
-<div id="ref-cohenSinglecenterExperienceEndovascular2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cohenSinglecenterExperienceEndovascular2012" class="csl-entry" role="listitem">
 Cohen, José E., John M. Gomori, Eyal Itshayek, Sergey Spektor, Yigal Shoshan, Guy Rosenthal, and Samuel Moscovici. 2012. <span>“Single-Center Experience on Endovascular Reconstruction of Traumatic Internal Carotid Artery Dissections:”</span> <em>The Journal of Trauma and Acute Care Surgery</em> 72 (1): 216–21. <a href="https://doi.org/10.1097/TA.0b013e31823f630a">https://doi.org/10.1097/TA.0b013e31823f630a</a>.
 </div>
-<div id="ref-coleman2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-coleman2013" class="csl-entry" role="listitem">
 Coleman, Dawn M., Andrea Obi, Enrique Criado, Shipra Arya, and Ramon Berguer. 2013. <span>“Contemporary Outcomes After Distal Vertebral Reconstruction.”</span> <em>Journal of Vascular Surgery</em> 58 (1): 152–57. <a href="https://doi.org/10.1016/j.jvs.2012.12.067">https://doi.org/10.1016/j.jvs.2012.12.067</a>.
 </div>
-<div id="ref-coward2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-coward2007" class="csl-entry" role="listitem">
 Coward, Lucy J., Dominick J. H. McCabe, Joerg Ederle, Roland L. Featherstone, Andrew Clifton, Martin M. Brown, and CAVATAS Investigators. 2007. <span>“Long-Term Outcome After Angioplasty and Stenting for Symptomatic Vertebral Artery Stenosis Compared with Medical Treatment in the Carotid and Vertebral Artery Transluminal Angioplasty Study (CAVATAS): A Randomized Trial.”</span> <em>Stroke</em> 38 (5): 1526–30. <a href="https://doi.org/10.1161/STROKEAHA.106.471862">https://doi.org/10.1161/STROKEAHA.106.471862</a>.
 </div>
-<div id="ref-davila2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-davila2016" class="csl-entry" role="listitem">
 Davila, Victor J., James M. Chang, William M. Stone, Richard J. Fowl, Thomas C. Bower, Michael L. Hinni, and Samuel R. Money. 2016. <span>“Current Surgical Management of Carotid Body Tumors.”</span> <em>Journal of Vascular Surgery</em> 64 (6): 1703–10. <a href="https://doi.org/10.1016/j.jvs.2016.05.076">https://doi.org/10.1016/j.jvs.2016.05.076</a>.
 </div>
-<div id="ref-fankhauser2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fankhauser2015" class="csl-entry" role="listitem">
 Fankhauser, Grant T., William M. Stone, Richard J. Fowl, Mark E. O’Donnell, Thomas C. Bower, Fredric B. Meyer, and Samuel R. Money. 2015. <span>“Surgical and Medical Management of Extracranial Carotid Artery Aneurysms.”</span> <em>Journal of Vascular Surgery</em> 61 (2): 389–93. <a href="https://doi.org/10.1016/j.jvs.2014.07.092">https://doi.org/10.1016/j.jvs.2014.07.092</a>.
 </div>
-<div id="ref-fatima2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fatima2019" class="csl-entry" role="listitem">
 Fatima, Javairiah, Vincent P. Federico, Salvatore T. Scali, Robert J. Feezor, Scott A. Berceli, Kristina A. Giles, Dean J. Arnaoutakis, Martin R. Back, Gilbert R. Upchurch, and Thomas S. Huber. 2019. <span>“Management of Patch Infections After Carotid Endarterectomy and Utility of Femoral Vein Interposition Bypass Graft.”</span> <em>Journal of Vascular Surgery</em> 69 (6): 1815–1823.e1. <a href="https://doi.org/10.1016/j.jvs.2018.09.036">https://doi.org/10.1016/j.jvs.2018.09.036</a>.
 </div>
-<div id="ref-fischer2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fischer2010" class="csl-entry" role="listitem">
 Fischer, Urs, Adrian Baumgartner, Marcel Arnold, Krassen Nedeltchev, Jan Gralla, Gian Marco De Marchis, Liliane Kappeler, et al. 2010. <span>“What Is a Minor Stroke?”</span> <em>Stroke</em> 41 (4): 661–66. <a href="https://doi.org/10.1161/STROKEAHA.109.572883">https://doi.org/10.1161/STROKEAHA.109.572883</a>.
 </div>
-<div id="ref-fletcher2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fletcher2016" class="csl-entry" role="listitem">
 Fletcher, E., M. Kabeer, J. Sathianathan, I. Muir, D. Williams, and C. Lim. 2016. <span>“Immediate Catheter Directed Thrombolysis for Thromboembolic Stroke During Carotid Endarterectomy.”</span> <em>EJVES Short Reports</em> 31 (April): 12–15. <a href="https://doi.org/10.1016/j.ejvssr.2016.03.003">https://doi.org/10.1016/j.ejvssr.2016.03.003</a>.
 </div>
-<div id="ref-garzon-muvdi2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-garzon-muvdi2016" class="csl-entry" role="listitem">
 Garzon-Muvdi, Tomas, Wuyang Yang, Xiaoming Rong, Justin M. Caplan, Xiaobu Ye, Geoffrey P. Colby, Alexander L. Coon, Rafael J. Tamargo, and Judy Huang. 2016. <span>“Restenosis After Carotid Endarterectomy: Insight into Risk Factors and Modification of Postoperative Management.”</span> <em>World Neurosurgery</em> 89 (May): 159–67. <a href="https://doi.org/10.1016/j.wneu.2016.01.028">https://doi.org/10.1016/j.wneu.2016.01.028</a>.
 </div>
-<div id="ref-giannopoulosRevascularizationRadiationinducedCarotid2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-giannopoulosRevascularizationRadiationinducedCarotid2018" class="csl-entry" role="listitem">
 Giannopoulos, Stefanos, Pavlos Texakalidis, Anil Kumar Jonnalagadda, Theofilos Karasavvidis, Spyridon Giannopoulos, and Damianos G. Kokkinidis. 2018. <span>“Revascularization of Radiation-Induced Carotid Artery Stenosis with Carotid Endarterectomy Vs. Carotid Artery Stenting: <span>A</span> Systematic Review and Meta-Analysis.”</span> <em>Cardiovascular Revascularization Medicine</em> 19 (5): 638–44. <a href="https://doi.org/10.1016/j.carrev.2018.01.014">https://doi.org/10.1016/j.carrev.2018.01.014</a>.
 </div>
-<div id="ref-goodney2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-goodney2010" class="csl-entry" role="listitem">
 Goodney, Philip P., Brian W. Nolan, Jens Eldrup-Jorgensen, Donald S. Likosky, and Jack L. Cronenwett. 2010. <span>“Restenosis After Carotid Endarterectomy in a Multicenter Regional Registry.”</span> <em>Journal of Vascular Surgery</em> 52 (4): 897–905.e2. <a href="https://doi.org/10.1016/j.jvs.2010.05.005">https://doi.org/10.1016/j.jvs.2010.05.005</a>.
 </div>
-<div id="ref-ec/icbypassstudygroup1985" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ec/icbypassstudygroup1985" class="csl-entry" role="listitem">
 Group, EC/IC Bypass Study. 1985. <span>“Failure of Extracranial-Intracranial Arterial Bypass to Reduce the Risk of Ischemic Stroke. Results of an International Randomized Trial.”</span> <em>The New England Journal of Medicine</em> 313 (19): 1191–1200. <a href="https://doi.org/10.1056/NEJM198511073131904">https://doi.org/10.1056/NEJM198511073131904</a>.
 </div>
-<div id="ref-halliday10yearStrokePrevention2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-halliday10yearStrokePrevention2010" class="csl-entry" role="listitem">
 Halliday, Alison, Michael Harrison, Elizabeth Hayter, Xiangling Kong, Averil Mansfield, Joanna Marro, Hongchao Pan, et al. 2010. <span>“10-Year Stroke Prevention After Successful Carotid Endarterectomy for Asymptomatic Stenosis (<span>ACST-1</span>): A Multicentre Randomised Trial.”</span> <em>Lancet</em> 376 (9746): 1074–84. <a href="https://doi.org/10.1016/S0140-6736(10)61197-X">https://doi.org/10.1016/S0140-6736(10)61197-X</a>.
 </div>
-<div id="ref-hellings2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hellings2008" class="csl-entry" role="listitem">
 Hellings, Willem E., Frans L. Moll, Jean-Paul P. M. De Vries, Rob G. A. Ackerstaff, Kees A. Seldenrijk, Rosemarie Met, Evelyn Velema, Wouter J. M. Derksen, Dominique P. V. De Kleijn, and Gerard Pasterkamp. 2008. <span>“Atherosclerotic Plaque Composition and Occurrence of Restenosis After Carotid Endarterectomy.”</span> <em>JAMA</em> 299 (5): 547–54. <a href="https://doi.org/10.1001/jama.299.5.547">https://doi.org/10.1001/jama.299.5.547</a>.
 </div>
-<div id="ref-hicks2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hicks2015" class="csl-entry" role="listitem">
 Hicks, Caitlin W., Katherine Talbott, Joseph K. Canner, Umair Qazi, Isibor Arhuidese, Natalia O. Glebova, Julie A. Freischlag, Bruce A. Perler, and Mahmoud B. Malas. 2015. <span>“Risk of Disease Progression in Patients with Moderate Asymptomatic Carotid Artery Stenosis: Implications of Tobacco Use and Dual Antiplatelet Therapy.”</span> <em>Annals of Vascular Surgery</em> 29 (1): 1–8. <a href="https://doi.org/10.1016/j.avsg.2014.02.007">https://doi.org/10.1016/j.avsg.2014.02.007</a>.
 </div>
-<div id="ref-hrbác2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hrbác2012" class="csl-entry" role="listitem">
 Hrbáč, Tomáš, Vladimír Beneš, Pavel Širůček, Tomáš Jonszta, Roman Herzig, Václav Procházka, and David Skoloudík. 2012. <span>“Safety and Efficacy of Surgical Treatment of Carotid Stump Syndrome: Pilot Study.”</span> <em>Annals of Vascular Surgery</em> 26 (6): 797–801. <a href="https://doi.org/10.1016/j.avsg.2011.11.034">https://doi.org/10.1016/j.avsg.2011.11.034</a>.
 </div>
-<div id="ref-kaku2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kaku2004" class="csl-entry" role="listitem">
 Kaku, Yasuhiko, Shin-ichi Yoshimura, and Jouji Kokuzawa. 2004. <span>“Factors Predictive of Cerebral Hyperperfusion After Carotid Angioplasty and Stent Placement.”</span> <em>AJNR: American Journal of Neuroradiology</em> 25 (8): 1403–8. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7975476/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7975476/</a>.
 </div>
-<div id="ref-kang2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kang2014" class="csl-entry" role="listitem">
 Kang, Jeanwan, Mark F. Conrad, Virendra I. Patel, Shankha Mukhopadhyay, Ashu Garg, Matthew R. Cambria, Glenn M. LaMuraglia, and Richard P. Cambria. 2014. <span>“Clinical and Anatomic Outcomes After Carotid Endarterectomy.”</span> <em>Journal of Vascular Surgery</em> 59 (4): 944–49. <a href="https://doi.org/10.1016/j.jvs.2013.10.059">https://doi.org/10.1016/j.jvs.2013.10.059</a>.
 </div>
-<div id="ref-karamHighDoseAtorvastatinStroke2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-karamHighDoseAtorvastatinStroke2008" class="csl-entry" role="listitem">
 Karam, Jocelyne G., Lisel Loney-Hutchinson, and Samy I. McFarlane. 2008. <span>“High-<span>Dose Atorvastatin After Stroke</span> or <span>Transient Ischemic Attack</span>: <span>The Stroke Prevention</span> by <span>Aggressive Reduction</span> in <span>Cholesterol Levels</span> (<span>SPARCL</span>) <span>Investigators</span>.”</span> <em>Journal of the CardioMetabolic Syndrome</em> 3 (1): 68–69. <a href="https://doi.org/10.1111/j.1559-4572.2008.07967.x">https://doi.org/10.1111/j.1559-4572.2008.07967.x</a>.
 </div>
-<div id="ref-kashyap2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kashyap2019" class="csl-entry" role="listitem">
 Kashyap, Vikram S., Alexander H. King, Mazin I. Foteh, Matthew Janko, Jeffrey Jim, Raghu L. Motaganahalli, Jeffrey M. Apple, Saideep Bose, and Norman H. Kumins. 2019. <span>“A Multi-Institutional Analysis of Transcarotid Artery Revascularization Compared to Carotid Endarterectomy.”</span> <em>Journal of Vascular Surgery</em> 70 (1): 123–29. <a href="https://doi.org/10.1016/j.jvs.2018.09.060">https://doi.org/10.1016/j.jvs.2018.09.060</a>.
 </div>
-<div id="ref-kawachi1993" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kawachi1993" class="csl-entry" role="listitem">
 Kawachi, I., G. A. Colditz, M. J. Stampfer, W. C. Willett, J. E. Manson, B. Rosner, F. E. Speizer, and C. H. Hennekens. 1993. <span>“Smoking Cessation and Decreased Risk of Stroke in Women.”</span> <em>JAMA</em> 269 (2): 232–36.
 </div>
-<div id="ref-klarinPerioperativeLongtermImpact2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-klarinPerioperativeLongtermImpact2016" class="csl-entry" role="listitem">
 Klarin, Derek, Robert T. Lancaster, Emel Ergul, Daniel Bertges, Philip Goodney, Marc L. Schermerhorn, Richard P. Cambria, and Virendra I. Patel. 2016. <span>“Perioperative and Long-Term Impact of Chronic Kidney Disease on Carotid Artery Interventions.”</span> <em>Journal of Vascular Surgery</em> 64 (5): 1295–1302. <a href="https://doi.org/10.1016/j.jvs.2016.04.038">https://doi.org/10.1016/j.jvs.2016.04.038</a>.
 </div>
-<div id="ref-kruger2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kruger2010" class="csl-entry" role="listitem">
 Kruger, Allan J., Philip J. Walker, Wallace J. Foster, Jason S. Jenkins, Nicholas S. Boyne, and Julie Jenkins. 2010. <span>“Important Observations Made Managing Carotid Body Tumors During a 25-Year Experience.”</span> <em>Journal of Vascular Surgery</em> 52 (6): 1518–23. <a href="https://doi.org/10.1016/j.jvs.2010.06.153">https://doi.org/10.1016/j.jvs.2010.06.153</a>.
 </div>
-<div id="ref-kwolek2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kwolek2015" class="csl-entry" role="listitem">
 Kwolek, Christopher J., Michael R. Jaff, J. Ignacio Leal, L. Nelson Hopkins, Rasesh M. Shah, Todd M. Hanover, Sumaira Macdonald, et al. 2015. <span>“Results of the ROADSTER Multicenter Trial of Transcarotid Stenting with Dynamic Flow Reversal.”</span> <em>Journal of Vascular Surgery</em> 62 (5): 1227–1234.e1. <a href="https://doi.org/10.1016/j.jvs.2015.04.460">https://doi.org/10.1016/j.jvs.2015.04.460</a>.
 </div>
-<div id="ref-lamuraglia2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lamuraglia2005" class="csl-entry" role="listitem">
 LaMuraglia, Glenn M., Michael C. Stoner, David C. Brewster, Michael T. Watkins, Kendra L. Juhola, Christopher Kwolek, David J. Dorer, and Richard P. Cambria. 2005. <span>“Determinants of Carotid Endarterectomy Anatomic Durability: Effects of Serum Lipids and Lipid-Lowering Drugs.”</span> <em>Journal of Vascular Surgery</em> 41 (5): 762–68. <a href="https://doi.org/10.1016/j.jvs.2005.01.035">https://doi.org/10.1016/j.jvs.2005.01.035</a>.
 </div>
-<div id="ref-lather2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lather2017" class="csl-entry" role="listitem">
 Lather, Henry D., Heather L. Gornik, Jeffrey W. Olin, Xiaokui Gu, Steven T. Heidt, Esther S. H. Kim, Daniella Kadian-Dodov, et al. 2017. <span>“Prevalence of Intracranial Aneurysm in Women with Fibromuscular Dysplasia.”</span> <em>JAMA Neurology</em> 74 (9): 1081–87. <a href="https://doi.org/10.1001/jamaneurol.2017.1333">https://doi.org/10.1001/jamaneurol.2017.1333</a>.
 </div>
-<div id="ref-limanetoPathophysiologyDiagnosisVertebrobasilar2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-limanetoPathophysiologyDiagnosisVertebrobasilar2017" class="csl-entry" role="listitem">
 Lima Neto, Arlindo Cardoso, Roseli Bittar, Gabriel Scarabotolo Gattas, Edson Bor-Seng-Shu, Marcelo de Lima Oliveira, Rafael da Costa Monsanto, and Luis Felipe Bittar. 2017a. <span>“Pathophysiology and <span>Diagnosis</span> of <span>Vertebrobasilar Insufficiency</span>: <span>A Review</span> of the <span>Literature</span>.”</span> <em>International Archives of Otorhinolaryngology</em> 21 (3): 302–7. <a href="https://doi.org/10.1055/s-0036-1593448">https://doi.org/10.1055/s-0036-1593448</a>.
 </div>
-<div id="ref-limaneto2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-limaneto2017" class="csl-entry" role="listitem">
 ———. 2017b. <span>“Pathophysiology and Diagnosis of Vertebrobasilar Insufficiency: A Review of the Literature.”</span> <em>International Archives of Otorhinolaryngology</em> 21 (3): 302–7. <a href="https://doi.org/10.1055/s-0036-1593448">https://doi.org/10.1055/s-0036-1593448</a>.
 </div>
-<div id="ref-lipski1996" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lipski1996" class="csl-entry" role="listitem">
 Lipski, D. A., T. M. Bergamini, R. N. Garrison, and R. L. Fulton. 1996. <span>“Intraoperative Duplex Scanning Reduces the Incidence of Residual Stenosis After Carotid Endarterectomy.”</span> <em>The Journal of Surgical Research</em> 60 (2): 317–20. <a href="https://doi.org/10.1006/jsre.1996.0050">https://doi.org/10.1006/jsre.1996.0050</a>.
 </div>
-<div id="ref-mantese2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mantese2010" class="csl-entry" role="listitem">
 Mantese, Vito A., Carlos H. Timaran, David Chiu, Richard J. Begg, and Thomas G. Brott. 2010. <span>“The Carotid Revascularization Endarterectomy Versus Stenting Trial (CREST) - Stenting Versus Carotid Endarterectomy for Carotid Disease.”</span> <em>Stroke; a Journal of Cerebral Circulation</em> 41 (10 Suppl): S31–34. <a href="https://doi.org/10.1161/STROKEAHA.110.595330">https://doi.org/10.1161/STROKEAHA.110.595330</a>.
 </div>
-<div id="ref-markusAntiplateletTherapyVs2019a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-markusAntiplateletTherapyVs2019a" class="csl-entry" role="listitem">
 Markus, Hugh S., Christopher Levi, Alice King, Jeremy Madigan, and John Norris. 2019. <span>“Antiplatelet <span>Therapy</span> Vs <span>Anticoagulation Therapy</span> in <span>Cervical Artery Dissection</span>.”</span> <em>JAMA Neurology</em> 76 (6): 657–64. <a href="https://doi.org/10.1001/jamaneurol.2019.0072">https://doi.org/10.1001/jamaneurol.2019.0072</a>.
 </div>
-<div id="ref-meershoekTimingCarotidIntervention2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-meershoekTimingCarotidIntervention2018" class="csl-entry" role="listitem">
 Meershoek, A. J. A., and G. J. de Borst. 2018. <span>“Timing of Carotid Intervention.”</span> <em>The British Journal of Surgery</em> 105 (10): 1231–33. <a href="https://doi.org/10.1002/bjs.10950">https://doi.org/10.1002/bjs.10950</a>.
 </div>
-<div id="ref-morasch2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-morasch2019" class="csl-entry" role="listitem">
 Morasch, Mark. 2019. <span>“97. Vertebral Artery Dissection and Other Conditions.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 18. Elsevier Inc.
 </div>
-<div id="ref-moritz2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-moritz2007" class="csl-entry" role="listitem">
 Moritz, Stefan, Piotr Kasprzak, Matthias Arlt, Kai Taeger, and Christoph Metz. 2007. <span>“Accuracy of Cerebral Monitoring in Detecting Cerebral Ischemia During Carotid Endarterectomy: A Comparison of Transcranial Doppler Sonography, Near-Infrared Spectroscopy, Stump Pressure, and Somatosensory Evoked Potentials.”</span> <em>Anesthesiology</em> 107 (4): 563–69. <a href="https://doi.org/10.1097/01.anes.0000281894.69422.ff">https://doi.org/10.1097/01.anes.0000281894.69422.ff</a>.
 </div>
-<div id="ref-naylorSystematicReviewOutcomes2003" class="csl-entry" role="doc-biblioentry">
+<div id="ref-naylorSystematicReviewOutcomes2003" class="csl-entry" role="listitem">
 Naylor, A. R., R. L. Cuffe, P. M. Rothwell, and P. R. F. Bell. 2003. <span>“A Systematic Review of Outcomes Following Staged and Synchronous Carotid Endarterectomy and Coronary Artery Bypass.”</span> <em>European Journal of Vascular and Endovascular Surgery</em> 25 (5): 380–89. <a href="https://doi.org/10.1053/ejvs.2002.1895">https://doi.org/10.1053/ejvs.2002.1895</a>.
 </div>
-<div id="ref-naylorWhyManagementAsymptomatic2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-naylorWhyManagementAsymptomatic2015" class="csl-entry" role="listitem">
 Naylor, A. Ross. 2015. <span>“Why Is the Management of Asymptomatic Carotid Disease so Controversial?”</span> <em>The Surgeon</em> 13 (1): 34–43. <a href="https://doi.org/10.1016/j.surge.2014.08.004">https://doi.org/10.1016/j.surge.2014.08.004</a>.
 </div>
-<div id="ref-naylor2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-naylor2018" class="csl-entry" role="listitem">
 Naylor, A. R., J.-B. Ricco, G. J. de Borst, S. Debus, J. de Haro, A. Halliday, G. Hamilton, et al. 2018. <span>“Editor’s Choice - Management of Atherosclerotic Carotid and Vertebral Artery Disease: 2017 Clinical Practice Guidelines of the European Society for Vascular Surgery (ESVS).”</span> <em>European Journal of Vascular and Endovascular Surgery: The Official Journal of the European Society for Vascular Surgery</em> 55 (1): 3–81. <a href="https://doi.org/10.1016/j.ejvs.2017.06.021">https://doi.org/10.1016/j.ejvs.2017.06.021</a>.
 </div>
-<div id="ref-naylor2023" class="csl-entry" role="doc-biblioentry">
+<div id="ref-naylor2023" class="csl-entry" role="listitem">
 Naylor, Ross, Barbara Rantner, Stefano Ancetti, Gert J. de Borst, Marco De Carlo, Alison Halliday, Stavros K. Kakkos, et al. 2023. <span>“Editor’s <span>Choice</span> - <span>European Society</span> for <span>Vascular Surgery</span> (<span>ESVS</span>) 2023 <span>Clinical Practice Guidelines</span> on the <span>Management</span> of <span>Atherosclerotic Carotid</span> and <span>Vertebral Artery Disease</span>.”</span> <em>European Journal of Vascular and Endovascular Surgery: The Official Journal of the European Society for Vascular Surgery</em> 65 (1): 7–111. <a href="https://doi.org/10.1016/j.ejvs.2022.04.011">https://doi.org/10.1016/j.ejvs.2022.04.011</a>.
 </div>
-<div id="ref-northamericansymptomaticcarotidendarterectomytrialcollaboratorsBeneficialEffectCarotid1991" class="csl-entry" role="doc-biblioentry">
+<div id="ref-northamericansymptomaticcarotidendarterectomytrialcollaboratorsBeneficialEffectCarotid1991" class="csl-entry" role="listitem">
 North American Symptomatic Carotid Endarterectomy Trial Collaborators. 1991. <span>“Beneficial Effect of Carotid Endarterectomy in Symptomatic Patients with High-Grade Carotid Stenosis.”</span> <em>New England Journal of Medicine</em> 325 (7): 445–53. <a href="https://doi.org/10.1056/NEJM199108153250701">https://doi.org/10.1056/NEJM199108153250701</a>.
 </div>
-<div id="ref-nouh2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-nouh2014" class="csl-entry" role="listitem">
 Nouh, Amre, Jessica Remke, and Sean Ruland. 2014. <span>“Ischemic Posterior Circulation Stroke: A Review of Anatomy, Clinical Presentations, Diagnosis, and Current Management.”</span> <em>Frontiers in Neurology</em> 5 (April): 30. <a href="https://doi.org/10.3389/fneur.2014.00030">https://doi.org/10.3389/fneur.2014.00030</a>.
 </div>
-<div id="ref-olin2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-olin2011" class="csl-entry" role="listitem">
 Olin, Jeffrey W., and Brett A. Sealove. 2011. <span>“Diagnosis, Management, and Future Developments of Fibromuscular Dysplasia.”</span> <em>Journal of Vascular Surgery</em> 53 (3): 826–836.e1. <a href="https://doi.org/10.1016/j.jvs.2010.10.066">https://doi.org/10.1016/j.jvs.2010.10.066</a>.
 </div>
-<div id="ref-pauletto2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-pauletto2000" class="csl-entry" role="listitem">
 Pauletto, P., M. Puato, E. Faggin, N. Santipolo, V. Pagliara, M. Zoleo, G. P. Deriu, et al. 2000. <span>“Specific Cellular Features of Atheroma Associated with Development of Neointima After Carotid Endarterectomy: The Carotid Atherosclerosis and Restenosis Study.”</span> <em>Circulation</em> 102 (7): 771–78. <a href="https://doi.org/10.1161/01.cir.102.7.771">https://doi.org/10.1161/01.cir.102.7.771</a>.
 </div>
-<div id="ref-petrik1995" class="csl-entry" role="doc-biblioentry">
+<div id="ref-petrik1995" class="csl-entry" role="listitem">
 Petrik, P. V., H. A. Gelabert, W. S. Moore, W. Quinones-Baldrich, and M. M. Law. 1995. <span>“Cigarette Smoking Accelerates Carotid Artery Intimal Hyperplasia in a Dose-Dependent Manner.”</span> <em>Stroke</em> 26 (8): 1409–14. <a href="https://doi.org/10.1161/01.str.26.8.1409">https://doi.org/10.1161/01.str.26.8.1409</a>.
 </div>
-<div id="ref-phamEndovascularStentingExtracranial2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-phamEndovascularStentingExtracranial2011" class="csl-entry" role="listitem">
 Pham, Martin H., Rudy J. Rahme, Omar Arnaout, Michael C. Hurley, Richard A. Bernstein, H. Hunt Batjer, and Bernard R. Bendok. 2011. <span>“Endovascular <span>Stenting</span> of <span>Extracranial Carotid</span> and <span>Vertebral Artery Dissections</span>: <span>A Systematic Review</span> of the <span>Literature</span>.”</span> <em>Neurosurgery</em> 68 (4): 856–66. <a href="https://doi.org/10.1227/NEU.0b013e318209ce03">https://doi.org/10.1227/NEU.0b013e318209ce03</a>.
 </div>
-<div id="ref-plessers2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-plessers2016" class="csl-entry" role="listitem">
 Plessers, Maarten, Isabelle Van Herzeele, Dimitri Hemelsoet, Nikil Patel, Emma M. L. Chung, Guy Vingerhoets, and Frank Vermassen. 2016. <span>“Transcervical Carotid Stenting with Dynamic Flow Reversal Demonstrates Embolization Rates Comparable to Carotid Endarterectomy.”</span> <em>Journal of Endovascular Therapy: An Official Journal of the International Society of Endovascular Specialists</em> 23 (2): 249–54. <a href="https://doi.org/10.1177/1526602815626561">https://doi.org/10.1177/1526602815626561</a>.
 </div>
-<div id="ref-pourier2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-pourier2018" class="csl-entry" role="listitem">
 Pourier, V. E. C., J. C. Welleweerd, L. J. Kappelle, G. J. E. Rinkel, Y. M. Ruigrok, H. B. van der Worp, T. H. Lo, M. L. Bots, F. L. Moll, and G. J. de Borst. 2018. <span>“Experience of a Single Center in the Conservative Approach of 20 Consecutive Cases of Asymptomatic Extracranial Carotid Artery Aneurysms.”</span> <em>European Journal of Neurology</em> 25 (10): 1285–89. <a href="https://doi.org/10.1111/ene.13720">https://doi.org/10.1111/ene.13720</a>.
 </div>
-<div id="ref-power2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-power2012" class="csl-entry" role="listitem">
 Power, Adam H., Thomas C. Bower, Jan Kasperbauer, Michael J. Link, Gustavo Oderich, Harry Cloft, William F. Young, and Peter Gloviczki. 2012. <span>“Impact of Preoperative Embolization on Outcomes of Carotid Body Tumor Resections.”</span> <em>Journal of Vascular Surgery</em> 56 (4): 979–89. <a href="https://doi.org/10.1016/j.jvs.2012.03.037">https://doi.org/10.1016/j.jvs.2012.03.037</a>.
 </div>
-<div id="ref-powers2018GuidelinesEarly2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-powers2018GuidelinesEarly2018" class="csl-entry" role="listitem">
 Powers, William J., Alejandro A. Rabinstein, Teri Ackerson, Opeolu M. Adeoye, Nicholas C. Bambakidis, Kyra Becker, José Biller, et al. 2018. <span>“2018 <span>Guidelines</span> for the <span>Early Management</span> of <span>Patients With Acute Ischemic Stroke</span>: <span>A Guideline</span> for <span>Healthcare Professionals From</span> the <span>American Heart Association</span>/<span>American Stroke Association</span>.”</span> <em>Stroke</em> 49 (3). <a href="https://doi.org/10.1161/STR.0000000000000158">https://doi.org/10.1161/STR.0000000000000158</a>.
 </div>
-<div id="ref-ramirez2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ramirez2012" class="csl-entry" role="listitem">
 Ramirez, Claudio Alberto, Guillaume Febrer, Julien Gaudric, Salam Abou-Taam, Kenza Beloucif, Laurent Chiche, and Fabien Koskas. 2012. <span>“Open Repair of Vertebral Artery: A 7-Year Single-Center Report.”</span> <em>Annals of Vascular Surgery</em> 26 (1): 79–85. <a href="https://doi.org/10.1016/j.avsg.2011.09.001">https://doi.org/10.1016/j.avsg.2011.09.001</a>.
 </div>
-<div id="ref-rangel-castilla2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rangel-castilla2015" class="csl-entry" role="listitem">
 Rangel-Castilla, Leonardo, M. Yashar S. Kalani, Katherine Cronk, Joseph M. Zabramski, Jonathan J. Russin, and Robert F. Spetzler. 2015. <span>“Vertebral Artery Transposition for Revascularization of the Posterior Circulation: A Critical Assessment of Temporary and Permanent Complications and Outcomes.”</span> <em>Journal of Neurosurgery</em> 122 (3): 671–77. <a href="https://doi.org/10.3171/2014.9.JNS14194">https://doi.org/10.3171/2014.9.JNS14194</a>.
 </div>
-<div id="ref-rantnerEarlyEndarterectomyCarries2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rantnerEarlyEndarterectomyCarries2017" class="csl-entry" role="listitem">
 Rantner, Barbara, Barbara Kollerits, Gary S Roubin, Peter A Ringleb, Olaf Jansen, George Howard, Jeroen Hendrikse, et al. 2017. <span>“Early <span>Endarterectomy Carries</span> a <span>Lower Procedural Risk Than Early Stenting</span> in <span>Patients With Symptomatic Stenosis</span> of the <span>Internal Carotid Artery</span>.”</span> <em>Stroke</em> 48 (June): 1580–87. <a href="https://doi.org/10.1161/STROKEAHA.116.016233">https://doi.org/10.1161/STROKEAHA.116.016233</a>.
 </div>
-<div id="ref-redfern2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-redfern2011" class="csl-entry" role="listitem">
 Redfern, G., R. N. Rodseth, and B. M. Biccard. 2011. <span>“Outcomes in Vascular Surgical Patients with Isolated Postoperative Troponin Leak: A Meta-Analysis: Troponin Leak in Vascular Surgical Patients.”</span> <em>Anaesthesia</em> 66 (7): 604–10. <a href="https://doi.org/10.1111/j.1365-2044.2011.06763.x">https://doi.org/10.1111/j.1365-2044.2011.06763.x</a>.
 </div>
-<div id="ref-rerkasem2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rerkasem2021" class="csl-entry" role="listitem">
 Rerkasem, Amaraporn, Saritphat Orrapin, Dominic Pj Howard, Sothida Nantakool, and Kittipan Rerkasem. 2021. <span>“Local Versus General Anaesthesia for Carotid Endarterectomy.”</span> <em>The Cochrane Database of Systematic Reviews</em> 10 (October): CD000126. <a href="https://doi.org/10.1002/14651858.CD000126.pub5">https://doi.org/10.1002/14651858.CD000126.pub5</a>.
 </div>
-<div id="ref-rerkasem2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rerkasem2009" class="csl-entry" role="listitem">
 Rerkasem, Kittipan, and Peter M Rothwell. 2009. <span>“Patch Angioplasty Versus Primary Closure for Carotid Endarterectomy.”</span> <em>The Cochrane Database of Systematic Reviews</em> 2009 (4): CD000160. <a href="https://doi.org/10.1002/14651858.CD000160.pub3">https://doi.org/10.1002/14651858.CD000160.pub3</a>.
 </div>
-<div id="ref-ricco2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ricco2013" class="csl-entry" role="listitem">
 Ricco, Jean-Baptiste, Fabrice Schneider, Giulio Illuminati, and Russell H. Samson. 2013. <span>“The Role of Completion Imaging Following Carotid Artery Endarterectomy.”</span> <em>Journal of Vascular Surgery</em> 57 (5): 1432–38. <a href="https://doi.org/10.1016/j.jvs.2013.02.001">https://doi.org/10.1016/j.jvs.2013.02.001</a>.
 </div>
-<div id="ref-ricotta2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ricotta2019" class="csl-entry" role="listitem">
 Ricotta, John J. 2019. <span>“89. Cerebrovascular Disease: Decision Making Including Medical Therapy.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 20.
 </div>
-<div id="ref-robertson2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-robertson2019" class="csl-entry" role="listitem">
 Robertson, Vaux, Federica Poli, Ben Hobson, Athanasios Saratzis, and A. Ross Naylor. 2019. <span>“A Systematic Review and Meta-Analysis of the Presentation and Surgical Management of Patients with Carotid Body Tumours.”</span> <em>European Journal of Vascular and Endovascular Surgery</em> 57 (4): 477–86. <a href="https://doi.org/10.1016/j.ejvs.2018.10.038">https://doi.org/10.1016/j.ejvs.2018.10.038</a>.
 </div>
-<div id="ref-rockman2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rockman2019" class="csl-entry" role="listitem">
 Rockman, Caron B. 2019. <span>“86. Cerebrovascular Disease: Epidemiology and Natural History.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Theapy</em>, 25. Elsevier Inc.
 </div>
-<div id="ref-rosenfieldRandomizedTrialStent2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rosenfieldRandomizedTrialStent2016" class="csl-entry" role="listitem">
 Rosenfield, Kenneth, Jon S. Matsumura, Seemant Chaturvedi, Tom Riles, Gary M. Ansel, D. Chris Metzger, Lawrence Wechsler, Michael R. Jaff, and William Gray. 2016. <span>“Randomized <span>Trial</span> of <span>Stent</span> Versus <span>Surgery</span> for <span>Asymptomatic Carotid Stenosis</span>.”</span> <em>New England Journal of Medicine</em> 374 (11): 1011–20. <a href="https://doi.org/10.1056/NEJMoa1515706">https://doi.org/10.1056/NEJMoa1515706</a>.
 </div>
-<div id="ref-rothwellEndarterectomySymptomaticCarotid2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rothwellEndarterectomySymptomaticCarotid2004" class="csl-entry" role="listitem">
 Rothwell, Pm, M Eliasziw, Sa Gutnikov, Cp Warlow, and Hjm Barnett. 2004. <span>“Endarterectomy for Symptomatic Carotid Stenosis in Relation to Clinical Subgroups and Timing of Surgery.”</span> <em>The Lancet</em> 363 (9413): 915–24. <a href="https://doi.org/10.1016/S0140-6736(04)15785-1">https://doi.org/10.1016/S0140-6736(04)15785-1</a>.
 </div>
-<div id="ref-sauve1994" class="csl-entry" role="doc-biblioentry">
+<div id="ref-sauve1994" class="csl-entry" role="listitem">
 Sauve, J. Stephane. 1994. <span>“Can Bruits Distinguish High-Grade from Moderate Symptomatic Carotid Stenosis?”</span> <em>Annals of Internal Medicine</em> 120 (8): 633. <a href="https://doi.org/10.7326/0003-4819-120-8-199404150-00002">https://doi.org/10.7326/0003-4819-120-8-199404150-00002</a>.
 </div>
-<div id="ref-shaalan2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-shaalan2008" class="csl-entry" role="listitem">
 Shaalan, Wael E., Carl M. Wahlgren, Tina Desai, Giancarlo Piano, Christopher Skelly, and Hisham S. Bassiouny. 2008. <span>“Reappraisal of Velocity Criteria for Carotid Bulb/Internal Carotid Artery Stenosis Utilizing High-Resolution b-Mode Ultrasound Validated with Computed Tomography Angiography.”</span> <em>Journal of Vascular Surgery</em> 48 (1): 104–13. <a href="https://doi.org/10.1016/j.jvs.2008.02.068">https://doi.org/10.1016/j.jvs.2008.02.068</a>.
 </div>
-<div id="ref-shamblin1971" class="csl-entry" role="doc-biblioentry">
+<div id="ref-shamblin1971" class="csl-entry" role="listitem">
 Shamblin, W. R., W. H. ReMine, S. G. Sheps, and E. G. Harrison. 1971. <span>“Carotid Body Tumor (Chemodectoma). Clinicopathologic Analysis of Ninety Cases.”</span> <em>American Journal of Surgery</em> 122 (6): 732–39. <a href="https://doi.org/10.1016/0002-9610(71)90436-3">https://doi.org/10.1016/0002-9610(71)90436-3</a>.
 </div>
-<div id="ref-silver2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-silver2011" class="csl-entry" role="listitem">
 Silver, Frank L., Ariane Mackey, Wayne M. Clark, William Brooks, Carlos H. Timaran, David Chiu, Larry B. Goldstein, et al. 2011. <span>“Safety of Stenting and Endarterectomy by Symptomatic Status in the Carotid Revascularization Endarterectomy Vs. Stenting Trial (CREST).”</span> <em>Stroke; a Journal of Cerebral Circulation</em> 42 (3): 675–80. <a href="https://doi.org/10.1161/STROKEAHA.110.610212">https://doi.org/10.1161/STROKEAHA.110.610212</a>.
 </div>
-<div id="ref-stone2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-stone2011" class="csl-entry" role="listitem">
 Stone, Patrick A., Mohit Srivastava, John E. Campbell, Albeir Y. Mousa, Stephen H. Hass, Hamza Kazmi, Daniel D. Dearing, and Ali F. AbuRahma. 2011. <span>“A 10-Year Experience of Infection Following Carotid Endarterectomy with Patch Angioplasty.”</span> <em>Journal of Vascular Surgery</em> 53 (6): 1473–77. <a href="https://doi.org/10.1016/j.jvs.2011.02.020">https://doi.org/10.1016/j.jvs.2011.02.020</a>.
 </div>
-<div id="ref-sugawara" class="csl-entry" role="doc-biblioentry">
+<div id="ref-sugawara" class="csl-entry" role="listitem">
 Sugawara, Yoshifumi, Takanori Kikuchi, Toshihiro Ueda, Mamoru Nishizaki, Shigeru Nakata, Teruhito Mochizuki, and Junpei Ikezoe. n.d. <span>“Usefulness of Brain SPECT to Evaluate Brain Tolerance and Hemodynamic Changes During Temporary Balloon Occlusion Test and After Permanent Carotid Occlusion,”</span> 8.
 </div>
-<div id="ref-tansavatdi2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tansavatdi2015" class="csl-entry" role="listitem">
 Tansavatdi, Katharine, Arthur B. Dublin, Paul J. Donald, and Brian Dahlin. 2015. <span>“Combined Balloon Test Occlusion and SPECT Analysis for Carotid Sacrifice: Angiographic Predictors for Success or Failure?”</span> <em>Journal of Neurological Surgery. Part B, Skull Base</em> 76 (4): 249–51. <a href="https://doi.org/10.1055/s-0035-1547363">https://doi.org/10.1055/s-0035-1547363</a>.
 </div>
-<div id="ref-valls2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-valls2017" class="csl-entry" role="listitem">
 Valls, Joan, Maranta Peiro-Chamarro, Serafí Cambray, Jessica Molina-Seguin, Ikram Benabdelhak, and Francisco Purroy. 2017. <span>“A Current Estimation of the Early Risk of Stroke After Transient Ischemic Attack: A Systematic Review and Meta-Analysis of Recent Intervention Studies.”</span> <em>Cerebrovascular Diseases (Basel, Switzerland)</em> 43 (1-2): 90–98. <a href="https://doi.org/10.1159/000452978">https://doi.org/10.1159/000452978</a>.
 </div>
-<div id="ref-voeks2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-voeks2011" class="csl-entry" role="listitem">
 Voeks, Jenifer H., George Howard, Gary S. Roubin, Mahmoud B. Malas, David J. Cohen, W. Charles Sternbergh, Herbert D. Aronow, et al. 2011. <span>“Age and Outcomes After Carotid Stenting and Endarterectomy: The Carotid Revascularization Endarterectomy Versus Stenting Trial.”</span> <em>Stroke</em> 42 (12): 3484–90. <a href="https://doi.org/10.1161/STROKEAHA.111.624155">https://doi.org/10.1161/STROKEAHA.111.624155</a>.
 </div>
-<div id="ref-walker1995" class="csl-entry" role="doc-biblioentry">
+<div id="ref-walker1995" class="csl-entry" role="listitem">
 Walker, Michael D. 1995. <span>“Endarterectomy for Asymptomatic Carotid Artery Stenosis.”</span> <em>JAMA: The Journal of the American Medical Association</em> 273 (18): 1421. <a href="https://doi.org/10.1001/jama.1995.03520420037035">https://doi.org/10.1001/jama.1995.03520420037035</a>.
 </div>
-<div id="ref-weinstein2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-weinstein2015" class="csl-entry" role="listitem">
 Weinstein, Stefanie, Marc C. Mabray, Riz Aslam, Tom Hope, Judy Yee, and Christopher Owens. 2015. <span>“Intraoperative Sonography During Carotid Endarterectomy: Normal Appearance and Spectrum of Complications.”</span> <em>Journal of Ultrasound in Medicine: Official Journal of the American Institute of Ultrasound in Medicine</em> 34 (5): 885–94. <a href="https://doi.org/10.7863/ultra.34.5.885">https://doi.org/10.7863/ultra.34.5.885</a>.
 </div>
-<div id="ref-welleweerd2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-welleweerd2015" class="csl-entry" role="listitem">
 Welleweerd, J. C., H. M. den Ruijter, B. G. L. Nelissen, M. L. Bots, L. J. Kappelle, G. J. E. Rinkel, F. L. Moll, and G. J. de Borst. 2015. <span>“Management of Extracranial Carotid Artery Aneurysm.”</span> <em>European Journal of Vascular and Endovascular Surgery</em> 50 (2): 141–47. <a href="https://doi.org/10.1016/j.ejvs.2015.05.002">https://doi.org/10.1016/j.ejvs.2015.05.002</a>.
 </div>
-<div id="ref-wilson1997" class="csl-entry" role="doc-biblioentry">
+<div id="ref-wilson1997" class="csl-entry" role="listitem">
 Wilson, P. W., J. M. Hoeg, R. B. D’Agostino, H. Silbershatz, A. M. Belanger, H. Poehlmann, D. O’Leary, and P. A. Wolf. 1997. <span>“Cumulative Effects of High Cholesterol Levels, High Blood Pressure, and Cigarette Smoking on Carotid Stenosis.”</span> <em>The New England Journal of Medicine</em> 337 (8): 516–22. <a href="https://doi.org/10.1056/NEJM199708213370802">https://doi.org/10.1056/NEJM199708213370802</a>.
 </div>
-<div id="ref-wiske2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-wiske2018" class="csl-entry" role="listitem">
 Wiske, Clay, Isibor Arhuidese, Mahmoud Malas, and Robert Patterson. 2018. <span>“Comparing the Efficacy of Shunting Approaches and Cerebral Monitoring During Carotid Endarterectomy Using a National Database.”</span> <em>Journal of Vascular Surgery</em> 68 (2): 416–25. <a href="https://doi.org/10.1016/j.jvs.2017.11.077">https://doi.org/10.1016/j.jvs.2017.11.077</a>.
 </div>
 </div>
@@ -1172,9 +1211,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1186,7 +1239,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -1214,31 +1284,136 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
@@ -1257,7 +1432,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

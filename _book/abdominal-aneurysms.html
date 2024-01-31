@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,15 +12,21 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -34,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -119,11 +124,16 @@ cookieconsent.run({
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./abdominal-aneurysms.html">Abdomen</a></li><li class="breadcrumb-item"><a href="./abdominal-aneurysms.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -131,240 +141,273 @@ cookieconsent.run({
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Vascular Surgery Exam Prep</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./authors.html" class="sidebar-item-text sidebar-link">Authors and Contributors</a>
+  <a href="./authors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authors and Contributors</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Head and Neck</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Head and Neck</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></a>
+  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></a>
+  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Upper Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Upper Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></a>
+  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tos.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></a>
+  <a href="./tos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></a>
+  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Thorax</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Thorax</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dissection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></a>
+  <a href="./dissection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taaa.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></a>
+  <a href="./taaa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></a>
+  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></a>
+  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Abdomen</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Abdomen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></a>
+  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></a>
+  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./renal.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></a>
+  <a href="./renal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></a>
+  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></a>
+  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Lower Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Lower Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./claudication.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></a>
+  <a href="./claudication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clti.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></a>
+  <a href="./clti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ali.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></a>
+  <a href="./ali.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></a>
+  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></a>
+  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">General</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">General</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></a>
+  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./radiation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></a>
+  <a href="./radiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></a>
+  <a href="./endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rapid.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></a>
+  <a href="./rapid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#demographics" id="toc-demographics" class="nav-link active" data-scroll-target="#demographics"> <span class="header-section-number">10.1</span> Demographics</a>
+  <li><a href="#demographics" id="toc-demographics" class="nav-link active" data-scroll-target="#demographics"><span class="header-section-number">10.1</span> Demographics</a>
   <ul class="collapse">
-  <li><a href="#etiology" id="toc-etiology" class="nav-link" data-scroll-target="#etiology"> <span class="header-section-number">10.1.1</span> Etiology</a></li>
+  <li><a href="#etiology" id="toc-etiology" class="nav-link" data-scroll-target="#etiology"><span class="header-section-number">10.1.1</span> Etiology</a></li>
   </ul></li>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"> <span class="header-section-number">10.2</span> Evaluation</a>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"><span class="header-section-number">10.2</span> Evaluation</a>
   <ul class="collapse">
-  <li><a href="#imaging" id="toc-imaging" class="nav-link" data-scroll-target="#imaging"> <span class="header-section-number">10.2.1</span> Imaging</a></li>
+  <li><a href="#imaging" id="toc-imaging" class="nav-link" data-scroll-target="#imaging"><span class="header-section-number">10.2.1</span> Imaging</a></li>
   </ul></li>
-  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"> <span class="header-section-number">10.3</span> Management</a>
+  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"><span class="header-section-number">10.3</span> Management</a>
   <ul class="collapse">
-  <li><a href="#evar" id="toc-evar" class="nav-link" data-scroll-target="#evar"> <span class="header-section-number">10.3.1</span> EVAR</a></li>
-  <li><a href="#sec-aaa-open-repair" id="toc-sec-aaa-open-repair" class="nav-link" data-scroll-target="#sec-aaa-open-repair"> <span class="header-section-number">10.3.2</span> Open Repair</a></li>
-  <li><a href="#ruptured-aneurysms" id="toc-ruptured-aneurysms" class="nav-link" data-scroll-target="#ruptured-aneurysms"> <span class="header-section-number">10.3.3</span> Ruptured Aneurysms</a></li>
+  <li><a href="#evar" id="toc-evar" class="nav-link" data-scroll-target="#evar"><span class="header-section-number">10.3.1</span> EVAR</a></li>
+  <li><a href="#sec-aaa-open-repair" id="toc-sec-aaa-open-repair" class="nav-link" data-scroll-target="#sec-aaa-open-repair"><span class="header-section-number">10.3.2</span> Open Repair</a></li>
+  <li><a href="#ruptured-aneurysms" id="toc-ruptured-aneurysms" class="nav-link" data-scroll-target="#ruptured-aneurysms"><span class="header-section-number">10.3.3</span> Ruptured Aneurysms</a></li>
   </ul></li>
-  <li><a href="#iliac-artery-aneurysms" id="toc-iliac-artery-aneurysms" class="nav-link" data-scroll-target="#iliac-artery-aneurysms"> <span class="header-section-number">10.4</span> Iliac Artery Aneurysms</a>
+  <li><a href="#iliac-artery-aneurysms" id="toc-iliac-artery-aneurysms" class="nav-link" data-scroll-target="#iliac-artery-aneurysms"><span class="header-section-number">10.4</span> Iliac Artery Aneurysms</a>
   <ul class="collapse">
-  <li><a href="#demographics-1" id="toc-demographics-1" class="nav-link" data-scroll-target="#demographics-1"> <span class="header-section-number">10.4.1</span> Demographics</a></li>
-  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation"> <span class="header-section-number">10.4.2</span> Presentation</a></li>
-  <li><a href="#management-1" id="toc-management-1" class="nav-link" data-scroll-target="#management-1"> <span class="header-section-number">10.4.3</span> Management</a></li>
+  <li><a href="#demographics-1" id="toc-demographics-1" class="nav-link" data-scroll-target="#demographics-1"><span class="header-section-number">10.4.1</span> Demographics</a></li>
+  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation"><span class="header-section-number">10.4.2</span> Presentation</a></li>
+  <li><a href="#management-1" id="toc-management-1" class="nav-link" data-scroll-target="#management-1"><span class="header-section-number">10.4.3</span> Management</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -374,19 +417,15 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-abd-aneurysms" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></span></h1>
+<h1 class="title"><span id="sec-abd-aneurysms" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></span></h1>
 </div>
 
-<div>
-  <div class="description">
-    eBook Companion for Audible Bleeding Podcast Series
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -670,12 +709,12 @@ cookieconsent.run({
 <li>The Open vs Endovascular Repair (OVER) trial included 881 patients from 42 VA centers randomized to either EVAR or open repair. This demonstrated that perioperative mortality was improved in the EVAR group (0.5% vs 3.0%), yet no statistically significant difference was seen in mortality at 2 years (7.0% vs 9.8%). <span class="citation" data-cites="lederleOpenEndovascularRepair2019">(<a href="references.html#ref-lederleOpenEndovascularRepair2019" role="doc-biblioref">Lederle et al. 2019</a>)</span></li>
 </ul></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -699,12 +738,12 @@ Take a Listen
 </ul></li>
 </ul></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Look
 </div>
 </div>
@@ -770,12 +809,12 @@ Take a Look
 <li><p>The sheaths are removed, and the groin sites are closed using Perclose devices if performed percutaneously, or primary repair if open cutdown performed.</p></li>
 <li><p>Check pedal signals at the end of the case to ensure no thromboembolic events or femoral artery access injuries have occurred. If there is concern, an ultrasound duplex can be performed intraoperatively.</p></li>
 </ol>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -816,12 +855,12 @@ Take a Listen
 <li><p>If the leak persists for &gt; 6 months with sac enlargement &gt;5mm, intervention is recommended. Several techniques exist to eliminate type II endoleaks, most frequently embolization. After multiple attempts at repair and if continued sac growth with impending Type I leak, then consider open conversion.<span class="citation" data-cites="kelso2009 mohapatra2019">(<a href="references.html#ref-kelso2009" role="doc-biblioref">Kelso et al. 2009</a>; <a href="references.html#ref-mohapatra2019" role="doc-biblioref">Mohapatra et al. 2019</a>)</span></p></li>
 </ul></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -911,12 +950,12 @@ Take a Listen
 </ul></li>
 <li><p>To finish, the aneurysm sac is then closed over the graft to protect the viscera, and the retro-peritoneum is reapproximated. Occasionally, a vascularized omental pedicle flap may be used to separate the graft from the duodenum to prevent an aorto-enteric fistula if the peritoneum cannot be closed securely.</p></li>
 </ol>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Look
 </div>
 </div>
@@ -933,12 +972,12 @@ Take a Look
 <li><p>A disadvantage is the difficulty addressing the right iliac artery from this approach. Patients can also develop denervation of the lateral abdominal wall and develop a bulge there.</p></li>
 </ul></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -986,12 +1025,12 @@ Take a Listen
 <li><p>Distal ischemia from embolization downstream can lodge in larger vessels or cause microembolization, colloquially known as “trash foot”.</p></li>
 <li><p>Infection is rare but can be associated with graft-enteric fistula which is another highly tested topic.<span class="citation" data-cites="fatima2013 oderich2011 smeds2016">(<a href="references.html#ref-fatima2013" role="doc-biblioref">Fatima et al. 2013</a>; <a href="references.html#ref-oderich2011" role="doc-biblioref">Oderich et al. 2011</a>; <a href="references.html#ref-smeds2016" role="doc-biblioref">Smeds et al. 2016</a>)</span></p></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -1065,12 +1104,12 @@ Take a Listen
 </ul></li>
 </ul></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -1117,12 +1156,12 @@ Take a Listen
 <li><p>IIA 6.5-13.5mm in diameter, 10mm seal zone<span class="citation" data-cites="schneider2017">(<a href="references.html#ref-schneider2017" role="doc-biblioref">Schneider et al. 2017</a>)</span></p></li>
 </ul></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Look
 </div>
 </div>
@@ -1140,287 +1179,287 @@ Take a Look
 </ul>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-abularrage2010" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-abularrage2010" class="csl-entry" role="listitem">
 Abularrage, Christopher J., Robert S. Crawford, Mark F. Conrad, Hang Lee, Christopher J. Kwolek, David C. Brewster, Richard P. Cambria, and Glenn M. Lamuraglia. 2010. <span>“Preoperative Variables Predict Persistent Type 2 Endoleak After Endovascular Aneurysm Repair.”</span> <em>Journal of Vascular Surgery</em> 52 (1): 19–24. <a href="https://doi.org/10.1016/j.jvs.2010.02.023">https://doi.org/10.1016/j.jvs.2010.02.023</a>.
 </div>
-<div id="ref-angiletta2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-angiletta2011" class="csl-entry" role="listitem">
 Angiletta, Domenico, Davide Marinazzo, Gloria Guido, Luigi Greco, and Guido Regina. 2011. <span>“Spinal Cord, Bowel, and Buttock Ischemia After Endovascular Aneurysm Repair.”</span> <em>Annals of Vascular Surgery</em> 25 (7): 980.e15–19. <a href="https://doi.org/10.1016/j.avsg.2010.12.044">https://doi.org/10.1016/j.avsg.2010.12.044</a>.
 </div>
-<div id="ref-bacharach2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bacharach2008" class="csl-entry" role="listitem">
 Bacharach, J. Michael, and David P. Slovut. 2008. <span>“State of the Art: Management of Iliac Artery Aneurysmal Disease.”</span> <em>Catheterization and Cardiovascular Interventions: Official Journal of the Society for Cardiac Angiography and Interventions</em> 71 (5): 708–14. <a href="https://doi.org/10.1002/ccd.21507">https://doi.org/10.1002/ccd.21507</a>.
 </div>
-<div id="ref-bobadilla2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bobadilla2010" class="csl-entry" role="listitem">
 Bobadilla, Joseph L., John R. Hoch, Glen E. Leverson, and Girma Tefera. 2010. <span>“The Effect of Warfarin Therapy on Endoleak Development After Endovascular Aneurysm Repair (EVAR) of the Abdominal Aorta.”</span> <em>Journal of Vascular Surgery</em> 52 (2): 267–71. <a href="https://doi.org/10.1016/j.jvs.2010.02.290">https://doi.org/10.1016/j.jvs.2010.02.290</a>.
 </div>
-<div id="ref-brewsterIntestinalIschemiaComplicating1991" class="csl-entry" role="doc-biblioentry">
+<div id="ref-brewsterIntestinalIschemiaComplicating1991" class="csl-entry" role="listitem">
 Brewster, D. C., D. P. Franklin, R. P. Cambria, R. C. Darling, A. C. Moncure, G. M. Lamuraglia, W. M. Stone, and W. M. Abbott. 1991. <span>“<a href="https://www.ncbi.nlm.nih.gov/pubmed/1844392">Intestinal Ischemia Complicating Abdominal Aortic Surgery</a>.”</span> <em>Surgery</em> 109 (4): 447–54.
 </div>
-<div id="ref-brightwell2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-brightwell2013" class="csl-entry" role="listitem">
 Brightwell, Robert E., Victoria Pegna, and Nicholas Boyne. 2013. <span>“Aortocaval Fistula: Current Management Strategies.”</span> <em>ANZ Journal of Surgery</em> 83 (1-2): 31–35. <a href="https://doi.org/10.1111/j.1445-2197.2012.06294.x">https://doi.org/10.1111/j.1445-2197.2012.06294.x</a>.
 </div>
-<div id="ref-cameron2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cameron2018" class="csl-entry" role="listitem">
 Cameron, Scott J., Hannah M. Russell, and A. Phillip Owens. 2018. <span>“Antithrombotic Therapy in Abdominal Aortic Aneurysm: Beneficial or Detrimental?”</span> <em>Blood</em> 132 (25): 2619–28. <a href="https://doi.org/10.1182/blood-2017-08-743237">https://doi.org/10.1182/blood-2017-08-743237</a>.
 </div>
-<div id="ref-chaikofSocietyVascularSurgery2018a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chaikofSocietyVascularSurgery2018a" class="csl-entry" role="listitem">
 Chaikof, Elliot L., Ronald L. Dalman, Mark K. Eskandari, Benjamin M. Jackson, W. Anthony Lee, M. Ashraf Mansour, Tara M. Mastracci, Matthew Mell, M. Hassan Murad, Louis L. Nguyen, Gustavo S. Oderich, et al. 2018. <span>“The <span>Society</span> for <span>Vascular Surgery</span> Practice Guidelines on the Care of Patients with an Abdominal Aortic Aneurysm.”</span> <em>Journal of Vascular Surgery</em> 67 (1): 2–77.e2. <a href="https://doi.org/10.1016/j.jvs.2017.10.044">https://doi.org/10.1016/j.jvs.2017.10.044</a>.
 </div>
-<div id="ref-chaikof2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chaikof2018" class="csl-entry" role="listitem">
 Chaikof, Elliot L., Ronald L. Dalman, Mark K. Eskandari, Benjamin M. Jackson, W. Anthony Lee, M. Ashraf Mansour, Tara M. Mastracci, Matthew Mell, M. Hassan Murad, Louis L. Nguyen, and et al. 2018. <span>“The Society for Vascular Surgery Practice Guidelines on the Care of Patients with an Abdominal Aortic Aneurysm.”</span> <em>Journal of Vascular Surgery</em> 67 (1): 2–77.e2. <a href="https://doi.org/10.1016/j.jvs.2017.10.044">https://doi.org/10.1016/j.jvs.2017.10.044</a>.
 </div>
-<div id="ref-cheatham2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cheatham2007" class="csl-entry" role="listitem">
 Cheatham, Michael L., Manu L. N. G. Malbrain, Andrew Kirkpatrick, Michael Sugrue, Michael Parr, Jan De Waele, Zsolt Balogh, et al. 2007. <span>“Results from the International Conference of Experts on Intra-Abdominal Hypertension and Abdominal Compartment Syndrome. II. Recommendations.”</span> <em>Intensive Care Medicine</em> 33 (6): 951–62. <a href="https://doi.org/10.1007/s00134-007-0592-4">https://doi.org/10.1007/s00134-007-0592-4</a>.
 </div>
-<div id="ref-curl1992" class="csl-entry" role="doc-biblioentry">
+<div id="ref-curl1992" class="csl-entry" role="listitem">
 Curl, G. R., G. L. Faggioli, A. Stella, M. D’Addato, and J. J. Ricotta. 1992. <span>“Aneurysmal Change at or Above the Proximal Anastomosis After Infrarenal Aortic Grafting.”</span> <em>Journal of Vascular Surgery</em> 16 (6): 855-859; discussion 859-860.
 </div>
-<div id="ref-devereaux2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-devereaux2015" class="csl-entry" role="listitem">
 Devereaux, P. J., and Daniel I. Sessler. 2015. <span>“Cardiac Complications in Patients Undergoing Major Noncardiac Surgery.”</span> <em>The New England Journal of Medicine</em> 373 (23): 2258–69. <a href="https://doi.org/10.1056/NEJMra1502824">https://doi.org/10.1056/NEJMra1502824</a>.
 </div>
-<div id="ref-diwanIncidenceFemoralPopliteal2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-diwanIncidenceFemoralPopliteal2000" class="csl-entry" role="listitem">
 Diwan, Aparna, Rajabrata Sarkar, James C. Stanley, Gerald B. Zelenock, and Thomas W. Wakefield. 2000a. <span>“Incidence of Femoral and Popliteal Artery Aneurysms in Patients with Abdominal Aortic Aneurysms.”</span> <em>Journal of Vascular Surgery</em> 31 (5): 863–69. <a href="https://doi.org/10.1067/mva.2000.105955">https://doi.org/10.1067/mva.2000.105955</a>.
 </div>
-<div id="ref-diwan2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-diwan2000" class="csl-entry" role="listitem">
 ———. 2000b. <span>“Incidence of Femoral and Popliteal Artery Aneurysms in Patients with Abdominal Aortic Aneurysms.”</span> <em>Journal of Vascular Surgery</em> 31 (5): 863–69. <a href="https://doi.org/10.1067/mva.2000.105955">https://doi.org/10.1067/mva.2000.105955</a>.
 </div>
-<div id="ref-dix2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dix2005" class="csl-entry" role="listitem">
 Dix, F. P., M. Titi, and H. Al-Khaffaf. 2005. <span>“The Isolated Internal Iliac Artery Aneurysm–a Review.”</span> <em>European Journal of Vascular and Endovascular Surgery: The Official Journal of the European Society for Vascular Surgery</em> 30 (2): 119–29. <a href="https://doi.org/10.1016/j.ejvs.2005.04.035">https://doi.org/10.1016/j.ejvs.2005.04.035</a>.
 </div>
-<div id="ref-donasCollectedWorldExperience2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-donasCollectedWorldExperience2015" class="csl-entry" role="listitem">
 Donas, Konstantinos P., Jason T. Lee, Mario Lachat, Giovanni Torsello, and Frank J. Veith. 2015. <span>“Collected <span>World Experience About</span> the <span>Performance</span> of the <span>Snorkel</span>/<span>Chimney Endovascular Technique</span> in the <span>Treatment</span> of <span>Complex Aortic Pathologies</span>: <span>The PERICLES Registry</span>.”</span> <em>Annals of Surgery</em> 262 (3): 546–53. <a href="https://doi.org/10.1097/SLA.0000000000001405">https://doi.org/10.1097/SLA.0000000000001405</a>.
 </div>
-<div id="ref-duffyPoplitealAneurysms10year1998" class="csl-entry" role="doc-biblioentry">
+<div id="ref-duffyPoplitealAneurysms10year1998" class="csl-entry" role="listitem">
 Duffy, S T, M P Colgan, S Sultan, D J Moore, and G D Shanik. 1998. <span>“Popliteal <span>Aneurysms</span>: A 10-Year <span>Experience</span>.”</span> <em>European Journal of Endovascular Surgery</em> 16: 218–22. <a href="https://doi.org/10.1016/s1078-5884(98)80223-2">https://doi.org/10.1016/s1078-5884(98)80223-2</a>.
 </div>
-<div id="ref-elkouriPerioperativeComplicationsEarly2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-elkouriPerioperativeComplicationsEarly2004" class="csl-entry" role="listitem">
 Elkouri, Stephane, Peter Gloviczki, Michael A. McKusick, Jean M. Panneton, James Andrews, Thomas C. Bower, Audra A. Noel, William S. Harmsen, Tanya L. Hoskin, and Kenneth Cherry. 2004. <span>“Perioperative Complications and Early Outcome After Endovascular and Open Surgical Repair of Abdominal Aortic Aneurysms.”</span> <em>Journal of Vascular Surgery</em> 39 (3): 497–505. <a href="https://doi.org/10.1016/j.jvs.2003.10.018">https://doi.org/10.1016/j.jvs.2003.10.018</a>.
 </div>
-<div id="ref-eslami2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-eslami2015" class="csl-entry" role="listitem">
 Eslami, Mohammad H., Denis Rybin, Gheorghe Doros, Jeffrey A. Kalish, and Alik Farber. 2015. <span>“Comparison of a Vascular Study Group of New England Risk Prediction Model with Established Risk Prediction Models of in-Hospital Mortality After Elective Abdominal Aortic Aneurysm Repair.”</span> <em>Journal of Vascular Surgery</em> 62 (5): 1125–1133.e2. <a href="https://doi.org/10.1016/j.jvs.2015.06.051">https://doi.org/10.1016/j.jvs.2015.06.051</a>.
 </div>
-<div id="ref-fairman72AortoiliacAneurysms2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fairman72AortoiliacAneurysms2019" class="csl-entry" role="listitem">
 Fairman, Ronald M. 2019. <span>“72. <span>Aortoiliac Aneurysms</span>: <span>Endovascular Treatment</span>.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>. <span>Elsevier Inc.</span>
 </div>
-<div id="ref-fatima2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fatima2013" class="csl-entry" role="listitem">
 Fatima, Javairiah, Audra A. Duncan, Eileen de Grandis, Gustavo S. Oderich, Manju Kalra, Peter Gloviczki, and Thomas C. Bower. 2013. <span>“Treatment Strategies and Outcomes in Patients with Infected Aortic Endografts.”</span> <em>Journal of Vascular Surgery</em> 58 (2): 371–79. <a href="https://doi.org/10.1016/j.jvs.2013.01.047">https://doi.org/10.1016/j.jvs.2013.01.047</a>.
 </div>
-<div id="ref-ferreira2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ferreira2010" class="csl-entry" role="listitem">
 Ferreira, Joana, Alexandra Canedo, Daniel Brandão, Miguel Maia, Sandrina Braga, Manuel Chaparro, Paulo Barreto, and Guedes Vaz. 2010. <span>“Isolated Iliac Artery Aneurysms: Six-Year Experience.”</span> <em>Interactive Cardiovascular and Thoracic Surgery</em> 10 (2): 245–48. <a href="https://doi.org/10.1510/icvts.2009.218305">https://doi.org/10.1510/icvts.2009.218305</a>.
 </div>
-<div id="ref-fleisher2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fleisher2014" class="csl-entry" role="listitem">
 Fleisher, Lee A., Kirsten E. Fleischmann, Andrew D. Auerbach, Susan A. Barnason, Joshua A. Beckman, Biykem Bozkurt, Victor G. Davila-Roman, et al. 2014. <span>“2014 ACC/AHA Guideline on Perioperative Cardiovascular Evaluation and Management of Patients Undergoing Noncardiac Surgery: Executive Summary: A Report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines.”</span> <em>Circulation</em> 130 (24): 2215–45. <a href="https://doi.org/10.1161/CIR.0000000000000105">https://doi.org/10.1161/CIR.0000000000000105</a>.
 </div>
-<div id="ref-garygwindAnatomicExposuresVascular2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-garygwindAnatomicExposuresVascular2013" class="csl-entry" role="listitem">
 Gary G Wind, and R. James Valentine. 2013. <em>Anatomic <span>Exposures</span> in <span>Vascular Surgery</span></em>. Second. <span>Lippincott Williams &amp; Wilkins</span>.
 </div>
-<div id="ref-gornik2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gornik2008" class="csl-entry" role="listitem">
 Gornik, Heather L., and Mark A. Creager. 2008. <span>“Aortitis.”</span> <em>Circulation</em> 117 (23): 3039–51. <a href="https://doi.org/10.1161/CIRCULATIONAHA.107.760686">https://doi.org/10.1161/CIRCULATIONAHA.107.760686</a>.
 </div>
-<div id="ref-goudekettingSystematicReviewMetaanalysis2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-goudekettingSystematicReviewMetaanalysis2019" class="csl-entry" role="listitem">
 Goudeketting, Seline R., P. H. Ping Fung Kon Jin, Çağdaş Ünlü, and Jean-Paul P. M. de Vries. 2019. <span>“Systematic Review and Meta-Analysis of Elective and Urgent Late Open Conversion After Failed Endovascular Aneurysm Repair.”</span> <em>Journal of Vascular Surgery</em> 70 (2): 615–628.e7. <a href="https://doi.org/10.1016/j.jvs.2018.11.022">https://doi.org/10.1016/j.jvs.2018.11.022</a>.
 </div>
-<div id="ref-greenhalghComparisonEndovascularAneurysm2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-greenhalghComparisonEndovascularAneurysm2004" class="csl-entry" role="listitem">
 Greenhalgh, Rm. 2004. <span>“Comparison of Endovascular Aneurysm Repair with Open Repair in Patients with Abdominal Aortic Aneurysm (<span>EVAR</span> Trial 1), 30-Day Operative Mortality Results: Randomised Controlled Trial.”</span> <em>The Lancet</em> 364 (9437): 843–48. <a href="https://doi.org/10.1016/S0140-6736(04)16979-1">https://doi.org/10.1016/S0140-6736(04)16979-1</a>.
 </div>
-<div id="ref-greenhalgh2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-greenhalgh2010" class="csl-entry" role="listitem">
 Greenhalgh, Roger M, Louise C Brown, Janet T Powell, Simon G Thompson, David M. Epstein, Mark J Sculpher, and UK EVAR Trial Investigators. 2010. <span>“Endovascular Versus Open Repair of Abdominal Aortic Aneurysm.”</span> <em>New England Journal of Medicine</em> 362 (20): 1863–71. <a href="https://doi.org/10.1056/NEJMoa0909305">https://doi.org/10.1056/NEJMoa0909305</a>.
 </div>
-<div id="ref-hoballahInferiorMesentericArtery2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hoballahInferiorMesentericArtery2021" class="csl-entry" role="listitem">
 Hoballah, Jamal J. 2021. <span>“Inferior <span>Mesenteric Artery Reimplantation</span>.”</span> In <em>Vascular <span>Reconstructions</span></em>, edited by Jamal J. Hoballah and Carlos F. Bechara, 373–79. <span>New York, NY</span>: <span>Springer New York</span>. <a href="https://doi.org/10.1007/978-1-0716-1089-3_17">https://doi.org/10.1007/978-1-0716-1089-3_17</a>.
 </div>
-<div id="ref-huang2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-huang2008" class="csl-entry" role="listitem">
 Huang, Ying, Peter Gloviczki, Audra A. Duncan, Manju Kalra, Tanya L. Hoskin, Gustavo S. Oderich, Michael A. McKusick, and Thomas C. Bower. 2008. <span>“Common Iliac Artery Aneurysm: Expansion Rate and Results of Open Surgical and Endovascular Repair.”</span> <em>Journal of Vascular Surgery</em> 47 (6): 1203-1210; discussion 1210-1211. <a href="https://doi.org/10.1016/j.jvs.2008.01.050">https://doi.org/10.1016/j.jvs.2008.01.050</a>.
 </div>
-<div id="ref-jones2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jones2007" class="csl-entry" role="listitem">
 Jones, John E., Marvin D. Atkins, David C. Brewster, Thomas K. Chung, Christopher J. Kwolek, Glenn M. LaMuraglia, Thomas M. Hodgman, and Richard P. Cambria. 2007. <span>“Persistent Type 2 Endoleak After Endovascular Repair of Abdominal Aortic Aneurysm Is Associated with Adverse Late Outcomes.”</span> <em>Journal of Vascular Surgery</em> 46 (1): 1–8. <a href="https://doi.org/10.1016/j.jvs.2007.02.073">https://doi.org/10.1016/j.jvs.2007.02.073</a>.
 </div>
-<div id="ref-jordan2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jordan2014" class="csl-entry" role="listitem">
 Jordan, William D., Manish Mehta, David Varnagy, William M. Moore, Frank R. Arko, James Joye, Kenneth Ouriel, Jean-Paul de Vries, and Aneurysm Treatment using the Heli-FX Aortic Securement System Global Registry (ANCHOR) Workgroup Members. 2014. <span>“Results of the ANCHOR Prospective, Multicenter Registry of EndoAnchors for Type Ia Endoleaks and Endograft Migration in Patients with Challenging Anatomy.”</span> <em>Journal of Vascular Surgery</em> 60 (4): 885–892.e2. <a href="https://doi.org/10.1016/j.jvs.2014.04.063">https://doi.org/10.1016/j.jvs.2014.04.063</a>.
 </div>
-<div id="ref-karch2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-karch2000" class="csl-entry" role="listitem">
 Karch, L. A., K. J. Hodgson, M. A. Mattos, W. T. Bohannon, D. E. Ramsey, and R. B. McLafferty. 2000. <span>“Adverse Consequences of Internal Iliac Artery Occlusion During Endovascular Repair of Abdominal Aortic Aneurysms.”</span> <em>Journal of Vascular Surgery</em> 32 (4): 676–83. <a href="https://doi.org/10.1067/mva.2000.109750">https://doi.org/10.1067/mva.2000.109750</a>.
 </div>
-<div id="ref-kelso2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kelso2009" class="csl-entry" role="listitem">
 Kelso, Rebecca L., Sean P. Lyden, Brett Butler, Roy K. Greenberg, Matthew J. Eagleton, and Daniel G. Clair. 2009. <span>“Late Conversion of Aortic Stent Grafts.”</span> <em>Journal of Vascular Surgery</em> 49 (3): 589–95. <a href="https://doi.org/10.1016/j.jvs.2008.10.020">https://doi.org/10.1016/j.jvs.2008.10.020</a>.
 </div>
-<div id="ref-kent2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kent2010" class="csl-entry" role="listitem">
 Kent, K. Craig, Robert M. Zwolak, Natalia N. Egorova, Thomas S. Riles, Andrew Manganaro, Alan J. Moskowitz, Annetine C. Gelijns, and Giampaolo Greco. 2010. <span>“Analysis of Risk Factors for Abdominal Aortic Aneurysm in a Cohort of More Than 3 Million Individuals.”</span> <em>Journal of Vascular Surgery</em> 52 (3): 539–48. <a href="https://doi.org/10.1016/j.jvs.2010.05.090">https://doi.org/10.1016/j.jvs.2010.05.090</a>.
 </div>
-<div id="ref-kristensen2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kristensen2014" class="csl-entry" role="listitem">
 Kristensen, Steen Dalby, Juhani Knuuti, Antti Saraste, Stefan Anker, Hans Erik Bøtker, Stefan De Hert, Ian Ford, et al. 2014. <span>“2014 ESC/ESA Guidelines on Non-Cardiac Surgery: Cardiovascular Assessment and Management: The Joint Task Force on Non-Cardiac Surgery: Cardiovascular Assessment and Management of the European Society of Cardiology (ESC) and the European Society of Anaesthesiology (ESA).”</span> <em>European Heart Journal</em> 35 (35): 2383–2431. <a href="https://doi.org/10.1093/eurheartj/ehu282">https://doi.org/10.1093/eurheartj/ehu282</a>.
 </div>
-<div id="ref-kristmundssonMorphologySmallAbdominal2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kristmundssonMorphologySmallAbdominal2016" class="csl-entry" role="listitem">
 Kristmundsson, Thorarinn, Nuno Dias, Tim Resch, and Björn Sonesson. 2016. <span>“Morphology of <span>Small Abdominal Aortic Aneurysms Should</span> Be <span>Considered</span> Before <span>Continued Ultrasound Surveillance</span>.”</span> <em>Annals of Vascular Surgery</em> 31 (February): 18–22. <a href="https://doi.org/10.1016/j.avsg.2015.09.016">https://doi.org/10.1016/j.avsg.2015.09.016</a>.
 </div>
-<div id="ref-krupski1998" class="csl-entry" role="doc-biblioentry">
+<div id="ref-krupski1998" class="csl-entry" role="listitem">
 Krupski, W. C., C. H. Selzman, R. Floridia, P. K. Strecker, M. R. Nehler, and T. A. Whitehill. 1998. <span>“Contemporary Management of Isolated Iliac Aneurysms.”</span> <em>Journal of Vascular Surgery</em> 28 (1): 1-11; discussion 11-13. <a href="https://doi.org/10.1016/s0741-5214(98)70194-6">https://doi.org/10.1016/s0741-5214(98)70194-6</a>.
 </div>
-<div id="ref-lainePopulationbasedStudyRuptured2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lainePopulationbasedStudyRuptured2016" class="csl-entry" role="listitem">
 Laine, M T, S J Laukontaus, I Kantonen, and M Venermo. 2016. <span>“Population-Based Study of Ruptured Abdominal Aortic Aneurysm.”</span> <em>British Journal of Surgery</em> 103 (12): 1634–39. <a href="https://doi.org/10.1002/bjs.10200">https://doi.org/10.1002/bjs.10200</a>.
 </div>
-<div id="ref-laine2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-laine2017" class="csl-entry" role="listitem">
 Laine, Matti T., Martin Björck, C. Barry Beiles, Zoltán Szeberin, Ian Thomson, Martin Altreuther, E. Sebastian Debus, Kevin Mani, Gábor Menyhei, and Maarit Venermo. 2017. <span>“Few Internal Iliac Artery Aneurysms Rupture Under 4&nbsp;Cm.”</span> <em>Journal of Vascular Surgery</em> 65 (1): 76–81. <a href="https://doi.org/10.1016/j.jvs.2016.06.109">https://doi.org/10.1016/j.jvs.2016.06.109</a>.
 </div>
-<div id="ref-lederleOpenEndovascularRepair2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lederleOpenEndovascularRepair2019" class="csl-entry" role="listitem">
 Lederle, Frank A., Tassos C. Kyriakides, Kevin T. Stroupe, Julie A. Freischlag, Frank T. Padberg, Jon S. Matsumura, Zhiping Huo, and Gary R. Johnson. 2019. <span>“Open Versus <span>Endovascular Repair</span> of <span>Abdominal Aortic Aneurysm</span>.”</span> <em>New England Journal of Medicine</em> 380 (22): 2126–35. <a href="https://doi.org/10.1056/NEJMoa1715955">https://doi.org/10.1056/NEJMoa1715955</a>.
 </div>
-<div id="ref-lee2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lee2015" class="csl-entry" role="listitem">
 Lee, Chien-Chang, Meng-Tse Gabriel Lee, Yueh-Sheng Chen, Shih-Hao Lee, Yih-Sharng Chen, Shyr-Chyr Chen, and Shan-Chwen Chang. 2015. <span>“Risk of Aortic Dissection and Aortic Aneurysm in Patients Taking Oral Fluoroquinolone.”</span> <em>JAMA Internal Medicine</em> 175 (11): 1839–47. <a href="https://doi.org/10.1001/jamainternmed.2015.5389">https://doi.org/10.1001/jamainternmed.2015.5389</a>.
 </div>
-<div id="ref-lee2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lee2018" class="csl-entry" role="listitem">
 Lee, Chien-Chang, Meng-Tse Gabriel Lee, Ronan Hsieh, Lorenzo Porta, Wan-Chien Lee, Si-Huei Lee, and Shy-Shin Chang. 2018. <span>“Oral Fluoroquinolone and the Risk&nbsp;of&nbsp;Aortic Dissection.”</span> <em>Journal of the American College of Cardiology</em> 72 (12): 1369–78. <a href="https://doi.org/10.1016/j.jacc.2018.06.067">https://doi.org/10.1016/j.jacc.2018.06.067</a>.
 </div>
-<div id="ref-leeInferiorMesentericArtery2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-leeInferiorMesentericArtery2019" class="csl-entry" role="listitem">
 Lee, Kyongjune Benjamin, Jinny Lu, Robyn A. Macsata, Darshan Patel, Alexander Yang, John J. Ricotta, Richard L. Amdur, Anton N. Sidawy, and Bao-Ngoc Nguyen. 2019. <span>“Inferior Mesenteric Artery Replantation Does Not Decrease the Risk of Ischemic Colitis After Open Infrarenal Abdominal Aortic Aneurysm Repair.”</span> <em>Journal of Vascular Surgery</em> 69 (6): 1825–30. <a href="https://doi.org/10.1016/j.jvs.2018.09.046">https://doi.org/10.1016/j.jvs.2018.09.046</a>.
 </div>
-<div id="ref-lefevre2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lefevre2014" class="csl-entry" role="listitem">
 LeFevre, Michael L., and U. S. Preventive Services Task Force. 2014. <span>“Screening for Abdominal Aortic Aneurysm: U.s. Preventive Services Task Force Recommendation Statement.”</span> <em>Annals of Internal Medicine</em> 161 (4): 281–90. <a href="https://doi.org/10.7326/M14-1204">https://doi.org/10.7326/M14-1204</a>.
 </div>
-<div id="ref-lemaire2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lemaire2018" class="csl-entry" role="listitem">
 LeMaire, Scott A., Lin Zhang, Wei Luo, Pingping Ren, Alon R. Azares, Yidan Wang, Chen Zhang, Joseph S. Coselli, and Ying H. Shen. 2018. <span>“Effect of Ciprofloxacin on Susceptibility to Aortic Dissection and Rupture in Mice.”</span> <em>JAMA Surgery</em> 153 (9): e181804. <a href="https://doi.org/10.1001/jamasurg.2018.1804">https://doi.org/10.1001/jamasurg.2018.1804</a>.
 </div>
-<div id="ref-li2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-li2012" class="csl-entry" role="listitem">
 Li, Zong-Zhuang, and Qiu-Yan Dai. 2012. <span>“Pathogenesis of Abdominal Aortic Aneurysms: Role of Nicotine and Nicotinic Acetylcholine Receptors.”</span> <em>Mediators of Inflammation</em> 2012: 103120. <a href="https://doi.org/10.1155/2012/103120">https://doi.org/10.1155/2012/103120</a>.
 </div>
-<div id="ref-liangComparablePerioperativeMortality2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-liangComparablePerioperativeMortality2018" class="csl-entry" role="listitem">
 Liang, Nathan L., Katherine M. Reitz, Michel S. Makaroun, Mahmoud B. Malas, and Edith Tzeng. 2018. <span>“Comparable Perioperative Mortality Outcomes in Younger Patients Undergoing Elective Open and Endovascular Abdominal Aortic Aneurysm Repair.”</span> <em>Journal of Vascular Surgery</em> 67 (5): 1404–1409.e2. <a href="https://doi.org/10.1016/j.jvs.2017.08.057">https://doi.org/10.1016/j.jvs.2017.08.057</a>.
 </div>
-<div id="ref-lindsay2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lindsay2019" class="csl-entry" role="listitem">
 Lindsay, Thomas F. 2019a. <span>“74. Ruptured Aortoiliac Aneurysms and Their Management.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 9th ed., 21. Elsevier Inc.
 </div>
-<div id="ref-lindsayChapter74Ruptured2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lindsayChapter74Ruptured2019" class="csl-entry" role="listitem">
 ———. 2019b. <span>“Chapter 74 - <span>Ruptured Aortoiliac Aneurysms</span> and <span>Their Management</span>.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>, Ninth, 21. <span>Elsevier Inc.</span>
 </div>
-<div id="ref-loAbdominalAorticAneurysms2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-loAbdominalAorticAneurysms2016" class="csl-entry" role="listitem">
 Lo, Ruby C., and Marc L. Schermerhorn. 2016a. <span>“Abdominal Aortic Aneurysms in Women.”</span> <em>Journal of Vascular Surgery</em> 63 (3): 839–44. <a href="https://doi.org/10.1016/j.jvs.2015.10.087">https://doi.org/10.1016/j.jvs.2015.10.087</a>.
 </div>
-<div id="ref-lo2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lo2016" class="csl-entry" role="listitem">
 ———. 2016b. <span>“Abdominal Aortic Aneurysms in Women.”</span> <em>Journal of Vascular Surgery</em> 63 (3): 839–44. <a href="https://doi.org/10.1016/j.jvs.2015.10.087">https://doi.org/10.1016/j.jvs.2015.10.087</a>.
 </div>
-<div id="ref-mehta2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mehta2005" class="csl-entry" role="listitem">
 Mehta, Manish, R. Clement Darling, Sean P. Roddy, Scott Fecteau, Kathleen J. Ozsvath, Paul B. Kreienberg, Philip S. K. Paty, Benjamin B. Chang, and Dhiraj M. Shah. 2005. <span>“Factors Associated with Abdominal Compartment Syndrome Complicating Endovascular Repair of Ruptured Abdominal Aortic Aneurysms.”</span> <em>Journal of Vascular Surgery</em> 42 (6): 1047–51. <a href="https://doi.org/10.1016/j.jvs.2005.08.033">https://doi.org/10.1016/j.jvs.2005.08.033</a>.
 </div>
-<div id="ref-moghadamyeghaneh2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-moghadamyeghaneh2016" class="csl-entry" role="listitem">
 Moghadamyeghaneh, Zhobin, Michael D. Sgroi, Samuel L. Chen, Nii-Kabu Kabutey, Michael J. Stamos, and Roy M. Fujitani. 2016. <span>“Risk Factors and Outcomes of Postoperative Ischemic Colitis in Contemporary Open and Endovascular Abdominal Aortic Aneurysm Repair.”</span> <em>Journal of Vascular Surgery</em> 63 (4): 866–72. <a href="https://doi.org/10.1016/j.jvs.2015.10.064">https://doi.org/10.1016/j.jvs.2015.10.064</a>.
 </div>
-<div id="ref-mohapatra2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mohapatra2019" class="csl-entry" role="listitem">
 Mohapatra, Abhisekh, Darve Robinson, Othman Malak, Michael C. Madigan, Efthimios D. Avgerinos, Rabih A. Chaer, Michael J. Singh, and Michel S. Makaroun. 2019. <span>“Increasing Use of Open Conversion for Late Complications After Endovascular Aortic Aneurysm Repair.”</span> <em>Journal of Vascular Surgery</em> 69 (6): 1766–75. <a href="https://doi.org/10.1016/j.jvs.2018.09.049">https://doi.org/10.1016/j.jvs.2018.09.049</a>.
 </div>
-<div id="ref-mooreVascularEndovascularSurgery2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mooreVascularEndovascularSurgery2019" class="csl-entry" role="listitem">
 Moore, Wesley S., Peter F. Lawrence, and Gustavo S. Oderich, eds. 2019. <em>Vascular and Endovascular Surgery: A Comprehensive Review</em>. Ninth edition. <span>Philadelphia</span>: <span>Elsevier/Saunders</span>.
 </div>
-<div id="ref-nachbur1991" class="csl-entry" role="doc-biblioentry">
+<div id="ref-nachbur1991" class="csl-entry" role="listitem">
 Nachbur, B. H., R. G. Inderbitzi, and W. Bär. 1991. <span>“Isolated Iliac Aneurysms.”</span> <em>European Journal of Vascular Surgery</em> 5 (4): 375–81. <a href="https://doi.org/10.1016/s0950-821x(05)80169-0">https://doi.org/10.1016/s0950-821x(05)80169-0</a>.
 </div>
-<div id="ref-newtonAssociationFluoroquinoloneUse2021a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-newtonAssociationFluoroquinoloneUse2021a" class="csl-entry" role="listitem">
 Newton, Emily R., Adam W. Akerman, Paula D. Strassle, and Melina R. Kibbe. 2021. <span>“Association of <span class="nocase">Fluoroquinolone Use With Short-term Risk</span> of <span>Development</span> of <span>Aortic Aneurysm</span>.”</span> <em>JAMA Surgery</em> 156 (3): 264. <a href="https://doi.org/10.1001/jamasurg.2020.6165">https://doi.org/10.1001/jamasurg.2020.6165</a>.
 </div>
-<div id="ref-oderich2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-oderich2011" class="csl-entry" role="listitem">
 Oderich, Gustavo S., Thomas C. Bower, Jan Hofer, Manju Kalra, Audra A. Duncan, John W. Wilson, Stephan Cha, and Peter Gloviczki. 2011. <span>“In Situ Rifampin-Soaked Grafts with Omental Coverage and Antibiotic Suppression Are Durable with Low Reinfection Rates in Patients with Aortic Graft Enteric Erosion or Fistula.”</span> <em>Journal of Vascular Surgery</em> 53 (1): 99–106, 107.e1-7; discussion 106-107. <a href="https://doi.org/10.1016/j.jvs.2010.08.018">https://doi.org/10.1016/j.jvs.2010.08.018</a>.
 </div>
-<div id="ref-oderichTechnicalAspectsRepair2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-oderichTechnicalAspectsRepair2014" class="csl-entry" role="listitem">
 Oderich, Gustavo S., Mateus P. Correa, and Bernardo C. Mendes. 2014. <span>“Technical Aspects of Repair of Juxtarenal Abdominal Aortic Aneurysms Using the <span>Zenith</span> Fenestrated Endovascular Stent Graft.”</span> <em>Journal of Vascular Surgery</em> 59 (5): 1456–61. <a href="https://doi.org/10.1016/j.jvs.2013.10.060">https://doi.org/10.1016/j.jvs.2013.10.060</a>.
 </div>
-<div id="ref-oderichResultsUnitedStates2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-oderichResultsUnitedStates2014" class="csl-entry" role="listitem">
 Oderich, Gustavo S., Roy K. Greenberg, Mark Farber, Sean Lyden, Luis Sanchez, Ron Fairman, Feiyi Jia, and Priya Bharadwaj. 2014. <span>“Results of the <span>United States</span> Multicenter Prospective Study Evaluating the <span>Zenith</span> Fenestrated Endovascular Graft for Treatment of Juxtarenal Abdominal Aortic Aneurysms.”</span> <em>Journal of Vascular Surgery</em> 60 (6): 1420–1428.e5. <a href="https://doi.org/10.1016/j.jvs.2014.08.061">https://doi.org/10.1016/j.jvs.2014.08.061</a>.
 </div>
-<div id="ref-oliver-williams2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-oliver-williams2019" class="csl-entry" role="listitem">
 Oliver-Williams, Clare, Michael J. Sweeting, Jo Jacomelli, Lisa Summers, Anne Stevenson, Tim Lees, and Jonothan J. Earnshaw. 2019. <span>“Safety of Men with Small and Medium Abdominal Aortic Aneurysms Under Surveillance in the NAAASP.”</span> <em>Circulation</em> 139 (11): 1371–80. <a href="https://doi.org/10.1161/CIRCULATIONAHA.118.036966">https://doi.org/10.1161/CIRCULATIONAHA.118.036966</a>.
 </div>
-<div id="ref-orion2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-orion2016" class="csl-entry" role="listitem">
 Orion, Kristine Clodfelter, Robert J. Beaulieu, and James H. Black. 2016. <span>“Aortocaval Fistula: Is Endovascular Repair the Preferred Solution?”</span> <em>Annals of Vascular Surgery</em> 31 (February): 221–28. <a href="https://doi.org/10.1016/j.avsg.2015.09.006">https://doi.org/10.1016/j.avsg.2015.09.006</a>.
 </div>
-<div id="ref-papazoglou2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-papazoglou2012" class="csl-entry" role="listitem">
 Papazoglou, Konstantinos O., George S. Sfyroeras, Neofytos Zambas, Konstantinos Konstantinidis, Stavros K. Kakkos, and Maria Mitka. 2012. <span>“Outcomes of Endovascular Aneurysm Repair with Selective Internal Iliac Artery Coverage Without Coil Embolization.”</span> <em>Journal of Vascular Surgery</em> 56 (2): 298–303. <a href="https://doi.org/10.1016/j.jvs.2011.08.063">https://doi.org/10.1016/j.jvs.2011.08.063</a>.
 </div>
-<div id="ref-paravastu2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-paravastu2009" class="csl-entry" role="listitem">
 Paravastu, S. C. V., J. Ghosh, D. Murray, F. G. Farquharson, F. Serracino-Inglott, and M. G. Walker. 2009. <span>“A Systematic Review of Open Versus Endovascular Repair of Inflammatory Abdominal Aortic Aneurysms.”</span> <em>European Journal of Vascular and Endovascular Surgery: The Official Journal of the European Society for Vascular Surgery</em> 38 (3): 291–97. <a href="https://doi.org/10.1016/j.ejvs.2009.05.005">https://doi.org/10.1016/j.ejvs.2009.05.005</a>.
 </div>
-<div id="ref-parkinsonRuptureRatesUntreated2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-parkinsonRuptureRatesUntreated2015" class="csl-entry" role="listitem">
 Parkinson, Fran, Stuart Ferguson, Peter Lewis, Ian M. Williams, and Christopher P. Twine. 2015. <span>“Rupture Rates of Untreated Large Abdominal Aortic Aneurysms in Patients Unfit for Elective Repair.”</span> <em>Journal of Vascular Surgery</em> 61 (6): 1606–12. <a href="https://doi.org/10.1016/j.jvs.2014.10.023">https://doi.org/10.1016/j.jvs.2014.10.023</a>.
 </div>
-<div id="ref-pasternak2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-pasternak2018" class="csl-entry" role="listitem">
 Pasternak, Björn, Malin Inghammar, and Henrik Svanström. 2018. <span>“Fluoroquinolone Use and Risk of Aortic Aneurysm and Dissection: Nationwide Cohort Study.”</span> <em>BMJ (Clinical Research Ed.)</em> 360 (March): k678. <a href="https://doi.org/10.1136/bmj.k678">https://doi.org/10.1136/bmj.k678</a>.
 </div>
-<div id="ref-patelEndovascularOpenRepair2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-patelEndovascularOpenRepair2016" class="csl-entry" role="listitem">
 Patel, Rajesh, Michael J Sweeting, Janet T Powell, and Roger M Greenhalgh. 2016. <span>“Endovascular Versus Open Repair of Abdominal Aortic Aneurysm in 15-Years’ Follow-up of the <span>UK</span> Endovascular Aneurysm Repair Trial 1 (<span>EVAR</span> Trial 1): A Randomised Controlled Trial.”</span> <em>The Lancet</em> 388 (10058): 2366–74. <a href="https://doi.org/10.1016/S0140-6736(16)31135-7">https://doi.org/10.1016/S0140-6736(16)31135-7</a>.
 </div>
-<div id="ref-prinssenRandomizedTrialComparing2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-prinssenRandomizedTrialComparing2004" class="csl-entry" role="listitem">
 Prinssen, Monique, Philippe W M Cuypers, and Erik Buskens. 2004. <span>“A <span>Randomized Trial Comparing Conventional</span> and <span>Endovascular Repair</span> of <span>Abdominal Aortic Aneurysms</span>.”</span> <em>The New England Journal of Medicine</em>, 13.
 </div>
-<div id="ref-rabkin2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rabkin2016" class="csl-entry" role="listitem">
 Rabkin, Simon W. 2016. <span>“The Effect of Nicotine and Tobacco on Aortic Matrix Metalloproteinases in the Production of Aortic Aneurysm.”</span> <em>Current Vascular Pharmacology</em> 14 (6): 514–22. <a href="https://doi.org/10.2174/1570161114666160625091205">https://doi.org/10.2174/1570161114666160625091205</a>.
 </div>
-<div id="ref-rajendranLateRuptureAbdominal2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rajendranLateRuptureAbdominal2017" class="csl-entry" role="listitem">
 Rajendran, Saissan, and James May. 2017. <span>“Late Rupture of Abdominal Aortic Aneurysm After Endovascular Repair.”</span> <em>Journal of Vascular Surgery</em> 65 (1): 52–57. <a href="https://doi.org/10.1016/j.jvs.2016.05.090">https://doi.org/10.1016/j.jvs.2016.05.090</a>.
 </div>
-<div id="ref-rasmussen1997" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rasmussen1997" class="csl-entry" role="listitem">
 Rasmussen, T. E., and J. W. Hallett. 1997. <span>“Inflammatory Aortic Aneurysms. A Clinical Review with New Perspectives in Pathogenesis.”</span> <em>Annals of Surgery</em> 225 (2): 155–64. <a href="https://doi.org/10.1097/00000658-199702000-00003">https://doi.org/10.1097/00000658-199702000-00003</a>.
 </div>
-<div id="ref-ryer2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ryer2012" class="csl-entry" role="listitem">
 Ryer, Evan J., Robert P. Garvin, Travis P. Webb, David P. Franklin, and James R. Elmore. 2012. <span>“Comparison of Outcomes with Coils Versus Vascular Plug Embolization of the Internal Iliac Artery for Endovascular Aortoiliac Aneurysm Repair.”</span> <em>Journal of Vascular Surgery</em> 56 (5): 1239–45. <a href="https://doi.org/10.1016/j.jvs.2012.05.001">https://doi.org/10.1016/j.jvs.2012.05.001</a>.
 </div>
-<div id="ref-sarac2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-sarac2012" class="csl-entry" role="listitem">
 Sarac, Timur P., Connor Gibbons, Lina Vargas, Jane Liu, Sunita Srivastava, James Bena, Tara Mastracci, Vikram S. Kashyap, and Daniel Clair. 2012. <span>“Long-Term Follow-up of Type II Endoleak Embolization Reveals the Need for Close Surveillance.”</span> <em>Journal of Vascular Surgery</em> 55 (1): 33–40. <a href="https://doi.org/10.1016/j.jvs.2011.07.092">https://doi.org/10.1016/j.jvs.2011.07.092</a>.
 </div>
-<div id="ref-schanzerFollowUpComplianceEndovascular2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-schanzerFollowUpComplianceEndovascular2015" class="csl-entry" role="listitem">
 Schanzer, Andres, Louis M. Messina, Kaushik Ghosh, Jessica P. Simons, William P. Robinson, Francesco A Aiello, Robert J. Goldberg, and Allison B. Rosen. 2015. <span>“Follow-<span>Up Compliance After Endovascular Abdominal Aortic Aneurysm Repair</span> in <span>Medicare Beneficiaries</span>.”</span> <em>Journal of Vascular Surgery</em> 61 (1): 16–22.e1. <a href="https://doi.org/10.1016/j.jvs.2014.06.006">https://doi.org/10.1016/j.jvs.2014.06.006</a>.
 </div>
-<div id="ref-schmidt1994" class="csl-entry" role="doc-biblioentry">
+<div id="ref-schmidt1994" class="csl-entry" role="listitem">
 Schmidt, R., C. Bruns, M. Walter, and H. Erasmi. 1994. <span>“Aorto-Caval Fistula–an Uncommon Complication of Infrarenal Aortic Aneurysms.”</span> <em>The Thoracic and Cardiovascular Surgeon</em> 42 (4): 208–11. <a href="https://doi.org/10.1055/s-2007-1016489">https://doi.org/10.1055/s-2007-1016489</a>.
 </div>
-<div id="ref-schneider2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-schneider2017" class="csl-entry" role="listitem">
 Schneider, Darren B., Jon S. Matsumura, Jason T. Lee, Brian G. Peterson, Rabih A. Chaer, and Gustavo S. Oderich. 2017. <span>“Prospective, Multicenter Study of Endovascular Repair of Aortoiliac and Iliac Aneurysms Using the Gore Iliac Branch Endoprosthesis.”</span> <em>Journal of Vascular Surgery</em> 66 (3): 775–85. <a href="https://doi.org/10.1016/j.jvs.2017.02.041">https://doi.org/10.1016/j.jvs.2017.02.041</a>.
 </div>
-<div id="ref-shalaby2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-shalaby2016" class="csl-entry" role="listitem">
 Shalaby, Sherif Y., Trenton R. Foster, Michael R. Hall, Kirstyn E. Brownson, Penny Vasilas, Daniel G. Federman, Hamid R. Mojibian, and Alan Dardik. 2016. <span>“Systemic Inflammatory Disease and Its Association with Type II Endoleak and Late Interventions After Endovascular Aneurysm Repair.”</span> <em>JAMA Surgery</em> 151 (2): 147–53. <a href="https://doi.org/10.1001/jamasurg.2015.3219">https://doi.org/10.1001/jamasurg.2015.3219</a>.
 </div>
-<div id="ref-singh2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-singh2019" class="csl-entry" role="listitem">
 Singh, Tejas P., Shannon A. Wong, Joseph V. Moxon, T. Christian Gasser, and Jonathan Golledge. 2019. <span>“Systematic Review and Meta-Analysis of the Association Between Intraluminal Thrombus Volume and Abdominal Aortic Aneurysm Rupture.”</span> <em>Journal of Vascular Surgery</em> 70 (6): 2065–2073.e10. <a href="https://doi.org/10.1016/j.jvs.2019.03.057">https://doi.org/10.1016/j.jvs.2019.03.057</a>.
 </div>
-<div id="ref-smeds2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-smeds2016" class="csl-entry" role="listitem">
 Smeds, Matthew R., Audra A. Duncan, Michael P. Harlander-Locke, Peter F. Lawrence, Sean Lyden, Javariah Fatima, Mark K. Eskandari, and Vascular Low-Frequency Disease Consortium. 2016. <span>“Treatment and Outcomes of Aortic Endograft Infection.”</span> <em>Journal of Vascular Surgery</em> 63 (2): 332–40. <a href="https://doi.org/10.1016/j.jvs.2015.08.113">https://doi.org/10.1016/j.jvs.2015.08.113</a>.
 </div>
-<div id="ref-stokmans2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-stokmans2013" class="csl-entry" role="listitem">
 Stokmans, R. A., E. M. Willigendael, J. a. W. Teijink, J. A. Ten Bosch, M. R. H. M. van Sambeek, and Ph W. M. Cuypers. 2013. <span>“Challenging the Evidence for Pre-Emptive Coil Embolisation of the Internal Iliac Artery During Endovascular Aneurysm Repair.”</span> <em>European Journal of Vascular and Endovascular Surgery: The Official Journal of the European Society for Vascular Surgery</em> 45 (3): 220–26. <a href="https://doi.org/10.1016/j.ejvs.2012.12.001">https://doi.org/10.1016/j.ejvs.2012.12.001</a>.
 </div>
-<div id="ref-tashiro2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tashiro2014" class="csl-entry" role="listitem">
 Tashiro, Teruko, Sorin V. Pislaru, Jodi M. Blustin, Vuyisile T. Nkomo, Martin D. Abel, Christopher G. Scott, and Patricia A. Pellikka. 2014. <span>“Perioperative Risk of Major Non-Cardiac Surgery in Patients with Severe Aortic Stenosis: A Reappraisal in Contemporary Practice.”</span> <em>European Heart Journal</em> 35 (35): 2372–81. <a href="https://doi.org/10.1093/eurheartj/ehu044">https://doi.org/10.1093/eurheartj/ehu044</a>.
 </div>
-<div id="ref-taudorf2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-taudorf2014" class="csl-entry" role="listitem">
 Taudorf, M., L. P. Jensen, K. C. Vogt, J. Grønvall, T. V. Schroeder, and L. Lönn. 2014. <span>“Endograft Limb Occlusion in EVAR: Iliac Tortuosity Quantified by Three Different Indices on the Basis of Preoperative CTA.”</span> <em>European Journal of Vascular and Endovascular Surgery: The Official Journal of the European Society for Vascular Surgery</em> 48 (5): 527–33. <a href="https://doi.org/10.1016/j.ejvs.2014.04.018">https://doi.org/10.1016/j.ejvs.2014.04.018</a>.
 </div>
-<div id="ref-thompson2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-thompson2013" class="csl-entry" role="listitem">
 Thompson, S. G., L. C. Brown, M. J. Sweeting, M. J. Bown, L. G. Kim, M. J. Glover, M. J. Buxton, and J. T. Powell. 2013. <span>“Systematic Review and Meta-Analysis of the Growth and Rupture Rates of Small Abdominal Aortic Aneurysms: Implications for Surveillance Intervals and Their Cost-Effectiveness.”</span> <em>Health Technology Assessment (Winchester, England)</em> 17 (41): 1–118. <a href="https://doi.org/10.3310/hta17410">https://doi.org/10.3310/hta17410</a>.
 </div>
-<div id="ref-timaran2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-timaran2004" class="csl-entry" role="listitem">
 Timaran, Carlos H., Takao Ohki, Soo J. Rhee, Frank J. Veith, Nicholas J. Gargiulo, Hisako Toriumi, Mahmood B. Malas, William D. Suggs, Reese A. Wain, and Evan C. Lipsitz. 2004. <span>“Predicting Aneurysm Enlargement in Patients with Persistent Type II Endoleaks.”</span> <em>Journal of Vascular Surgery</em> 39 (6): 1157–62. <a href="https://doi.org/10.1016/j.jvs.2003.12.033">https://doi.org/10.1016/j.jvs.2003.12.033</a>.
 </div>
-<div id="ref-tracci" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tracci" class="csl-entry" role="listitem">
 Tracci, MARGARET C, Rishi Roy, and Gilbert R. Upchurch. n.d. <span>“70. Aortoiliac Aneurysms: Evaluation, Decision Making, and Medical Management.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 9th Edition, 884–93.
 </div>
-<div id="ref-tuvesonPatientsAbdominalAortic2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tuvesonPatientsAbdominalAortic2016" class="csl-entry" role="listitem">
 Tuveson, Viktoria, Hedvig E Löfdahl, and Rebecka Hultgren. 2016. <span>“Patients with Abdominal Aortic Aneurysm Have a High Prevalence of Popliteal Artery Aneurysms.”</span> <em>Vascular Medicine</em> 21 (4): 369–75. <a href="https://doi.org/10.1177/1358863X16648404">https://doi.org/10.1177/1358863X16648404</a>.
 </div>
-<div id="ref-ultee2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ultee2016" class="csl-entry" role="listitem">
 Ultee, Klaas H. J., Peter A. Soden, Sara L. Zettervall, Jeremy Darling, Hence J. M. Verhagen, and Marc L. Schermerhorn. 2016a. <span>“Conversion from Endovascular to Open Abdominal Aortic Aneurysm Repair.”</span> <em>Journal of Vascular Surgery</em> 64 (1): 76–82. <a href="https://doi.org/10.1016/j.jvs.2015.12.055">https://doi.org/10.1016/j.jvs.2015.12.055</a>.
 </div>
-<div id="ref-ulteeConversionEVAROpen2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ulteeConversionEVAROpen2016" class="csl-entry" role="listitem">
 ———. 2016b. <span>“Conversion from <span>EVAR</span> to <span>Open Abdominal Aortic Aneurysm Repair</span>.”</span> <em>Journal of Vascular Surgery</em> 64 (1): 76–82. <a href="https://doi.org/10.1016/j.jvs.2015.12.055">https://doi.org/10.1016/j.jvs.2015.12.055</a>.
 </div>
-<div id="ref-vacirca2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-vacirca2019" class="csl-entry" role="listitem">
 Vacirca, Andrea, Gianluca Faggioli, Rodolfo Pini, Enrico Gallitto, Chiara Mascoli, Laura Maria Cacioppa, Mauro Gargiulo, and Andrea Stella. 2019. <span>“The Outcome of Technical Intraoperative Complications Occurring in Standard Aortic Endovascular Repair.”</span> <em>Annals of Vascular Surgery</em> 56 (April): 153–62. <a href="https://doi.org/10.1016/j.avsg.2018.08.092">https://doi.org/10.1016/j.avsg.2018.08.092</a>.
 </div>
-<div id="ref-veith2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-veith2009" class="csl-entry" role="listitem">
 Veith, Frank J., Mario Lachat, Dieter Mayer, Martin Malina, Jan Holst, Manish Mehta, Eric L. G. Verhoeven, et al. 2009. <span>“Collected World and Single Center Experience with Endovascular Treatment of Ruptured Abdominal Aortic Aneurysms.”</span> <em>Annals of Surgery</em> 250 (5): 818–24. <a href="https://doi.org/10.1097/SLA.0b013e3181bdd7f5">https://doi.org/10.1097/SLA.0b013e3181bdd7f5</a>.
 </div>
-<div id="ref-wangEndovascularRepairRuptured2020a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-wangEndovascularRepairRuptured2020a" class="csl-entry" role="listitem">
 Wang, Linda J., Satinderjit Locham, Omar Al-Nouri, Matthew J. Eagleton, W. Darrin Clouse, and Mahmoud B. Malas. 2020. <span>“Endovascular Repair of Ruptured Abdominal Aortic Aneurysm Is Superior to Open Repair: <span class="nocase">Propensity-matched</span> Analysis in the <span>Vascular Quality Initiative</span>.”</span> <em>Journal of Vascular Surgery</em> 72 (2): 498–507. <a href="https://doi.org/10.1016/j.jvs.2019.11.063">https://doi.org/10.1016/j.jvs.2019.11.063</a>.
 </div>
-<div id="ref-wanhainen2006" class="csl-entry" role="doc-biblioentry">
+<div id="ref-wanhainen2006" class="csl-entry" role="listitem">
 Wanhainen, Anders, Jonas Lundkvist, David Bergqvist, and Martin Björck. 2006. <span>“Cost-Effectiveness of Screening Women for Abdominal Aortic Aneurysm.”</span> <em>Journal of Vascular Surgery</em> 43 (5): 908–914; discussion 914. <a href="https://doi.org/10.1016/j.jvs.2005.12.064">https://doi.org/10.1016/j.jvs.2005.12.064</a>.
 </div>
-<div id="ref-ward2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ward2014" class="csl-entry" role="listitem">
 Ward, Thomas J., Stuart Cohen, Rahul S. Patel, Edward Kim, Aaron M. Fischman, Francis S. Nowakowski, Sharif H. Ellozy, Peter L. Faries, Michael L. Marin, and Robert A. Lookstein. 2014. <span>“Anatomic Risk Factors for Type-2 Endoleak Following EVAR: A Retrospective Review of Preoperative CT Angiography in 326 Patients.”</span> <em>Cardiovascular and Interventional Radiology</em> 37 (2): 324–28. <a href="https://doi.org/10.1007/s00270-013-0646-7">https://doi.org/10.1007/s00270-013-0646-7</a>.
 </div>
 </div>
@@ -1455,9 +1494,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1469,7 +1522,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -1497,31 +1567,136 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
@@ -1540,7 +1715,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

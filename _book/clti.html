@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,15 +12,21 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -34,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -119,11 +124,16 @@ cookieconsent.run({
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./claudication.html">Lower Extremity</a></li><li class="breadcrumb-item"><a href="./clti.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -131,239 +141,272 @@ cookieconsent.run({
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Vascular Surgery Exam Prep</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./authors.html" class="sidebar-item-text sidebar-link">Authors and Contributors</a>
+  <a href="./authors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authors and Contributors</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Head and Neck</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Head and Neck</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></a>
+  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></a>
+  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Upper Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Upper Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></a>
+  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tos.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></a>
+  <a href="./tos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></a>
+  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Thorax</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Thorax</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dissection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></a>
+  <a href="./dissection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taaa.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></a>
+  <a href="./taaa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></a>
+  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></a>
+  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Abdomen</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Abdomen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></a>
+  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></a>
+  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./renal.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></a>
+  <a href="./renal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></a>
+  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></a>
+  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Lower Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Lower Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./claudication.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></a>
+  <a href="./claudication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clti.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></a>
+  <a href="./clti.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ali.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></a>
+  <a href="./ali.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></a>
+  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></a>
+  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">General</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">General</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></a>
+  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./radiation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></a>
+  <a href="./radiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></a>
+  <a href="./endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rapid.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></a>
+  <a href="./rapid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#guidelines" id="toc-guidelines" class="nav-link active" data-scroll-target="#guidelines"> <span class="header-section-number">16.1</span> Guidelines</a></li>
-  <li><a href="#demographics" id="toc-demographics" class="nav-link" data-scroll-target="#demographics"> <span class="header-section-number">16.2</span> Demographics</a>
+  <li><a href="#guidelines" id="toc-guidelines" class="nav-link active" data-scroll-target="#guidelines"><span class="header-section-number">16.1</span> Guidelines</a></li>
+  <li><a href="#demographics" id="toc-demographics" class="nav-link" data-scroll-target="#demographics"><span class="header-section-number">16.2</span> Demographics</a>
   <ul class="collapse">
-  <li><a href="#etiology-and-presentation" id="toc-etiology-and-presentation" class="nav-link" data-scroll-target="#etiology-and-presentation"> <span class="header-section-number">16.2.1</span> Etiology and Presentation</a></li>
-  <li><a href="#natural-history" id="toc-natural-history" class="nav-link" data-scroll-target="#natural-history"> <span class="header-section-number">16.2.2</span> Natural History</a></li>
-  <li><a href="#wifi-classification" id="toc-wifi-classification" class="nav-link" data-scroll-target="#wifi-classification"> <span class="header-section-number">16.2.3</span> WIFi Classification</a></li>
-  <li><a href="#differential-diagnosis" id="toc-differential-diagnosis" class="nav-link" data-scroll-target="#differential-diagnosis"> <span class="header-section-number">16.2.4</span> Differential Diagnosis</a></li>
+  <li><a href="#etiology-and-presentation" id="toc-etiology-and-presentation" class="nav-link" data-scroll-target="#etiology-and-presentation"><span class="header-section-number">16.2.1</span> Etiology and Presentation</a></li>
+  <li><a href="#natural-history" id="toc-natural-history" class="nav-link" data-scroll-target="#natural-history"><span class="header-section-number">16.2.2</span> Natural History</a></li>
+  <li><a href="#wifi-classification" id="toc-wifi-classification" class="nav-link" data-scroll-target="#wifi-classification"><span class="header-section-number">16.2.3</span> WIFi Classification</a></li>
+  <li><a href="#differential-diagnosis" id="toc-differential-diagnosis" class="nav-link" data-scroll-target="#differential-diagnosis"><span class="header-section-number">16.2.4</span> Differential Diagnosis</a></li>
   </ul></li>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"> <span class="header-section-number">16.3</span> Evaluation</a>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"><span class="header-section-number">16.3</span> Evaluation</a>
   <ul class="collapse">
-  <li><a href="#physiologic-testing" id="toc-physiologic-testing" class="nav-link" data-scroll-target="#physiologic-testing"> <span class="header-section-number">16.3.1</span> Physiologic Testing</a></li>
-  <li><a href="#imaging" id="toc-imaging" class="nav-link" data-scroll-target="#imaging"> <span class="header-section-number">16.3.2</span> Imaging</a></li>
+  <li><a href="#physiologic-testing" id="toc-physiologic-testing" class="nav-link" data-scroll-target="#physiologic-testing"><span class="header-section-number">16.3.1</span> Physiologic Testing</a></li>
+  <li><a href="#imaging" id="toc-imaging" class="nav-link" data-scroll-target="#imaging"><span class="header-section-number">16.3.2</span> Imaging</a></li>
   </ul></li>
-  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"> <span class="header-section-number">16.4</span> Management</a>
+  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"><span class="header-section-number">16.4</span> Management</a>
   <ul class="collapse">
-  <li><a href="#medical-managment" id="toc-medical-managment" class="nav-link" data-scroll-target="#medical-managment"> <span class="header-section-number">16.4.1</span> Medical Managment</a></li>
-  <li><a href="#endovascular-and-surgical-management" id="toc-endovascular-and-surgical-management" class="nav-link" data-scroll-target="#endovascular-and-surgical-management"> <span class="header-section-number">16.4.2</span> Endovascular and Surgical Management</a></li>
-  <li><a href="#complications" id="toc-complications" class="nav-link" data-scroll-target="#complications"> <span class="header-section-number">16.4.3</span> Complications</a></li>
+  <li><a href="#medical-managment" id="toc-medical-managment" class="nav-link" data-scroll-target="#medical-managment"><span class="header-section-number">16.4.1</span> Medical Managment</a></li>
+  <li><a href="#endovascular-and-surgical-management" id="toc-endovascular-and-surgical-management" class="nav-link" data-scroll-target="#endovascular-and-surgical-management"><span class="header-section-number">16.4.2</span> Endovascular and Surgical Management</a></li>
+  <li><a href="#complications" id="toc-complications" class="nav-link" data-scroll-target="#complications"><span class="header-section-number">16.4.3</span> Complications</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -373,19 +416,15 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-clti" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></span></h1>
+<h1 class="title"><span id="sec-clti" class="quarto-section-identifier"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></span></h1>
 </div>
 
-<div>
-  <div class="description">
-    eBook Companion for Audible Bleeding Podcast Series
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -520,12 +559,12 @@ cookieconsent.run({
 </ol></li>
 </ol>
 <p>“It is intended to be an iterative process with the goal of more precisely stratifying patients according to their initial disease burden, analogous to TNM cancer staging, but not to dictate therapy.”</p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Get the App!
 </div>
 </div>
@@ -589,12 +628,12 @@ Get the App!
 <p>The CLTI Guidelines outline an algorithm of attaining Arterial Anatomical Imaging. Starting with US and then depending on the information required, CTA, MRA, or eventually digital subtraction angiography. They emphasize the importance of obtaining good quality imaging to appropriately stage and be able to compare the level and degree of disease.</p>
 <p>For wounds with concern for underlying osteomyelitis - initial workup is with plain radiography, which can identify soft tissue emphysema, evidence of osteomyelitis, or presence of a foreign body. High suspicion of early osteomyelitis with negative x-ray may warrant an MRI.<span class="citation" data-cites="giurato2017">(<a href="references.html#ref-giurato2017" role="doc-biblioref">Giurato et al. 2017</a>)</span></p>
 <p>The most recently published RCT in CLTI, BEST-CLI, highlights the good outcomes of surgical bypass with saphenous vein, suggesting that vein mapping also be considered a routine imaging study during the workup of patients. This will help to clearly understand revascularization options before attempting endovascular diagnostic or therapeutic interventions.<span class="citation" data-cites="farber2022">(<a href="references.html#ref-farber2022" role="doc-biblioref">Farber et al. 2022</a>)</span></p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -616,12 +655,12 @@ Take a Listen
 <p>Once the GRADES (0-4) of FP and IP disease are determined then staging (1-3) can be performed based on the matrix or grid that is provided. Staging then allows for est imated <strong>Peripheral endoVascular Intervention outcomes</strong> (PVI) to be predicted, Immediate Technical Failure (ITF - &lt;10% or &lt; 20% or &gt; 20%)) and 1-year Limb Based Patency (LBP - &gt;70%, 50-75% or &lt;50%).&nbsp;</p>
 <p><strong>What is the Target Arterial Path (TAP)?</strong></p>
 <p>“The selected continuous route of in-line flow from groin to ankle. The TAP typically involves the least diseased IP artery but may be angiosome based.”</p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Again, Get the App!
 </div>
 </div>
@@ -644,12 +683,12 @@ Again, Get the App!
 <li><p><strong>Diabetic foot wounds</strong> with signs of infection, erythema, swelling, pain and foul smelling drainage should be investigated with plain radiography, ESR, CRP, cultures and, managed with iv antibiotics. Signs of systemic sepsis, such as fevers, tachycardia or shock, such as hypotension, should warrant urgent debridement and drainage, regardless of vascular status.</p></li>
 <li><p>For more details, see <a href="claudication.html#sec-pad-medical-management"><span>Section&nbsp;15.2.2.1</span></a></p></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -709,12 +748,12 @@ Take a Listen
 </ol>
 <p><strong>What evidence do we have for deciding between Endo and Open management? What is the BASIL trial?</strong></p>
 <p>In November of 2022, the first results of the <strong>BEST-CLI</strong> were published in the NEJM. BEST-CLI is the first international, open-label, multicenter, superiority trial of its scope and scale. The key results found that in patients with adequate great saphenous vein conduit, the surgical group demonstrated a lower incidence of major adverse limb events or death (the study’s primary endpoint) than the endovascular group. They found relatively equivalent outcomes in patients with inadequate autogenous conduit.<span class="citation" data-cites="farber2022">(<a href="references.html#ref-farber2022" role="doc-biblioref">Farber et al. 2022</a>)</span> The full impact of the results of this study is yet to be determined, and there will likely be several additional analyses published from this study’s data. It is unlikely that this data will impact what is tested on this year’s exams. However, you should keep an eye out for future results!</p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -756,134 +795,134 @@ Take a Listen
 <p>Femoral exploration carries high risk of infection or lymphatic leak. Lymphatic leaks often resolve spontaneously. Infected lymphatic leaks, particularly in the setting of prosthetic bypass require exploration. Should a lymph leak not resolve with conservative management, definitive therapy requires alcohol ablation or muscle flap coverage. The most important aspect of lymph leak is prevention with careful dissection and tissue management during femoral exploration.<span class="citation" data-cites="obara2014 weaver2014">(<a href="references.html#ref-obara2014" role="doc-biblioref">Obara et al. 2014</a>; <a href="references.html#ref-weaver2014" role="doc-biblioref">Weaver et al. 2014</a>)</span></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-adam2005" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-adam2005" class="csl-entry" role="listitem">
 Adam, D. J., J. D. Beard, T. Cleveland, J. Bell, A. W. Bradbury, J. F. Forbes, F. G. R. Fowkes, et al. 2005. <span>“Bypass Versus Angioplasty in Severe Ischaemia of the Leg (BASIL): Multicentre, Randomised Controlled Trial.”</span> <em>Lancet (London, England)</em> 366 (9501): 1925–34. <a href="https://doi.org/10.1016/S0140-6736(05)67704-5">https://doi.org/10.1016/S0140-6736(05)67704-5</a>.
 </div>
-<div id="ref-arvela2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-arvela2010" class="csl-entry" role="listitem">
 Arvela, Eva, Maria Söderström, Anders Albäck, Pekka-Sakari Aho, Maarit Venermo, and Mauri Lepäntalo. 2010. <span>“Arm Vein Conduit Vs Prosthetic Graft in Infrainguinal Revascularization for Critical Leg Ischemia.”</span> <em>Journal of Vascular Surgery</em> 52 (3): 616–23. <a href="https://doi.org/10.1016/j.jvs.2010.04.013">https://doi.org/10.1016/j.jvs.2010.04.013</a>.
 </div>
-<div id="ref-arya2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-arya2018" class="csl-entry" role="listitem">
 Arya, Shipra, Anjali Khakharia, Zachary O. Binney, Randall R. DeMartino, Luke P. Brewster, Philip P. Goodney, and Peter W. F. Wilson. 2018. <span>“Statins Have a Dose-Dependent Effect on Amputation and Survival in Peripheral Artery Disease Patients.”</span> <em>Circulation</em> 137 (14): 1435–46. <a href="https://doi.org/10.1161/CIRCULATIONAHA.117.032361">https://doi.org/10.1161/CIRCULATIONAHA.117.032361</a>.
 </div>
-<div id="ref-avgerinos2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-avgerinos2015" class="csl-entry" role="listitem">
 Avgerinos, Efthymios D., Ulka Sachdev, Abdallah Naddaf, Dannielle R. Doucet, Abhisekh Mohapatra, Steven A. Leers, Rabih A. Chaer, and Michel S. Makaroun. 2015. <span>“Autologous Alternative Veins May Not Provide Better Outcomes Than Prosthetic Conduits for Below-Knee Bypass When Great Saphenous Vein Is Unavailable.”</span> <em>Journal of Vascular Surgery</em> 62 (2): 385–91. <a href="https://doi.org/10.1016/j.jvs.2015.03.025">https://doi.org/10.1016/j.jvs.2015.03.025</a>.
 </div>
-<div id="ref-boren1980" class="csl-entry" role="doc-biblioentry">
+<div id="ref-boren1980" class="csl-entry" role="listitem">
 Boren, Clark H, Jonathan B Towne, Victor M Bernhard, and S Salles-Cunha. 1980. <span>“Profundapopliteal Collateral Index. A Guide to Successful Profundaplasty.”</span> <em>Archives of Surgery</em> 115: 1366–72. <a href="https://doi.org/10.1001/archsurg.1980.01380110098015">https://doi.org/10.1001/archsurg.1980.01380110098015</a>.
 </div>
-<div id="ref-bradburyBypassAngioplastySevere2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bradburyBypassAngioplastySevere2005" class="csl-entry" role="listitem">
 Bradbury, Andrew W., D. J. Adam, J. D. Beard, T. Cleveland, J. F. Forbes, F. G. R. Fowkes, I. Gillepsie, C. V. Ruckley, G. Raab, and H. Storkey. 2005. <span>“Bypass Versus Angioplasty in Severe Ischaemia of the Leg (<span>BASIL</span>): <span>Multicentre</span>, Randomised Controlled Trial.”</span> <em>Lancet</em> 366 (9501): 1925–34. <a href="https://doi.org/10.1016/S0140-6736(05)67704-5">https://doi.org/10.1016/S0140-6736(05)67704-5</a>.
 </div>
-<div id="ref-brochadoneto2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-brochadoneto2014" class="csl-entry" role="listitem">
 Brochado Neto, F., G. A. Sandri, M. J. Kalaf, M. F. Matielo, I. B. Casella, M. R. Godoy, M. V. Martins Cury, and R. Sacilotto. 2014. <span>“Arm Vein as an Alternative Autogenous Conduit for Infragenicular Bypass in the Treatment of Critical Limb Ischaemia: A 15 Year Experience.”</span> <em>European Journal of Vascular and Endovascular Surgery: The Official Journal of the European Society for Vascular Surgery</em> 47 (6): 609–14. <a href="https://doi.org/10.1016/j.ejvs.2014.01.019">https://doi.org/10.1016/j.ejvs.2014.01.019</a>.
 </div>
-<div id="ref-capriesteeringcommittee1996" class="csl-entry" role="doc-biblioentry">
+<div id="ref-capriesteeringcommittee1996" class="csl-entry" role="listitem">
 Committee, CAPRIE Steering. 1996. <span>“A Randomised, Blinded, Trial of Clopidogrel Versus Aspirin in Patients at Risk of Ischaemic Events (CAPRIE).”</span> <em>The Lancet</em> 348 (9038): 1329–39. <a href="https://doi.org/10.1016/S0140-6736(96)09457-3">https://doi.org/10.1016/S0140-6736(96)09457-3</a>.
 </div>
-<div id="ref-conteGlobalVascularGuidelines2019a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-conteGlobalVascularGuidelines2019a" class="csl-entry" role="listitem">
 Conte, Michael S., Andrew W. Bradbury, Philippe Kolh, John V. White, Florian Dick, Robert Fitridge, Joseph L Mills, Jean-Baptiste Ricco, Kalkunte R. Suresh, and M. Hassan Murad. 2019. <span>“Global Vascular Guidelines on the Management of Chronic Limb-Threatening Ischemia.”</span> <em>European Journal of Vascular and Endovascular Surgery : The Official Journal of the European Society for Vascular Surgery</em> 58 (1 Suppl): S1–S109.e33. <a href="https://doi.org/10.1016/j.ejvs.2019.05.006">https://doi.org/10.1016/j.ejvs.2019.05.006</a>.
 </div>
-<div id="ref-conte2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-conte2015" class="csl-entry" role="listitem">
 Conte, Michael S., Frank B. Pomposelli, Daniel G. Clair, Patrick J. Geraghty, James F. McKinsey, Joseph L. Mills, Gregory L. Moneta, et al. 2015. <span>“Society for Vascular Surgery Practice Guidelines for Atherosclerotic Occlusive Disease of the Lower Extremities: Management of Asymptomatic Disease and Claudication.”</span> <em>Journal of Vascular Surgery</em> 61 (3): 2S–41S.e1. <a href="https://doi.org/10.1016/j.jvs.2014.12.009">https://doi.org/10.1016/j.jvs.2014.12.009</a>.
 </div>
-<div id="ref-cranleyIschemicRestPain1969" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cranleyIschemicRestPain1969" class="csl-entry" role="listitem">
 Cranley, John J. 1969. <span>“Ischemic <span>Rest Pain</span>.”</span> <em>Archives of Surgery</em> 98 (2): 187. <a href="https://doi.org/10.1001/archsurg.1969.01340080079015">https://doi.org/10.1001/archsurg.1969.01340080079015</a>.
 </div>
-<div id="ref-eslami2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-eslami2007" class="csl-entry" role="listitem">
 Eslami, Mohammad H., Maksim Zayaruzny, and Gordon A. Fitzgerald. 2007. <span>“The Adverse Effects of Race, Insurance Status, and Low Income on the Rate of Amputation in Patients Presenting with Lower Extremity Ischemia.”</span> <em>Journal of Vascular Surgery</em> 45 (1): 55–59. <a href="https://doi.org/10.1016/j.jvs.2006.09.044">https://doi.org/10.1016/j.jvs.2006.09.044</a>.
 </div>
-<div id="ref-farber2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-farber2022" class="csl-entry" role="listitem">
 Farber, Alik, Matthew T Menard, Michael S Conte, John A Kaufman, Richard J Powell, Niteesh K Choudhry, Taye H Hamza, et al. 2022. <span>“Surgery or Endovascular Therapy for Chronic Limb-Threatening Ischemia.”</span> <em>N Engl j Med</em>, 13.
 </div>
-<div id="ref-faries2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-faries2000" class="csl-entry" role="listitem">
 Faries, P. L., F. W. Logerfo, S. Arora, M. C. Pulling, D. I. Rohan, C. M. Akbari, D. R. Campbell, G. W. Gibbons, and F. B. Pomposelli. 2000. <span>“Arm Vein Conduit Is Superior to Composite Prosthetic-Autogenous Grafts in Lower Extremity Revascularization.”</span> <em>Journal of Vascular Surgery</em> 31 (6): 1119–27. <a href="https://doi.org/10.1067/mva.2000.106488">https://doi.org/10.1067/mva.2000.106488</a>.
 </div>
-<div id="ref-gerhard-herman2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gerhard-herman2017" class="csl-entry" role="listitem">
 Gerhard-Herman, Marie D., Heather L. Gornik, Coletta Barrett, Neal R. Barshes, Matthew A. Corriere, Douglas E. Drachman, Lee A. Fleisher, et al. 2017. <span>“2016 AHA/ACC Guideline on the Management of Patients with Lower Extremity Peripheral Artery Disease: Executive Summary: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines.”</span> <em>Circulation</em> 135 (12). <a href="https://doi.org/10.1161/CIR.0000000000000470">https://doi.org/10.1161/CIR.0000000000000470</a>.
 </div>
-<div id="ref-giurato2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-giurato2017" class="csl-entry" role="listitem">
 Giurato, Laura, Marco Meloni, Valentina Izzo, and Luigi Uccioli. 2017. <span>“Osteomyelitis in Diabetic Foot: A Comprehensive Overview.”</span> <em>World Journal of Diabetes</em> 8 (4): 135–42. <a href="https://doi.org/10.4239/wjd.v8.i4.135">https://doi.org/10.4239/wjd.v8.i4.135</a>.
 </div>
-<div id="ref-grundy2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-grundy2019" class="csl-entry" role="listitem">
 Grundy, Scott M., Neil J. Stone, Alison L. Bailey, Craig Beam, Kim K. Birtcher, Roger S. Blumenthal, Lynne T. Braun, et al. 2019. <span>“2018 AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Blood Cholesterol: A Report of the American College of Cardiology/American Heart Association Task&nbsp;Force&nbsp;on&nbsp;Clinical Practice Guidelines.”</span> <em>Journal of the American College of Cardiology</em> 73 (24): e285–350. <a href="https://doi.org/10.1016/j.jacc.2018.11.003">https://doi.org/10.1016/j.jacc.2018.11.003</a>.
 </div>
-<div id="ref-hicks2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hicks2018" class="csl-entry" role="listitem">
 Hicks, Caitlin W., Joseph K. Canner, Nestoras Mathioudakis, Ronald Sherman, Mahmoud B. Malas, James H. Black, and Christopher J. Abularrage. 2018. <span>“The Society for Vascular Surgery Wound, Ischemia, and Foot Infection (WIfI) Classification Independently Predicts Wound Healing in Diabetic Foot Ulcers.”</span> <em>Journal of Vascular Surgery</em> 68 (4): 1096–1103. <a href="https://doi.org/10.1016/j.jvs.2017.12.079">https://doi.org/10.1016/j.jvs.2017.12.079</a>.
 </div>
-<div id="ref-hingorani2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hingorani2016" class="csl-entry" role="listitem">
 Hingorani, Anil, Glenn M. LaMuraglia, Peter Henke, Mark H. Meissner, Lorraine Loretz, Kathya M. Zinszer, Vickie R. Driver, et al. 2016. <span>“The Management of Diabetic Foot: A Clinical Practice Guideline by the Society for Vascular Surgery in Collaboration with the American Podiatric Medical Association and the Society for Vascular Medicine.”</span> <em>Journal of Vascular Surgery</em> 63 (2): 3S–21S. <a href="https://doi.org/10.1016/j.jvs.2015.10.003">https://doi.org/10.1016/j.jvs.2015.10.003</a>.
 </div>
-<div id="ref-ho2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ho2005" class="csl-entry" role="listitem">
 Ho, Vivian, Douglas Wirthlin, Huifeng Yun, and Jeroan Allison. 2005. <span>“Physician Supply, Treatment, and Amputation Rates for Peripheral Arterial Disease.”</span> <em>Journal of Vascular Surgery</em> 42 (1): 81–87. <a href="https://doi.org/10.1016/j.jvs.2005.03.023">https://doi.org/10.1016/j.jvs.2005.03.023</a>.
 </div>
-<div id="ref-hughes2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hughes2019" class="csl-entry" role="listitem">
 Hughes, Kakra, Lucas Mota, Maria Nunez, Neil Sehgal, and Gezzer Ortega. 2019. <span>“The Effect of Income and Insurance on the Likelihood of Major Leg Amputation.”</span> <em>Journal of Vascular Surgery</em> 70 (2): 580–87. <a href="https://doi.org/10.1016/j.jvs.2018.11.028">https://doi.org/10.1016/j.jvs.2018.11.028</a>.
 </div>
-<div id="ref-hussain2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hussain2018" class="csl-entry" role="listitem">
 Hussain, Mohamad A., Mohammed Al-Omran, Mark A. Creager, Sonia S. Anand, Subodh Verma, and Deepak L. Bhatt. 2018. <span>“Antithrombotic Therapy for Peripheral&nbsp;Artery Disease: Recent Advances.”</span> <em>Journal of the American College of Cardiology</em> 71 (21): 2450–67. <a href="https://doi.org/10.1016/j.jacc.2018.03.483">https://doi.org/10.1016/j.jacc.2018.03.483</a>.
 </div>
-<div id="ref-jongsma2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jongsma2017" class="csl-entry" role="listitem">
 Jongsma, Hidde, Joost A. Bekken, George P. Akkersdijk, Sanne E. Hoeks, Hence J. Verhagen, and Bram Fioole. 2017. <span>“Angiosome-Directed Revascularization in Patients with Critical Limb Ischemia.”</span> <em>Journal of Vascular Surgery</em> 65 (4): 1208–1219.e1. <a href="https://doi.org/10.1016/j.jvs.2016.10.100">https://doi.org/10.1016/j.jvs.2016.10.100</a>.
 </div>
-<div id="ref-kalish2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kalish2010" class="csl-entry" role="listitem">
 Kalish, Jeffrey, and Allen Hamdan. 2010. <span>“Management of Diabetic Foot Problems.”</span> <em>Journal of Vascular Surgery</em> 51 (2): 476–86. <a href="https://doi.org/10.1016/j.jvs.2009.08.043">https://doi.org/10.1016/j.jvs.2009.08.043</a>.
 </div>
-<div id="ref-kayssi2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kayssi2016" class="csl-entry" role="listitem">
 Kayssi, Ahmed, Talal Al‐Atassi, George Oreopoulos, Graham Roche‐Nagle, Kong Teng Tan, and Dheeraj K Rajan. 2016. <span>“Drug‐eluting Balloon Angioplasty Versus Uncoated Balloon Angioplasty for Peripheral Arterial Disease of the Lower Limbs.”</span> <em>The Cochrane Database of Systematic Reviews</em> 2016 (8): CD011319. <a href="https://doi.org/10.1002/14651858.CD011319.pub2">https://doi.org/10.1002/14651858.CD011319.pub2</a>.
 </div>
-<div id="ref-malone1987" class="csl-entry" role="doc-biblioentry">
+<div id="ref-malone1987" class="csl-entry" role="listitem">
 Malone, J. M., G. G. Anderson, S. G. Lalka, R. M. Hagaman, R. Henry, K. E. McIntyre, and V. M. Bernhard. 1987. <span>“Prospective Comparison of Noninvasive Techniques for Amputation Level Selection.”</span> <em>American Journal of Surgery</em> 154 (2): 179–84. <a href="https://doi.org/10.1016/0002-9610(87)90174-7">https://doi.org/10.1016/0002-9610(87)90174-7</a>.
 </div>
-<div id="ref-mawatari2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mawatari2000" class="csl-entry" role="listitem">
 Mawatari, K., Yoichi Muto, K. Komori, K. Kawasaki, J. Okazaki, D. H. Eguchi, S. Kuma, T. Ikeda, and K. Sugimachi. 2000. <span>“Value of the Profundapopliteal Collateral Index for Selecting Between an in-Flow and Sequential Arterial Reconstruction in Patients with Multisegment Arterial Occlusive Disease.”</span> <em>Journal of Cardiovascular Surgery</em> 41 (January): 79–82.
 </div>
-<div id="ref-meyer2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-meyer2018" class="csl-entry" role="listitem">
 Meyer, Alexander, Cornelia Fiessler, Konstantinos Stavroulakis, Giovanni Torsello, Theodosios Bisdas, Werner Lang, and CRITISCH collaborators. 2018. <span>“Outcomes of Dialysis Patients with Critical Limb Ischemia After Revascularization Compared with Patients with Normal Renal Function.”</span> <em>Journal of Vascular Surgery</em> 68 (3): 822–829.e1. <a href="https://doi.org/10.1016/j.jvs.2017.12.048">https://doi.org/10.1016/j.jvs.2017.12.048</a>.
 </div>
-<div id="ref-millsSocietyVascularSurgery2014a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-millsSocietyVascularSurgery2014a" class="csl-entry" role="listitem">
 Mills, Joseph L., Michael S. Conte, David G. Armstrong, Frank B. Pomposelli, Andres Schanzer, Anton N. Sidawy, and George Andros. 2014. <span>“The <span>Society</span> for <span>Vascular Surgery Lower Extremity Threatened Limb Classification System</span>: <span>Risk</span> Stratification Based on <span>Wound</span>, <span>Ischemia</span>, and Foot <span>Infection</span> (<span>WIfI</span>).”</span> <em>Journal of Vascular Surgery</em> 59 (1): 220–234.e2. <a href="https://doi.org/10.1016/j.jvs.2013.08.003">https://doi.org/10.1016/j.jvs.2013.08.003</a>.
 </div>
-<div id="ref-mohler2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mohler2012" class="csl-entry" role="listitem">
 Mohler, Emile R., Heather L. Gornik, Marie Gerhard-Herman, Sanjay Misra, Jeffrey W. Olin, R. Eugene Zierler, Michael J. Wolk, et al. 2012. <span>“ACCF/ACR/AIUM/ASE/ASN/ICAVL/SCAI/SCCT/SIR/SVM/SVS 2012 Appropriate Use Criteria for Peripheral Vascular Ultrasound and Physiological Testing Part i: Arterial Ultrasound and Physiological Testing.”</span> <em>Journal of the American College of Cardiology</em> 60 (3): 242–76. <a href="https://doi.org/10.1016/j.jacc.2012.02.009">https://doi.org/10.1016/j.jacc.2012.02.009</a>.
 </div>
-<div id="ref-moreira2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-moreira2016" class="csl-entry" role="listitem">
 Moreira, Carla C., Alexander D. Leung, Alik Farber, Denis Rybin, Gheorghe Doros, Jeffrey J. Siracuse, Jeffrey Kalish, and Mohammad H. Eslami. 2016. <span>“Alternative Conduit for Infrageniculate Bypass in Patients with Critical Limb Ischemia.”</span> <em>Journal of Vascular Surgery</em> 64 (1): 131–139.e1. <a href="https://doi.org/10.1016/j.jvs.2016.01.042">https://doi.org/10.1016/j.jvs.2016.01.042</a>.
 </div>
-<div id="ref-mustapha2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mustapha2016" class="csl-entry" role="listitem">
 Mustapha, J. A., Sara M. Finton, Larry J. Diaz-Sandoval, Fadi A. Saab, and Larry E. Miller. 2016. <span>“Percutaneous Transluminal Angioplasty in Patients with Infrapopliteal Arterial Disease: Systematic Review and Meta-Analysis.”</span> <em>Circulation: Cardiovascular Interventions</em> 9 (5): e003468. <a href="https://doi.org/10.1161/CIRCINTERVENTIONS.115.003468">https://doi.org/10.1161/CIRCINTERVENTIONS.115.003468</a>.
 </div>
-<div id="ref-norgren2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-norgren2007" class="csl-entry" role="listitem">
 Norgren, L., W. R. Hiatt, J. A. Dormandy, M. R. Nehler, K. A. Harris, and F. G. R. Fowkes. 2007. <span>“Inter-Society Consensus for the Management of Peripheral Arterial Disease (TASC II).”</span> <em>Journal of Vascular Surgery</em> 45 (1): S5–67. <a href="https://doi.org/10.1016/j.jvs.2006.12.037">https://doi.org/10.1016/j.jvs.2006.12.037</a>.
 </div>
-<div id="ref-obara2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-obara2014" class="csl-entry" role="listitem">
 Obara, Andrzej, Miroslaw A. Dziekiewicz, Marek Maruszynski, Adam Witkowski, Maciej Dąbrowski, and Zbigniew Chmielak. 2014. <span>“Lymphatic Complications After Vascular Interventions.”</span> <em>Wideochirurgia I Inne Techniki Maloinwazyjne = Videosurgery and Other Miniinvasive Techniques</em> 9 (3): 420–26. <a href="https://doi.org/10.5114/wiitm.2014.43021">https://doi.org/10.5114/wiitm.2014.43021</a>.
 </div>
-<div id="ref-popplewell2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-popplewell2019" class="csl-entry" role="listitem">
 Popplewell, Matthew A, and Andrew W Bradbury. 2019. <span>“110. Infrainguinal Disease : Endovascular Therapy.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>. Elsevier Inc.
 </div>
-<div id="ref-resnick2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-resnick2004" class="csl-entry" role="listitem">
 Resnick, Helaine E., Robert S. Lindsay, Mary McGrae McDermott, Richard B. Devereux, Kristina L. Jones, Richard R. Fabsitz, and Barbara V. Howard. 2004. <span>“Relationship of High and Low Ankle Brachial Index to All-Cause and Cardiovascular Disease Mortality: The Strong Heart Study.”</span> <em>Circulation</em> 109 (6): 733–39. <a href="https://doi.org/10.1161/01.CIR.0000112642.63927.54">https://doi.org/10.1161/01.CIR.0000112642.63927.54</a>.
 </div>
-<div id="ref-strobl2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-strobl2013" class="csl-entry" role="listitem">
 Strobl, Frederik F., Klaus Brechtel, Jörg Schmehl, Thomas Zeller, Maximilian F. Reiser, Claus D. Claussen, and Gunnar Tepe. 2013. <span>“Twelve-Month Results of a Randomized Trial Comparing Mono with Dual Antiplatelet Therapy in Endovascularly Treated Patients with Peripheral Artery Disease.”</span> <em>Journal of Endovascular Therapy: An Official Journal of the International Society of Endovascular Specialists</em> 20 (5): 699–706. <a href="https://doi.org/10.1583/13-4275MR.1">https://doi.org/10.1583/13-4275MR.1</a>.
 </div>
-<div id="ref-taylor1987" class="csl-entry" role="doc-biblioentry">
+<div id="ref-taylor1987" class="csl-entry" role="listitem">
 Taylor, L. M., J. M. Edwards, B. Brant, E. S. Phinney, and J. M. Porter. 1987. <span>“Autogenous Reversed Vein Bypass for Lower Extremity Ischemia in Patients with Absent or Inadequate Greater Saphenous Vein.”</span> <em>American Journal of Surgery</em> 153 (5): 505–10. <a href="https://doi.org/10.1016/0002-9610(87)90803-8">https://doi.org/10.1016/0002-9610(87)90803-8</a>.
 </div>
-<div id="ref-tepe2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tepe2012" class="csl-entry" role="listitem">
 Tepe, Gunnar, Rüdiger Bantleon, Klaus Brechtel, Jörg Schmehl, Thomas Zeller, Claus D. Claussen, and Frederik F. Strobl. 2012. <span>“Management of Peripheral Arterial Interventions with Mono or Dual Antiplatelet Therapy–the MIRROR Study: A Randomised and Double-Blinded Clinical Trial.”</span> <em>European Radiology</em> 22 (9): 1998–2006. <a href="https://doi.org/10.1007/s00330-012-2441-2">https://doi.org/10.1007/s00330-012-2441-2</a>.
 </div>
-<div id="ref-vitti1994" class="csl-entry" role="doc-biblioentry">
+<div id="ref-vitti1994" class="csl-entry" role="listitem">
 Vitti, M. J., D. V. Robinson, M. Hauer-Jensen, B. W. Thompson, T. J. Ranval, G. Barone, R. W. Barnes, and J. F. Eidt. 1994. <span>“Wound Healing in Forefoot Amputations: The Predictive Value of Toe Pressure.”</span> <em>Annals of Vascular Surgery</em> 8 (1): 99–106. <a href="https://doi.org/10.1007/BF02133411">https://doi.org/10.1007/BF02133411</a>.
 </div>
-<div id="ref-weaver2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-weaver2014" class="csl-entry" role="listitem">
 Weaver, Marvin V., Rami O. Tadros, Varinder S. Phangureh, Peter L. Faries, Robert A. Lookstein, and Michael L. Marin. 2014. <span>“A Novel Approach to the Management of a Recurrent Lymphocele Following a Femoral-Femoral Bypass.”</span> <em>Journal of Vascular Surgery</em> 59 (4): 1109–11. <a href="https://doi.org/10.1016/j.jvs.2013.04.049">https://doi.org/10.1016/j.jvs.2013.04.049</a>.
 </div>
-<div id="ref-wickström2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-wickström2017" class="csl-entry" role="listitem">
 Wickström, J.-E., M. Laivuori, E. Aro, R. T. Sund, O. Hautero, M. Venermo, J. Jalkanen, and H. Hakovirta. 2017. <span>“Toe Pressure and Toe Brachial Index Are Predictive of Cardiovascular Mortality, Overall Mortality, and Amputation Free Survival in Patients with Peripheral Artery Disease.”</span> <em>European Journal of Vascular and Endovascular Surgery</em> 53 (5): 696–703. <a href="https://doi.org/10.1016/j.ejvs.2017.02.012">https://doi.org/10.1016/j.ejvs.2017.02.012</a>.
 </div>
-<div id="ref-zierler2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-zierler2018" class="csl-entry" role="listitem">
 Zierler, R. Eugene, William D. Jordan, Brajesh K. Lal, Firas Mussa, Steven Leers, Joseph Fulton, William Pevec, Andrew Hill, and M. Hassan Murad. 2018. <span>“The Society for Vascular Surgery Practice Guidelines on Follow-up After Vascular Surgery Arterial Procedures.”</span> <em>Journal of Vascular Surgery</em> 68 (1): 256–84. <a href="https://doi.org/10.1016/j.jvs.2018.04.018">https://doi.org/10.1016/j.jvs.2018.04.018</a>.
 </div>
 </div>
@@ -918,9 +957,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -932,7 +985,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -960,31 +1030,136 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
@@ -1003,7 +1178,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

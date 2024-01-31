@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,15 +12,21 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -34,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -119,11 +124,16 @@ cookieconsent.run({
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./abdominal-aneurysms.html">Abdomen</a></li><li class="breadcrumb-item"><a href="./renal.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -131,262 +141,295 @@ cookieconsent.run({
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Vascular Surgery Exam Prep</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./authors.html" class="sidebar-item-text sidebar-link">Authors and Contributors</a>
+  <a href="./authors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authors and Contributors</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Head and Neck</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Head and Neck</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></a>
+  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></a>
+  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Upper Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Upper Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></a>
+  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tos.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></a>
+  <a href="./tos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></a>
+  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Thorax</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Thorax</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dissection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></a>
+  <a href="./dissection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taaa.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></a>
+  <a href="./taaa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></a>
+  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></a>
+  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Abdomen</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Abdomen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></a>
+  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></a>
+  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./renal.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></a>
+  <a href="./renal.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></a>
+  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></a>
+  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Lower Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Lower Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./claudication.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></a>
+  <a href="./claudication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clti.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></a>
+  <a href="./clti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ali.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></a>
+  <a href="./ali.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></a>
+  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></a>
+  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">General</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">General</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></a>
+  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./radiation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></a>
+  <a href="./radiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></a>
+  <a href="./endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rapid.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></a>
+  <a href="./rapid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#renovascular-ischemic-disease" id="toc-renovascular-ischemic-disease" class="nav-link active" data-scroll-target="#renovascular-ischemic-disease"> <span class="header-section-number">12.1</span> Renovascular Ischemic Disease</a>
+  <li><a href="#renovascular-ischemic-disease" id="toc-renovascular-ischemic-disease" class="nav-link active" data-scroll-target="#renovascular-ischemic-disease"><span class="header-section-number">12.1</span> Renovascular Ischemic Disease</a>
   <ul class="collapse">
-  <li><a href="#pathophysiology" id="toc-pathophysiology" class="nav-link" data-scroll-target="#pathophysiology"> <span class="header-section-number">12.1.1</span> Pathophysiology</a></li>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"> <span class="header-section-number">12.1.2</span> Evaluation</a></li>
-  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"> <span class="header-section-number">12.1.3</span> Management</a></li>
+  <li><a href="#pathophysiology" id="toc-pathophysiology" class="nav-link" data-scroll-target="#pathophysiology"><span class="header-section-number">12.1.1</span> Pathophysiology</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"><span class="header-section-number">12.1.2</span> Evaluation</a></li>
+  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"><span class="header-section-number">12.1.3</span> Management</a></li>
   </ul></li>
-  <li><a href="#sec-fibromuscular-dysplasia" id="toc-sec-fibromuscular-dysplasia" class="nav-link" data-scroll-target="#sec-fibromuscular-dysplasia"> <span class="header-section-number">12.2</span> Fibromuscular Dysplasia (FMD)</a>
+  <li><a href="#sec-fibromuscular-dysplasia" id="toc-sec-fibromuscular-dysplasia" class="nav-link" data-scroll-target="#sec-fibromuscular-dysplasia"><span class="header-section-number">12.2</span> Fibromuscular Dysplasia (FMD)</a>
   <ul class="collapse">
-  <li><a href="#demographics" id="toc-demographics" class="nav-link" data-scroll-target="#demographics"> <span class="header-section-number">12.2.1</span> Demographics</a></li>
-  <li><a href="#evaluation-1" id="toc-evaluation-1" class="nav-link" data-scroll-target="#evaluation-1"> <span class="header-section-number">12.2.2</span> Evaluation</a></li>
-  <li><a href="#management-1" id="toc-management-1" class="nav-link" data-scroll-target="#management-1"> <span class="header-section-number">12.2.3</span> Management</a></li>
+  <li><a href="#demographics" id="toc-demographics" class="nav-link" data-scroll-target="#demographics"><span class="header-section-number">12.2.1</span> Demographics</a></li>
+  <li><a href="#evaluation-1" id="toc-evaluation-1" class="nav-link" data-scroll-target="#evaluation-1"><span class="header-section-number">12.2.2</span> Evaluation</a></li>
+  <li><a href="#management-1" id="toc-management-1" class="nav-link" data-scroll-target="#management-1"><span class="header-section-number">12.2.3</span> Management</a></li>
   </ul></li>
-  <li><a href="#renal-artery-aneurysms" id="toc-renal-artery-aneurysms" class="nav-link" data-scroll-target="#renal-artery-aneurysms"> <span class="header-section-number">12.3</span> Renal Artery Aneurysms</a>
+  <li><a href="#renal-artery-aneurysms" id="toc-renal-artery-aneurysms" class="nav-link" data-scroll-target="#renal-artery-aneurysms"><span class="header-section-number">12.3</span> Renal Artery Aneurysms</a>
   <ul class="collapse">
-  <li><a href="#demographics-1" id="toc-demographics-1" class="nav-link" data-scroll-target="#demographics-1"> <span class="header-section-number">12.3.1</span> Demographics</a></li>
-  <li><a href="#anatomy" id="toc-anatomy" class="nav-link" data-scroll-target="#anatomy"> <span class="header-section-number">12.3.2</span> Anatomy</a></li>
-  <li><a href="#presentation-1" id="toc-presentation-1" class="nav-link" data-scroll-target="#presentation-1"> <span class="header-section-number">12.3.3</span> Presentation</a></li>
-  <li><a href="#management-2" id="toc-management-2" class="nav-link" data-scroll-target="#management-2"> <span class="header-section-number">12.3.4</span> Management</a></li>
+  <li><a href="#demographics-1" id="toc-demographics-1" class="nav-link" data-scroll-target="#demographics-1"><span class="header-section-number">12.3.1</span> Demographics</a></li>
+  <li><a href="#anatomy" id="toc-anatomy" class="nav-link" data-scroll-target="#anatomy"><span class="header-section-number">12.3.2</span> Anatomy</a></li>
+  <li><a href="#presentation-1" id="toc-presentation-1" class="nav-link" data-scroll-target="#presentation-1"><span class="header-section-number">12.3.3</span> Presentation</a></li>
+  <li><a href="#management-2" id="toc-management-2" class="nav-link" data-scroll-target="#management-2"><span class="header-section-number">12.3.4</span> Management</a></li>
   </ul></li>
-  <li><a href="#renal-artery-dissection" id="toc-renal-artery-dissection" class="nav-link" data-scroll-target="#renal-artery-dissection"> <span class="header-section-number">12.4</span> Renal Artery Dissection</a>
+  <li><a href="#renal-artery-dissection" id="toc-renal-artery-dissection" class="nav-link" data-scroll-target="#renal-artery-dissection"><span class="header-section-number">12.4</span> Renal Artery Dissection</a>
   <ul class="collapse">
-  <li><a href="#demographics-2" id="toc-demographics-2" class="nav-link" data-scroll-target="#demographics-2"> <span class="header-section-number">12.4.1</span> Demographics</a></li>
-  <li><a href="#evaluation-2" id="toc-evaluation-2" class="nav-link" data-scroll-target="#evaluation-2"> <span class="header-section-number">12.4.2</span> Evaluation</a></li>
-  <li><a href="#management-3" id="toc-management-3" class="nav-link" data-scroll-target="#management-3"> <span class="header-section-number">12.4.3</span> Management</a></li>
+  <li><a href="#demographics-2" id="toc-demographics-2" class="nav-link" data-scroll-target="#demographics-2"><span class="header-section-number">12.4.1</span> Demographics</a></li>
+  <li><a href="#evaluation-2" id="toc-evaluation-2" class="nav-link" data-scroll-target="#evaluation-2"><span class="header-section-number">12.4.2</span> Evaluation</a></li>
+  <li><a href="#management-3" id="toc-management-3" class="nav-link" data-scroll-target="#management-3"><span class="header-section-number">12.4.3</span> Management</a></li>
   </ul></li>
-  <li><a href="#nutcracker-syndrome" id="toc-nutcracker-syndrome" class="nav-link" data-scroll-target="#nutcracker-syndrome"> <span class="header-section-number">12.5</span> Nutcracker Syndrome</a>
+  <li><a href="#nutcracker-syndrome" id="toc-nutcracker-syndrome" class="nav-link" data-scroll-target="#nutcracker-syndrome"><span class="header-section-number">12.5</span> Nutcracker Syndrome</a>
   <ul class="collapse">
-  <li><a href="#demographics-3" id="toc-demographics-3" class="nav-link" data-scroll-target="#demographics-3"> <span class="header-section-number">12.5.1</span> Demographics</a></li>
-  <li><a href="#evaluation-3" id="toc-evaluation-3" class="nav-link" data-scroll-target="#evaluation-3"> <span class="header-section-number">12.5.2</span> Evaluation</a></li>
-  <li><a href="#management-4" id="toc-management-4" class="nav-link" data-scroll-target="#management-4"> <span class="header-section-number">12.5.3</span> Management</a></li>
+  <li><a href="#demographics-3" id="toc-demographics-3" class="nav-link" data-scroll-target="#demographics-3"><span class="header-section-number">12.5.1</span> Demographics</a></li>
+  <li><a href="#evaluation-3" id="toc-evaluation-3" class="nav-link" data-scroll-target="#evaluation-3"><span class="header-section-number">12.5.2</span> Evaluation</a></li>
+  <li><a href="#management-4" id="toc-management-4" class="nav-link" data-scroll-target="#management-4"><span class="header-section-number">12.5.3</span> Management</a></li>
   </ul></li>
-  <li><a href="#renal-vein-thrombosis" id="toc-renal-vein-thrombosis" class="nav-link" data-scroll-target="#renal-vein-thrombosis"> <span class="header-section-number">12.6</span> Renal Vein Thrombosis</a>
+  <li><a href="#renal-vein-thrombosis" id="toc-renal-vein-thrombosis" class="nav-link" data-scroll-target="#renal-vein-thrombosis"><span class="header-section-number">12.6</span> Renal Vein Thrombosis</a>
   <ul class="collapse">
-  <li><a href="#evaluation-4" id="toc-evaluation-4" class="nav-link" data-scroll-target="#evaluation-4"> <span class="header-section-number">12.6.1</span> Evaluation</a></li>
-  <li><a href="#management-5" id="toc-management-5" class="nav-link" data-scroll-target="#management-5"> <span class="header-section-number">12.6.2</span> Management</a></li>
+  <li><a href="#evaluation-4" id="toc-evaluation-4" class="nav-link" data-scroll-target="#evaluation-4"><span class="header-section-number">12.6.1</span> Evaluation</a></li>
+  <li><a href="#management-5" id="toc-management-5" class="nav-link" data-scroll-target="#management-5"><span class="header-section-number">12.6.2</span> Management</a></li>
   </ul></li>
-  <li><a href="#renal-arteriovenous-fistula" id="toc-renal-arteriovenous-fistula" class="nav-link" data-scroll-target="#renal-arteriovenous-fistula"> <span class="header-section-number">12.7</span> Renal Arteriovenous Fistula</a>
+  <li><a href="#renal-arteriovenous-fistula" id="toc-renal-arteriovenous-fistula" class="nav-link" data-scroll-target="#renal-arteriovenous-fistula"><span class="header-section-number">12.7</span> Renal Arteriovenous Fistula</a>
   <ul class="collapse">
-  <li><a href="#presentation-4" id="toc-presentation-4" class="nav-link" data-scroll-target="#presentation-4"> <span class="header-section-number">12.7.1</span> Presentation</a></li>
-  <li><a href="#evaluation-5" id="toc-evaluation-5" class="nav-link" data-scroll-target="#evaluation-5"> <span class="header-section-number">12.7.2</span> Evaluation</a></li>
-  <li><a href="#management-6" id="toc-management-6" class="nav-link" data-scroll-target="#management-6"> <span class="header-section-number">12.7.3</span> Management</a></li>
+  <li><a href="#presentation-4" id="toc-presentation-4" class="nav-link" data-scroll-target="#presentation-4"><span class="header-section-number">12.7.1</span> Presentation</a></li>
+  <li><a href="#evaluation-5" id="toc-evaluation-5" class="nav-link" data-scroll-target="#evaluation-5"><span class="header-section-number">12.7.2</span> Evaluation</a></li>
+  <li><a href="#management-6" id="toc-management-6" class="nav-link" data-scroll-target="#management-6"><span class="header-section-number">12.7.3</span> Management</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -396,19 +439,15 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    eBook Companion for Audible Bleeding Podcast Series
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -1170,143 +1209,143 @@ cookieconsent.run({
 <p>Treated most often with angiogram, covered stent or highly selective micro-coil embolization. <span class="citation" data-cites="ginatTranscatheterRenalArtery2009 saliouIdiopathicRenalArteriovenous1998">(<a href="references.html#ref-ginatTranscatheterRenalArtery2009" role="doc-biblioref">Ginat, Saad, and Turba 2009</a>; <a href="references.html#ref-saliouIdiopathicRenalArteriovenous1998" role="doc-biblioref">Saliou et al. 1998</a>)</span></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-ananthan2017" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-ananthan2017" class="csl-entry" role="listitem">
 Ananthan, K., S. Onida, and A. H. Davies. 2017. <span>“Nutcracker Syndrome: An Update on Current Diagnostic Criteria and Management Guidelines.”</span> <em>European Journal of Vascular and Endovascular Surgery: The Official Journal of the European Society for Vascular Surgery</em> 53 (6): 886–94. <a href="https://doi.org/10.1016/j.ejvs.2017.02.015">https://doi.org/10.1016/j.ejvs.2017.02.015</a>.
 </div>
-<div id="ref-asgharRenalVeinThrombosis2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-asgharRenalVeinThrombosis2007" class="csl-entry" role="listitem">
 Asghar, M., K. Ahmed, S. S. Shah, M. K. Siddique, P. Dasgupta, and M. S. Khan. 2007. <span>“Renal <span>Vein Thrombosis</span>.”</span> <em>European Journal of Vascular and Endovascular Surgery</em> 34 (2): 217–23. <a href="https://doi.org/10.1016/j.ejvs.2007.02.017">https://doi.org/10.1016/j.ejvs.2007.02.017</a>.
 </div>
-<div id="ref-benjamin126RenovascularDisease2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-benjamin126RenovascularDisease2019" class="csl-entry" role="listitem">
 Benjamin, Marshall E, and Kimberley J Hansen. 2019. <span>“126: <span>Renovascular Disease</span> : <span>Open Surgical Treatment</span>.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>, Ninth. Vol. 2. <span>Elsevier Inc.</span> <a href="https://doi.org/10.1016/B978-1-4557-5304-8.00145-X">https://doi.org/10.1016/B978-1-4557-5304-8.00145-X</a>.
 </div>
-<div id="ref-calligaro2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-calligaro2019" class="csl-entry" role="listitem">
 Calligaro, Keith D, and Matthew J Dougherty. 2019. <span>“128: Renovascular Disease: Aneurysms and Arteriovenous Fistulae.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 9th ed. Elsevier Inc.
 </div>
-<div id="ref-colemanRenalArteryAneurysms2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-colemanRenalArteryAneurysms2015" class="csl-entry" role="listitem">
 Coleman, Dawn M., and James C. Stanley. 2015. <span>“Renal Artery Aneurysms.”</span> <em>Journal of Vascular Surgery</em> 62 (3): 779–85. <a href="https://doi.org/10.1016/j.jvs.2015.05.034">https://doi.org/10.1016/j.jvs.2015.05.034</a>.
 </div>
-<div id="ref-cooperStentingMedicalTherapy2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cooperStentingMedicalTherapy2014" class="csl-entry" role="listitem">
 Cooper, Christopher J., Timothy P. Murphy, Donald E. Cutlip, Kenneth Jamerson, William Henrich, Diane M. Reid, David J. Cohen, et al. 2014. <span>“Stenting and <span>Medical Therapy</span> for <span>Atherosclerotic Renal-Artery Stenosis</span>.”</span> <em>New England Journal of Medicine</em> 370 (1): 13–22. <a href="https://doi.org/10.1056/NEJMoa1310753">https://doi.org/10.1056/NEJMoa1310753</a>.
 </div>
-<div id="ref-daviesLongtermOutcomesPercutaneous2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-daviesLongtermOutcomesPercutaneous2008" class="csl-entry" role="listitem">
 Davies, Mark G., Wael E. Saad, Eric K. Peden, Imran T. Mohiuddin, Joseph J. Naoum, and Alan B. Lumsden. 2008. <span>“The Long-Term Outcomes of Percutaneous Therapy for Renal Artery Fibromuscular Dysplasia.”</span> <em>Journal of Vascular Surgery</em> 48 (4): 865–71. <a href="https://doi.org/10.1016/j.jvs.2008.05.030">https://doi.org/10.1016/j.jvs.2008.05.030</a>.
 </div>
-<div id="ref-edwards127RenovascularDisease2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-edwards127RenovascularDisease2019" class="csl-entry" role="listitem">
 Edwards, Matthew S, and Christopher J Cooper. 2019. <span>“127: <span>Renovascular Disease</span> : <span>Endovascular Treatment</span>.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>, Ninth. Vol. 2. <span>Elsevier Inc.</span> <a href="https://doi.org/10.1016/B978-1-4557-5304-8.00146-1">https://doi.org/10.1016/B978-1-4557-5304-8.00146-1</a>.
 </div>
-<div id="ref-ehlert139TakayasuDisease2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ehlert139TakayasuDisease2019" class="csl-entry" role="listitem">
 Ehlert, Bryan A, and Christopher J. Abularrage. 2019. <span>“139. <span>Takayasu Disease</span>.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>, Ninth, 17. <span>Elsevier Inc.</span>
 </div>
-<div id="ref-erben2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-erben2015" class="csl-entry" role="listitem">
 Erben, Young, Peter Gloviczki, Manju Kalra, Haraldur Bjarnason, Nanette R. Reed, Audra A. Duncan, Gustavo S. Oderich, and Thomas C. Bower. 2015. <span>“Treatment of Nutcracker Syndrome with Open and Endovascular Interventions.”</span> <em>Journal of Vascular Surgery. Venous and Lymphatic Disorders</em> 3 (4): 389–96. <a href="https://doi.org/10.1016/j.jvsv.2015.04.003">https://doi.org/10.1016/j.jvsv.2015.04.003</a>.
 </div>
-<div id="ref-galan2006" class="csl-entry" role="doc-biblioentry">
+<div id="ref-galan2006" class="csl-entry" role="listitem">
 Galan, Anjela, Shawn E Cowper, and Richard Bucala. 2006. <span>“Nephrogenic Systemic FIbrosis (Nephrogenic FIbrosing Dermopathy).”</span> <em>Current Opinion in Rheumatology</em> 18: 614–17.
 </div>
-<div id="ref-ginatTranscatheterRenalArtery2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ginatTranscatheterRenalArtery2009" class="csl-entry" role="listitem">
 Ginat, Daniel T., Wael E. A. Saad, and Ulku C. Turba. 2009. <span>“Transcatheter <span>Renal Artery Embolization</span>: <span>Clinical Applications</span> and <span>Techniques</span>.”</span> <em>Techniques in Vascular and Interventional Radiology</em> 12 (4): 224–39. <a href="https://doi.org/10.1053/j.tvir.2009.09.007">https://doi.org/10.1053/j.tvir.2009.09.007</a>.
 </div>
-<div id="ref-hiramoto2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hiramoto2005" class="csl-entry" role="listitem">
 Hiramoto, Jade, Kimberley J. Hansen, Xian Mang Pan, Matthew S. Edwards, Rajiv Sawhney, and Joseph H. Rapp. 2005. <span>“Atheroemboli During Renal Artery Angioplasty: An Ex Vivo Study.”</span> <em>Journal of Vascular Surgery</em> 41 (6): 1026–30. <a href="https://doi.org/10.1016/j.jvs.2005.02.042">https://doi.org/10.1016/j.jvs.2005.02.042</a>.
 </div>
-<div id="ref-hirschACCAHA20052006" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hirschACCAHA20052006" class="csl-entry" role="listitem">
 Hirsch, Alan T., Ziv J. Haskal, Norman R. Hertzer, Curtis W. Bakal, Mark A. Creager, Jonathan L. Halperin, Loren F. Hiratzka, et al. 2006. <span>“<span>ACC</span>/<span>AHA</span> 2005 <span>Practice Guidelines</span> for the <span>Management</span> of <span>Patients With Peripheral Arterial Disease</span> (<span>Lower Extremity</span>, <span>Renal</span>, <span>Mesenteric</span>, and <span>Abdominal Aortic</span>): <span>A Collaborative Report</span> from the <span>American Association</span> for <span>Vascular Surgery</span>/<span>Society</span> for <span>Vascular Surgery</span>,* <span>Society</span> for <span>Cardiovascular Angiography</span> and <span>Interventions</span>, <span>Society</span> for <span>Vascular Medicine</span> and <span>Biology</span>, <span>Society</span> of <span>Interventional Radiology</span>, and the <span>ACC</span>/<span>AHA Task Force</span> on <span>Practice Guidelines</span> (<span>Writing Committee</span> to <span>Develop Guidelines</span> for the <span>Management</span> of <span>Patients With Peripheral Arterial Disease</span>): <span>Endorsed</span> by the <span>American Association</span> of <span>Cardiovascular</span> and <span>Pulmonary Rehabilitation</span>; <span>National Heart</span>, <span>Lung</span>, and <span>Blood Institute</span>; <span>Society</span> for <span>Vascular Nursing</span>; <span>TransAtlantic Inter-Society Consensus</span>; and <span>Vascular Disease Foundation</span>.”</span> <em>Circulation</em> 113 (11). <a href="https://doi.org/10.1161/CIRCULATIONAHA.106.174526">https://doi.org/10.1161/CIRCULATIONAHA.106.174526</a>.
 </div>
-<div id="ref-hoffmannRoleDuplexScanning1991" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hoffmannRoleDuplexScanning1991" class="csl-entry" role="listitem">
 Hoffmann, Ulrich, James M. Edwards, Stephen Carter, Martin L. Goldman, John D. Harley, Molly J. Zaccardi, and D. Eugene Strandness. 1991. <span>“Role of Duplex Scanning for the Detection of Atherosclerotic Renal Artery Disease.”</span> <em>Kidney International</em> 39 (6): 1232–39. <a href="https://doi.org/10.1038/ki.1991.156">https://doi.org/10.1038/ki.1991.156</a>.
 </div>
-<div id="ref-hunter174AcquiredArteriovenous2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hunter174AcquiredArteriovenous2019" class="csl-entry" role="listitem">
 Hunter, Glenn C, Scott S. Berman, and Eric M. Walser. 2019. <span>“174. <span>Acquired Arteriovenous Fistulas</span>.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>, Ninth, 20. <span>Elsevier Inc.</span>
 </div>
-<div id="ref-astralinvestigatorsRevascularizationMedicalTherapy2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-astralinvestigatorsRevascularizationMedicalTherapy2009" class="csl-entry" role="listitem">
 Investigators, ASTRAL. 2009. <span>“Revascularization Versus <span>Medical Therapy</span> for <span>Renal-Artery Stenosis</span>.”</span> <em>The New England Journal of Medicine</em>, 10.
 </div>
-<div id="ref-jenkinsOutcomesHypertensivePatients2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jenkinsOutcomesHypertensivePatients2015" class="csl-entry" role="listitem">
 Jenkins, Thomas L., Mary Grace Baker, Aparna R. Baheti, Aditya M. Sharma, James T. Patrie, J. Fritz Angle, and Alan H. Matsumoto. 2015. <span>“Outcomes of <span>Hypertensive Patients</span> with <span>Renal Fibromuscular Dysplasia Compared</span> with <span>Patients</span> with <span>Concomitant Atherosclerotic Renal Artery Stenosis</span> Following <span>Endovascular Therapy</span>.”</span> <em>Journal of Vascular and Interventional Radiology</em> 26 (5): 625–33. <a href="https://doi.org/10.1016/j.jvir.2015.01.027">https://doi.org/10.1016/j.jvir.2015.01.027</a>.
 </div>
-<div id="ref-kim2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kim2011" class="csl-entry" role="listitem">
 Kim, Kyung Won, Jeong Yeon Cho, Seung Hyup Kim, Jeong-Hee Yoon, Dae Sik Kim, Jin Wook Chung, and Jae Hyung Park. 2011. <span>“Diagnostic Value of Computed Tomographic Findings of Nutcracker Syndrome: Correlation with Renal Venography and Renocaval Pressure Gradients.”</span> <em>European Journal of Radiology</em> 80 (3): 648–54. <a href="https://doi.org/10.1016/j.ejrad.2010.08.044">https://doi.org/10.1016/j.ejrad.2010.08.044</a>.
 </div>
-<div id="ref-klausnerContemporaryManagementRenal2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-klausnerContemporaryManagementRenal2015" class="csl-entry" role="listitem">
 Klausner, Jill Q., Peter F. Lawrence, Michael P. Harlander-Locke, Dawn M. Coleman, James C. Stanley, Naoki Fujimura, Nathan K. Itoga, et al. 2015. <span>“The Contemporary Management of Renal Artery Aneurysms.”</span> <em>Journal of Vascular Surgery</em> 61 (4): 978–984.e1. <a href="https://doi.org/10.1016/j.jvs.2014.10.107">https://doi.org/10.1016/j.jvs.2014.10.107</a>.
 </div>
-<div id="ref-kurklinsky2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kurklinsky2010" class="csl-entry" role="listitem">
 Kurklinsky, Andrew K., and Thom W. Rooke. 2010. <span>“Nutcracker Phenomenon and Nutcracker Syndrome.”</span> <em>Mayo Clinic Proceedings</em> 85 (6): 552–59. <a href="https://doi.org/10.4065/mcp.2009.0586">https://doi.org/10.4065/mcp.2009.0586</a>.
 </div>
-<div id="ref-merkusHighIncidenceArteriovenous2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-merkusHighIncidenceArteriovenous2005" class="csl-entry" role="listitem">
 Merkus, J W S, C J A M Zeebregts, A J Hoitsma, W N J C van Asten, R A P Koene, and S H Skotnicki. 2005. <span>“High Incidence of Arteriovenous Fistula After Biopsy of Kidney Allografts.”</span> <em>British Journal of Surgery</em> 80 (3): 310–12. <a href="https://doi.org/10.1002/bjs.1800800313">https://doi.org/10.1002/bjs.1800800313</a>.
 </div>
-<div id="ref-morimotoUniqueCaseRenovascular1995" class="csl-entry" role="doc-biblioentry">
+<div id="ref-morimotoUniqueCaseRenovascular1995" class="csl-entry" role="listitem">
 Morimoto, A., A. Nakatani, K. Matsui, T. Hashimoto, M. Maeda, H. Uchida, and K. Dohi. 1995. <span>“A Unique Case of Renovascular Hypertension Caused by Combined Renal Artery Disease.”</span> <em>Hypertension Research: Official Journal of the Japanese Society of Hypertension</em> 18 (3): 255–57. <a href="https://doi.org/10.1291/hypres.18.255">https://doi.org/10.1291/hypres.18.255</a>.
 </div>
-<div id="ref-mullerSurgicalTreatmentRenal2003" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mullerSurgicalTreatmentRenal2003" class="csl-entry" role="listitem">
 Müller, Barbara Theresia, Lutz Reiher, Tomas Pfeiffer, Wolfram Müller, Waldemar Hort, Adina Voiculescu, Bernd Grabensee, Günther Fürst, and Wilhelm Sandmann. 2003. <span>“Surgical Treatment of Renal Artery Dissection in 25 Patients: <span>Indications</span> and Results.”</span> <em>Journal of Vascular Surgery</em> 37 (4): 761–68. <a href="https://doi.org/10.1067/mva.2003.171">https://doi.org/10.1067/mva.2003.171</a>.
 </div>
-<div id="ref-nelsonGadoliniumenhancedBreathholdThreedimensional1999" class="csl-entry" role="doc-biblioentry">
+<div id="ref-nelsonGadoliniumenhancedBreathholdThreedimensional1999" class="csl-entry" role="listitem">
 Nelson, Howard A., Maryellyn Gilfeather, John M. Holman, Edward W. Nelson, and Hyo-Chun Yoon. 1999. <span>“Gadolinium-Enhanced <span class="nocase">Breathhold Three-dimensional Time-of-Flight Renal MR Angiography</span> in the <span>Evaluation</span> of <span>Potential Renal Donors</span>.”</span> <em>Journal of Vascular and Interventional Radiology</em> 10 (2): 175–81. <a href="https://doi.org/10.1016/S1051-0443(99)70462-8">https://doi.org/10.1016/S1051-0443(99)70462-8</a>.
 </div>
-<div id="ref-olinFibromuscularDysplasiaState2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-olinFibromuscularDysplasiaState2014" class="csl-entry" role="listitem">
 Olin, Jeffrey W., Heather L. Gornik, J. Michael Bacharach, Jose Biller, Lawrence J. Fine, Bruce H. Gray, William A. Gray, et al. 2014. <span>“Fibromuscular <span>Dysplasia</span>: <span>State</span> of the <span>Science</span> and <span>Critical Unanswered Questions</span>: <span>A Scientific Statement From</span> the <span>American Heart Association</span>.”</span> <em>Circulation</em> 129 (9): 1048–78. <a href="https://doi.org/10.1161/01.cir.0000442577.96802.8c">https://doi.org/10.1161/01.cir.0000442577.96802.8c</a>.
 </div>
-<div id="ref-olin2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-olin2011" class="csl-entry" role="listitem">
 Olin, Jeffrey W., and Brett A. Sealove. 2011. <span>“Diagnosis, Management, and Future Developments of Fibromuscular Dysplasia.”</span> <em>Journal of Vascular Surgery</em> 53 (3): 826–836.e1. <a href="https://doi.org/10.1016/j.jvs.2010.10.066">https://doi.org/10.1016/j.jvs.2010.10.066</a>.
 </div>
-<div id="ref-ozbekImagedirectedColorDoppler1995" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ozbekImagedirectedColorDoppler1995" class="csl-entry" role="listitem">
 Ozbek, S. S., A. Memiş, R. Killi, E. Karaca, C. Kabasakal, and S. Mir. 1995. <span>“Image-Directed and Color <span>Doppler</span> Ultrasonography in the Diagnosis of Postbiopsy Arteriovenous Fistulas of Native Kidneys.”</span> <em>Journal of Clinical Ultrasound: JCU</em> 23 (4): 239–42. <a href="https://doi.org/10.1002/jcu.1870230406">https://doi.org/10.1002/jcu.1870230406</a>.
 </div>
-<div id="ref-quevedo2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-quevedo2014" class="csl-entry" role="listitem">
 Quevedo, Henry C., Salman A. Arain, and Nidal Abi Rafeh. 2014. <span>“Systematic Review of Endovascular Therapy for Nutcracker Syndrome and Case Presentation.”</span> <em>Cardiovascular Revascularization Medicine: Including Molecular Interventions</em> 15 (5): 305–7. <a href="https://doi.org/10.1016/j.carrev.2014.04.008">https://doi.org/10.1016/j.carrev.2014.04.008</a>.
 </div>
-<div id="ref-radermacher2001" class="csl-entry" role="doc-biblioentry">
+<div id="ref-radermacher2001" class="csl-entry" role="listitem">
 Radermacher, Jörg, Ajay Chavan, Jörg Bleck, Annabel Vitzthum, Birte Stoess, Michael Jan Gebel, Michael Galanski, Karl Martin Koch, and Hermann Haller. 2001. <span>“Use of Doppler Ultrasonography to Predict the Outcome of Therapy for Renal-Artery Stenosis.”</span> <em>New England Journal of Medicine</em> 344 (6): 410–17. <a href="https://doi.org/10.1056/NEJM200102083440603">https://doi.org/10.1056/NEJM200102083440603</a>.
 </div>
-<div id="ref-reed2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-reed2009" class="csl-entry" role="listitem">
 Reed, Nanette R., Manju Kalra, Thomas C. Bower, Terri J. Vrtiska, Joseph J. Ricotta, and Peter Gloviczki. 2009. <span>“Left Renal Vein Transposition for Nutcracker Syndrome.”</span> <em>Journal of Vascular Surgery</em> 49 (2): 386-393; discussion 393-394. <a href="https://doi.org/10.1016/j.jvs.2008.09.051">https://doi.org/10.1016/j.jvs.2008.09.051</a>.
 </div>
-<div id="ref-renaud2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-renaud2012" class="csl-entry" role="listitem">
 Renaud, Sophie, Hélène Leray-Moraguès, Leila Chenine, Ludovic Canaud, Hélène Vernhet-Kovacsik, and Bernard Canaud. 2012. <span>“Spontaneous Renal Artery Dissection with Renal Infarction.”</span> <em>Clinical Kidney Journal</em> 5 (3): 261–64. <a href="https://doi.org/10.1093/ckj/sfs047">https://doi.org/10.1093/ckj/sfs047</a>.
 </div>
-<div id="ref-rickey125RenovascularDisease2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rickey125RenovascularDisease2019" class="csl-entry" role="listitem">
 Rickey, Ashley K, and Randolph L Geary. 2019a. <span>“125: <span>Renovascular Disease</span>: <span>Pathophysiology</span>, <span>Epidemiology</span>, <span>Clinical Presentation</span>, and <span>Medical Management</span>.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>, Ninth. <span>Elsevier Inc.</span> <a href="https://doi.org/10.1016/B978-0-323-42791-3.00125-0">https://doi.org/10.1016/B978-0-323-42791-3.00125-0</a>.
 </div>
-<div id="ref-rickey2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rickey2019" class="csl-entry" role="listitem">
 ———. 2019b. <span>“125: Renovascular Disease: Pathophysiology, Epidemiology, Clinical Presentation, and Medical Management.”</span> In, 9th ed. Elsevier Inc. <a href="https://www-clinicalkey-com.cmich.idm.oclc.org/#!/content/book/3-s2.0-B9780323427913001250?indexOverride=GLOBAL">https://www-clinicalkey-com.cmich.idm.oclc.org/#!/content/book/3-s2.0-B9780323427913001250?indexOverride=GLOBAL</a>.
 </div>
-<div id="ref-saliouIdiopathicRenalArteriovenous1998" class="csl-entry" role="doc-biblioentry">
+<div id="ref-saliouIdiopathicRenalArteriovenous1998" class="csl-entry" role="listitem">
 Saliou, Christophe, Alain Raynaud, François Blanc, Michel Azencot, and Jean-Noël Fabiani. 1998. <span>“Idiopathic <span>Renal Arteriovenous Fistula</span>: <span>Treatment</span> with <span>Embolization</span>.”</span> <em>Annals of Vascular Surgery</em> 12 (1): 75–77. <a href="https://doi.org/10.1007/s100169900119">https://doi.org/10.1007/s100169900119</a>.
 </div>
-<div id="ref-schäberle2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-schäberle2016" class="csl-entry" role="listitem">
 Schäberle, W., L. Leyerer, W. Schierling, and K. Pfister. 2016. <span>“Ultrasound Diagnostics of Renal Artery Stenosis: Stenosis Criteria, CEUS and Recurrent in-Stent Stenosis.”</span> <em>Gefasschirurgie: Zeitschrift Fur Vaskulare Und Endovaskulare Chirurgie: Organ Der Deutschen Und Der Osterreichischen Gesellschaft Fur Gefasschirurgie Unter Mitarbeit Der Schweizerischen Gesellschaft Fur Gefasschirurgie</em> 21: 4–13. <a href="https://doi.org/10.1007/s00772-015-0060-3">https://doi.org/10.1007/s00772-015-0060-3</a>.
 </div>
-<div id="ref-schoolwerthRenalConsiderationsAngiotensin2001" class="csl-entry" role="doc-biblioentry">
+<div id="ref-schoolwerthRenalConsiderationsAngiotensin2001" class="csl-entry" role="listitem">
 Schoolwerth, Anton C., Domenic A. Sica, Barbara J. Ballermann, and Christopher S. Wilcox. 2001. <span>“Renal <span>Considerations</span> in <span>Angiotensin Converting Enzyme Inhibitor Therapy</span>: <span>A Statement</span> for <span>Healthcare Professionals From</span> the <span>Council</span> on the <span>Kidney</span> in <span>Cardiovascular Disease</span> and the <span>Council</span> for <span>High Blood Pressure Research</span> of the <span>American Heart Association</span>.”</span> <em>Circulation</em> 104 (16): 1985–91. <a href="https://doi.org/10.1161/hc4101.096153">https://doi.org/10.1161/hc4101.096153</a>.
 </div>
-<div id="ref-schwarzCourseRelevanceArteriovenous2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-schwarzCourseRelevanceArteriovenous2008" class="csl-entry" role="listitem">
 Schwarz, A., M. Hiss, W. Gwinner, T. Becker, H. Haller, and M. Keberle. 2008. <span>“Course and <span>Relevance</span> of <span>Arteriovenous Fistulas After Renal Transplant Biopsies</span>.”</span> <em>American Journal of Transplantation</em> 8 (4): 826–31. <a href="https://doi.org/10.1111/j.1600-6143.2008.02160.x">https://doi.org/10.1111/j.1600-6143.2008.02160.x</a>.
 </div>
-<div id="ref-singerImpactBaselineRenal2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-singerImpactBaselineRenal2009" class="csl-entry" role="listitem">
 Singer, Gregory M., Michael S. Remetz, Jeptha P. Curtis, and John F. Setaro. 2009. <span>“Impact of <span>Baseline Renal Function</span> on <span>Outcomes</span> of <span>Renal Artery Stenting</span> in <span>Hypertensive Patients</span>.”</span> <em>The Journal of Clinical Hypertension</em> 11 (11): 615–20. <a href="https://doi.org/10.1111/j.1751-7176.2009.00167.x">https://doi.org/10.1111/j.1751-7176.2009.00167.x</a>.
 </div>
-<div id="ref-textorPercutaneousRevascularizationIschemic2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-textorPercutaneousRevascularizationIschemic2013" class="csl-entry" role="listitem">
 Textor, Stephen C., Sanjay Misra, and Gustavo S. Oderich. 2013. <span>“Percutaneous Revascularization for Ischemic Nephropathy: The Past, Present, and Future.”</span> <em>Kidney International</em> 83 (1): 28–40. <a href="https://doi.org/10.1038/ki.2012.363">https://doi.org/10.1038/ki.2012.363</a>.
 </div>
-<div id="ref-velazquez-ramirez129RenovascularDisease2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-velazquez-ramirez129RenovascularDisease2019" class="csl-entry" role="listitem">
 Velazquez-ramirez, Gabriela, and Matthew A Corriere. 2019. <span>“129: <span>Renovascular Disease</span> : <span>Acute Occlusive</span> and <span>Ischemic Events</span>.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>, Ninth. <span>Elsevier Inc.</span> <a href="https://doi.org/10.1016/B978-0-323-42791-3.00129-8">https://doi.org/10.1016/B978-0-323-42791-3.00129-8</a>.
 </div>
-<div id="ref-wang2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-wang2012" class="csl-entry" role="listitem">
 Wang, Xiaobai, Yan Zhang, Chengzhi Li, and Hong Zhang. 2012. <span>“Results of Endovascular Treatment for Patients with Nutcracker Syndrome.”</span> <em>Journal of Vascular Surgery</em> 56 (1): 142–48. <a href="https://doi.org/10.1016/j.jvs.2012.01.007">https://doi.org/10.1016/j.jvs.2012.01.007</a>.
 </div>
-<div id="ref-weaverRenalRevascularizationTakayasu2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-weaverRenalRevascularizationTakayasu2004" class="csl-entry" role="listitem">
 Weaver, Fred A., S.Ram Kumar, Albert E. Yellin, Scott Anderson, Douglas B. Hood, Vincent L. Rowe, Rodanthi C. Kitridou, Roy D. Kohl, and Jason Alexander. 2004. <span>“Renal Revascularization in <span>Takayasu</span> Arteritisinduced Renal Artery Stenosis.”</span> <em>Journal of Vascular Surgery</em> 39 (4): 749–57. <a href="https://doi.org/10.1016/j.jvs.2003.12.022">https://doi.org/10.1016/j.jvs.2003.12.022</a>.
 </div>
-<div id="ref-yun2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-yun2016" class="csl-entry" role="listitem">
 Yun, Seong Jong, Jung Min Lee, Deok Ho Nam, Jung Kyu Ryu, and Sun Hwa Lee. 2016. <span>“Discriminating Renal Nutcracker Syndrome from Asymptomatic Nutcracker Phenomenon Using Multidetector Computed Tomography.”</span> <em>Abdominal Radiology (New York)</em> 41 (8): 1580–88. <a href="https://doi.org/10.1007/s00261-016-0717-8">https://doi.org/10.1007/s00261-016-0717-8</a>.
 </div>
-<div id="ref-zhuTakayasuArteritisImaging2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-zhuTakayasuArteritisImaging2012" class="csl-entry" role="listitem">
 Zhu, F P, S Luo, Z J Wang, Z Y Jin, L J Zhang, and G M Lu. 2012. <span>“Takayasu Arteritis: Imaging Spectrum at Multidetector <span>CT</span> Angiography.”</span> <em>The British Journal of Radiology</em> 85 (1020): e1282–92. <a href="https://doi.org/10.1259/bjr/25536451">https://doi.org/10.1259/bjr/25536451</a>.
 </div>
-<div id="ref-zierlerStrandnessDuplexScanning2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-zierlerStrandnessDuplexScanning2016" class="csl-entry" role="listitem">
 Zierler, R. Eugene, and David L. Dawson, eds. 2016. <em>Strandness’s Duplex Scanning in Vascular Disorders</em>. Fifth edition. <span>Philadelphia</span>: <span>Wolters Kluwer</span>.
 </div>
 </div>
@@ -1341,9 +1380,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1355,7 +1408,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -1383,31 +1453,136 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
@@ -1426,7 +1601,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

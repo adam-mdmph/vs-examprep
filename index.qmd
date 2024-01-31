@@ -64,3 +64,4 @@ knitr::write_bib(c(
 ```
 
 This book is built on [Quarto](https://quarto.org).
+

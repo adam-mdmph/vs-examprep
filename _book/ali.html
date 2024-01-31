@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,15 +12,21 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -34,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -119,11 +124,16 @@ cookieconsent.run({
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./claudication.html">Lower Extremity</a></li><li class="breadcrumb-item"><a href="./ali.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -131,249 +141,282 @@ cookieconsent.run({
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Vascular Surgery Exam Prep</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./authors.html" class="sidebar-item-text sidebar-link">Authors and Contributors</a>
+  <a href="./authors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authors and Contributors</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Head and Neck</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Head and Neck</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></a>
+  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></a>
+  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Upper Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Upper Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></a>
+  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tos.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></a>
+  <a href="./tos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></a>
+  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Thorax</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Thorax</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dissection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></a>
+  <a href="./dissection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taaa.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></a>
+  <a href="./taaa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></a>
+  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></a>
+  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Abdomen</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Abdomen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></a>
+  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></a>
+  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./renal.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></a>
+  <a href="./renal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></a>
+  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></a>
+  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Lower Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Lower Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./claudication.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></a>
+  <a href="./claudication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clti.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></a>
+  <a href="./clti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ali.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></a>
+  <a href="./ali.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></a>
+  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></a>
+  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">General</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">General</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></a>
+  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./radiation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></a>
+  <a href="./radiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></a>
+  <a href="./endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rapid.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></a>
+  <a href="./rapid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"> <span class="header-section-number">17.1</span> Overview</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">17.1</span> Overview</a>
   <ul class="collapse">
-  <li><a href="#demographics" id="toc-demographics" class="nav-link" data-scroll-target="#demographics"> <span class="header-section-number">17.1.1</span> Demographics</a></li>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"> <span class="header-section-number">17.1.2</span> Evaluation</a></li>
-  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"> <span class="header-section-number">17.1.3</span> Management</a></li>
+  <li><a href="#demographics" id="toc-demographics" class="nav-link" data-scroll-target="#demographics"><span class="header-section-number">17.1.1</span> Demographics</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"><span class="header-section-number">17.1.2</span> Evaluation</a></li>
+  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"><span class="header-section-number">17.1.3</span> Management</a></li>
   </ul></li>
-  <li><a href="#compartment-syndrome" id="toc-compartment-syndrome" class="nav-link" data-scroll-target="#compartment-syndrome"> <span class="header-section-number">17.2</span> Compartment Syndrome</a>
+  <li><a href="#compartment-syndrome" id="toc-compartment-syndrome" class="nav-link" data-scroll-target="#compartment-syndrome"><span class="header-section-number">17.2</span> Compartment Syndrome</a>
   <ul class="collapse">
-  <li><a href="#etiology-1" id="toc-etiology-1" class="nav-link" data-scroll-target="#etiology-1"> <span class="header-section-number">17.2.1</span> Etiology</a></li>
-  <li><a href="#evaluation-1" id="toc-evaluation-1" class="nav-link" data-scroll-target="#evaluation-1"> <span class="header-section-number">17.2.2</span> Evaluation</a></li>
-  <li><a href="#management-1" id="toc-management-1" class="nav-link" data-scroll-target="#management-1"> <span class="header-section-number">17.2.3</span> Management</a></li>
+  <li><a href="#etiology-1" id="toc-etiology-1" class="nav-link" data-scroll-target="#etiology-1"><span class="header-section-number">17.2.1</span> Etiology</a></li>
+  <li><a href="#evaluation-1" id="toc-evaluation-1" class="nav-link" data-scroll-target="#evaluation-1"><span class="header-section-number">17.2.2</span> Evaluation</a></li>
+  <li><a href="#management-1" id="toc-management-1" class="nav-link" data-scroll-target="#management-1"><span class="header-section-number">17.2.3</span> Management</a></li>
   </ul></li>
-  <li><a href="#blue-toe-syndrome" id="toc-blue-toe-syndrome" class="nav-link" data-scroll-target="#blue-toe-syndrome"> <span class="header-section-number">17.3</span> Blue Toe Syndrome</a>
+  <li><a href="#blue-toe-syndrome" id="toc-blue-toe-syndrome" class="nav-link" data-scroll-target="#blue-toe-syndrome"><span class="header-section-number">17.3</span> Blue Toe Syndrome</a>
   <ul class="collapse">
-  <li><a href="#etiology-and-presentation" id="toc-etiology-and-presentation" class="nav-link" data-scroll-target="#etiology-and-presentation"> <span class="header-section-number">17.3.1</span> Etiology and Presentation</a></li>
-  <li><a href="#evaluation-2" id="toc-evaluation-2" class="nav-link" data-scroll-target="#evaluation-2"> <span class="header-section-number">17.3.2</span> Evaluation</a></li>
-  <li><a href="#management-2" id="toc-management-2" class="nav-link" data-scroll-target="#management-2"> <span class="header-section-number">17.3.3</span> Management</a></li>
+  <li><a href="#etiology-and-presentation" id="toc-etiology-and-presentation" class="nav-link" data-scroll-target="#etiology-and-presentation"><span class="header-section-number">17.3.1</span> Etiology and Presentation</a></li>
+  <li><a href="#evaluation-2" id="toc-evaluation-2" class="nav-link" data-scroll-target="#evaluation-2"><span class="header-section-number">17.3.2</span> Evaluation</a></li>
+  <li><a href="#management-2" id="toc-management-2" class="nav-link" data-scroll-target="#management-2"><span class="header-section-number">17.3.3</span> Management</a></li>
   </ul></li>
-  <li><a href="#sec-pop-disease" id="toc-sec-pop-disease" class="nav-link" data-scroll-target="#sec-pop-disease"> <span class="header-section-number">17.4</span> Non-atheromatous Popliteal Artery Disease</a>
+  <li><a href="#sec-pop-disease" id="toc-sec-pop-disease" class="nav-link" data-scroll-target="#sec-pop-disease"><span class="header-section-number">17.4</span> Non-atheromatous Popliteal Artery Disease</a>
   <ul class="collapse">
-  <li><a href="#sec-paes" id="toc-sec-paes" class="nav-link" data-scroll-target="#sec-paes"> <span class="header-section-number">17.4.1</span> Popliteal Artery Entrapment Syndrome (PAES)</a></li>
-  <li><a href="#sec-cystic-adventitial-disease" id="toc-sec-cystic-adventitial-disease" class="nav-link" data-scroll-target="#sec-cystic-adventitial-disease"> <span class="header-section-number">17.4.2</span> Cystic Adventitial Disease</a></li>
+  <li><a href="#sec-paes" id="toc-sec-paes" class="nav-link" data-scroll-target="#sec-paes"><span class="header-section-number">17.4.1</span> Popliteal Artery Entrapment Syndrome (PAES)</a></li>
+  <li><a href="#sec-cystic-adventitial-disease" id="toc-sec-cystic-adventitial-disease" class="nav-link" data-scroll-target="#sec-cystic-adventitial-disease"><span class="header-section-number">17.4.2</span> Cystic Adventitial Disease</a></li>
   </ul></li>
-  <li><a href="#amputations" id="toc-amputations" class="nav-link" data-scroll-target="#amputations"> <span class="header-section-number">17.5</span> Amputations</a>
+  <li><a href="#amputations" id="toc-amputations" class="nav-link" data-scroll-target="#amputations"><span class="header-section-number">17.5</span> Amputations</a>
   <ul class="collapse">
-  <li><a href="#above-knee-trans-femoral-amputation-aka" id="toc-above-knee-trans-femoral-amputation-aka" class="nav-link" data-scroll-target="#above-knee-trans-femoral-amputation-aka"> <span class="header-section-number">17.5.1</span> Above-knee, trans-femoral amputation (AKA)</a></li>
-  <li><a href="#below-knee-trans-tibial-amputation-bka" id="toc-below-knee-trans-tibial-amputation-bka" class="nav-link" data-scroll-target="#below-knee-trans-tibial-amputation-bka"> <span class="header-section-number">17.5.2</span> Below-knee, trans-tibial amputation (BKA)</a></li>
-  <li><a href="#transmetatarsal-amputation-tma" id="toc-transmetatarsal-amputation-tma" class="nav-link" data-scroll-target="#transmetatarsal-amputation-tma"> <span class="header-section-number">17.5.3</span> Transmetatarsal amputation (TMA)</a></li>
+  <li><a href="#above-knee-trans-femoral-amputation-aka" id="toc-above-knee-trans-femoral-amputation-aka" class="nav-link" data-scroll-target="#above-knee-trans-femoral-amputation-aka"><span class="header-section-number">17.5.1</span> Above-knee, trans-femoral amputation (AKA)</a></li>
+  <li><a href="#below-knee-trans-tibial-amputation-bka" id="toc-below-knee-trans-tibial-amputation-bka" class="nav-link" data-scroll-target="#below-knee-trans-tibial-amputation-bka"><span class="header-section-number">17.5.2</span> Below-knee, trans-tibial amputation (BKA)</a></li>
+  <li><a href="#transmetatarsal-amputation-tma" id="toc-transmetatarsal-amputation-tma" class="nav-link" data-scroll-target="#transmetatarsal-amputation-tma"><span class="header-section-number">17.5.3</span> Transmetatarsal amputation (TMA)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -383,19 +426,15 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-acute-limb-ischemia" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></span></h1>
+<h1 class="title"><span id="sec-acute-limb-ischemia" class="quarto-section-identifier"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></span></h1>
 </div>
 
-<div>
-  <div class="description">
-    eBook Companion for Audible Bleeding Podcast Series
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -701,98 +740,98 @@ cookieconsent.run({
 <p>Transmetatersal amputation is performed with transection of the metatarsal bones just distal to the heads. Best to transect in a graduated parabola with the 5th metatarsal most proximal. Patients may benefit from concomitant Achilles tendon lengthening to prevent equinous deformity that can result in ulceration of the medial aspect of the TMA.<span class="citation" data-cites="eidt2019">(<a href="references.html#ref-eidt2019" role="doc-biblioref">Eidt and Kalapatapu 2019</a>)</span></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-bianchi2018" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-bianchi2018" class="csl-entry" role="listitem">
 Bianchi, Christian, and Ahmed M Abou-zamzam Jr. 2018. <span>“111. Lower Extremity Amputations: Epidemiology, Procedure Selection, and Rehabilitation Outcomes.”</span> In <em>111. Lower Extremity Amputations : Epidemiology , Procedure Selection , and Rehabilitation Outcomes</em>. Elsevier Inc. <a href="https://doi.org/10.1016/B978-0-323-42791-3.00111-0">https://doi.org/10.1016/B978-0-323-42791-3.00111-0</a>.
 </div>
-<div id="ref-creagerClinicalPracticeAcute2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-creagerClinicalPracticeAcute2012" class="csl-entry" role="listitem">
 Creager, Mark A., John A. Kaufman, and Michael S. Conte. 2012. <span>“Clinical Practice. <span>Acute</span> Limb Ischemia.”</span> <em>The New England Journal of Medicine</em> 366 (23): 2198–2206. <a href="https://doi.org/10.1056/NEJMcp1006054">https://doi.org/10.1056/NEJMcp1006054</a>.
 </div>
-<div id="ref-darwoodSurgeryThrombolysisInitial2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-darwoodSurgeryThrombolysisInitial2018" class="csl-entry" role="listitem">
 Darwood, Rosemary, David C Berridge, David O Kessel, Iain Robertson, and Rachel Forster. 2018. <span>“Surgery Versus Thrombolysis for Initial Management of Acute Limb Ischaemia.”</span> <em>The Cochrane Database of Systematic Reviews</em> 2018 (8): CD002784. <a href="https://doi.org/10.1002/14651858.CD002784.pub3">https://doi.org/10.1002/14651858.CD002784.pub3</a>.
 </div>
-<div id="ref-earnshaw100AcuteLimb2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-earnshaw100AcuteLimb2019" class="csl-entry" role="listitem">
 Earnshaw, Jonothan J. 2019. <span>“100: <span>Acute Limb Ischemia</span> : <span>Evaluation</span> and <span>Decision Making</span>.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span>, 2-<span>Volume Set</span></em>, 1315–1325.e2. <span>Elsevier Inc.</span> <a href="https://doi.org/10.1016/B978-0-323-42791-3.00100-6">https://doi.org/10.1016/B978-0-323-42791-3.00100-6</a>.
 </div>
-<div id="ref-eidt2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-eidt2019" class="csl-entry" role="listitem">
 Eidt, John F, and Venkat R Kalapatapu. 2019. <span>“112: Lower Extremity Amputation : Techniques and Results.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>. Vol. 2. Elsevier Inc.
 </div>
-<div id="ref-elliott2003" class="csl-entry" role="doc-biblioentry">
+<div id="ref-elliott2003" class="csl-entry" role="listitem">
 Elliott, Kirsten G. B., and Alan J. Johnstone. 2003. <span>“Diagnosing Acute Compartment Syndrome.”</span> <em>The Journal of Bone and Joint Surgery. British Volume</em> 85 (5): 625–32.
 </div>
-<div id="ref-forbes2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-forbes2019" class="csl-entry" role="listitem">
 Forbes, Thomas L., and Ahmed Kayssi. 2019. <span>“143: Nonatheromatous Popliteal Artery Disease.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>. Elsevier Inc.
 </div>
-<div id="ref-frink2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-frink2010" class="csl-entry" role="listitem">
 Frink, Michael, Frank Hildebrand, Christian Krettek, Jurgen Brand, and Stefan Hankemeier. 2010. <span>“Compartment Syndrome of the Lower Leg and Foot.”</span> <em>Clinical Orthopaedics and Related Research</em> 468 (4): 940–50. <a href="https://doi.org/10.1007/s11999-009-0891-x">https://doi.org/10.1007/s11999-009-0891-x</a>.
 </div>
-<div id="ref-ghahramaniPostproceduralBlueToes2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ghahramaniPostproceduralBlueToes2016" class="csl-entry" role="listitem">
 Ghahramani, Grant K., Alison E. Seline, and Karolyn A. Wanat. 2016. <span>“Postprocedural <span>Blue Toes</span>.”</span> <em>JAMA</em> 315 (13): 1396–97. <a href="https://doi.org/10.1001/jama.2016.1810">https://doi.org/10.1001/jama.2016.1810</a>.
 </div>
-<div id="ref-gokkus2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gokkus2014" class="csl-entry" role="listitem">
 Gokkus, Kemal, Ergin Sagtas, Tamer Bakalim, Ertugrul Taskaya, and Ahmet Turan Aydin. 2014. <span>“Popliteal Entrapment Syndrome. A Systematic Review of the Literature and Case Presentation.”</span> <em>Muscles, Ligaments and Tendons Journal</em> 4 (2): 141–48.
 </div>
-<div id="ref-thestileinvestigatorsResultsProspectiveRandomized1994" class="csl-entry" role="doc-biblioentry">
+<div id="ref-thestileinvestigatorsResultsProspectiveRandomized1994" class="csl-entry" role="listitem">
 Investigators, The STILE. 1994. <span>“<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1234376">Results of a Prospective Randomized Trial Evaluating Surgery Versus Thrombolysis for Ischemia of the Lower Extremity. <span>The STILE</span> Trial.</a>”</span> <em>Annals of Surgery</em> 220 (3): 251–68.
 </div>
-<div id="ref-jeyabalanEndovascularStrategiesTreatment2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jeyabalanEndovascularStrategiesTreatment2014" class="csl-entry" role="listitem">
 Jeyabalan, Geetha, Justin R. Wallace, Rabih Antoine Chaer, Steven A. Leers, Luke Keith Marone, and Michel S. Makaroun. 2014. <span>“Endovascular Strategies for Treatment of Embolizing Thoracoabdominal Aortic Lesions.”</span> <em>Journal of Vascular Surgery</em> 59 (5): 1256–64. <a href="https://doi.org/10.1016/j.jvs.2013.11.068">https://doi.org/10.1016/j.jvs.2013.11.068</a>.
 </div>
-<div id="ref-kempeResultsSurgicalManagement2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kempeResultsSurgicalManagement2014" class="csl-entry" role="listitem">
 Kempe, Kelly, Brett Starr, Jeanette M. Stafford, Arsalla Islam, Ashley Mooney, Emily Lagergren, Matthew A. Corriere, and Matthew S. Edwards. 2014. <span>“Results of Surgical Management of Acute Thromboembolic Lower Extremity Ischemia.”</span> <em>Journal of Vascular Surgery</em> 60 (3): 702–7. <a href="https://doi.org/10.1016/j.jvs.2014.03.273">https://doi.org/10.1016/j.jvs.2014.03.273</a>.
 </div>
-<div id="ref-vonkeudell2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-vonkeudell2015" class="csl-entry" role="listitem">
 Keudell, Arvind G. von, Michael J. Weaver, Paul T. Appleton, Donald S. Bae, George S. M. Dyer, Marilyn Heng, Jesse B. Jupiter, and Mark S. Vrahas. 2015. <span>“Diagnosis and Treatment of Acute Extremity Compartment Syndrome.”</span> <em>Lancet (London, England)</em> 386 (10000): 1299–1310. <a href="https://doi.org/10.1016/S0140-6736(15)00277-9">https://doi.org/10.1016/S0140-6736(15)00277-9</a>.
 </div>
-<div id="ref-lejay2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lejay2014" class="csl-entry" role="listitem">
 Lejay, A., M. Ohana, J. T. Lee, Y. Georg, C. Delay, B. Lucereau, F. Thaveau, S. Gaertner, N. Chakfé, and Groupe Européen de Recherche sur les Prothèses Appliquées à la Chirurgie Vasculaire (GEPROVAS). 2014. <span>“Popliteal Artery Entrapment Syndrome.”</span> <em>The Journal of Cardiovascular Surgery</em> 55 (2 Suppl 1): 225–37.
 </div>
-<div id="ref-li2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-li2017" class="csl-entry" role="listitem">
 Li, Shuo, Brian N. King, Noel Velasco, Yogesh Kumar, and Nishant Gupta. 2017. <span>“Cystic Adventitial Disease—Case Series and Review of Literature.”</span> <em>Annals of Translational Medicine</em> 5 (16): 327. <a href="https://doi.org/10.21037/atm.2017.05.04">https://doi.org/10.21037/atm.2017.05.04</a>.
 </div>
-<div id="ref-mann2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mann2019" class="csl-entry" role="listitem">
 Mann, Kenneth G. 2019. <span>“36. Normal Coagulation.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 25. Elsevier Inc.
 </div>
-<div id="ref-mcqueen1996" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mcqueen1996" class="csl-entry" role="listitem">
 McQueen, M. M., and C. M. Court-Brown. 1996. <span>“Compartment Monitoring in Tibial Fractures. The Pressure Threshold for Decompression.”</span> <em>The Journal of Bone and Joint Surgery. British Volume</em> 78 (1): 99–104.
 </div>
-<div id="ref-mohapatraRiskFactorsPerioperative2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mohapatraRiskFactorsPerioperative2018" class="csl-entry" role="listitem">
 Mohapatra, Abhisekh, Karim M. Salem, Emade Jaman, Darve Robinson, Efthymios D. Avgerinos, Michel S. Makaroun, and Mohammad H. Eslami. 2018. <span>“Risk <span>Factors</span> for <span>Perioperative Mortality Following Revascularization</span> for <span>Acute Aortic Occlusion</span>.”</span> <em>Journal of Vascular Surgery</em> 68 (6): 1789–95. <a href="https://doi.org/10.1016/j.jvs.2018.04.037">https://doi.org/10.1016/j.jvs.2018.04.037</a>.
 </div>
-<div id="ref-obaraAcuteLimbIschemia2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-obaraAcuteLimbIschemia2018" class="csl-entry" role="listitem">
 Obara, Hideaki, Kentaro Matsubara, and Yuko Kitagawa. 2018. <span>“Acute <span>Limb Ischemia</span>.”</span> <em>Annals of Vascular Diseases</em> 11 (4): 443–48. <a href="https://doi.org/10.3400/avd.ra.18-00074">https://doi.org/10.3400/avd.ra.18-00074</a>.
 </div>
-<div id="ref-ourielComparisonRecombinantUrokinase1998" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ourielComparisonRecombinantUrokinase1998" class="csl-entry" role="listitem">
 Ouriel, Kenneth, Frank J. Veith, and Arthur A. Sasahara. 1998. <span>“A <span>Comparison</span> of <span>Recombinant Urokinase</span> with <span>Vascular Surgery</span> as <span>Initial Treatment</span> for <span>Acute Arterial Occlusion</span> of the <span>Legs</span>.”</span> <em>New England Journal of Medicine</em> 338 (16): 1105–11. <a href="https://doi.org/10.1056/NEJM199804163381603">https://doi.org/10.1056/NEJM199804163381603</a>.
 </div>
-<div id="ref-papalambros1989" class="csl-entry" role="doc-biblioentry">
+<div id="ref-papalambros1989" class="csl-entry" role="listitem">
 Papalambros, E. L., Y. P. Panayiotopoulos, E. Bastounis, G. Zavos, and P. Balas. 1989. <span>“Prophylactic Fasciotomy of the Legs Following Acute Arterial Occlusion Procedures.”</span> <em>International Angiology: A Journal of the International Union of Angiology</em> 8 (3): 120–24.
 </div>
-<div id="ref-quinonesCholesterolEmboliSyndrome2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-quinonesCholesterolEmboliSyndrome2013" class="csl-entry" role="listitem">
 Quinones, Adriana, and Muhamed Saric. 2013. <span>“The Cholesterol Emboli Syndrome in Atherosclerosis.”</span> <em>Current Atherosclerosis Reports</em> 15 (4): 315. <a href="https://doi.org/10.1007/s11883-013-0315-y">https://doi.org/10.1007/s11883-013-0315-y</a>.
 </div>
-<div id="ref-reyesvaldiviaAnticoagulationAloneAortic2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-reyesvaldiviaAnticoagulationAloneAortic2017" class="csl-entry" role="listitem">
 Reyes Valdivia, Andrés, Africa Duque Santos, Marta Garnica Ureña, Asunción Romero Lozano, Enrique Aracil Sanus, Julia Ocaña Guaita, and Claudio Gandaria. 2017. <span>“Anticoagulation <span>Alone</span> for <span>Aortic Segment Treatment</span> in <span>Symptomatic Primary Aortic Mural Thrombus Patients</span>.”</span> <em>Annals of Vascular Surgery</em> 43 (August): 121–26. <a href="https://doi.org/10.1016/j.avsg.2017.01.005">https://doi.org/10.1016/j.avsg.2017.01.005</a>.
 </div>
-<div id="ref-rutherfordRecommendedStandardsReports1997" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rutherfordRecommendedStandardsReports1997" class="csl-entry" role="listitem">
 Rutherford, Robert B., J.Dennis Baker, Calvin Ernst, K.Wayne Johnston, John M. Porter, Sam Ahn, and Darrell N. Jones. 1997. <span>“Recommended Standards for Reports Dealing with Lower Extremity Ischemia: <span>Revised</span> Version.”</span> <em>Journal of Vascular Surgery</em> 26 (3): 517–38. <a href="https://doi.org/10.1016/S0741-5214(97)70045-4">https://doi.org/10.1016/S0741-5214(97)70045-4</a>.
 </div>
-<div id="ref-saricAorticAtherosclerosisEmbolic2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-saricAorticAtherosclerosisEmbolic2012" class="csl-entry" role="listitem">
 Saric, Muhamed, and Itzhak Kronzon. 2012. <span>“Aortic Atherosclerosis and Embolic Events.”</span> <em>Current Cardiology Reports</em> 14 (3): 342–49. <a href="https://doi.org/10.1007/s11886-012-0261-2">https://doi.org/10.1007/s11886-012-0261-2</a>.
 </div>
-<div id="ref-sinha2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-sinha2012" class="csl-entry" role="listitem">
 Sinha, Sidhartha, Jon Houghton, Peter J. Holt, Matt M. Thompson, Ian M. Loftus, and Robert J. Hinchliffe. 2012. <span>“Popliteal Entrapment Syndrome.”</span> <em>Journal of Vascular Surgery</em> 55 (1): 252–262.e30. <a href="https://doi.org/10.1016/j.jvs.2011.08.050">https://doi.org/10.1016/j.jvs.2011.08.050</a>.
 </div>
-<div id="ref-tisi2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tisi2014" class="csl-entry" role="listitem">
 Tisi, Paul V., and Mary M. Than. 2014. <span>“Type of Incision for Below Knee Amputation.”</span> <em>The Cochrane Database of Systematic Reviews</em>, no. 4 (April): CD003749. <a href="https://doi.org/10.1002/14651858.CD003749.pub3">https://doi.org/10.1002/14651858.CD003749.pub3</a>.
 </div>
-<div id="ref-velmahos2002" class="csl-entry" role="doc-biblioentry">
+<div id="ref-velmahos2002" class="csl-entry" role="listitem">
 Velmahos, George C., and Konstantinos G. Toutouzas. 2002. <span>“Vascular Trauma and Compartment Syndromes.”</span> <em>The Surgical Clinics of North America</em> 82 (1): 125–41, xxi. <a href="https://doi.org/10.1016/S0039-6109(03)00145-2">https://doi.org/10.1016/S0039-6109(03)00145-2</a>.
 </div>
-<div id="ref-vermaContemporaryManagementSymptomatic2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-vermaContemporaryManagementSymptomatic2014" class="csl-entry" role="listitem">
 Verma, Himanshu, Narendranadh Meda, Simit Vora, Robbie K. George, and Ramesh K. Tripathi. 2014. <span>“Contemporary Management of Symptomatic Primary Aortic Mural Thrombus.”</span> <em>Journal of Vascular Surgery</em> 60 (6): 1524–34. <a href="https://doi.org/10.1016/j.jvs.2014.08.057">https://doi.org/10.1016/j.jvs.2014.08.057</a>.
 </div>
-<div id="ref-wang2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-wang2016" class="csl-entry" role="listitem">
 Wang, John C., Ann H. Kim, and Vikram S. Kashyap. 2016. <span>“Open Surgical or Endovascular Revascularization for Acute Limb Ischemia.”</span> <em>Journal of Vascular Surgery</em> 63 (1): 270–78. <a href="https://doi.org/10.1016/j.jvs.2015.09.055">https://doi.org/10.1016/j.jvs.2015.09.055</a>.
 </div>
 </div>
@@ -827,9 +866,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -841,7 +894,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -869,31 +939,136 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
@@ -912,7 +1087,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

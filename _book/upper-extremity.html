@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,15 +12,21 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -34,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -119,11 +124,16 @@ cookieconsent.run({
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./upper-extremity.html">Upper Extremity</a></li><li class="breadcrumb-item"><a href="./upper-extremity.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -131,271 +141,304 @@ cookieconsent.run({
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Vascular Surgery Exam Prep</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./authors.html" class="sidebar-item-text sidebar-link">Authors and Contributors</a>
+  <a href="./authors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authors and Contributors</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Head and Neck</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Head and Neck</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></a>
+  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></a>
+  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Upper Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Upper Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></a>
+  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tos.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></a>
+  <a href="./tos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></a>
+  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Thorax</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Thorax</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dissection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></a>
+  <a href="./dissection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taaa.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></a>
+  <a href="./taaa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></a>
+  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></a>
+  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Abdomen</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Abdomen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></a>
+  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></a>
+  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./renal.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></a>
+  <a href="./renal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></a>
+  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></a>
+  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Lower Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Lower Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./claudication.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></a>
+  <a href="./claudication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clti.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></a>
+  <a href="./clti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ali.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></a>
+  <a href="./ali.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></a>
+  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></a>
+  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">General</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">General</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></a>
+  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./radiation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></a>
+  <a href="./radiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></a>
+  <a href="./endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rapid.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></a>
+  <a href="./rapid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"> <span class="header-section-number">3.1</span> Overview</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">3.1</span> Overview</a>
   <ul class="collapse">
-  <li><a href="#anatomy" id="toc-anatomy" class="nav-link" data-scroll-target="#anatomy"> <span class="header-section-number">3.1.1</span> Anatomy</a></li>
-  <li><a href="#etiology" id="toc-etiology" class="nav-link" data-scroll-target="#etiology"> <span class="header-section-number">3.1.2</span> Etiology</a></li>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"> <span class="header-section-number">3.1.3</span> Evaluation</a></li>
+  <li><a href="#anatomy" id="toc-anatomy" class="nav-link" data-scroll-target="#anatomy"><span class="header-section-number">3.1.1</span> Anatomy</a></li>
+  <li><a href="#etiology" id="toc-etiology" class="nav-link" data-scroll-target="#etiology"><span class="header-section-number">3.1.2</span> Etiology</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"><span class="header-section-number">3.1.3</span> Evaluation</a></li>
   </ul></li>
-  <li><a href="#vaso-occlusive-disease" id="toc-vaso-occlusive-disease" class="nav-link" data-scroll-target="#vaso-occlusive-disease"> <span class="header-section-number">3.2</span> Vaso-occlusive Disease</a>
+  <li><a href="#vaso-occlusive-disease" id="toc-vaso-occlusive-disease" class="nav-link" data-scroll-target="#vaso-occlusive-disease"><span class="header-section-number">3.2</span> Vaso-occlusive Disease</a>
   <ul class="collapse">
-  <li><a href="#demographics" id="toc-demographics" class="nav-link" data-scroll-target="#demographics"> <span class="header-section-number">3.2.1</span> Demographics</a></li>
-  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"> <span class="header-section-number">3.2.2</span> Management</a></li>
+  <li><a href="#demographics" id="toc-demographics" class="nav-link" data-scroll-target="#demographics"><span class="header-section-number">3.2.1</span> Demographics</a></li>
+  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"><span class="header-section-number">3.2.2</span> Management</a></li>
   </ul></li>
-  <li><a href="#sec-vasospastic-disorders" id="toc-sec-vasospastic-disorders" class="nav-link" data-scroll-target="#sec-vasospastic-disorders"> <span class="header-section-number">3.3</span> Vasospastic Disorders</a>
+  <li><a href="#sec-vasospastic-disorders" id="toc-sec-vasospastic-disorders" class="nav-link" data-scroll-target="#sec-vasospastic-disorders"><span class="header-section-number">3.3</span> Vasospastic Disorders</a>
   <ul class="collapse">
-  <li><a href="#iatrogenic-or-vasopressor-induced-ischemia" id="toc-iatrogenic-or-vasopressor-induced-ischemia" class="nav-link" data-scroll-target="#iatrogenic-or-vasopressor-induced-ischemia"> <span class="header-section-number">3.3.1</span> Iatrogenic or Vasopressor Induced Ischemia</a></li>
-  <li><a href="#raynauds-phenomenon" id="toc-raynauds-phenomenon" class="nav-link" data-scroll-target="#raynauds-phenomenon"> <span class="header-section-number">3.3.2</span> Raynaud’s Phenomenon</a></li>
-  <li><a href="#ergotism" id="toc-ergotism" class="nav-link" data-scroll-target="#ergotism"> <span class="header-section-number">3.3.3</span> Ergotism</a></li>
-  <li><a href="#sec-buergers-disease" id="toc-sec-buergers-disease" class="nav-link" data-scroll-target="#sec-buergers-disease"> <span class="header-section-number">3.3.4</span> Buerger’s Disease</a></li>
-  <li><a href="#sec-large-vasculitis" id="toc-sec-large-vasculitis" class="nav-link" data-scroll-target="#sec-large-vasculitis"> <span class="header-section-number">3.3.5</span> Large Artery Vasculitis</a></li>
-  <li><a href="#other-vasculitis-syndromes" id="toc-other-vasculitis-syndromes" class="nav-link" data-scroll-target="#other-vasculitis-syndromes"> <span class="header-section-number">3.3.6</span> Other Vasculitis syndromes</a></li>
+  <li><a href="#iatrogenic-or-vasopressor-induced-ischemia" id="toc-iatrogenic-or-vasopressor-induced-ischemia" class="nav-link" data-scroll-target="#iatrogenic-or-vasopressor-induced-ischemia"><span class="header-section-number">3.3.1</span> Iatrogenic or Vasopressor Induced Ischemia</a></li>
+  <li><a href="#raynauds-phenomenon" id="toc-raynauds-phenomenon" class="nav-link" data-scroll-target="#raynauds-phenomenon"><span class="header-section-number">3.3.2</span> Raynaud’s Phenomenon</a></li>
+  <li><a href="#ergotism" id="toc-ergotism" class="nav-link" data-scroll-target="#ergotism"><span class="header-section-number">3.3.3</span> Ergotism</a></li>
+  <li><a href="#sec-buergers-disease" id="toc-sec-buergers-disease" class="nav-link" data-scroll-target="#sec-buergers-disease"><span class="header-section-number">3.3.4</span> Buerger’s Disease</a></li>
+  <li><a href="#sec-large-vasculitis" id="toc-sec-large-vasculitis" class="nav-link" data-scroll-target="#sec-large-vasculitis"><span class="header-section-number">3.3.5</span> Large Artery Vasculitis</a></li>
+  <li><a href="#other-vasculitis-syndromes" id="toc-other-vasculitis-syndromes" class="nav-link" data-scroll-target="#other-vasculitis-syndromes"><span class="header-section-number">3.3.6</span> Other Vasculitis syndromes</a></li>
   </ul></li>
-  <li><a href="#aneurysmal-disease" id="toc-aneurysmal-disease" class="nav-link" data-scroll-target="#aneurysmal-disease"> <span class="header-section-number">3.4</span> Aneurysmal Disease</a>
+  <li><a href="#aneurysmal-disease" id="toc-aneurysmal-disease" class="nav-link" data-scroll-target="#aneurysmal-disease"><span class="header-section-number">3.4</span> Aneurysmal Disease</a>
   <ul class="collapse">
-  <li><a href="#subclavian-artery-aneurysms" id="toc-subclavian-artery-aneurysms" class="nav-link" data-scroll-target="#subclavian-artery-aneurysms"> <span class="header-section-number">3.4.1</span> Subclavian Artery Aneurysms</a></li>
-  <li><a href="#axillary-artery-aneurysms" id="toc-axillary-artery-aneurysms" class="nav-link" data-scroll-target="#axillary-artery-aneurysms"> <span class="header-section-number">3.4.2</span> Axillary Artery Aneurysms</a></li>
-  <li><a href="#brachial-artery-aneurysms" id="toc-brachial-artery-aneurysms" class="nav-link" data-scroll-target="#brachial-artery-aneurysms"> <span class="header-section-number">3.4.3</span> Brachial Artery Aneurysms</a></li>
-  <li><a href="#radial-artery-pseudoaneurysm" id="toc-radial-artery-pseudoaneurysm" class="nav-link" data-scroll-target="#radial-artery-pseudoaneurysm"> <span class="header-section-number">3.4.4</span> Radial Artery Pseudoaneurysm</a></li>
+  <li><a href="#subclavian-artery-aneurysms" id="toc-subclavian-artery-aneurysms" class="nav-link" data-scroll-target="#subclavian-artery-aneurysms"><span class="header-section-number">3.4.1</span> Subclavian Artery Aneurysms</a></li>
+  <li><a href="#axillary-artery-aneurysms" id="toc-axillary-artery-aneurysms" class="nav-link" data-scroll-target="#axillary-artery-aneurysms"><span class="header-section-number">3.4.2</span> Axillary Artery Aneurysms</a></li>
+  <li><a href="#brachial-artery-aneurysms" id="toc-brachial-artery-aneurysms" class="nav-link" data-scroll-target="#brachial-artery-aneurysms"><span class="header-section-number">3.4.3</span> Brachial Artery Aneurysms</a></li>
+  <li><a href="#radial-artery-pseudoaneurysm" id="toc-radial-artery-pseudoaneurysm" class="nav-link" data-scroll-target="#radial-artery-pseudoaneurysm"><span class="header-section-number">3.4.4</span> Radial Artery Pseudoaneurysm</a></li>
   </ul></li>
-  <li><a href="#occupational-vascular-disease" id="toc-occupational-vascular-disease" class="nav-link" data-scroll-target="#occupational-vascular-disease"> <span class="header-section-number">3.5</span> Occupational Vascular Disease</a>
+  <li><a href="#occupational-vascular-disease" id="toc-occupational-vascular-disease" class="nav-link" data-scroll-target="#occupational-vascular-disease"><span class="header-section-number">3.5</span> Occupational Vascular Disease</a>
   <ul class="collapse">
-  <li><a href="#hand-arm-vibration-syndrome" id="toc-hand-arm-vibration-syndrome" class="nav-link" data-scroll-target="#hand-arm-vibration-syndrome"> <span class="header-section-number">3.5.1</span> Hand-Arm Vibration Syndrome</a></li>
-  <li><a href="#hypothenar-hammer-syndrome" id="toc-hypothenar-hammer-syndrome" class="nav-link" data-scroll-target="#hypothenar-hammer-syndrome"> <span class="header-section-number">3.5.2</span> Hypothenar hammer syndrome</a></li>
-  <li><a href="#environmental-exposures" id="toc-environmental-exposures" class="nav-link" data-scroll-target="#environmental-exposures"> <span class="header-section-number">3.5.3</span> Environmental Exposures</a></li>
+  <li><a href="#hand-arm-vibration-syndrome" id="toc-hand-arm-vibration-syndrome" class="nav-link" data-scroll-target="#hand-arm-vibration-syndrome"><span class="header-section-number">3.5.1</span> Hand-Arm Vibration Syndrome</a></li>
+  <li><a href="#hypothenar-hammer-syndrome" id="toc-hypothenar-hammer-syndrome" class="nav-link" data-scroll-target="#hypothenar-hammer-syndrome"><span class="header-section-number">3.5.2</span> Hypothenar hammer syndrome</a></li>
+  <li><a href="#environmental-exposures" id="toc-environmental-exposures" class="nav-link" data-scroll-target="#environmental-exposures"><span class="header-section-number">3.5.3</span> Environmental Exposures</a></li>
   </ul></li>
-  <li><a href="#sports-medicine" id="toc-sports-medicine" class="nav-link" data-scroll-target="#sports-medicine"> <span class="header-section-number">3.6</span> Sports Medicine</a>
+  <li><a href="#sports-medicine" id="toc-sports-medicine" class="nav-link" data-scroll-target="#sports-medicine"><span class="header-section-number">3.6</span> Sports Medicine</a>
   <ul class="collapse">
-  <li><a href="#quadrilateral-space-syndrome" id="toc-quadrilateral-space-syndrome" class="nav-link" data-scroll-target="#quadrilateral-space-syndrome"> <span class="header-section-number">3.6.1</span> Quadrilateral space syndrome</a></li>
-  <li><a href="#humeral-head-compression-of-axillary-artery" id="toc-humeral-head-compression-of-axillary-artery" class="nav-link" data-scroll-target="#humeral-head-compression-of-axillary-artery"> <span class="header-section-number">3.6.2</span> Humeral head compression of axillary artery</a></li>
-  <li><a href="#thoracic-outlet-syndrome" id="toc-thoracic-outlet-syndrome" class="nav-link" data-scroll-target="#thoracic-outlet-syndrome"> <span class="header-section-number">3.6.3</span> Thoracic Outlet Syndrome</a></li>
+  <li><a href="#quadrilateral-space-syndrome" id="toc-quadrilateral-space-syndrome" class="nav-link" data-scroll-target="#quadrilateral-space-syndrome"><span class="header-section-number">3.6.1</span> Quadrilateral space syndrome</a></li>
+  <li><a href="#humeral-head-compression-of-axillary-artery" id="toc-humeral-head-compression-of-axillary-artery" class="nav-link" data-scroll-target="#humeral-head-compression-of-axillary-artery"><span class="header-section-number">3.6.2</span> Humeral head compression of axillary artery</a></li>
+  <li><a href="#thoracic-outlet-syndrome" id="toc-thoracic-outlet-syndrome" class="nav-link" data-scroll-target="#thoracic-outlet-syndrome"><span class="header-section-number">3.6.3</span> Thoracic Outlet Syndrome</a></li>
   </ul></li>
-  <li><a href="#vascular-trauma-upper-extremity" id="toc-vascular-trauma-upper-extremity" class="nav-link" data-scroll-target="#vascular-trauma-upper-extremity"> <span class="header-section-number">3.7</span> Vascular Trauma-Upper Extremity</a>
+  <li><a href="#vascular-trauma-upper-extremity" id="toc-vascular-trauma-upper-extremity" class="nav-link" data-scroll-target="#vascular-trauma-upper-extremity"><span class="header-section-number">3.7</span> Vascular Trauma-Upper Extremity</a>
   <ul class="collapse">
-  <li><a href="#subclavian-artery-trauma" id="toc-subclavian-artery-trauma" class="nav-link" data-scroll-target="#subclavian-artery-trauma"> <span class="header-section-number">3.7.1</span> Subclavian Artery Trauma</a></li>
-  <li><a href="#axillary-artery-trauma" id="toc-axillary-artery-trauma" class="nav-link" data-scroll-target="#axillary-artery-trauma"> <span class="header-section-number">3.7.2</span> Axillary Artery Trauma</a></li>
-  <li><a href="#brachial-artery-trauma" id="toc-brachial-artery-trauma" class="nav-link" data-scroll-target="#brachial-artery-trauma"> <span class="header-section-number">3.7.3</span> Brachial Artery Trauma</a></li>
-  <li><a href="#radialulnar-artery-trauma" id="toc-radialulnar-artery-trauma" class="nav-link" data-scroll-target="#radialulnar-artery-trauma"> <span class="header-section-number">3.7.4</span> Radial/ulnar artery trauma</a></li>
+  <li><a href="#subclavian-artery-trauma" id="toc-subclavian-artery-trauma" class="nav-link" data-scroll-target="#subclavian-artery-trauma"><span class="header-section-number">3.7.1</span> Subclavian Artery Trauma</a></li>
+  <li><a href="#axillary-artery-trauma" id="toc-axillary-artery-trauma" class="nav-link" data-scroll-target="#axillary-artery-trauma"><span class="header-section-number">3.7.2</span> Axillary Artery Trauma</a></li>
+  <li><a href="#brachial-artery-trauma" id="toc-brachial-artery-trauma" class="nav-link" data-scroll-target="#brachial-artery-trauma"><span class="header-section-number">3.7.3</span> Brachial Artery Trauma</a></li>
+  <li><a href="#radialulnar-artery-trauma" id="toc-radialulnar-artery-trauma" class="nav-link" data-scroll-target="#radialulnar-artery-trauma"><span class="header-section-number">3.7.4</span> Radial/ulnar artery trauma</a></li>
   </ul></li>
-  <li><a href="#sec-upper-extremity-lymphedema" id="toc-sec-upper-extremity-lymphedema" class="nav-link" data-scroll-target="#sec-upper-extremity-lymphedema"> <span class="header-section-number">3.8</span> Upper Extremity Lymphedema</a>
+  <li><a href="#sec-upper-extremity-lymphedema" id="toc-sec-upper-extremity-lymphedema" class="nav-link" data-scroll-target="#sec-upper-extremity-lymphedema"><span class="header-section-number">3.8</span> Upper Extremity Lymphedema</a>
   <ul class="collapse">
-  <li><a href="#etiology-1" id="toc-etiology-1" class="nav-link" data-scroll-target="#etiology-1"> <span class="header-section-number">3.8.1</span> Etiology</a></li>
-  <li><a href="#management-2" id="toc-management-2" class="nav-link" data-scroll-target="#management-2"> <span class="header-section-number">3.8.2</span> Management</a></li>
+  <li><a href="#etiology-1" id="toc-etiology-1" class="nav-link" data-scroll-target="#etiology-1"><span class="header-section-number">3.8.1</span> Etiology</a></li>
+  <li><a href="#management-2" id="toc-management-2" class="nav-link" data-scroll-target="#management-2"><span class="header-section-number">3.8.2</span> Management</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -405,19 +448,15 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    eBook Companion for Audible Bleeding Podcast Series
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -1112,260 +1151,260 @@ cookieconsent.run({
 <p>Lymphangiosarcoma in the setting of lymphedema (Stewart-Treves syndrome) without distant disease is best managed with wide local excision and adjuvant chemoradiation. Prognosis is poor.<span class="citation" data-cites="sharma2012">(<a href="references.html#ref-sharma2012" role="doc-biblioref">Sharma and Schwartz 2012</a>)</span></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-aburahma2000" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-aburahma2000" class="csl-entry" role="listitem">
 AbuRahma, Ali F., Patrick A. Robinson, and Tucker G. Jennings. 2000. <span>“Carotid-Subclavian Bypass Grafting with Polytetrafluoroethylene Grafts for Symptomatic Subclavian Artery Stenosis or Occlusion: A 20-Year Experience.”</span> <em>Journal of Vascular Surgery</em> 32 (3): 411–19. <a href="https://doi.org/10.1067/mva.2000.108644">https://doi.org/10.1067/mva.2000.108644</a>.
 </div>
-<div id="ref-aiello2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-aiello2011" class="csl-entry" role="listitem">
 Aiello, Francesco, and Nicholas J. Morrissey. 2011. <span>“Open and Endovascular Management of Subclavian and Innominate Arterial Pathology.”</span> <em>Seminars in Vascular Surgery</em> 24 (1): 31–35. <a href="https://doi.org/10.1053/j.semvascsurg.2011.04.001">https://doi.org/10.1053/j.semvascsurg.2011.04.001</a>.
 </div>
-<div id="ref-akar2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-akar2019" class="csl-entry" role="listitem">
 Akar, Ahmet Rüçhan. 2019. <span>“138 - Thromboangiitis Obliterans (Buerger Disease).”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 27. Elsevier Inc.
 </div>
-<div id="ref-bagir2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bagir2017" class="csl-entry" role="listitem">
 Bagir, Melih, Emrah Sayit, and Asli Tanrivermis Sayit. 2017. <span>“Pseudoaneurysm of the Radial Artery on the Hand Secondary to Stabbing.”</span> <em>Annals of Vascular Surgery</em> 41 (May): 280.e7–10. <a href="https://doi.org/10.1016/j.avsg.2016.09.027">https://doi.org/10.1016/j.avsg.2016.09.027</a>.
 </div>
-<div id="ref-baig84UpperExtremity2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baig84UpperExtremity2019" class="csl-entry" role="listitem">
 Baig, m shadman, and Carlos H. Timaran. 2019. <span>“84. <span>Upper</span> Extremity Aneurysms.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>. <span>Elsevier Inc.</span>
 </div>
-<div id="ref-berguer1998" class="csl-entry" role="doc-biblioentry">
+<div id="ref-berguer1998" class="csl-entry" role="listitem">
 Berguer, R., M. D. Morasch, and R. A. Kline. 1998. <span>“Transthoracic Repair of Innominate and Common Carotid Artery Disease: Immediate and Long-Term Outcome for 100 Consecutive Surgical Reconstructions.”</span> <em>Journal of Vascular Surgery</em> 27 (1): 34–41; discussion 42. <a href="https://doi.org/10.1016/s0741-5214(98)70289-7">https://doi.org/10.1016/s0741-5214(98)70289-7</a>.
 </div>
-<div id="ref-berguer1999" class="csl-entry" role="doc-biblioentry">
+<div id="ref-berguer1999" class="csl-entry" role="listitem">
 Berguer, R., M. D. Morasch, R. A. Kline, A. Kazmers, and M. S. Friedland. 1999. <span>“Cervical Reconstruction of the Supra-Aortic Trunks: A 16-Year Experience.”</span> <em>Journal of Vascular Surgery</em> 29 (2): 239-246; discussion 246-248. <a href="https://doi.org/10.1016/s0741-5214(99)70377-0">https://doi.org/10.1016/s0741-5214(99)70377-0</a>.
 </div>
-<div id="ref-bongartz2006" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bongartz2006" class="csl-entry" role="listitem">
 Bongartz, Tim, and Eric L. Matteson. 2006. <span>“Large-Vessel Involvement in Giant Cell Arteritis.”</span> <em>Current Opinion in Rheumatology</em> 18 (1): 10–17. <a href="https://doi.org/10.1097/01.bor.0000197996.04709.4e">https://doi.org/10.1097/01.bor.0000197996.04709.4e</a>.
 </div>
-<div id="ref-bradaricEndovascularTherapyStenoOcclusive2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bradaricEndovascularTherapyStenoOcclusive2015" class="csl-entry" role="listitem">
 Bradaric, Christian, Kristin Kuhs, Philip Groha, Michael Dommasch, Nicolas Langwieser, Bernhard Haller, Ilka Ott, et al. 2015. <span>“Endovascular <span>Therapy</span> for <span>Steno-Occlusive Subclavian</span> and <span>Innominate Artery Disease</span>: <span>Safety</span> and <span>Efficacy</span> at a <span>Single Center With</span> &amp;Gt;20 <span>Years</span>’ <span>Experience</span> .”</span> <em>Circulation Journal</em> 79 (3): 537–43. <a href="https://doi.org/10.1253/circj.CJ-14-0855">https://doi.org/10.1253/circj.CJ-14-0855</a>.
 </div>
-<div id="ref-busch2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-busch2011" class="csl-entry" role="listitem">
 Busch, Kathryn. 2011. <span>“Buerger’s Disease (Thromboangiitis Obliterans): Clinical Features and Assessment by Colour Duplex Ultrasound.”</span> <em>Australasian Journal of Ultrasound in Medicine</em> 14 (4): 18–22. <a href="https://doi.org/10.1002/j.2205-0140.2011.tb00126.x">https://doi.org/10.1002/j.2205-0140.2011.tb00126.x</a>.
 </div>
-<div id="ref-byrne2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-byrne2007" class="csl-entry" role="listitem">
 Byrne, J., R. C. Darling, S. P. Roddy, M. Mehta, P. S. K. Paty, P. B. Kreienberg, B. B. Chang, K. J. Ozsvath, Y. Sternbach, and D. M. Shah. 2007. <span>“Long Term Outcome for Extra-Anatomic Arch Reconstruction. An Analysis of 143 Procedures.”</span> <em>European Journal of Vascular and Endovascular Surgery</em> 34 (4): 444–50. <a href="https://doi.org/10.1016/j.ejvs.2007.05.016">https://doi.org/10.1016/j.ejvs.2007.05.016</a>.
 </div>
-<div id="ref-carr2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-carr2019" class="csl-entry" role="listitem">
 Carr, Marcus P., Giles W. Becker, Mihra S. Taljanovic, and Wendy E. McCurdy. 2019. <span>“Hypothenar Hammer Syndrome: Case Report and Literature Review.”</span> <em>Radiology Case Reports</em> 14 (7): 868–71. <a href="https://doi.org/10.1016/j.radcr.2019.04.015">https://doi.org/10.1016/j.radcr.2019.04.015</a>.
 </div>
-<div id="ref-chang2003" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chang2003" class="csl-entry" role="listitem">
 Chang, Benjamin B., Sean P. Roddy, R. Clement Darling, Dale Maharaj, Philip S. K. Paty, Paul B. Kreienberg, Kathleen J. Ozsvath, Manish Mehta, and Dhiraj M. Shah. 2003. <span>“Upper Extremity Bypass Grafting for Limb Salvage in End-Stage Renal Failure.”</span> <em>Journal of Vascular Surgery</em> 38 (6): 1313–15. <a href="https://doi.org/10.1016/s0741-5214(03)00773-0">https://doi.org/10.1016/s0741-5214(03)00773-0</a>.
 </div>
-<div id="ref-chatterjeeAngioplastyAloneAngioplasty2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chatterjeeAngioplastyAloneAngioplasty2013" class="csl-entry" role="listitem">
 Chatterjee, Saurav, Nishant Nerella, Saneka Chakravarty, and Jacob Shani. 2013. <span>“Angioplasty <span>Alone Versus Angioplasty</span> and <span>Stenting</span> for <span>Subclavian Artery Stenosis</span> and <span class="nocase">Meta-analysis</span>.”</span> <em>American Journal of Therapeutics</em> 20 (5): 520–23. <a href="https://doi.org/10.1097/MJT.0b013e31822831d8">https://doi.org/10.1097/MJT.0b013e31822831d8</a>.
 </div>
-<div id="ref-cheun2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cheun2019" class="csl-entry" role="listitem">
 Cheun, Tracy J., Lalithapriya Jayakumar, Maureen K. Sheehan, Matthew J. Sideman, Lori L. Pounds, and Mark G. Davies. 2019. <span>“Outcomes of Upper Extremity Interventions for Chronic Critical Ischemia.”</span> <em>Journal of Vascular Surgery</em> 69 (1): 120–128.e2. <a href="https://doi.org/10.1016/j.jvs.2018.04.056">https://doi.org/10.1016/j.jvs.2018.04.056</a>.
 </div>
-<div id="ref-cinà2002" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cinà2002" class="csl-entry" role="listitem">
 Cinà, Claudio S., Hussein A. Safar, Antonello Laganà, Goffredo Arena, and Catherine M. Clase. 2002. <span>“Subclavian Carotid Transposition and Bypass Grafting: Consecutive Cohort Study and Systematic Review.”</span> <em>Journal of Vascular Surgery</em> 35 (3): 422–29. <a href="https://doi.org/10.1067/mva.2002.120035">https://doi.org/10.1067/mva.2002.120035</a>.
 </div>
-<div id="ref-cohen2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cohen2014" class="csl-entry" role="listitem">
 Cohen, José E., J. Moshe Gomori, Haim Anner, and Eyal Itshayek. 2014. <span>“Inadvertent Subclavian Artery Cannulation Treated by Percutaneous Closure.”</span> <em>Journal of Clinical Neuroscience: Official Journal of the Neurosurgical Society of Australasia</em> 21 (11): 1973–75. <a href="https://doi.org/10.1016/j.jocn.2014.04.009">https://doi.org/10.1016/j.jocn.2014.04.009</a>.
 </div>
-<div id="ref-cuaReviewCoronarySubclavian2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cuaReviewCoronarySubclavian2017" class="csl-entry" role="listitem">
 Cua, Bennett, Natasha Mamdani, David Halpin, Sunny Jhamnani, Sasanka Jayasuriya, and Carlos Mena-Hurtado. 2017. <span>“Review of Coronary Subclavian Steal Syndrome.”</span> <em>Journal of Cardiology</em> 70 (5): 432–37. <a href="https://doi.org/10.1016/j.jjcc.2017.02.012">https://doi.org/10.1016/j.jjcc.2017.02.012</a>.
 </div>
-<div id="ref-daniel2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-daniel2014" class="csl-entry" role="listitem">
 Daniel, Vijaya T., Arin L. Madenci, Louis L. Nguyen, Mohammad H. Eslami, Jeffrey A. Kalish, Alik Farber, and James T. McPhee. 2014. <span>“Contemporary Comparison of Supra-Aortic Trunk Surgical Reconstructions for Occlusive Disease.”</span> <em>Journal of Vascular Surgery</em> 59 (6): 1577–1582.e2. <a href="https://doi.org/10.1016/j.jvs.2013.12.017">https://doi.org/10.1016/j.jvs.2013.12.017</a>.
 </div>
-<div id="ref-dean2001" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dean2001" class="csl-entry" role="listitem">
 Dean, S. M., and B. Satiani. 2001. <span>“Three Cases of Digital Ischemia Successfully Treated with Cilostazol.”</span> <em>Vascular Medicine (London, England)</em> 6 (4): 245–48. <a href="https://doi.org/10.1177/1358836x0100600408">https://doi.org/10.1177/1358836x0100600408</a>.
 </div>
-<div id="ref-dineen2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dineen2007" class="csl-entry" role="listitem">
 Dineen, Sean, Stephen Smith, and Frank R. Arko. 2007. <span>“Successful Percutaneous Angioplasty and Stenting of the Radial Artery in a Patient with Chronic Upper Extremity Ischemia and Digital Gangrene.”</span> <em>Journal of Endovascular Therapy: An Official Journal of the International Society of Endovascular Specialists</em> 14 (3): 426–28. <a href="https://doi.org/10.1583/06-2017.1">https://doi.org/10.1583/06-2017.1</a>.
 </div>
-<div id="ref-dumfarth2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dumfarth2015" class="csl-entry" role="listitem">
 Dumfarth, Julia, Alan S. Chou, Bulat A. Ziganshin, Rohan Bhandari, Sven Peterss, Maryann Tranquilli, Hamid Mojibian, Hai Fang, John A. Rizzo, and John A. Elefteriades. 2015. <span>“Atypical Aortic Arch Branching Variants: A Novel Marker for Thoracic Aortic Disease.”</span> <em>The Journal of Thoracic and Cardiovascular Surgery</em> 149 (6): 1586–92. <a href="https://doi.org/10.1016/j.jtcvs.2015.02.019">https://doi.org/10.1016/j.jtcvs.2015.02.019</a>.
 </div>
-<div id="ref-ehlert2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ehlert2019" class="csl-entry" role="listitem">
 Ehlert, Bryan A, and Christopher J. Abularrage. 2019. <span>“139. Takayasu Disease.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 9th ed., 17. Elsevier Inc.
 </div>
-<div id="ref-eskandari185ConditionsArising2020" class="csl-entry" role="doc-biblioentry">
+<div id="ref-eskandari185ConditionsArising2020" class="csl-entry" role="listitem">
 Eskandari, Mark K, and Courtney E Morgan. 2020. <em>185: <span>Conditions Arising From Repetitive Trauma</span> and <span>Occupational Vascular Problems</span></em>. <em>Rutherford’s Vascular Surgery and Endovascular Therapy, 2-Volume Set</em>. <span>Elsevier Inc.</span> <a href="https://doi.org/10.1016/B978-0-323-42791-3.00185-7">https://doi.org/10.1016/B978-0-323-42791-3.00185-7</a>.
 </div>
-<div id="ref-ferris2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ferris2000" class="csl-entry" role="listitem">
 Ferris, B. L., L. M. Taylor, K. Oyama, R. B. McLafferty, J. M. Edwards, G. L. Moneta, and J. M. Porter. 2000. <span>“Hypothenar Hammer Syndrome: Proposed Etiology.”</span> <em>Journal of Vascular Surgery</em> 31 (1 Pt 1): 104–13. <a href="https://doi.org/10.1016/s0741-5214(00)70072-3">https://doi.org/10.1016/s0741-5214(00)70072-3</a>.
 </div>
-<div id="ref-fujii2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fujii2011" class="csl-entry" role="listitem">
 Fujii, Yuichi, Junko Soga, Takayuki Hidaka, Takaki Hata, Naomi Idei, Noritaka Fujimura, Shinsuke Mikami, et al. 2011. <span>“Color Doppler Flows of Corkscrew Collaterals in Thromboangiitis Obliterans (Buerger’s Disease) Using Color Duplex Ultrasonography.”</span> <em>Journal of the American College of Cardiology</em> 57 (25): 2539. <a href="https://doi.org/10.1016/j.jacc.2010.07.071">https://doi.org/10.1016/j.jacc.2010.07.071</a>.
 </div>
-<div id="ref-garygwindAnatomicExposuresVascular2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-garygwindAnatomicExposuresVascular2013" class="csl-entry" role="listitem">
 Gary G Wind, and R. James Valentine. 2013. <em>Anatomic <span>Exposures</span> in <span>Vascular Surgery</span></em>. Second. <span>Lippincott Williams &amp; Wilkins</span>.
 </div>
-<div id="ref-gelberman1981" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gelberman1981" class="csl-entry" role="listitem">
 Gelberman, R. H., S. R. Garfin, P. T. Hergenroeder, S. J. Mubarak, and J. Menon. 1981. <span>“Compartment Syndromes of the Forearm: Diagnosis and Treatment.”</span> <em>Clinical Orthopaedics and Related Research</em>, no. 161 (December): 252–61.
 </div>
-<div id="ref-goldstein2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-goldstein2010" class="csl-entry" role="listitem">
 Goldstein, Lee J., Joseph D. Ayers, Scott Hollenbeck, Jason A. Spector, and Ageliki G. Vouyouka. 2010. <span>“Successful Revascularization for Delayed Presentation of Radiation-Induced Distal Upper Extremity Ischemia.”</span> <em>Annals of Vascular Surgery</em> 24 (2): 257.e5–8. <a href="https://doi.org/10.1016/j.avsg.2009.07.024">https://doi.org/10.1016/j.avsg.2009.07.024</a>.
 </div>
-<div id="ref-henke2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-henke2009" class="csl-entry" role="listitem">
 Henke, Peter K. 2009. <span>“Contemporary Management of Acute Limb Ischemia: Factors Associated with Amputation and in-Hospital Mortality.”</span> <em>Seminars in Vascular Surgery</em> 22 (1): 34–40. <a href="https://doi.org/10.1053/j.semvascsurg.2009.01.002">https://doi.org/10.1053/j.semvascsurg.2009.01.002</a>.
 </div>
-<div id="ref-hooten1998" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hooten1998" class="csl-entry" role="listitem">
 Hooten, W. M., H. K. Bruns, and J. T. Hays. 1998. <span>“Inpatient Treatment of Severe Nicotine Dependence in a Patient with Thromboangiitis Obliterans (Buerger’s Disease).”</span> <em>Mayo Clinic Proceedings</em> 73 (6): 529–32. <a href="https://doi.org/10.4065/73.6.529">https://doi.org/10.4065/73.6.529</a>.
 </div>
-<div id="ref-illig57UpperExtremity2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-illig57UpperExtremity2019" class="csl-entry" role="listitem">
 Illig, Karl A. 2019. <span>“57. <span>Upper Extremity Vascular Exposure</span>.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>, 12. <span>Elsevier Inc.</span>
 </div>
-<div id="ref-illuminati2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-illuminati2018" class="csl-entry" role="listitem">
 Illuminati, Giulio, Giulia Pizzardi, Francesco G. Calio, Federica Masci, Rocco Pasqua, Francesca Frezzotti, and Simone Peschillo. 2018. <span>“Results of Subclavian to Carotid Artery Bypass for Occlusive Disease of the Common Carotid Artery: A Retrospective Cohort Study.”</span> <em>International Journal of Surgery (London, England)</em> 53 (May): 111–16. <a href="https://doi.org/10.1016/j.ijsu.2018.03.038">https://doi.org/10.1016/j.ijsu.2018.03.038</a>.
 </div>
-<div id="ref-jacklcronenwettVascularDecisionMaking2020" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jacklcronenwettVascularDecisionMaking2020" class="csl-entry" role="listitem">
 Jack L Cronenwett, Alik Farber, and Erica L. Mitchell. 2020. <em>Vascular <span>Decision Making</span>: <span>Medical</span>, <span>Endovascular</span>, <span>Surgical</span></em>. <span>Wolters Kluwer</span>.
 </div>
-<div id="ref-janssen2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-janssen2008" class="csl-entry" role="listitem">
 Janssen, Stan P., Emile H. Comans, Alexandre E. Voskuyl, Willem Wisselink, and Yvo M. Smulders. 2008. <span>“Giant Cell Arteritis: Heterogeneity in Clinical Presentation and Imaging Results.”</span> <em>Journal of Vascular Surgery</em> 48 (4): 1025–31. <a href="https://doi.org/10.1016/j.jvs.2008.04.054">https://doi.org/10.1016/j.jvs.2008.04.054</a>.
 </div>
-<div id="ref-kauvar184VascularTrauma2020" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kauvar184VascularTrauma2020" class="csl-entry" role="listitem">
 Kauvar, David S, and Larry W Kraiss. 2020. <em>184: <span>Vascular Trauma</span>: <span>Extremity</span></em>. <em>Rutherford’s Vascular Surgery and Endovascular Therapy, 2-Volume Set</em>. <span>Elsevier Inc.</span> <a href="https://doi.org/10.1016/B978-0-323-42791-3.00184-5">https://doi.org/10.1016/B978-0-323-42791-3.00184-5</a>.
 </div>
-<div id="ref-kistler2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kistler2018" class="csl-entry" role="listitem">
 Kistler, Justin M., Asif M. Ilyas, and Joseph J. Thoder. 2018. <span>“Forearm Compartment Syndrome: Evaluation and Management.”</span> <em>Hand Clinics</em> 34 (1): 53–60. <a href="https://doi.org/10.1016/j.hcl.2017.09.006">https://doi.org/10.1016/j.hcl.2017.09.006</a>.
 </div>
-<div id="ref-kobayashi1999" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kobayashi1999" class="csl-entry" role="listitem">
 Kobayashi, M., M. Ito, A. Nakagawa, N. Nishikimi, and Y. Nimura. 1999. <span>“Immunohistochemical Analysis of Arterial Wall Cellular Infiltration in Buerger’s Disease (Endarteritis Obliterans).”</span> <em>Journal of Vascular Surgery</em> 29 (3): 451–58. <a href="https://doi.org/10.1016/s0741-5214(99)70273-9">https://doi.org/10.1016/s0741-5214(99)70273-9</a>.
 </div>
-<div id="ref-kubota1997" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kubota1997" class="csl-entry" role="listitem">
 Kubota, Y., K. Kichikawa, H. Uchida, K. Nishimine, R. Hirohashi, and H. Ohishi. 1997. <span>“Superselective Urokinase Infusion Therapy for Dorsalis Pedis Artery Occlusion in Buerger’s Disease.”</span> <em>Cardiovascular and Interventional Radiology</em> 20 (5): 380–82. <a href="https://doi.org/10.1007/s002709900172">https://doi.org/10.1007/s002709900172</a>.
 </div>
-<div id="ref-landry141RaynaudPhenomenon2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-landry141RaynaudPhenomenon2019" class="csl-entry" role="listitem">
 Landry, Gregory J. 2019. <span>“141. <span>Raynaud Phenomenon</span>.”</span> In <em>Rutherford <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>. <span>Elsevier Inc.</span>
 </div>
-<div id="ref-landry2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-landry2013" class="csl-entry" role="listitem">
 Landry, Gregory J. 2013. <span>“Current Medical and Surgical Management of Raynaud’s Syndrome.”</span> <em>Journal of Vascular Surgery</em> 57 (6): 1710–16. <a href="https://doi.org/10.1016/j.jvs.2013.03.012">https://doi.org/10.1016/j.jvs.2013.03.012</a>.
 </div>
-<div id="ref-landry2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-landry2018" class="csl-entry" role="listitem">
 Landry, Gregory J., Courtney J. Mostul, Daniel S. Ahn, Bryant J. McLafferty, Timothy K. Liem, Erica L. Mitchell, Enjae Jung, et al. 2018. <span>“Causes and Outcomes of Finger Ischemia in Hospitalized Patients in the Intensive Care Unit.”</span> <em>Journal of Vascular Surgery</em> 68 (5): 1499–1504. <a href="https://doi.org/10.1016/j.jvs.2018.01.050">https://doi.org/10.1016/j.jvs.2018.01.050</a>.
 </div>
-<div id="ref-layton2006" class="csl-entry" role="doc-biblioentry">
+<div id="ref-layton2006" class="csl-entry" role="listitem">
 Layton, K. F., D. F. Kallmes, H. J. Cloft, E. P. Lindell, and V. S. Cox. 2006. <span>“Bovine Aortic Arch Variant in Humans: Clarification of a Common Misnomer.”</span> <em>AJNR: American Journal of Neuroradiology</em> 27 (7): 1541–42. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7977516/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7977516/</a>.
 </div>
-<div id="ref-lejoncour2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lejoncour2018" class="csl-entry" role="listitem">
 Le Joncour, Alexandre, Simon Soudet, Axelle Dupont, Olivier Espitia, Fabien Koskas, Philippe Cluzel, Pierre Yves Hatron, et al. 2018. <span>“Long‐term Outcome and Prognostic Factors of Complications in Thromboangiitis Obliterans (Buerger’s Disease): A Multicenter Study of 224 Patients.”</span> <em>Journal of the American Heart Association: Cardiovascular and Cerebrovascular Disease</em> 7 (23): e010677. <a href="https://doi.org/10.1161/JAHA.118.010677">https://doi.org/10.1161/JAHA.118.010677</a>.
 </div>
-<div id="ref-leversedge2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-leversedge2011" class="csl-entry" role="listitem">
 Leversedge, Fraser J., Thomas J. Moore, Bret C. Peterson, and John G. Seiler. 2011. <span>“Compartment Syndrome of the Upper Extremity.”</span> <em>The Journal of Hand Surgery</em> 36 (3): 544–559; quiz 560. <a href="https://doi.org/10.1016/j.jhsa.2010.12.008">https://doi.org/10.1016/j.jhsa.2010.12.008</a>.
 </div>
-<div id="ref-mansukhani2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mansukhani2018" class="csl-entry" role="listitem">
 Mansukhani, Neel A., Kyle R. Miller, George E. Havelka, Hyde M. Russell, and Mark K. Eskandari. 2018. <span>“Aorta-Innominate Bypass Through Ministernotomy.”</span> <em>Journal of Vascular Surgery</em> 68 (2): 607–10. <a href="https://doi.org/10.1016/j.jvs.2018.01.069">https://doi.org/10.1016/j.jvs.2018.01.069</a>.
 </div>
-<div id="ref-masden2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-masden2012" class="csl-entry" role="listitem">
 Masden, Derek L., Mitchel Seruya, and James P. Higgins. 2012. <span>“A Systematic Review of the Outcomes of Distal Upper Extremity Bypass Surgery with Arterial and Venous Conduits.”</span> <em>The Journal of Hand Surgery</em> 37 (11): 2362–67. <a href="https://doi.org/10.1016/j.jhsa.2012.07.028">https://doi.org/10.1016/j.jhsa.2012.07.028</a>.
 </div>
-<div id="ref-maskanakis2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-maskanakis2018" class="csl-entry" role="listitem">
 Maskanakis, Anastasios, Nikolaos Patelis, Demetrios Moris, Diamantis I. Tsilimigras, Dimitrios Schizas, Maria Diakomi, Chris Bakoyiannis, Sotirios Georgopoulos, Chris Klonaris, and Theodoros Liakakos. 2018. <span>“Stenting of Subclavian Artery True and False Aneurysms: A Systematic Review.”</span> <em>Annals of Vascular Surgery</em> 47 (February): 291–304. <a href="https://doi.org/10.1016/j.avsg.2017.08.013">https://doi.org/10.1016/j.avsg.2017.08.013</a>.
 </div>
-<div id="ref-maz2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-maz2021" class="csl-entry" role="listitem">
 Maz, Mehrdad, Sharon A. Chung, Andy Abril, Carol A. Langford, Mark Gorelik, Gordon Guyatt, Amy M. Archer, et al. 2021. <span>“2021 American College of Rheumatology/Vasculitis Foundation Guideline for the Management of Giant Cell Arteritis and Takayasu Arteritis.”</span> <em>Arthritis Care &amp; Research</em> 73 (8): 1071–87. <a href="https://doi.org/10.1002/acr.24632">https://doi.org/10.1002/acr.24632</a>.
 </div>
-<div id="ref-modrall2003" class="csl-entry" role="doc-biblioentry">
+<div id="ref-modrall2003" class="csl-entry" role="listitem">
 Modrall, J. Gregory, and Javid Sadjadi. 2003. <span>“Early and Late Presentations of Radiation Arteritis.”</span> <em>Seminars in Vascular Surgery</em> 16 (3): 209–14. <a href="https://doi.org/10.1016/s0895-7967(03)00026-7">https://doi.org/10.1016/s0895-7967(03)00026-7</a>.
 </div>
-<div id="ref-mohan2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mohan2016" class="csl-entry" role="listitem">
 Mohan, Sathish, Andres Schanzer, William P. Robinson, and Francesco A. Aiello. 2016. <span>“Endovascular Management of Radiation-Induced Subclavian and Axillary Artery Aneurysms.”</span> <em>Journal of Vascular Surgery</em> 64 (4): 1135–37. <a href="https://doi.org/10.1016/j.jvs.2015.08.073">https://doi.org/10.1016/j.jvs.2015.08.073</a>.
 </div>
-<div id="ref-mondry2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mondry2004" class="csl-entry" role="listitem">
 Mondry, Tammy E., Robert H. Riffenburgh, and Peter A. S. Johnstone. 2004. <span>“Prospective Trial of Complete Decongestive Therapy for Upper Extremity Lymphedema After Breast Cancer Therapy.”</span> <em>Cancer Journal (Sudbury, Mass.)</em> 10 (1): 42-48; discussion 17-19. <a href="https://doi.org/10.1097/00130404-200401000-00009">https://doi.org/10.1097/00130404-200401000-00009</a>.
 </div>
-<div id="ref-montori2002" class="csl-entry" role="doc-biblioentry">
+<div id="ref-montori2002" class="csl-entry" role="listitem">
 Montori, V. M., S. J. Kavros, E. E. Walsh, and T. W. Rooke. 2002. <span>“Intermittent Compression Pump for Nonhealing Wounds in Patients with Limb Ischemia. The Mayo Clinic Experience (1998-2000).”</span> <em>International Angiology: A Journal of the International Union of Angiology</em> 21 (4): 360–66.
 </div>
-<div id="ref-moraschTechniqueSubclavianCarotid2009d" class="csl-entry" role="doc-biblioentry">
+<div id="ref-moraschTechniqueSubclavianCarotid2009d" class="csl-entry" role="listitem">
 Morasch, Mark D. 2009. <span>“Technique for Subclavian to Carotid Transposition, Tips, and Tricks.”</span> <em>Journal of Vascular Surgery</em> 49 (1): 251–54. <a href="https://doi.org/10.1016/j.jvs.2008.10.035">https://doi.org/10.1016/j.jvs.2008.10.035</a>.
 </div>
-<div id="ref-mordasini2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mordasini2011" class="csl-entry" role="listitem">
 Mordasini, P., J. Gralla, D.-D. Do, J. Schmidli, B. Keserü, M. Arnold, U. Fischer, G. Schroth, and C. Brekenfeld. 2011. <span>“Percutaneous and Open Retrograde Endovascular Stenting of Symptomatic High-Grade Innominate Artery Stenosis: Technique and Follow-up.”</span> <em>AJNR: American Journal of Neuroradiology</em> 32 (9): 1726–31. <a href="https://doi.org/10.3174/ajnr.A2598">https://doi.org/10.3174/ajnr.A2598</a>.
 </div>
-<div id="ref-morrell2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-morrell2005" class="csl-entry" role="listitem">
 Morrell, Rosalyn M., Michele Y. Halyard, Steven E. Schild, Muna S. Ali, Leonard L. Gunderson, and Barbara A. Pockaj. 2005. <span>“Breast Cancer-Related Lymphedema.”</span> <em>Mayo Clinic Proceedings</em> 80 (11): 1480–84. <a href="https://doi.org/10.4065/80.11.1480">https://doi.org/10.4065/80.11.1480</a>.
 </div>
-<div id="ref-nasser2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-nasser2014" class="csl-entry" role="listitem">
 Nasser, Felipe, Rafael Noronha Cavalcante, Francisco Leonardo Galastri, Jorge Eduardo de Amorim, Marcus Alexandre Politzer Telles, Fabiellen Berzoini Travassos, Bruna De Fina, and Breno Boueri Affonso. 2014. <span>“Endovascular Stenting of Brachial Artery Occlusion in Critical Hand Ischemia.”</span> <em>Annals of Vascular Surgery</em> 28 (6): 1564.e1–3. <a href="https://doi.org/10.1016/j.avsg.2013.12.022">https://doi.org/10.1016/j.avsg.2013.12.022</a>.
 </div>
-<div id="ref-olin2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-olin2000" class="csl-entry" role="listitem">
 Olin, J. W. 2000. <span>“Thromboangiitis Obliterans (Buerger’s Disease).”</span> <em>The New England Journal of Medicine</em> 343 (12): 864–69. <a href="https://doi.org/10.1056/NEJM200009213431207">https://doi.org/10.1056/NEJM200009213431207</a>.
 </div>
-<div id="ref-olin2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-olin2018" class="csl-entry" role="listitem">
 Olin, Jeffrey W. 2018. <span>“Thromboangiitis Obliterans: 110&nbsp;Years Old and Little Progress Made.”</span> <em>Journal of the American Heart Association: Cardiovascular and Cerebrovascular Disease</em> 7 (23): e011214. <a href="https://doi.org/10.1161/JAHA.118.011214">https://doi.org/10.1161/JAHA.118.011214</a>.
 </div>
-<div id="ref-palchik2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-palchik2008" class="csl-entry" role="listitem">
 Palchik, Eugene, Andrew M. Bakken, Heather Y. Wolford, David L. Waldman, and Mark G. Davies. 2008. <span>“Evolving Strategies in Treatment of Isolated Symptomatic Innominate Artery Disease.”</span> <em>Vascular and Endovascular Surgery</em> 42 (5): 440–45. <a href="https://doi.org/10.1177/1538574408315994">https://doi.org/10.1177/1538574408315994</a>.
 </div>
-<div id="ref-reul1991" class="csl-entry" role="doc-biblioentry">
+<div id="ref-reul1991" class="csl-entry" role="listitem">
 Reul, G. J., M. J. Jacobs, I. D. Gregoric, M. Calderon, J. M. Duncan, D. A. Ott, J. J. Livesay, and D. A. Cooley. 1991. <span>“Innominate Artery Occlusive Disease: Surgical Approach and Long-Term Results.”</span> <em>Journal of Vascular Surgery</em> 14 (3): 405–12. <a href="https://doi.org/10.1067/mva.1991.31287">https://doi.org/10.1067/mva.1991.31287</a>.
 </div>
-<div id="ref-rodriguez2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rodriguez2016" class="csl-entry" role="listitem">
 Rodriguez, Joleen Duarte. 2016. <span>“Brachiocephalic Artery Disease Progression Resulting in Complex Steal Phenomena.”</span> <em>Journal of Diagnostic Medical Sonography</em> 32 (3): 173–80. <a href="https://doi.org/10.1177/8756479316649950">https://doi.org/10.1177/8756479316649950</a>.
 </div>
-<div id="ref-ronel2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ronel2004" class="csl-entry" role="listitem">
 Ronel, Daniel N., Estomih Mtui, and William B. Nolan. 2004. <span>“Forearm Compartment Syndrome: Anatomical Analysis of Surgical Approaches to the Deep Space.”</span> <em>Plastic and Reconstructive Surgery</em> 114 (3): 697–705. <a href="https://doi.org/10.1097/01.prs.0000130967.42426.23">https://doi.org/10.1097/01.prs.0000130967.42426.23</a>.
 </div>
-<div id="ref-sahaSubclavianArteryDisease2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-sahaSubclavianArteryDisease2017" class="csl-entry" role="listitem">
 Saha, Tisa, Syed Yaseen Naqvi, Omar Abine Ayah, Daniel McCormick, and Sheldon Goldberg. 2017. <span>“Subclavian <span>Artery Disease</span>: <span>Diagnosis</span> and <span>Therapy</span>.”</span> <em>The American Journal of Medicine</em> 130 (4): 409–16. <a href="https://doi.org/10.1016/j.amjmed.2016.12.027">https://doi.org/10.1016/j.amjmed.2016.12.027</a>.
 </div>
-<div id="ref-shanmugam2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-shanmugam2019" class="csl-entry" role="listitem">
 Shanmugam, Victoria K. 2019. <span>“137. Vasculitis and Other Uncommon Arteriopathies.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 16.
 </div>
-<div id="ref-sharma2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-sharma2012" class="csl-entry" role="listitem">
 Sharma, Amit, and Robert A. Schwartz. 2012. <span>“Stewart-Treves Syndrome: Pathogenesis and Management.”</span> <em>Journal of the American Academy of Dermatology</em> 67 (6): 1342–48. <a href="https://doi.org/10.1016/j.jaad.2012.04.028">https://doi.org/10.1016/j.jaad.2012.04.028</a>.
 </div>
-<div id="ref-shuja2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-shuja2019" class="csl-entry" role="listitem">
 Shuja, Fahad. 2019. <span>“117. Upper Extremity Arterial Disease: Epidemiology, Etiology, and Diagnostic Evaluation.”</span> In, 11. Elsevier Inc.
 </div>
-<div id="ref-spinelli2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-spinelli2010" class="csl-entry" role="listitem">
 Spinelli, F., F. Benedetto, G. Passari, M. La Spada, G. Carella, F. Stilo, G. De Caridi, and S. Lentini. 2010. <span>“Bypass Surgery for the Treatment of Upper Limb Chronic Ischaemia.”</span> <em>European Journal of Vascular and Endovascular Surgery: The Official Journal of the European Society for Vascular Surgery</em> 39 (2): 165–70. <a href="https://doi.org/10.1016/j.ejvs.2009.10.015">https://doi.org/10.1016/j.ejvs.2009.10.015</a>.
 </div>
-<div id="ref-jamescstanleyCurrentTherapyVascular2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jamescstanleyCurrentTherapyVascular2014" class="csl-entry" role="listitem">
 Stanley, James C, Frank Veith, and Thomas W. Wakefield. 2014. <em>Current <span>Therapy</span> in <span>Vascular</span> and <span>Endovascular Surgery</span></em>. <span>Elsevier Health Sciences</span>.
 </div>
-<div id="ref-tanaka2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tanaka2015" class="csl-entry" role="listitem">
 Tanaka, Akiko, Ross Milner, and Takeyoshi Ota. 2015. <span>“Kommerell’s Diverticulum in the Current Era: A Comprehensive Review.”</span> <em>General Thoracic and Cardiovascular Surgery</em> 63 (5): 245–59. <a href="https://doi.org/10.1007/s11748-015-0521-3">https://doi.org/10.1007/s11748-015-0521-3</a>.
 </div>
-<div id="ref-tosti2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tosti2017" class="csl-entry" role="listitem">
 Tosti, Rick, Sezai Özkan, Robert M. Schainfeld, and Kyle R. Eberlin. 2017. <span>“Radial Artery Pseudoaneurysm.”</span> <em>The Journal of Hand Surgery</em> 42 (4): 295.e1–6. <a href="https://doi.org/10.1016/j.jhsa.2017.01.024">https://doi.org/10.1016/j.jhsa.2017.01.024</a>.
 </div>
-<div id="ref-tran2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tran2011" class="csl-entry" role="listitem">
 Tran, Daniel D., and Charles A. Andersen. 2011. <span>“Axillary Sheath Hematomas Causing Neurologic Complications Following Arterial Access.”</span> <em>Annals of Vascular Surgery</em> 25 (5): 697.e5–8. <a href="https://doi.org/10.1016/j.avsg.2010.12.024">https://doi.org/10.1016/j.avsg.2010.12.024</a>.
 </div>
-<div id="ref-tran2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tran2009" class="csl-entry" role="listitem">
 Tran, Victor, Alexander Shiferson, Anil P. Hingorani, Enrico Ascher, Natalie Marks, Kapil Gopal, Nirav Patel, and Theresa Jacob. 2009. <span>“Use of the StarClose Device for Closure of Inadvertent Subclavian Artery Punctures.”</span> <em>Annals of Vascular Surgery</em> 23 (5): 688.e11–13. <a href="https://doi.org/10.1016/j.avsg.2009.06.005">https://doi.org/10.1016/j.avsg.2009.06.005</a>.
 </div>
-<div id="ref-treitl2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-treitl2015" class="csl-entry" role="listitem">
 Treitl, Karla Maria, Cosima König, Maximilian F. Reiser, and Marcus Treitl. 2015. <span>“Complications of Transbrachial Arterial Access for Peripheral Endovascular Interventions.”</span> <em>Journal of Endovascular Therapy: An Official Journal of the International Society of Endovascular Specialists</em> 22 (1): 63–70. <a href="https://doi.org/10.1177/1526602814564363">https://doi.org/10.1177/1526602814564363</a>.
 </div>
-<div id="ref-valentine2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-valentine2005" class="csl-entry" role="listitem">
 Valentine, R. James, J. Gregory Modrall, and G. Patrick Clagett. 2005. <span>“Hand Ischemia After Radial Artery Cannulation.”</span> <em>Journal of the American College of Surgeons</em> 201 (1): 18–22. <a href="https://doi.org/10.1016/j.jamcollsurg.2005.01.011">https://doi.org/10.1016/j.jamcollsurg.2005.01.011</a>.
 </div>
-<div id="ref-vierhout2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-vierhout2010" class="csl-entry" role="listitem">
 Vierhout, B. P., C. J. Zeebregts, J. J. A. M. van den Dungen, and M. M. P. J. Reijnen. 2010. <span>“Changing Profiles of Diagnostic and Treatment Options in Subclavian Artery Aneurysms.”</span> <em>European Journal of Vascular and Endovascular Surgery</em> 40 (1): 27–34. <a href="https://doi.org/10.1016/j.ejvs.2010.03.011">https://doi.org/10.1016/j.ejvs.2010.03.011</a>.
 </div>
-<div id="ref-vandervliet1995" class="csl-entry" role="doc-biblioentry">
+<div id="ref-vandervliet1995" class="csl-entry" role="listitem">
 Vliet, J. A. van der, H. W. Palamba, D. M. Scharn, S. F. S. van Roye, and F. G. M. Buskens. 1995. <span>“Arterial Reconstruction for Subclavian Obstructive Disease: A Comparison of Extrathoracic Procedures.”</span> <em>European Journal of Vascular and Endovascular Surgery</em> 9 (4): 454–58. <a href="https://doi.org/10.1016/S1078-5884(05)80015-2">https://doi.org/10.1016/S1078-5884(05)80015-2</a>.
 </div>
-<div id="ref-voigtOutcomesCarotidsubclavianBypass2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-voigtOutcomesCarotidsubclavianBypass2019" class="csl-entry" role="listitem">
 Voigt, Soraya L., Muath Bishawi, David Ranney, Babatunde Yerokun, Richard L. McCann, and G. Chad Hughes. 2019. <span>“Outcomes of Carotid-Subclavian Bypass Performed in the Setting of Thoracic Endovascular Aortic Repair.”</span> <em>Journal of Vascular Surgery</em> 69 (3): 701–9. <a href="https://doi.org/10.1016/j.jvs.2018.07.022">https://doi.org/10.1016/j.jvs.2018.07.022</a>.
 </div>
-<div id="ref-wahlberg2006" class="csl-entry" role="doc-biblioentry">
+<div id="ref-wahlberg2006" class="csl-entry" role="listitem">
 Wahlberg, Eric, Jerry Goldstone, and Pär Olofsson. 2006. <em>Emergency Vascular Surgery: A Practical Guide</em>. Medicine (Springer-11650; ZDB-2-SME). Springer-Verlag. Springer e-books.
 </div>
-<div id="ref-warren2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-warren2007" class="csl-entry" role="listitem">
 Warren, Anne G., Håkan Brorson, Loren J. Borud, and Sumner A. Slavin. 2007. <span>“Lymphedema: A Comprehensive Review.”</span> <em>Annals of Plastic Surgery</em> 59 (4): 464–72. <a href="https://doi.org/10.1097/01.sap.0000257149.42922.7e">https://doi.org/10.1097/01.sap.0000257149.42922.7e</a>.
 </div>
-<div id="ref-weyand2003" class="csl-entry" role="doc-biblioentry">
+<div id="ref-weyand2003" class="csl-entry" role="listitem">
 Weyand, Cornelia M., and Jörg J. Goronzy. 2003. <span>“Medium- and Large-Vessel Vasculitis.”</span> <em>The New England Journal of Medicine</em> 349 (2): 160–69. <a href="https://doi.org/10.1056/NEJMra022694">https://doi.org/10.1056/NEJMra022694</a>.
 </div>
-<div id="ref-weyand2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-weyand2014" class="csl-entry" role="listitem">
 ———. 2014. <span>“Giant-Cell Arteritis and Polymyalgia Rheumatica.”</span> Edited by Caren G. Solomon. <em>New England Journal of Medicine</em> 371 (1): 50–57. <a href="https://doi.org/10.1056/NEJMcp1214825">https://doi.org/10.1056/NEJMcp1214825</a>.
 </div>
-<div id="ref-wigley2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-wigley2016" class="csl-entry" role="listitem">
 Wigley, Fredrick M., and Nicholas A. Flavahan. 2016. <span>“Raynaud’s Phenomenon.”</span> <em>The New England Journal of Medicine</em> 375 (6): 556–65. <a href="https://doi.org/10.1056/NEJMra1507638">https://doi.org/10.1056/NEJMra1507638</a>.
 </div>
-<div id="ref-yoon2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-yoon2015" class="csl-entry" role="listitem">
 Yoon, Dustin Y., Suman Annambhotla, Scott A. Resnick, Mark K. Eskandari, and Heron E. Rodriguez. 2015. <span>“Inadvertent Arterial Placement of Central Venous Catheters: Diagnostic and Therapeutic Strategies.”</span> <em>Annals of Vascular Surgery</em> 29 (8): 1567–74. <a href="https://doi.org/10.1016/j.avsg.2015.05.030">https://doi.org/10.1016/j.avsg.2015.05.030</a>.
 </div>
-<div id="ref-ziomek1986" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ziomek1986" class="csl-entry" role="listitem">
 Ziomek, S., W. J. Quiñones-Baldrich, R. W. Busuttil, J. D. Baker, H. I. Machleder, and W. S. Moore. 1986. <span>“The Superiority of Synthetic Arterial Grafts over Autologous Veins in Carotid-Subclavian Bypass.”</span> <em>Journal of Vascular Surgery</em> 3 (1): 140–45.
 </div>
 </div>
@@ -1400,9 +1439,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1414,7 +1467,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -1442,31 +1512,136 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
@@ -1485,7 +1660,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

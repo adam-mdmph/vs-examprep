@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,15 +12,21 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -34,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -119,11 +124,16 @@ cookieconsent.run({
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vascular-lab.html">General</a></li><li class="breadcrumb-item"><a href="./radiation.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -131,232 +141,265 @@ cookieconsent.run({
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Vascular Surgery Exam Prep</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./authors.html" class="sidebar-item-text sidebar-link">Authors and Contributors</a>
+  <a href="./authors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authors and Contributors</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Head and Neck</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Head and Neck</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></a>
+  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></a>
+  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Upper Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Upper Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></a>
+  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tos.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></a>
+  <a href="./tos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></a>
+  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Thorax</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Thorax</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dissection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></a>
+  <a href="./dissection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taaa.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></a>
+  <a href="./taaa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></a>
+  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></a>
+  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Abdomen</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Abdomen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></a>
+  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></a>
+  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./renal.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></a>
+  <a href="./renal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></a>
+  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></a>
+  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Lower Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Lower Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./claudication.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></a>
+  <a href="./claudication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clti.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></a>
+  <a href="./clti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ali.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></a>
+  <a href="./ali.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></a>
+  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></a>
+  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">General</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">General</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></a>
+  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./radiation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></a>
+  <a href="./radiation.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></a>
+  <a href="./endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rapid.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></a>
+  <a href="./rapid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#important-terms" id="toc-important-terms" class="nav-link active" data-scroll-target="#important-terms"> <span class="header-section-number">21.1</span> Important Terms</a></li>
-  <li><a href="#radiation-effects" id="toc-radiation-effects" class="nav-link" data-scroll-target="#radiation-effects"> <span class="header-section-number">21.2</span> Radiation effects</a></li>
-  <li><a href="#risk-factors" id="toc-risk-factors" class="nav-link" data-scroll-target="#risk-factors"> <span class="header-section-number">21.3</span> Risk factors</a></li>
-  <li><a href="#reduction-strategies" id="toc-reduction-strategies" class="nav-link" data-scroll-target="#reduction-strategies"> <span class="header-section-number">21.4</span> Reduction strategies</a>
+  <li><a href="#important-terms" id="toc-important-terms" class="nav-link active" data-scroll-target="#important-terms"><span class="header-section-number">21.1</span> Important Terms</a></li>
+  <li><a href="#radiation-effects" id="toc-radiation-effects" class="nav-link" data-scroll-target="#radiation-effects"><span class="header-section-number">21.2</span> Radiation effects</a></li>
+  <li><a href="#risk-factors" id="toc-risk-factors" class="nav-link" data-scroll-target="#risk-factors"><span class="header-section-number">21.3</span> Risk factors</a></li>
+  <li><a href="#reduction-strategies" id="toc-reduction-strategies" class="nav-link" data-scroll-target="#reduction-strategies"><span class="header-section-number">21.4</span> Reduction strategies</a>
   <ul class="collapse">
-  <li><a href="#pregnancy-considerations" id="toc-pregnancy-considerations" class="nav-link" data-scroll-target="#pregnancy-considerations"> <span class="header-section-number">21.4.1</span> Pregnancy considerations</a></li>
-  <li><a href="#regulation" id="toc-regulation" class="nav-link" data-scroll-target="#regulation"> <span class="header-section-number">21.4.2</span> Regulation</a></li>
+  <li><a href="#pregnancy-considerations" id="toc-pregnancy-considerations" class="nav-link" data-scroll-target="#pregnancy-considerations"><span class="header-section-number">21.4.1</span> Pregnancy considerations</a></li>
+  <li><a href="#regulation" id="toc-regulation" class="nav-link" data-scroll-target="#regulation"><span class="header-section-number">21.4.2</span> Regulation</a></li>
   </ul></li>
-  <li><a href="#contrast-reduction" id="toc-contrast-reduction" class="nav-link" data-scroll-target="#contrast-reduction"> <span class="header-section-number">21.5</span> Contrast Reduction</a>
+  <li><a href="#contrast-reduction" id="toc-contrast-reduction" class="nav-link" data-scroll-target="#contrast-reduction"><span class="header-section-number">21.5</span> Contrast Reduction</a>
   <ul class="collapse">
-  <li><a href="#co2-angiography" id="toc-co2-angiography" class="nav-link" data-scroll-target="#co2-angiography"> <span class="header-section-number">21.5.1</span> CO2 Angiography</a></li>
+  <li><a href="#co2-angiography" id="toc-co2-angiography" class="nav-link" data-scroll-target="#co2-angiography"><span class="header-section-number">21.5.1</span> CO2 Angiography</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -366,19 +409,15 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></h1>
+<h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    eBook Companion for Audible Bleeding Podcast Series
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -479,12 +518,12 @@ cookieconsent.run({
 <li><p>Decrease the frame rate to reduce the frequency of radiation exposure per second.</p></li>
 </ul></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Look
 </div>
 </div>
@@ -506,12 +545,12 @@ Take a Look
 <li><p>Lead shielding should be regularly inspected and discarded if damaged. Particularly if defect is &gt;15mm2 on a critical organ area, &gt;670mm2 along a seem/overlapping area, &gt;11mm2 on a thyroid shield.<span class="citation" data-cites="officeofhealthcareinspections2014 university">(<a href="references.html#ref-officeofhealthcareinspections2014" role="doc-biblioref">Healthcare Inspections 2014</a>; <a href="references.html#ref-university" role="doc-biblioref">University, Stanford, and Complaints, n.d.</a>)</span></p></li>
 </ul></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Look
 </div>
 </div>
@@ -589,12 +628,12 @@ Take a Look
 <li><p>Mesenteric vapor lock presents with significant unrelenting abdominal pain. Fluoroscopy can confirm a retained bubble. Initial management includes ongoing heparinization to prevent down stream thrombosis and maneuvers to break up the bubble by rotating the patient side-to-side or deep abdominal massage. Catheter aspiration may be needed.<span class="citation" data-cites="caridi1997 sharafuddin2017">(<a href="references.html#ref-caridi1997" role="doc-biblioref">Caridi and Hawkins 1997</a>; <a href="references.html#ref-sharafuddin2017" role="doc-biblioref">Sharafuddin and Marjan 2017</a>)</span></p></li>
 </ul></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -604,134 +643,134 @@ Take a Listen
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-arbique" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-arbique" class="csl-entry" role="listitem">
 Arbique, Gary M. n.d. <span>“The Fluoroscopic Sentinel Event: What to Do?”</span> 3 (3): 13.
 </div>
-<div id="ref-baiter2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-baiter2011" class="csl-entry" role="listitem">
 Baiter, Stephen, Marvin Rosenstein, Donald L. Miller, Beth Schueler, and David Spelic. 2011. <span>“Patient Radiation Dose Audits for Fluoroscopically Guided Interventional Procedures.”</span> <em>Medical Physics</em> 38 (3): 1611–18. <a href="https://doi.org/10.1118/1.3557868">https://doi.org/10.1118/1.3557868</a>.
 </div>
-<div id="ref-balter2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-balter2010" class="csl-entry" role="listitem">
 Balter, Stephen, John W. Hopewell, Donald L. Miller, Louis K. Wagner, and Michael J. Zelefsky. 2010. <span>“Fluoroscopically Guided Interventional Procedures: A Review of Radiation Effects on Patients’ Skin and Hair.”</span> <em>Radiology</em> 254 (2): 326–41. <a href="https://doi.org/10.1148/radiol.2542082312">https://doi.org/10.1148/radiol.2542082312</a>.
 </div>
-<div id="ref-brown2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-brown2011" class="csl-entry" role="listitem">
 Brown, Kellie R., and Eva Rzucidlo. 2011. <span>“Acute and Chronic Radiation Injury.”</span> <em>Journal of Vascular Surgery</em> 53 (1 Suppl): 15S–21S. <a href="https://doi.org/10.1016/j.jvs.2010.06.175">https://doi.org/10.1016/j.jvs.2010.06.175</a>.
 </div>
-<div id="ref-caridi1997" class="csl-entry" role="doc-biblioentry">
-Caridi, J. G., and I. F. Hawkins. 1997. <span>“Co2 Digital Subtraction Angiography: Potential Complications and Their Prevention.”</span> <em>Journal of Vascular and Interventional Radiology: JVIR</em> 8 (3): 383–91. <a href="https://doi.org/10.1016/s1051-0443(97)70577-3">https://doi.org/10.1016/s1051-0443(97)70577-3</a>.
+<div id="ref-caridi1997" class="csl-entry" role="listitem">
+Caridi, J. G., and I. F. Hawkins. 1997. <span>“CO2 Digital Subtraction Angiography: Potential Complications and Their Prevention.”</span> <em>Journal of Vascular and Interventional Radiology: JVIR</em> 8 (3): 383–91. <a href="https://doi.org/10.1016/s1051-0443(97)70577-3">https://doi.org/10.1016/s1051-0443(97)70577-3</a>.
 </div>
-<div id="ref-cdc2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cdc2011" class="csl-entry" role="listitem">
 CDC. 2011. <em>Prenatal Radiation Exposure: A Fact Sheet for Physicians</em>. Radiation Emergencies. <a href="https://emergency.cdc.gov/radiation/pdf/prenatalphysician.pdf">https://emergency.cdc.gov/radiation/pdf/prenatalphysician.pdf</a>.
 </div>
-<div id="ref-chandra2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-chandra2013" class="csl-entry" role="listitem">
 Chandra, Venita, Chelsea Dorsey, Amy B. Reed, Palma Shaw, Dawn Banghart, and Wei Zhou. 2013. <span>“Monitoring of Fetal Radiation Exposure During Pregnancy.”</span> <em>Journal of Vascular Surgery</em> 58 (3): 710–14. <a href="https://doi.org/10.1016/j.jvs.2013.01.052">https://doi.org/10.1016/j.jvs.2013.01.052</a>.
 </div>
-<div id="ref-cho2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cho2015" class="csl-entry" role="listitem">
 Cho, Kyung Jae. 2015. <span>“Carbon Dioxide Angiography: Scientific Principles and Practice.”</span> <em>Vascular Specialist International</em> 31 (3): 67–80. <a href="https://doi.org/10.5758/vsi.2015.31.3.67">https://doi.org/10.5758/vsi.2015.31.3.67</a>.
 </div>
-<div id="ref-cho2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cho2011" class="csl-entry" role="listitem">
 Cho, Kyung J., and Irvin F. Hawkins. 2011. <span>“Discontinuation of the Plastic Bag Delivery System for Carbon Dioxide Angiography Will Increase Radiocontrast Nephropathy and Life-Threatening Complications.”</span> <em>AJR. American Journal of Roentgenology</em> 197 (5): W940–941. <a href="https://doi.org/10.2214/AJR.11.6639">https://doi.org/10.2214/AJR.11.6639</a>.
 </div>
-<div id="ref-thejointcommission2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-thejointcommission2019" class="csl-entry" role="listitem">
 Commission, The Joint. 2019. <em>Radiation Risks of Diagnostic Imaging and Fluoroscopy</em>. Sentinel Event Alert. <a href="https://www.jointcommission.org/-/media/tjc/documents/resources/patient-safety-topics/sentinel-event/sea_47_radiation_revised2_feb_20181.pdf">https://www.jointcommission.org/-/media/tjc/documents/resources/patient-safety-topics/sentinel-event/sea_47_radiation_revised2_feb_20181.pdf</a>.
 </div>
-<div id="ref-criado2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-criado2012" class="csl-entry" role="listitem">
 Criado, Enrique, Gilbert R. Upchurch, Kate Young, John E. Rectenwald, Dawn M. Coleman, Jonathon L. Eliason, and Guillermo A. Escobar. 2012. <span>“Endovascular Aortic Aneurysm Repair with Carbon Dioxide-Guided Angiography in Patients with Renal Insufficiency.”</span> <em>Journal of Vascular Surgery</em> 55 (6): 1570–75. <a href="https://doi.org/10.1016/j.jvs.2011.11.142">https://doi.org/10.1016/j.jvs.2011.11.142</a>.
 </div>
-<div id="ref-dauer2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dauer2015" class="csl-entry" role="listitem">
 Dauer, Lawrence T., Donald L. Miller, Beth Schueler, James Silberzweig, Stephen Balter, Gabriel Bartal, Charles Chambers, et al. 2015. <span>“Occupational Radiation Protection of Pregnant or Potentially Pregnant Workers in IR: A Joint Guideline of the Society of Interventional Radiology and the Cardiovascular and Interventional Radiological Society of Europe.”</span> <em>Journal of Vascular and Interventional Radiology: JVIR</em> 26 (2): 171–81. <a href="https://doi.org/10.1016/j.jvir.2014.11.026">https://doi.org/10.1016/j.jvir.2014.11.026</a>.
 </div>
-<div id="ref-einstein2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-einstein2012" class="csl-entry" role="listitem">
 Einstein, Andrew J. 2012. <span>“Effects of Radiation Exposure from Cardiac Imaging: How Good Are the Data?”</span> <em>Journal of the American College of Cardiology</em> 59 (6): 553–65. <a href="https://doi.org/10.1016/j.jacc.2011.08.079">https://doi.org/10.1016/j.jacc.2011.08.079</a>.
 </div>
-<div id="ref-gonzales2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gonzales2014" class="csl-entry" role="listitem">
 Gonzales, John P., Christopher Moran, and James E. Silberzweig. 2014. <span>“Reduction of Operator Radiation Dose by an Extended Lower Body Shield.”</span> <em>Journal of Vascular and Interventional Radiology: JVIR</em> 25 (3): 462–68, 468.e1. <a href="https://doi.org/10.1016/j.jvir.2013.11.006">https://doi.org/10.1016/j.jvir.2013.11.006</a>.
 </div>
-<div id="ref-guesnier-dopagne2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-guesnier-dopagne2019" class="csl-entry" role="listitem">
 Guesnier-Dopagne, Mélanie, Louis Boyer, Bruno Pereira, Joël Guersen, Pascal Motreff, and Michel D’Incan. 2019. <span>“Incidence of Chronic Radiodermatitis After Fluoroscopically Guided Interventions: A Retrospective Study.”</span> <em>Journal of Vascular and Interventional Radiology: JVIR</em> 30 (5): 692–698.e13. <a href="https://doi.org/10.1016/j.jvir.2019.01.010">https://doi.org/10.1016/j.jvir.2019.01.010</a>.
 </div>
-<div id="ref-hamada2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hamada2017" class="csl-entry" role="listitem">
 Hamada, Nobuyuki, Sisko Salomaa, Kathryn D. Held, and John D. Boice. 2017. <span>“Introduction to the Bill Morgan Memorial Special Issue on Biology, Epidemiology, and Implications for Radiation Protection.”</span> <em>International Journal of Radiation Biology</em> 93 (10): 1003–8. <a href="https://doi.org/10.1080/09553002.2017.1342148">https://doi.org/10.1080/09553002.2017.1342148</a>.
 </div>
-<div id="ref-haqqani2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-haqqani2012" class="csl-entry" role="listitem">
 Haqqani, Omar P., Prakhar K. Agarwal, Neil M. Halin, and Mark D. Iafrati. 2012. <span>“Minimizing Radiation Exposure to the Vascular Surgeon.”</span> <em>Journal of Vascular Surgery</em> 55 (3): 799–805. <a href="https://doi.org/10.1016/j.jvs.2011.08.055">https://doi.org/10.1016/j.jvs.2011.08.055</a>.
 </div>
-<div id="ref-officeofhealthcareinspections2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-officeofhealthcareinspections2014" class="csl-entry" role="listitem">
 Healthcare Inspections, Office of. 2014. <em>Combined Assessment Program Review of the Canandaigua VA Medical Center</em>. 14-00688-162. Department of Veterans Affairs Office of Inspector General. <a href="https://www.va.gov/oig/pubs/VAOIG-14-00688-162.pdf">https://www.va.gov/oig/pubs/VAOIG-14-00688-162.pdf</a>.
 </div>
-<div id="ref-heidbuchel2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-heidbuchel2014" class="csl-entry" role="listitem">
 Heidbuchel, Hein, Fred H. M. Wittkampf, Eliseo Vano, Sabine Ernst, Richard Schilling, Eugenio Picano, Lluis Mont, et al. 2014. <span>“Practical Ways to Reduce Radiation Dose for Patients and Staff During Device Implantations and Electrophysiological Procedures.”</span> <em>Europace: European Pacing, Arrhythmias, and Cardiac Electrophysiology: Journal of the Working Groups on Cardiac Pacing, Arrhythmias, and Cardiac Cellular Electrophysiology of the European Society of Cardiology</em> 16 (7): 946–64. <a href="https://doi.org/10.1093/europace/eut409">https://doi.org/10.1093/europace/eut409</a>.
 </div>
-<div id="ref-hirshfeld2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hirshfeld2005" class="csl-entry" role="listitem">
 Hirshfeld, John W., Stephen Balter, Jeffrey A. Brinker, Morton J. Kern, Lloyd W. Klein, Bruce D. Lindsay, Carl L. Tommaso, et al. 2005. <span>“ACCF/AHA/HRS/SCAI Clinical Competence Statement on Physician Knowledge to Optimize Patient Safety and Image Quality in Fluoroscopically Guided Invasive Cardiovascular Procedures: A Report of the American College of Cardiology Foundation/American Heart Association/American College of Physicians Task Force on Clinical Competence and Training.”</span> <em>Circulation</em> 111 (4): 511–32. <a href="https://doi.org/10.1161/01.CIR.0000157946.29224.5D">https://doi.org/10.1161/01.CIR.0000157946.29224.5D</a>.
 </div>
-<div id="ref-johnson2001" class="csl-entry" role="doc-biblioentry">
+<div id="ref-johnson2001" class="csl-entry" role="listitem">
 Johnson, D. R., J. Kyriou, E. J. Morton, A. Clifton, M. Fitzgerald, and E. Macsweeney. 2001. <span>“Radiation Protection in Interventional Radiology.”</span> <em>Clinical Radiology</em> 56 (2): 99–106. <a href="https://doi.org/10.1053/crad.2000.0640">https://doi.org/10.1053/crad.2000.0640</a>.
 </div>
-<div id="ref-jones2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jones2011" class="csl-entry" role="listitem">
 Jones, A. Kyle, and Alexander S. Pasciak. 2011. <span>“Calculating the Peak Skin Dose Resulting from Fluoroscopically Guided Interventions. Part i: Methods.”</span> <em>Journal of Applied Clinical Medical Physics</em> 12 (4): 3670. <a href="https://doi.org/10.1120/jacmp.v12i4.3670">https://doi.org/10.1120/jacmp.v12i4.3670</a>.
 </div>
-<div id="ref-killewich2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-killewich2011" class="csl-entry" role="listitem">
 Killewich, Lois A., Garietta Falls, Tara M. Mastracci, and Kellie R. Brown. 2011. <span>“Factors Affecting Radiation Injury.”</span> <em>Journal of Vascular Surgery</em> 53 (1): 9S–14S. <a href="https://doi.org/10.1016/j.jvs.2010.07.025">https://doi.org/10.1016/j.jvs.2010.07.025</a>.
 </div>
-<div id="ref-kirkwood2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kirkwood2015" class="csl-entry" role="listitem">
 Kirkwood, Melissa L., Gary M. Arbique, Jeffrey B. Guild, Carlos Timaran, Jon A. Anderson, and R. James Valentine. 2015. <span>“Deterministic Effects After Fenestrated Endovascular Aortic Aneurysm Repair.”</span> <em>Journal of Vascular Surgery</em> 61 (4): 902–6. <a href="https://doi.org/10.1016/j.jvs.2014.11.044">https://doi.org/10.1016/j.jvs.2014.11.044</a>.
 </div>
-<div id="ref-kirkwood2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kirkwood2013" class="csl-entry" role="listitem">
 Kirkwood, Melissa L., Gary M. Arbique, Jeffrey B. Guild, Carlos Timaran, Jayer Chung, Jon A. Anderson, and R. James Valentine. 2013. <span>“Surgeon Education Decreases Radiation Dose in Complex Endovascular Procedures and Improves Patient Safety.”</span> <em>Journal of Vascular Surgery</em> 58 (3): 715–21. <a href="https://doi.org/10.1016/j.jvs.2013.04.004">https://doi.org/10.1016/j.jvs.2013.04.004</a>.
 </div>
-<div id="ref-kirkwood2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kirkwood2014" class="csl-entry" role="listitem">
 Kirkwood, Melissa L., Gary M. Arbique, Jeffrey B. Guild, Carlos Timaran, R. James Valentine, and Jon A. Anderson. 2014. <span>“Radiation-Induced Skin Injury After Complex Endovascular Procedures.”</span> <em>Journal of Vascular Surgery</em> 60 (3): 742–48. <a href="https://doi.org/10.1016/j.jvs.2014.03.236">https://doi.org/10.1016/j.jvs.2014.03.236</a>.
 </div>
-<div id="ref-kirkwood2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kirkwood2018" class="csl-entry" role="listitem">
 Kirkwood, Melissa L., Gary M. Arbique, Jeffrey B. Guild, Katie Zeng, Yin Xi, John Rectenwald, Jon A. Anderson, and Carlos Timaran. 2018. <span>“Radiation Brain Dose to Vascular Surgeons During Fluoroscopically Guided Interventions Is Not Effectively Reduced by Wearing Lead Equivalent Surgical Caps.”</span> <em>Journal of Vascular Surgery</em> 68 (2): 567–71. <a href="https://doi.org/10.1016/j.jvs.2017.12.054">https://doi.org/10.1016/j.jvs.2017.12.054</a>.
 </div>
-<div id="ref-knipp2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-knipp2010" class="csl-entry" role="listitem">
 Knipp, Brian S., Guillermo A. Escobar, Sean English, Gilbert R. Upchurch, and Enrique Criado. 2010. <span>“Endovascular Repair of Ruptured Aortic Aneurysms Using Carbon Dioxide Contrast Angiography.”</span> <em>Annals of Vascular Surgery</em> 24 (7): 845–50. <a href="https://doi.org/10.1016/j.avsg.2010.05.013">https://doi.org/10.1016/j.avsg.2010.05.013</a>.
 </div>
-<div id="ref-kwon2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kwon2011" class="csl-entry" role="listitem">
 Kwon, Deukwoo, Mark P. Little, and Donald L. Miller. 2011. <span>“Reference Air Kerma and Kerma-Area Product as Estimators of Peak Skin Dose for Fluoroscopically Guided Interventions.”</span> <em>Medical Physics</em> 38 (7): 4196–4204. <a href="https://doi.org/10.1118/1.3590358">https://doi.org/10.1118/1.3590358</a>.
 </div>
-<div id="ref-machan2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-machan2018" class="csl-entry" role="listitem">
 Machan, Lindsay. 2018. <span>“The Eyes Have It.”</span> <em>Techniques in Vascular and Interventional Radiology</em> 21 (1): 21–25. <a href="https://doi.org/10.1053/j.tvir.2017.12.005">https://doi.org/10.1053/j.tvir.2017.12.005</a>.
 </div>
-<div id="ref-miller2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-miller2010" class="csl-entry" role="listitem">
 Miller, Donald L., Eliseo Vañó, Gabriel Bartal, Stephen Balter, Robert Dixon, Renato Padovani, Beth Schueler, et al. 2010. <span>“Occupational Radiation Protection in Interventional Radiology: A Joint Guideline of the Cardiovascular and Interventional Radiology Society of Europe and the Society of Interventional Radiology.”</span> <em>Journal of Vascular and Interventional Radiology: JVIR</em> 21 (5): 607–15. <a href="https://doi.org/10.1016/j.jvir.2010.01.007">https://doi.org/10.1016/j.jvir.2010.01.007</a>.
 </div>
-<div id="ref-mitchell2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mitchell2011" class="csl-entry" role="listitem">
 Mitchell, Erica L., and Patricia Furey. 2011. <span>“Prevention of Radiation Injury from Medical Imaging.”</span> <em>Journal of Vascular Surgery</em> 53 (1): 22S–27S. <a href="https://doi.org/10.1016/j.jvs.2010.05.139">https://doi.org/10.1016/j.jvs.2010.05.139</a>.
 </div>
-<div id="ref-modarai2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-modarai2022" class="csl-entry" role="listitem">
 Modarai, Bijan, Stéphan Haulon, Elizabeth Ainsbury, Dittmar Böckler, Eliseo Vano-Carruana, Joseph Dawson, Mark Farber, et al. 2022. <span>“European Society for Vascular Surgery (ESVS) 2023 Clinical Practice Guidelines on Radiation Safety.”</span> <em>European Journal of Vascular and Endovascular Surgery</em>, September, S1078588422005469. <a href="https://doi.org/10.1016/j.ejvs.2022.09.005">https://doi.org/10.1016/j.ejvs.2022.09.005</a>.
 </div>
-<div id="ref-rajaraman2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rajaraman2016" class="csl-entry" role="listitem">
 Rajaraman, Preetha, Michele M. Doody, Chu Ling Yu, Dale L. Preston, Jeremy S. Miller, Alice J. Sigurdson, D. Michal Freedman, et al. 2016. <span>“Cancer Risks in u.s. Radiologic Technologists Working with Fluoroscopically Guided Interventional Procedures, 1994-2008.”</span> <em>AJR. American Journal of Roentgenology</em> 206 (5): 1101–1108; quiz 1109. <a href="https://doi.org/10.2214/AJR.15.15265">https://doi.org/10.2214/AJR.15.15265</a>.
 </div>
-<div id="ref-reed2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-reed2019" class="csl-entry" role="listitem">
 Reed, Amy B. 2019. <span>“24. Radiation Safety.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 265–273.e1. Elsevier Inc. <a href="https://doi.org/10.1016/B978-0-323-40126-5.00005-7">https://doi.org/10.1016/B978-0-323-40126-5.00005-7</a>.
 </div>
-<div id="ref-sailer2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-sailer2019" class="csl-entry" role="listitem">
 Sailer, Anna M., Leonie Paulis, Laura Vergoossen, Joachim E. Wildberger, and Cécile R. L. P. N. Jeukens. 2019. <span>“Optimizing Staff Dose in Fluoroscopy-Guided Interventions by Comparing Clinical Data with Phantom Experiments.”</span> <em>Journal of Vascular and Interventional Radiology: JVIR</em> 30 (5): 701–708.e1. <a href="https://doi.org/10.1016/j.jvir.2018.11.019">https://doi.org/10.1016/j.jvir.2018.11.019</a>.
 </div>
-<div id="ref-schabelman2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-schabelman2010" class="csl-entry" role="listitem">
 Schabelman, Esteban, and Michael Witting. 2010. <span>“The Relationship of Radiocontrast, Iodine, and Seafood Allergies: A Medical Myth Exposed.”</span> <em>The Journal of Emergency Medicine</em> 39 (5): 701–7. <a href="https://doi.org/10.1016/j.jemermed.2009.10.014">https://doi.org/10.1016/j.jemermed.2009.10.014</a>.
 </div>
-<div id="ref-sharafuddin2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-sharafuddin2017" class="csl-entry" role="listitem">
 Sharafuddin, Mel J., and Anna E. Marjan. 2017. <span>“Current Status of Carbon Dioxide Angiography.”</span> <em>Journal of Vascular Surgery</em> 66 (2): 618–37. <a href="https://doi.org/10.1016/j.jvs.2017.03.446">https://doi.org/10.1016/j.jvs.2017.03.446</a>.
 </div>
-<div id="ref-shaw2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-shaw2011" class="csl-entry" role="listitem">
 Shaw, Palma, Audra Duncan, Ageliki Vouyouka, and Kathleen Ozsvath. 2011. <span>“Radiation Exposure and Pregnancy.”</span> <em>Journal of Vascular Surgery</em> 53 (1): 28S–34S. <a href="https://doi.org/10.1016/j.jvs.2010.05.140">https://doi.org/10.1016/j.jvs.2010.05.140</a>.
 </div>
-<div id="ref-stecker2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-stecker2009" class="csl-entry" role="listitem">
 Stecker, Michael S., Stephen Balter, Richard B. Towbin, Donald L. Miller, Eliseo Vañó, Gabriel Bartal, J. Fritz Angle, et al. 2009. <span>“Guidelines for Patient Radiation Dose Management.”</span> <em>Journal of Vascular and Interventional Radiology: JVIR</em> 20 (7 Suppl): S263–273. <a href="https://doi.org/10.1016/j.jvir.2009.04.037">https://doi.org/10.1016/j.jvir.2009.04.037</a>.
 </div>
-<div id="ref-university" class="csl-entry" role="doc-biblioentry">
+<div id="ref-university" class="csl-entry" role="listitem">
 University, © Stanford, Stanford, and California 94305 Copyright Complaints. n.d. <span>“Radiation Protection Guidance for Hospital Staff – Stanford Environmental Health and Safety.”</span> <a href="https://ehs.stanford.edu/manual/radiation-protection-guidance-hospital-staff">https://ehs.stanford.edu/manual/radiation-protection-guidance-hospital-staff</a>.
 </div>
-<div id="ref-wagner1999" class="csl-entry" role="doc-biblioentry">
+<div id="ref-wagner1999" class="csl-entry" role="listitem">
 Wagner, L. K., M. D. McNeese, M. V. Marx, and E. L. Siegel. 1999. <span>“Severe Skin Reactions from Interventional Fluoroscopy: Case Report and Review of the Literature.”</span> <em>Radiology</em> 213 (3): 773–76. <a href="https://doi.org/10.1148/radiology.213.3.r99dc16773">https://doi.org/10.1148/radiology.213.3.r99dc16773</a>.
 </div>
-<div id="ref-witrak1984" class="csl-entry" role="doc-biblioentry">
+<div id="ref-witrak1984" class="csl-entry" role="listitem">
 Witrak, B. J., and P. Sprawls. 1984. <span>“Maternity Lead Apron.”</span> <em>Radiology</em> 150 (2): 597. <a href="https://doi.org/10.1148/radiology.150.2.6691124">https://doi.org/10.1148/radiology.150.2.6691124</a>.
 </div>
 </div>
@@ -767,9 +806,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -781,7 +834,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -809,31 +879,136 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
@@ -852,7 +1027,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

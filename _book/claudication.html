@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,15 +12,21 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -34,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -119,11 +124,16 @@ cookieconsent.run({
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./claudication.html">Lower Extremity</a></li><li class="breadcrumb-item"><a href="./claudication.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -131,230 +141,263 @@ cookieconsent.run({
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Vascular Surgery Exam Prep</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/adam-mdmph/vs-examprep.git" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./authors.html" class="sidebar-item-text sidebar-link">Authors and Contributors</a>
+  <a href="./authors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authors and Contributors</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Head and Neck</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Head and Neck</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></a>
+  <a href="./cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cerebrovascular</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></a>
+  <a href="./trauma-cerebrovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Trauma - Cerebrovascular</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Upper Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Upper Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></a>
+  <a href="./upper-extremity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Upper Extremity</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tos.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></a>
+  <a href="./tos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Thoracic Outlet</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></a>
+  <a href="./hemodialysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hemodialysis</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Thorax</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Thorax</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dissection.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></a>
+  <a href="./dissection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Aortic Dissection</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./taaa.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></a>
+  <a href="./taaa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">TAAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></a>
+  <a href="./aortopathies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Aortopathies</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></a>
+  <a href="./trauma-endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Trauma - Endo</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Abdomen</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Abdomen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></a>
+  <a href="./abdominal-aneurysms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">AAA</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></a>
+  <a href="./mesenteric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mesenteric Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./renal.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></a>
+  <a href="./renal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Renal</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></a>
+  <a href="./trauma-arterial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Trauma - Arterial</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></a>
+  <a href="./trauma-venous.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Trauma - Venous</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Lower Extremity</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Lower Extremity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./claudication.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></a>
+  <a href="./claudication.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clti.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></a>
+  <a href="./clti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">CLTI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ali.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></a>
+  <a href="./ali.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Acute Limb Ischemia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></a>
+  <a href="./venous-disease.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Venous Disease</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></a>
+  <a href="./trauma-peripheral.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Trauma - Peripheral</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">General</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+ <span class="menu-text">General</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></a>
+  <a href="./vascular-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Vascular Lab</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./radiation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></a>
+  <a href="./radiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Radiation Safety</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./endovascular.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></a>
+  <a href="./endovascular.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Endovascular Access</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rapid.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></a>
+  <a href="./rapid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Rapid Review</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#pathogenesis-of-peripheral-arterial-disease" id="toc-pathogenesis-of-peripheral-arterial-disease" class="nav-link active" data-scroll-target="#pathogenesis-of-peripheral-arterial-disease"> <span class="header-section-number">15.1</span> Pathogenesis of peripheral arterial disease</a>
+  <li><a href="#pathogenesis-of-peripheral-arterial-disease" id="toc-pathogenesis-of-peripheral-arterial-disease" class="nav-link active" data-scroll-target="#pathogenesis-of-peripheral-arterial-disease"><span class="header-section-number">15.1</span> Pathogenesis of peripheral arterial disease</a>
   <ul class="collapse">
-  <li><a href="#sec-pad-risk-factors" id="toc-sec-pad-risk-factors" class="nav-link" data-scroll-target="#sec-pad-risk-factors"> <span class="header-section-number">15.1.1</span> Risk Factors</a></li>
-  <li><a href="#landmark-studies" id="toc-landmark-studies" class="nav-link" data-scroll-target="#landmark-studies"> <span class="header-section-number">15.1.2</span> Landmark Studies</a></li>
+  <li><a href="#sec-pad-risk-factors" id="toc-sec-pad-risk-factors" class="nav-link" data-scroll-target="#sec-pad-risk-factors"><span class="header-section-number">15.1.1</span> Risk Factors</a></li>
+  <li><a href="#landmark-studies" id="toc-landmark-studies" class="nav-link" data-scroll-target="#landmark-studies"><span class="header-section-number">15.1.2</span> Landmark Studies</a></li>
   </ul></li>
-  <li><a href="#intermittent-claudication" id="toc-intermittent-claudication" class="nav-link" data-scroll-target="#intermittent-claudication"> <span class="header-section-number">15.2</span> Intermittent Claudication</a>
+  <li><a href="#intermittent-claudication" id="toc-intermittent-claudication" class="nav-link" data-scroll-target="#intermittent-claudication"><span class="header-section-number">15.2</span> Intermittent Claudication</a>
   <ul class="collapse">
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"> <span class="header-section-number">15.2.1</span> Evaluation</a></li>
-  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"> <span class="header-section-number">15.2.2</span> Management</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation"><span class="header-section-number">15.2.1</span> Evaluation</a></li>
+  <li><a href="#management" id="toc-management" class="nav-link" data-scroll-target="#management"><span class="header-section-number">15.2.2</span> Management</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -364,19 +407,15 @@ cookieconsent.run({
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></h1>
+<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Medical Management and Claudication</span></h1>
 </div>
 
-<div>
-  <div class="description">
-    eBook Companion for Audible Bleeding Podcast Series
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -400,12 +439,12 @@ cookieconsent.run({
 Although with the rising incidence of diabetes a second population of patients with a significant PAD burden has developed.</p>
 <p>Atherosclerosis begins with an injury to the intimal lining of the arterial wall, which, for example, can result from smoking, hypertension, hyperglycemia, or advanced age. Repeated injury leads to a chronic inflammatory process resulting in the uptake and oxidation of LDL, resulting in foam cells.<span class="citation" data-cites="hiltunen1998 tsimikas2005 witztum1994">(<a href="references.html#ref-hiltunen1998" role="doc-biblioref">Hiltunen et al. 1998</a>; <a href="references.html#ref-tsimikas2005" role="doc-biblioref">Tsimikas et al. 2005</a>; <a href="references.html#ref-witztum1994" role="doc-biblioref">Witztum 1994</a>)</span> Foam cells result when unregulated scavenger receptors promote uptake of oxidized LDL by macrophages and smooth muscle cells. These foam cells become necrotic and then create the central core of the atheroma.<span class="citation" data-cites="owens2019">(<a href="references.html#ref-owens2019" role="doc-biblioref">Owens 2019</a>)</span> This oxidized LDL form into intimal plaque, build up and calcification that may result in progressive vessel stenosis and subsequent occlusion, or plaque rupture with acute occlusion.</p>
 <p>Atherosclerosis is particularly prone to developing at sites of arterial bifurcation (i.e.&nbsp;carotid bifurcation, femoral bifurcation) because turbulent flow and low laminar shear stress results in the down regulation of eNOS and NO production. This in turn increases V-CAM-1 and reduces inhibition of KF-kB (resulting in it’s elevation.<span class="citation" data-cites="owens2019">(<a href="references.html#ref-owens2019" role="doc-biblioref">Owens 2019</a>)</span></p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -730,12 +769,12 @@ Take a Listen
 <li><p>European Society of Vascular Surgery<span class="citation" data-cites="aboyans2017ESCGuidelines2018">(<a href="references.html#ref-aboyans2017ESCGuidelines2018" role="doc-biblioref">Aboyans et al. 2018</a>)</span></p></li>
 <li><p>AHA/ACC Guidelines<span class="citation" data-cites="gerhard-herman2017">(<a href="references.html#ref-gerhard-herman2017" role="doc-biblioref">Gerhard-Herman et al. 2017</a>)</span> - multidisciplinary, involving vascular surgeons</p></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -861,12 +900,12 @@ Take a Listen
 </ul></li>
 </ul></li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Take a Listen
 </div>
 </div>
@@ -876,329 +915,329 @@ Take a Listen
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-aboyansMeasurementInterpretationAnkleBrachial2012" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-aboyansMeasurementInterpretationAnkleBrachial2012" class="csl-entry" role="listitem">
 Aboyans, Victor, Michael H. Criqui, Pierre Abraham, Matthew A. Allison, Mark A. Creager, Curt Diehm, F. Gerry R. Fowkes, et al. 2012. <span>“Measurement and <span>Interpretation</span> of the <span>Ankle-Brachial Index</span>: <span>A Scientific Statement From</span> the <span>American Heart Association</span>.”</span> <em>Circulation</em> 126 (24): 2890–2909. <a href="https://doi.org/10.1161/CIR.0b013e318276fbcb">https://doi.org/10.1161/CIR.0b013e318276fbcb</a>.
 </div>
-<div id="ref-aboyansGeneralPrognosisPatients2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-aboyansGeneralPrognosisPatients2010" class="csl-entry" role="listitem">
 Aboyans, Victor, Ileana Desormais, Philippe Lacroix, Johanna Salazar, Michael H. Criqui, and Marc Laskar. 2010. <span>“The <span>General Prognosis</span> of <span>Patients With Peripheral Arterial Disease Differs According</span> to the <span>Disease Localization</span>.”</span> <em>Journal of the American College of Cardiology</em> 55 (9): 898–903. <a href="https://doi.org/10.1016/j.jacc.2009.09.055">https://doi.org/10.1016/j.jacc.2009.09.055</a>.
 </div>
-<div id="ref-aboyans2017ESCGuidelines2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-aboyans2017ESCGuidelines2018" class="csl-entry" role="listitem">
 Aboyans, Victor, Jean-Baptiste Ricco, Marie-Louise E L Bartelink, Martin Björck, Marianne Brodmann, Tina Cohnert, Jean-Philippe Collet, et al. 2018. <span>“2017 <span>ESC Guidelines</span> on the <span>Diagnosis</span> and <span>Treatment</span> of <span>Peripheral Arterial Diseases</span>, in Collaboration with the <span>European Society</span> for <span>Vascular Surgery</span> (<span>ESVS</span>).”</span> <em>European Heart Journal</em> 39 (9): 763–816. <a href="https://doi.org/10.1093/eurheartj/ehx095">https://doi.org/10.1093/eurheartj/ehx095</a>.
 </div>
-<div id="ref-adler2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-adler2000" class="csl-entry" role="listitem">
 Adler, A. I., I. M. Stratton, H. A. Neil, J. S. Yudkin, D. R. Matthews, C. A. Cull, A. D. Wright, R. C. Turner, and R. R. Holman. 2000. <span>“Association of Systolic Blood Pressure with Macrovascular and Microvascular Complications of Type 2 Diabetes (UKPDS 36): Prospective Observational Study.”</span> <em>BMJ (Clinical Research Ed.)</em> 321 (7258): 412–19. <a href="https://doi.org/10.1136/bmj.321.7258.412">https://doi.org/10.1136/bmj.321.7258.412</a>.
 </div>
-<div id="ref-adlerUKPDS59Hyperglycemia2002" class="csl-entry" role="doc-biblioentry">
+<div id="ref-adlerUKPDS59Hyperglycemia2002" class="csl-entry" role="listitem">
 Adler, Amanda I., Richard J. Stevens, Andrew Neil, Irene M. Stratton, Andrew J. M. Boulton, Rury R. Holman, and for the U.K. Prospective Diabetes Study Group. 2002. <span>“<span>UKPDS</span> 59: <span>Hyperglycemia</span> and <span>Other Potentially Modifiable Risk Factors</span> for <span>Peripheral Vascular Disease</span> in <span>Type</span> 2 <span>Diabetes</span>.”</span> <em>Diabetes Care</em> 25 (5): 894–99. <a href="https://doi.org/10.2337/diacare.25.5.894">https://doi.org/10.2337/diacare.25.5.894</a>.
 </div>
-<div id="ref-ahlborg2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ahlborg2007" class="csl-entry" role="listitem">
 Ahlborg, Gunvor, Alexey Shemyakin, Felix Böhm, Adrian Gonon, and John Pernow. 2007. <span>“Dual Endothelin Receptor Blockade Acutely Improves Insulin Sensitivity in Obese Patients with Insulin Resistance and Coronary Artery Disease.”</span> <em>Diabetes Care</em> 30 (3): 591–96. <a href="https://doi.org/10.2337/dc06-1978">https://doi.org/10.2337/dc06-1978</a>.
 </div>
-<div id="ref-vandenakker1992" class="csl-entry" role="doc-biblioentry">
+<div id="ref-vandenakker1992" class="csl-entry" role="listitem">
 Akker, P. J. van den, R. van Schilfgaarde, R. Brand, J. Hajo van Bockel, and J. L. Terpstra. 1992. <span>“Long-Term Results of Prosthetic and Non-Prosthetic Reconstruction for Obstructive Aorto-Iliac Disease.”</span> <em>European Journal of Vascular Surgery</em> 6 (1): 53–61. <a href="https://doi.org/10.1016/s0950-821x(05)80095-7">https://doi.org/10.1016/s0950-821x(05)80095-7</a>.
 </div>
-<div id="ref-allisonEffectNovelCardiovascular2006" class="csl-entry" role="doc-biblioentry">
+<div id="ref-allisonEffectNovelCardiovascular2006" class="csl-entry" role="listitem">
 Allison, Matthew A., Michael H. Criqui, Robyn L. McClelland, JoAnn M. Scott, Mary M. McDermott, Kiang Liu, Aaron R. Folsom, et al. 2006. <span>“The <span>Effect</span> of <span>Novel Cardiovascular Risk Factors</span> on the <span>Ethnic-Specific Odds</span> for <span>Peripheral Arterial Disease</span> in the <span>Multi-Ethnic Study</span> of <span>Atherosclerosis</span> (<span>MESA</span>).”</span> <em>Journal of the American College of Cardiology</em> 48 (6): 1190–97. <a href="https://doi.org/10.1016/j.jacc.2006.05.049">https://doi.org/10.1016/j.jacc.2006.05.049</a>.
 </div>
-<div id="ref-alqahtaniPredictorsChangeAnkleBrachial2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-alqahtaniPredictorsChangeAnkleBrachial2018" class="csl-entry" role="listitem">
 Alqahtani, Khalid M., Munveer Bhangoo, Florin Vaida, Julie O. Denenberg, Matthew A. Allison, and Michael H. Criqui. 2018. <span>“Predictors of <span>Change</span> in the <span>Ankle-Brachial Index</span> with <span>Exercise</span>.”</span> <em>European Journal of Vascular and Endovascular Surgery : The Official Journal of the European Society for Vascular Surgery</em> 55 (3): 399–404. <a href="https://doi.org/10.1016/j.ejvs.2017.12.004">https://doi.org/10.1016/j.ejvs.2017.12.004</a>.
 </div>
-<div id="ref-anand2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-anand2018" class="csl-entry" role="listitem">
 Anand, Sonia S., Francois Caron, John W. Eikelboom, Jackie Bosch, Leanne Dyal, Victor Aboyans, Maria Teresa Abola, et al. 2018. <span>“Major Adverse Limb Events and Mortality in Patients with Peripheral Artery Disease: The COMPASS Trial.”</span> <em>Journal of the American College of Cardiology</em> 71 (20): 2306–15. <a href="https://doi.org/10.1016/j.jacc.2018.03.008">https://doi.org/10.1016/j.jacc.2018.03.008</a>.
 </div>
-<div id="ref-anthenelli2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-anthenelli2016" class="csl-entry" role="listitem">
 Anthenelli, Robert M., Neal L. Benowitz, Robert West, Lisa St Aubin, Thomas McRae, David Lawrence, John Ascher, Cristina Russ, Alok Krishen, and A. Eden Evins. 2016. <span>“Neuropsychiatric Safety and Efficacy of Varenicline, Bupropion, and Nicotine Patch in Smokers with and Without Psychiatric Disorders (EAGLES): A Double-Blind, Randomised, Placebo-Controlled Clinical Trial.”</span> <em>Lancet (London, England)</em> 387 (10037): 2507–20. <a href="https://doi.org/10.1016/S0140-6736(16)30272-0">https://doi.org/10.1016/S0140-6736(16)30272-0</a>.
 </div>
-<div id="ref-armstrong2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-armstrong2017" class="csl-entry" role="listitem">
 Armstrong, David G., Andrew J. M. Boulton, and Sicco A. Bus. 2017. <span>“Diabetic Foot Ulcers and Their Recurrence.”</span> <em>The New England Journal of Medicine</em> 376 (24): 2367–75. <a href="https://doi.org/10.1056/NEJMra1615439">https://doi.org/10.1056/NEJMra1615439</a>.
 </div>
-<div id="ref-armstrong26PathophysiologyPrinciplesManagement2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-armstrong26PathophysiologyPrinciplesManagement2012" class="csl-entry" role="listitem">
 Armstrong, David L, Timothy K Fisher, Brian Lepow, Matthew L White, and Joseph L Mills. 2012. <span>“<span>26Pathophysiology</span> and <span>Principles</span> of <span>Management</span> of the <span>Diabetic Foot</span>.”</span> In <em>Mechanisms of <span>Vascular Disease</span>: <span>A Reference Book</span> for <span>Vascular Specialists</span></em>. <span>Adelaide</span>: <span>University of Adelaide Press</span>. <a href="https://doi.org/10.1017/UPO9781922064004">https://doi.org/10.1017/UPO9781922064004</a>.
 </div>
-<div id="ref-bandyk2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bandyk2018" class="csl-entry" role="listitem">
 Bandyk, Dennis F. 2018. <span>“The Diabetic Foot: Pathophysiology, Evaluation, and Treatment.”</span> <em>Seminars in Vascular Surgery</em> 31 (2-4): 43–48. <a href="https://doi.org/10.1053/j.semvascsurg.2019.02.001">https://doi.org/10.1053/j.semvascsurg.2019.02.001</a>.
 </div>
-<div id="ref-banerjee2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-banerjee2015" class="csl-entry" role="listitem">
 Banerjee, Subhash, Karan Sarode, Ariel Vinas, Avantika Banerjee, Atif Mohammad, and Emmanouil S. Brilakis. 2015. <span>“The Role of Antiplatelet Therapy in Patients with Peripheral Artery Disease and Lower Extremity Peripheral Artery Revascularization.”</span> <em>Current Opinion in Cardiology</em> 30 (5): 525–35. <a href="https://doi.org/10.1097/HCO.0000000000000208">https://doi.org/10.1097/HCO.0000000000000208</a>.
 </div>
-<div id="ref-barrons2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-barrons2016" class="csl-entry" role="listitem">
 Barrons, Robert W., and J. Andrew Woods. 2016. <span>“The Roles of ACE Inhibitors in Lower Extremity Peripheral Artery Disease.”</span> <em>American Journal of Therapeutics</em> 23 (1): e7–15. <a href="https://doi.org/10.1097/MJT.0000000000000011">https://doi.org/10.1097/MJT.0000000000000011</a>.
 </div>
-<div id="ref-bavry2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bavry2010" class="csl-entry" role="listitem">
 Bavry, Anthony A., R. David Anderson, Yan Gong, Scott J. Denardo, Rhonda M. Cooper-Dehoff, Eileen M. Handberg, and Carl J. Pepine. 2010. <span>“Outcomes Among Hypertensive Patients with Concomitant Peripheral and Coronary Artery Disease: Findings from the INternational VErapamil-SR/Trandolapril STudy.”</span> <em>Hypertension (Dallas, Tex.: 1979)</em> 55 (1): 48–53. <a href="https://doi.org/10.1161/HYPERTENSIONAHA.109.142240">https://doi.org/10.1161/HYPERTENSIONAHA.109.142240</a>.
 </div>
-<div id="ref-bildMultiEthnicStudyAtherosclerosis2002" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bildMultiEthnicStudyAtherosclerosis2002" class="csl-entry" role="listitem">
 Bild, D. E. 2002. <span>“Multi-<span>Ethnic Study</span> of <span>Atherosclerosis</span>: <span>Objectives</span> and <span>Design</span>.”</span> <em>American Journal of Epidemiology</em> 156 (9): 871–81. <a href="https://doi.org/10.1093/aje/kwf113">https://doi.org/10.1093/aje/kwf113</a>.
 </div>
-<div id="ref-bitzur2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-bitzur2013" class="csl-entry" role="listitem">
 Bitzur, Rafael, Hofit Cohen, Yehuda Kamari, and Dror Harats. 2013. <span>“Intolerance to Statins: Mechanisms and Management.”</span> <em>Diabetes Care</em> 36 Suppl 2 (August): S325–330. <a href="https://doi.org/10.2337/dcS13-2038">https://doi.org/10.2337/dcS13-2038</a>.
 </div>
-<div id="ref-blessberger2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-blessberger2018" class="csl-entry" role="listitem">
 Blessberger, Hermann, Juergen Kammler, Hans Domanovits, Oliver Schlager, Brigitte Wildner, Danyel Azar, Martin Schillinger, Franz Wiesbauer, and Clemens Steinwender. 2018. <span>“Perioperative Beta-Blockers for Preventing Surgery-Related Mortality and Morbidity.”</span> <em>The Cochrane Database of Systematic Reviews</em> 3 (March): CD004476. <a href="https://doi.org/10.1002/14651858.CD004476.pub3">https://doi.org/10.1002/14651858.CD004476.pub3</a>.
 </div>
-<div id="ref-boultonGlobalBurdenDiabetic2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-boultonGlobalBurdenDiabetic2005" class="csl-entry" role="listitem">
 Boulton, Andrew JM, Loretta Vileikyte, Gunnel Ragnarson-Tennvall, and Jan Apelqvist. 2005. <span>“The Global Burden of Diabetic Foot Disease.”</span> <em>The Lancet</em> 366 (9498): 1719–24. <a href="https://doi.org/10.1016/S0140-6736(05)67698-2">https://doi.org/10.1016/S0140-6736(05)67698-2</a>.
 </div>
-<div id="ref-brewster1978" class="csl-entry" role="doc-biblioentry">
+<div id="ref-brewster1978" class="csl-entry" role="listitem">
 Brewster, D. C., and R. C. Darling. 1978. <span>“Optimal Methods of Aortoiliac Reconstruction.”</span> <em>Surgery</em> 84 (6): 739–48.
 </div>
-<div id="ref-cahill2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cahill2016" class="csl-entry" role="listitem">
 Cahill, Kate, Nicola Lindson-Hawley, Kyla H. Thomas, Thomas R. Fanshawe, and Tim Lancaster. 2016. <span>“Nicotine Receptor Partial Agonists for Smoking Cessation.”</span> <em>The Cochrane Database of Systematic Reviews</em>, no. 5 (May): CD006103. <a href="https://doi.org/10.1002/14651858.CD006103.pub7">https://doi.org/10.1002/14651858.CD006103.pub7</a>.
 </div>
-<div id="ref-colhoun2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-colhoun2004" class="csl-entry" role="listitem">
 Colhoun, Helen M., D. John Betteridge, Paul N. Durrington, Graham A. Hitman, H. Andrew W. Neil, Shona J. Livingstone, Margaret J. Thomason, et al. 2004. <span>“Primary Prevention of Cardiovascular Disease with Atorvastatin in Type 2 Diabetes in the Collaborative Atorvastatin Diabetes Study (CARDS): Multicentre Randomised Placebo-Controlled Trial.”</span> <em>Lancet (London, England)</em> 364 (9435): 685–96. <a href="https://doi.org/10.1016/S0140-6736(04)16895-5">https://doi.org/10.1016/S0140-6736(04)16895-5</a>.
 </div>
-<div id="ref-collaborationCollaborativeMetaanalysisRandomised2002" class="csl-entry" role="doc-biblioentry">
+<div id="ref-collaborationCollaborativeMetaanalysisRandomised2002" class="csl-entry" role="listitem">
 Collaboration, Antithrombotic Trialists’. 2002. <span>“<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC64503">Collaborative Meta-Analysis of Randomised Trials of Antiplatelet Therapy for Prevention of Death, Myocardial Infarction, and Stroke in High Risk Patients</a>.”</span> <em>BMJ : British Medical Journal</em> 324 (7329): 71–86.
 </div>
-<div id="ref-antithrombotictrialists2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-antithrombotictrialists2009" class="csl-entry" role="listitem">
 Collaboration, Antithrombotic Trialists’(ATT), Colin Baigent, Lisa Blackwell, Rory Collins, Jonathan Emberson, Jon Godwin, Richard Peto, et al. 2009. <span>“Aspirin in the Primary and Secondary Prevention of Vascular Disease: Collaborative Meta-Analysis of Individual Participant Data from Randomised Trials.”</span> <em>Lancet (London, England)</em> 373 (9678): 1849–60. <a href="https://doi.org/10.1016/S0140-6736(09)60503-1">https://doi.org/10.1016/S0140-6736(09)60503-1</a>.
 </div>
-<div id="ref-cholesteroltreatmenttrialists2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-cholesteroltreatmenttrialists2008" class="csl-entry" role="listitem">
 Collaborators, Cholesterol Treatment Trialists’(CTT), P. M. Kearney, L. Blackwell, R. Collins, A. Keech, J. Simes, R. Peto, J. Armitage, and C. Baigent. 2008. <span>“Efficacy of Cholesterol-Lowering Therapy in 18,686 People with Diabetes in 14 Randomised Trials of Statins: A Meta-Analysis.”</span> <em>Lancet (London, England)</em> 371 (9607): 117–25. <a href="https://doi.org/10.1016/S0140-6736(08)60104-X">https://doi.org/10.1016/S0140-6736(08)60104-X</a>.
 </div>
-<div id="ref-capriesteeringcommitteeRandomisedBlindedTrial1996" class="csl-entry" role="doc-biblioentry">
+<div id="ref-capriesteeringcommitteeRandomisedBlindedTrial1996" class="csl-entry" role="listitem">
 Committee, CAPRIE Steering. 1996. <span>“A Randomised, Blinded, Trial of Clopidogrel Versus Aspirin in Patients at Risk of Ischaemic Events (<span>CAPRIE</span>).”</span> <em>The Lancet</em> 348 (9038): 1329–39. <a href="https://doi.org/10.1016/S0140-6736(96)09457-3">https://doi.org/10.1016/S0140-6736(96)09457-3</a>.
 </div>
-<div id="ref-conteGlobalVascularGuidelines2019a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-conteGlobalVascularGuidelines2019a" class="csl-entry" role="listitem">
 Conte, Michael S., Andrew W. Bradbury, Philippe Kolh, John V. White, Florian Dick, Robert Fitridge, Joseph L Mills, Jean-Baptiste Ricco, Kalkunte R. Suresh, and M. Hassan Murad. 2019. <span>“Global Vascular Guidelines on the Management of Chronic Limb-Threatening Ischemia.”</span> <em>European Journal of Vascular and Endovascular Surgery : The Official Journal of the European Society for Vascular Surgery</em> 58 (1 Suppl): S1–S109.e33. <a href="https://doi.org/10.1016/j.ejvs.2019.05.006">https://doi.org/10.1016/j.ejvs.2019.05.006</a>.
 </div>
-<div id="ref-conteSocietyVascularSurgery2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-conteSocietyVascularSurgery2015" class="csl-entry" role="listitem">
 Conte, Michael S., Frank B. Pomposelli, Daniel G. Clair, Patrick J. Geraghty, James F. McKinsey, Joseph L. Mills, Gregory L. Moneta, M. Hassan Murad, Richard J. Powell, Amy B. Reed, Andres Schanzer, et al. 2015. <span>“Society for <span>Vascular Surgery</span> Practice Guidelines for Atherosclerotic Occlusive Disease of the Lower Extremities: <span>Management</span> of Asymptomatic Disease and Claudication.”</span> <em>Journal of Vascular Surgery</em> 61 (3): 2S–41S.e1. <a href="https://doi.org/10.1016/j.jvs.2014.12.009">https://doi.org/10.1016/j.jvs.2014.12.009</a>.
 </div>
-<div id="ref-conte2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-conte2015" class="csl-entry" role="listitem">
 Conte, Michael S., Frank B. Pomposelli, Daniel G. Clair, Patrick J. Geraghty, James F. McKinsey, Joseph L. Mills, Gregory L. Moneta, M. Hassan Murad, Richard J. Powell, Amy B. Reed, and et al. 2015. <span>“Society for Vascular Surgery Practice Guidelines for Atherosclerotic Occlusive Disease of the Lower Extremities: Management of Asymptomatic Disease and Claudication.”</span> <em>Journal of Vascular Surgery</em> 61 (3): 2S–41S.e1. <a href="https://doi.org/10.1016/j.jvs.2014.12.009">https://doi.org/10.1016/j.jvs.2014.12.009</a>.
 </div>
-<div id="ref-dangelo1997" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dangelo1997" class="csl-entry" role="listitem">
 D’Angelo, A., and J. Selhub. 1997. <span>“Homocysteine and Thrombotic Disease.”</span> <em>Blood</em> 90 (1): 1–11.
 </div>
-<div id="ref-diehm2004" class="csl-entry" role="doc-biblioentry">
+<div id="ref-diehm2004" class="csl-entry" role="listitem">
 Diehm, Curt, Stefan Lange, Hans Joachim Trampisch, Roman Haberl, Harald Darius, Berndt von Stritzky, David Pittrow, Gerhart Tepohl, Jens Rainer Allenberg, and GetABI Study Group. 2004. <span>“Relationship Between Lipid Parameters and the Presence of Peripheral Arterial Disease in Elderly Patients.”</span> <em>Current Medical Research and Opinion</em> 20 (12): 1873–75. <a href="https://doi.org/10.1185/030079904x12780">https://doi.org/10.1185/030079904x12780</a>.
 </div>
-<div id="ref-eikelboom2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-eikelboom2017" class="csl-entry" role="listitem">
 Eikelboom, John W., Stuart J. Connolly, Jackie Bosch, Gilles R. Dagenais, Robert G. Hart, Olga Shestakovska, Rafael Diaz, et al. 2017. <span>“Rivaroxaban with or Without Aspirin in Stable Cardiovascular Disease.”</span> <em>The New England Journal of Medicine</em> 377 (14): 1319–30. <a href="https://doi.org/10.1056/NEJMoa1709118">https://doi.org/10.1056/NEJMoa1709118</a>.
 </div>
-<div id="ref-emdin2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-emdin2015" class="csl-entry" role="listitem">
 Emdin, Connor A., Simon G. Anderson, Thomas Callender, Nathalie Conrad, Gholamreza Salimi-Khorshidi, Hamid Mohseni, Mark Woodward, and Kazem Rahimi. 2015. <span>“Usual Blood Pressure, Peripheral Arterial Disease, and Vascular Risk: Cohort Study of 4.2 Million Adults.”</span> <em>BMJ (Clinical Research Ed.)</em> 351 (September): h4865. <a href="https://doi.org/10.1136/bmj.h4865">https://doi.org/10.1136/bmj.h4865</a>.
 </div>
-<div id="ref-fakhry2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fakhry2015" class="csl-entry" role="listitem">
 Fakhry, Farzin, Sandra Spronk, Lijckle van der Laan, Jan J. Wever, Joep A. W. Teijink, Wolter H. Hoffmann, Taco M. Smits, et al. 2015. <span>“Endovascular Revascularization and Supervised Exercise for Peripheral Artery Disease and Intermittent Claudication: A Randomized Clinical Trial.”</span> <em>JAMA</em> 314 (18): 1936–44. <a href="https://doi.org/10.1001/jama.2015.14851">https://doi.org/10.1001/jama.2015.14851</a>.
 </div>
-<div id="ref-fakhry2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fakhry2013" class="csl-entry" role="listitem">
 Fakhry, F., E. V. Rouwet, P. T. den Hoed, M. G. M. Hunink, and S. Spronk. 2013. <span>“Long-Term Clinical Effectiveness of Supervised Exercise Therapy Versus Endovascular Revascularization for Intermittent Claudication from a Randomized Clinical Trial.”</span> <em>The British Journal of Surgery</em> 100 (9): 1164–71. <a href="https://doi.org/10.1002/bjs.9207">https://doi.org/10.1002/bjs.9207</a>.
 </div>
-<div id="ref-fontaineSurgicalTreatmentPeripheral1954" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fontaineSurgicalTreatmentPeripheral1954" class="csl-entry" role="listitem">
 Fontaine, R., M. Kim, and R. Kieny. 1954. <span>“<a href="https://www.ncbi.nlm.nih.gov/pubmed/14366554"><span>[Surgical treatment of peripheral circulation disorders]</span></a>.”</span> <em>Helvetica Chirurgica Acta</em> 21 (5-6): 499–533.
 </div>
-<div id="ref-fowkesEdinburghArteryStudy1991" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fowkesEdinburghArteryStudy1991" class="csl-entry" role="listitem">
 Fowkes, F G R, E Housley, E H H Cawood, C C A Macintyre, C V Ruckley, and R J Prescott. 1991. <span>“Edinburgh <span>Artery Study</span>: <span>Prevalence</span> of <span>Asymptomatic</span> and <span>Symptomatic Peripheral Arterial Disease</span> in the <span>General Population</span>.”</span> <em>International Journal of Epidemiology</em> 20 (2): 384–92. <a href="https://doi.org/10.1093/ije/20.2.384">https://doi.org/10.1093/ije/20.2.384</a>.
 </div>
-<div id="ref-fowkesAspirinPreventionCardiovascular2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fowkesAspirinPreventionCardiovascular2010" class="csl-entry" role="listitem">
 Fowkes, F. Gerald R. 2010. <span>“Aspirin for <span>Prevention</span> of <span>Cardiovascular Events</span> in a <span>General Population Screened</span> for a <span>Low Ankle Brachial IndexA Randomized Controlled Trial</span>.”</span> <em>JAMA</em> 303 (9): 841. <a href="https://doi.org/10.1001/jama.2010.221">https://doi.org/10.1001/jama.2010.221</a>.
 </div>
-<div id="ref-frederick2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-frederick2010" class="csl-entry" role="listitem">
 Frederick, Michael, John Newman, and Jeffrey Kohlwes. 2010. <span>“Leriche Syndrome.”</span> <em>Journal of General Internal Medicine</em> 25 (10): 1102–4. <a href="https://doi.org/10.1007/s11606-010-1412-z">https://doi.org/10.1007/s11606-010-1412-z</a>.
 </div>
-<div id="ref-geraldes2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-geraldes2010" class="csl-entry" role="listitem">
 Geraldes, Pedro, and George L. King. 2010. <span>“Activation of Protein Kinase c Isoforms and Its Impact on Diabetic Complications.”</span> <em>Circulation Research</em> 106 (8): 1319–31. <a href="https://doi.org/10.1161/CIRCRESAHA.110.217117">https://doi.org/10.1161/CIRCRESAHA.110.217117</a>.
 </div>
-<div id="ref-gerhard-herman2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gerhard-herman2017" class="csl-entry" role="listitem">
 Gerhard-Herman, Marie D., Heather L. Gornik, Coletta Barrett, Neal R. Barshes, Matthew A. Corriere, Douglas E. Drachman, Lee A. Fleisher, et al. 2017. <span>“2016 AHA/ACC Guideline on the Management of Patients with Lower Extremity Peripheral Artery Disease: Executive Summary: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines.”</span> <em>Circulation</em> 135 (12). <a href="https://doi.org/10.1161/CIR.0000000000000470">https://doi.org/10.1161/CIR.0000000000000470</a>.
 </div>
-<div id="ref-gordonPredispositionAtherosclerosisHead1972" class="csl-entry" role="doc-biblioentry">
+<div id="ref-gordonPredispositionAtherosclerosisHead1972" class="csl-entry" role="listitem">
 Gordon, T., and W. B. Kannel. 1972. <span>“<a href="https://www.ncbi.nlm.nih.gov/pubmed/4261853">Predisposition to Atherosclerosis in the Head, Heart, and Legs. <span>The Framingham</span> Study</a>.”</span> <em>JAMA</em> 221 (7): 661–66.
 </div>
-<div id="ref-grenon2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-grenon2012" class="csl-entry" role="listitem">
 Grenon, S. Marlene, Millie Hughes-Fulford, Joseph Rapp, and Michael S. Conte. 2012. <span>“Polyunsaturated Fatty Acids and Peripheral Artery Disease.”</span> <em>Vascular Medicine (London, England)</em> 17 (1): 51–63. <a href="https://doi.org/10.1177/1358863X11429175">https://doi.org/10.1177/1358863X11429175</a>.
 </div>
-<div id="ref-heartprotectionstudycollaborativegroupRandomizedTrialEffects2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-heartprotectionstudycollaborativegroupRandomizedTrialEffects2007" class="csl-entry" role="listitem">
 Group, Heart Protection Study Collaborative. 2007. <span>“Randomized Trial of the Effects of Cholesterol-Lowering with Simvastatin on Peripheral Vascular and Other Major Vascular Outcomes in 20,536 People with Peripheral Arterial Disease and Other High-Risk Conditions.”</span> <em>Journal of Vascular Surgery</em> 45 (4): 645–654.e1. <a href="https://doi.org/10.1016/j.jvs.2006.12.054">https://doi.org/10.1016/j.jvs.2006.12.054</a>.
 </div>
-<div id="ref-poisestudygroup2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-poisestudygroup2008" class="csl-entry" role="listitem">
 Group, POISE Study, P. J. Devereaux, Homer Yang, Salim Yusuf, Gordon Guyatt, Kate Leslie, Juan Carlos Villar, et al. 2008. <span>“Effects of Extended-Release Metoprolol Succinate in Patients Undergoing Non-Cardiac Surgery (POISE Trial): A Randomised Controlled Trial.”</span> <em>Lancet (London, England)</em> 371 (9627): 1839–47. <a href="https://doi.org/10.1016/S0140-6736(08)60601-7">https://doi.org/10.1016/S0140-6736(08)60601-7</a>.
 </div>
-<div id="ref-hackam2003" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hackam2003" class="csl-entry" role="listitem">
 Hackam, Daniel G., and Sonia S. Anand. 2003. <span>“Emerging Risk Factors for Atherosclerotic Vascular Disease: A Critical Review of the Evidence.”</span> <em>JAMA</em> 290 (7): 932–40. <a href="https://doi.org/10.1001/jama.290.7.932">https://doi.org/10.1001/jama.290.7.932</a>.
 </div>
-<div id="ref-hagemanSupervisedExerciseTherapy2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hagemanSupervisedExerciseTherapy2018" class="csl-entry" role="listitem">
 Hageman, David, Hugo JP Fokkenrood, Lindy NM Gommans, Marijn ML van den Houten, and Joep AW Teijink. 2018. <span>“Supervised Exercise Therapy Versus Home-Based Exercise Therapy Versus Walking Advice for Intermittent Claudication.”</span> <em>The Cochrane Database of Systematic Reviews</em> 2018 (4): CD005263. <a href="https://doi.org/10.1002/14651858.CD005263.pub4">https://doi.org/10.1002/14651858.CD005263.pub4</a>.
 </div>
-<div id="ref-higashi2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-higashi2009" class="csl-entry" role="listitem">
 Higashi, Yukihito, Kensuke Noma, Masao Yoshizumi, and Yasuki Kihara. 2009. <span>“Endothelial Function and Oxidative Stress in Cardiovascular Diseases.”</span> <em>Circulation Journal: Official Journal of the Japanese Circulation Society</em> 73 (3): 411–18. <a href="https://doi.org/10.1253/circj.cj-08-1102">https://doi.org/10.1253/circj.cj-08-1102</a>.
 </div>
-<div id="ref-hiltunen1998" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hiltunen1998" class="csl-entry" role="listitem">
 Hiltunen, T. P., J. S. Luoma, T. Nikkari, and S. Ylä-Herttuala. 1998. <span>“Expression of LDL Receptor, VLDL Receptor, LDL Receptor-Related Protein, and Scavenger Receptor in Rabbit Atherosclerotic Lesions: Marked Induction of Scavenger Receptor and VLDL Receptor Expression During Lesion Development.”</span> <em>Circulation</em> 97 (11): 1079–86. <a href="https://doi.org/10.1161/01.cir.97.11.1079">https://doi.org/10.1161/01.cir.97.11.1079</a>.
 </div>
-<div id="ref-hughes2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hughes2014" class="csl-entry" role="listitem">
 Hughes, John R., Lindsay F. Stead, Jamie Hartmann-Boyce, Kate Cahill, and Tim Lancaster. 2014. <span>“Antidepressants for Smoking Cessation.”</span> <em>The Cochrane Database of Systematic Reviews</em>, no. 1 (January): CD000031. <a href="https://doi.org/10.1002/14651858.CD000031.pub4">https://doi.org/10.1002/14651858.CD000031.pub4</a>.
 </div>
-<div id="ref-hussain2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-hussain2018" class="csl-entry" role="listitem">
 Hussain, Mohamad A., Mohammed Al-Omran, Mark A. Creager, Sonia S. Anand, Subodh Verma, and Deepak L. Bhatt. 2018. <span>“Antithrombotic Therapy for Peripheral&nbsp;Artery Disease: Recent Advances.”</span> <em>Journal of the American College of Cardiology</em> 71 (21): 2450–67. <a href="https://doi.org/10.1016/j.jacc.2018.03.483">https://doi.org/10.1016/j.jacc.2018.03.483</a>.
 </div>
-<div id="ref-ikram2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ikram2017" class="csl-entry" role="listitem">
 Ikram, M. Arfan, Guy G. O. Brusselle, Sarwa Darwish Murad, Cornelia M. van Duijn, Oscar H. Franco, André Goedegebure, Caroline C. W. Klaver, et al. 2017. <span>“The Rotterdam Study: 2018 Update on Objectives, Design and Main Results.”</span> <em>European Journal of Epidemiology</em> 32 (9): 807–50. <a href="https://doi.org/10.1007/s10654-017-0321-4">https://doi.org/10.1007/s10654-017-0321-4</a>.
 </div>
-<div id="ref-itoga2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-itoga2018" class="csl-entry" role="listitem">
 Itoga, Nathan K., Daniel S. Tawfik, Charles K. Lee, Satoshi Maruyama, Nicholas J. Leeper, and Tara I. Chang. 2018. <span>“Association of Blood Pressure Measurements with Peripheral Artery Disease Events.”</span> <em>Circulation</em> 138 (17): 1805–14. <a href="https://doi.org/10.1161/CIRCULATIONAHA.118.033348">https://doi.org/10.1161/CIRCULATIONAHA.118.033348</a>.
 </div>
-<div id="ref-jaquinandi2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jaquinandi2008" class="csl-entry" role="listitem">
 Jaquinandi, Vincent, Jean Picquet, Jean-Louis Saumet, Peyman Benharash, Georges Leftheriotis, and Pierre Abraham. 2008. <span>“Functional Assessment at the Buttock Level of the Effect of Aortobifemoral Bypass Surgery.”</span> <em>Annals of Surgery</em> 247 (5): 869–76. <a href="https://doi.org/10.1097/SLA.0b013e31816bcd75">https://doi.org/10.1097/SLA.0b013e31816bcd75</a>.
 </div>
-<div id="ref-jha2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-jha2019" class="csl-entry" role="listitem">
 Jha, Manish K., Arman Qamar, Muthiah Vaduganathan, Dennis S. Charney, and James W. Murrough. 2019. <span>“Screening and Management of Depression in Patients with Cardiovascular Disease: JACC&nbsp;State-of-the-Art Review.”</span> <em>Journal of the American College of Cardiology</em> 73 (14): 1827–45. <a href="https://doi.org/10.1016/j.jacc.2019.01.041">https://doi.org/10.1016/j.jacc.2019.01.041</a>.
 </div>
-<div id="ref-kannelUpdateEpidemiologicFeatures1985" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kannelUpdateEpidemiologicFeatures1985" class="csl-entry" role="listitem">
 Kannel, W. B., and D. L. McGee. 1985. <span>“Update on Some Epidemiologic Features of Intermittent Claudication: The <span>Framingham Study</span>.”</span> <em>Journal of the American Geriatrics Society</em> 33 (1): 13–18. <a href="https://doi.org/10.1111/j.1532-5415.1985.tb02853.x">https://doi.org/10.1111/j.1532-5415.1985.tb02853.x</a>.
 </div>
-<div id="ref-katsanos2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-katsanos2018" class="csl-entry" role="listitem">
 Katsanos, Konstantinos, Stavros Spiliopoulos, Panagiotis Kitrou, Miltiadis Krokidis, and Dimitrios Karnabatidis. 2018. <span>“Risk of Death Following Application of Paclitaxel-Coated Balloons and Stents in the Femoropopliteal Artery of the Leg: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.”</span> <em>Journal of the American Heart Association</em> 7 (24): e011245. <a href="https://doi.org/10.1161/JAHA.118.011245">https://doi.org/10.1161/JAHA.118.011245</a>.
 </div>
-<div id="ref-kayssi2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kayssi2019" class="csl-entry" role="listitem">
 KAYSSI, AHMED, LEE C. ROGERS, and RICHARD F. NEVILLE. 2019. <span>“113: General Considerations of Diabetic Foot Ulcers.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>. Elsevier Inc. <a href="https://doi.org/10.1016/B978-0-323-42791-3.00113-4">https://doi.org/10.1016/B978-0-323-42791-3.00113-4</a>.
 </div>
-<div id="ref-keen2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-keen2014" class="csl-entry" role="listitem">
 Keen, Helen I., Janakan Krishnarajah, Timothy R. Bates, and Gerald F. Watts. 2014. <span>“Statin Myopathy: The Fly in the Ointment for the Prevention of Cardiovascular Disease in the 21st Century?”</span> <em>Expert Opinion on Drug Safety</em> 13 (9): 1227–39. <a href="https://doi.org/10.1517/14740338.2014.937422">https://doi.org/10.1517/14740338.2014.937422</a>.
 </div>
-<div id="ref-khandanpour2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-khandanpour2009" class="csl-entry" role="listitem">
 Khandanpour, N., Y. K. Loke, F. J. Meyer, B. Jennings, and M. P. Armon. 2009. <span>“Homocysteine and Peripheral Arterial Disease: Systematic Review and Meta-Analysis.”</span> <em>European Journal of Vascular and Endovascular Surgery: The Official Journal of the European Society for Vascular Surgery</em> 38 (3): 316–22. <a href="https://doi.org/10.1016/j.ejvs.2009.05.007">https://doi.org/10.1016/j.ejvs.2009.05.007</a>.
 </div>
-<div id="ref-kris-etherton2002" class="csl-entry" role="doc-biblioentry">
+<div id="ref-kris-etherton2002" class="csl-entry" role="listitem">
 Kris-Etherton, Penny M., William S. Harris, Lawrence J. Appel, and American Heart Association. Nutrition Committee. 2002. <span>“Fish Consumption, Fish Oil, Omega-3 Fatty Acids, and Cardiovascular Disease.”</span> <em>Circulation</em> 106 (21): 2747–57. <a href="https://doi.org/10.1161/01.cir.0000038493.65177.94">https://doi.org/10.1161/01.cir.0000038493.65177.94</a>.
 </div>
-<div id="ref-lajoie2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lajoie2019" class="csl-entry" role="listitem">
 Lajoie, Lidie. 2019. <span>“12. Atherosclerotic Risk Factors: Diabetes.”</span> In <em>Rutherfords Vascular Surgery and Endovascular Therapy</em>, 12. Elsevier Inc.
 </div>
-<div id="ref-laneExerciseIntermittentClaudication2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-laneExerciseIntermittentClaudication2017" class="csl-entry" role="listitem">
 Lane, Risha, Amy Harwood, Lorna Watson, and Gillian C Leng. 2017. <span>“Exercise for Intermittent Claudication.”</span> <em>The Cochrane Database of Systematic Reviews</em> 2017 (12): CD000990. <a href="https://doi.org/10.1002/14651858.CD000990.pub4">https://doi.org/10.1002/14651858.CD000990.pub4</a>.
 </div>
-<div id="ref-langlois2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-langlois2018" class="csl-entry" role="listitem">
 Langlois, Michel R., and Børge G. Nordestgaard. 2018. <span>“Which Lipids Should Be Analyzed for Diagnostic Workup and Follow-up of Patients with Hyperlipidemias?”</span> <em>Current Cardiology Reports</em> 20 (10): 88. <a href="https://doi.org/10.1007/s11886-018-1036-1">https://doi.org/10.1007/s11886-018-1036-1</a>.
 </div>
-<div id="ref-lendEdinburghClaudicationQuestionnaire1992" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lendEdinburghClaudicationQuestionnaire1992" class="csl-entry" role="listitem">
 Lend, G. C., and F. G. R. Fowkes. 1992. <span>“The <span>Edinburgh Claudication Questionnaire</span>: <span>An</span> Improved Version of the <span>WHO</span>/<span>Rose</span> Questionnaire for Use in Epidemiological Surveys.”</span> <em>Journal of Clinical Epidemiology</em> 45 (10): 1101–9. <a href="https://doi.org/10.1016/0895-4356(92)90150-L">https://doi.org/10.1016/0895-4356(92)90150-L</a>.
 </div>
-<div id="ref-lepäntalo2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lepäntalo2011" class="csl-entry" role="listitem">
 Lepäntalo, M., J. Apelqvist, C. Setacci, J.-B. Ricco, G. de Donato, F. Becker, H. Robert-Ebadi, et al. 2011. <span>“Chapter v: Diabetic Foot.”</span> <em>European Journal of Vascular and Endovascular Surgery</em> 42 (December): S60–74. <a href="https://doi.org/10.1016/S1078-5884(11)60012-9">https://doi.org/10.1016/S1078-5884(11)60012-9</a>.
 </div>
-<div id="ref-leriche1948" class="csl-entry" role="doc-biblioentry">
+<div id="ref-leriche1948" class="csl-entry" role="listitem">
 Leriche, René, and André Morel. 1948. <span>“The Syndrome of Thrombotic Obliteration of the Aortic Bifurcation.”</span> <em>Annals of Surgery</em> 127 (2): 193–206. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1513778/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1513778/</a>.
 </div>
-<div id="ref-liebman2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-liebman2019" class="csl-entry" role="listitem">
 Liebman, Howard A. 2019. <span>“38. Hypercoagulable States.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 19. Elsevier Inc.
 </div>
-<div id="ref-mahmoodFraminghamHeartStudy2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mahmoodFraminghamHeartStudy2014" class="csl-entry" role="listitem">
 Mahmood, Syed S., Daniel Levy, Ramachandran S. Vasan, and Thomas J. Wang. 2014. <span>“The <span>Framingham Heart Study</span> and the <span>Epidemiology</span> of <span>Cardiovascular Diseases</span>: <span>A Historical Perspective</span>.”</span> <em>Lancet</em> 383 (9921): 999–1008. <a href="https://doi.org/10.1016/S0140-6736(13)61752-3">https://doi.org/10.1016/S0140-6736(13)61752-3</a>.
 </div>
-<div id="ref-mcdermott2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mcdermott2016" class="csl-entry" role="listitem">
 McDermott, Mary M., Jack M. Guralnik, Lu Tian, Melina R. Kibbe, Luigi Ferrucci, Lihui Zhao, Kiang Liu, Yihua Liao, Ying Gao, and Michael H. Criqui. 2016. <span>“Incidence and Prognostic Significance of Depressive Symptoms in&nbsp;Peripheral Artery Disease.”</span> <em>Journal of the American Heart Association</em> 5 (3): e002959. <a href="https://doi.org/10.1161/JAHA.115.002959">https://doi.org/10.1161/JAHA.115.002959</a>.
 </div>
-<div id="ref-mcgill2000" class="csl-entry" role="doc-biblioentry">
+<div id="ref-mcgill2000" class="csl-entry" role="listitem">
 McGill, H. C., C. A. McMahan, A. W. Zieske, R. E. Tracy, G. T. Malcom, E. E. Herderick, and J. P. Strong. 2000. <span>“Association of Coronary Heart Disease Risk Factors with Microscopic Qualities of Coronary Atherosclerosis in Youth.”</span> <em>Circulation</em> 102 (4): 374–79. <a href="https://doi.org/10.1161/01.cir.102.4.374">https://doi.org/10.1161/01.cir.102.4.374</a>.
 </div>
-<div id="ref-millsSocietyVascularSurgery2014a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-millsSocietyVascularSurgery2014a" class="csl-entry" role="listitem">
 Mills, Joseph L., Michael S. Conte, David G. Armstrong, Frank B. Pomposelli, Andres Schanzer, Anton N. Sidawy, and George Andros. 2014. <span>“The <span>Society</span> for <span>Vascular Surgery Lower Extremity Threatened Limb Classification System</span>: <span>Risk</span> Stratification Based on <span>Wound</span>, <span>Ischemia</span>, and Foot <span>Infection</span> (<span>WIfI</span>).”</span> <em>Journal of Vascular Surgery</em> 59 (1): 220–234.e2. <a href="https://doi.org/10.1016/j.jvs.2013.08.003">https://doi.org/10.1016/j.jvs.2013.08.003</a>.
 </div>
-<div id="ref-murphy2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-murphy2012" class="csl-entry" role="listitem">
 Murphy, Timothy P., Donald E. Cutlip, Judith G. Regensteiner, Emile R. Mohler, David J. Cohen, Matthew R. Reynolds, Joseph M. Massaro, et al. 2012. <span>“Supervised Exercise Versus Primary Stenting for Claudication Resulting from Aortoiliac Peripheral Artery Disease: Six-Month Outcomes from the Claudication: Exercise Versus Endoluminal Revascularization (CLEVER) Study.”</span> <em>Circulation</em> 125 (1): 130–39. <a href="https://doi.org/10.1161/CIRCULATIONAHA.111.075770">https://doi.org/10.1161/CIRCULATIONAHA.111.075770</a>.
 </div>
-<div id="ref-murphy2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-murphy2015" class="csl-entry" role="listitem">
 ———, et al. 2015. <span>“Supervised Exercise, Stent Revascularization, or Medical Therapy for Claudication Due to Aortoiliac Peripheral Artery Disease: The CLEVER Study.”</span> <em>Journal of the American College of Cardiology</em> 65 (10): 999–1009. <a href="https://doi.org/10.1016/j.jacc.2014.12.043">https://doi.org/10.1016/j.jacc.2014.12.043</a>.
 </div>
-<div id="ref-nadeauReliabilityDifferentiatingNeurogenic2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-nadeauReliabilityDifferentiatingNeurogenic2013" class="csl-entry" role="listitem">
 Nadeau, Mélissa, M. Patricia Rosas-Arellano, Kevin R. Gurr, Stewart I. Bailey, David C. Taylor, Ruby Grewal, D. Kirk Lawlor, and Chris S. Bailey. 2013. <span>“The Reliability of Differentiating Neurogenic Claudication from Vascular Claudication Based on Symptomatic Presentation.”</span> <em>Canadian Journal of Surgery</em> 56 (6): 372–77. <a href="https://doi.org/10.1503/cjs.016512">https://doi.org/10.1503/cjs.016512</a>.
 </div>
-<div id="ref-nicolaiReliabilityTreadmillTesting2009" class="csl-entry" role="doc-biblioentry">
+<div id="ref-nicolaiReliabilityTreadmillTesting2009" class="csl-entry" role="listitem">
 Nicolaï, Saskia P. A., Wolfgang Viechtbauer, Lotte M. Kruidenier, Math J. J. M. Candel, Martin H. Prins, and Joep A. W. Teijink. 2009. <span>“Reliability of Treadmill Testing in Peripheral Arterial Disease: <span>A</span> Meta-Regression Analysis.”</span> <em>Journal of Vascular Surgery</em> 50 (2): 322–29. <a href="https://doi.org/10.1016/j.jvs.2009.01.042">https://doi.org/10.1016/j.jvs.2009.01.042</a>.
 </div>
-<div id="ref-norgren2007" class="csl-entry" role="doc-biblioentry">
+<div id="ref-norgren2007" class="csl-entry" role="listitem">
 Norgren, L., W. R. Hiatt, J. A. Dormandy, M. R. Nehler, K. A. Harris, and F. G. R. Fowkes. 2007. <span>“Inter-Society Consensus for the Management of Peripheral Arterial Disease (TASC II).”</span> <em>Journal of Vascular Surgery</em> 45 (1): S5–67. <a href="https://doi.org/10.1016/j.jvs.2006.12.037">https://doi.org/10.1016/j.jvs.2006.12.037</a>.
 </div>
-<div id="ref-ourielCriticalEvaluationStress1982" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ourielCriticalEvaluationStress1982" class="csl-entry" role="listitem">
 Ouriel, K., A. E. McDonnell, C. E. Metz, and C. K. Zarins. 1982. <span>“<a href="https://www.ncbi.nlm.nih.gov/pubmed/7079971">Critical Evaluation of Stress Testing in the Diagnosis of Peripheral Vascular Disease</a>.”</span> <em>Surgery</em> 91 (6): 686–93.
 </div>
-<div id="ref-owens2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-owens2019" class="csl-entry" role="listitem">
 Owens, Christopher D. 2019. <span>“4: Atherosclerosis.”</span> In <em>Rutherford’s Vascular Surgery and Endovascular Therapy</em>, 14. Elsevier Inc.
 </div>
-<div id="ref-piper2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-piper2014" class="csl-entry" role="listitem">
 Piper, Margaret A., Corinne V. Evans, Brittany U. Burda, Karen L. Margolis, Elizabeth O’Connor, Ning Smith, Elizabeth Webber, Leslie A. Perdue, Keshia D. Bigler, and Evelyn P. Whitlock. 2014. <em>Screening for High Blood Pressure in Adults: A Systematic Evidence Review for the u.s. Preventive Services Task Force</em>. U.s. Preventive Services Task Force Evidence Syntheses, Formerly Systematic Evidence Reviews. Agency for Healthcare Research; Quality (US). <a href="http://www.ncbi.nlm.nih.gov/books/NBK269495/">http://www.ncbi.nlm.nih.gov/books/NBK269495/</a>.
 </div>
-<div id="ref-ramirez2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ramirez2018" class="csl-entry" role="listitem">
 Ramirez, Joel L., Laura M. Drudi, and S. Marlene Grenon. 2018. <span>“Review of Biologic and Behavioral Risk Factors Linking Depression and Peripheral Artery Disease.”</span> <em>Vascular Medicine (London, England)</em> 23 (5): 478–88. <a href="https://doi.org/10.1177/1358863X18773161">https://doi.org/10.1177/1358863X18773161</a>.
 </div>
-<div id="ref-ratchford2011" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ratchford2011" class="csl-entry" role="listitem">
 Ratchford, Elizabeth V., and James H. Black. 2011. <span>“Approach to Smoking Cessation in the Patient with Vascular Disease.”</span> <em>Current Treatment Options in Cardiovascular Medicine</em> 13 (2): 91–102. <a href="https://doi.org/10.1007/s11936-011-0109-x">https://doi.org/10.1007/s11936-011-0109-x</a>.
 </div>
-<div id="ref-regensteiner2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-regensteiner2015" class="csl-entry" role="listitem">
 Regensteiner, Judith G., Sherita Golden, Amy G. Huebschmann, Elizabeth Barrett-Connor, Alice Y. Chang, Deborah Chyun, Caroline S. Fox, et al. 2015. <span>“Sex Differences in the Cardiovascular Consequences of Diabetes Mellitus: A Scientific Statement from the American Heart Association.”</span> <em>Circulation</em> 132 (25): 2424–47. <a href="https://doi.org/10.1161/CIR.0000000000000343">https://doi.org/10.1161/CIR.0000000000000343</a>.
 </div>
-<div id="ref-ridker2008" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ridker2008" class="csl-entry" role="listitem">
 Ridker, Paul M., Eleanor Danielson, Francisco A. H. Fonseca, Jacques Genest, Antonio M. Gotto, John J. P. Kastelein, Wolfgang Koenig, et al. 2008. <span>“Rosuvastatin to Prevent Vascular Events in Men and Women with Elevated c-Reactive Protein.”</span> <em>The New England Journal of Medicine</em> 359 (21): 2195–2207. <a href="https://doi.org/10.1056/NEJMoa0807646">https://doi.org/10.1056/NEJMoa0807646</a>.
 </div>
-<div id="ref-rooke2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rooke2013" class="csl-entry" role="listitem">
 Rooke, Thom W., Alan T. Hirsch, Sanjay Misra, Anton N. Sidawy, Joshua A. Beckman, Laura Findeiss, Jafar Golzarian, et al. 2013. <span>“Management of Patients with Peripheral Artery Disease (Compilation of 2005 and 2011 ACCF/AHA Guideline Recommendations): A Report of the American College of Cardiology Foundation/American Heart Association Task Force on Practice Guidelines.”</span> <em>Journal of the American College of Cardiology</em> 61 (14): 1555–70. <a href="https://doi.org/10.1016/j.jacc.2013.01.004">https://doi.org/10.1016/j.jacc.2013.01.004</a>.
 </div>
-<div id="ref-roseDiagnosisIschaemicHeart1962" class="csl-entry" role="doc-biblioentry">
+<div id="ref-roseDiagnosisIschaemicHeart1962" class="csl-entry" role="listitem">
 Rose, G. A. 1962. <span>“<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2555832">The Diagnosis of Ischaemic Heart Pain and Intermittent Claudication in Field Surveys</a>.”</span> <em>Bulletin of the World Health Organization</em> 27 (6): 645–58.
 </div>
-<div id="ref-rutherfordRecommendedStandardsReports1997" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rutherfordRecommendedStandardsReports1997" class="csl-entry" role="listitem">
 Rutherford, Robert B., J.Dennis Baker, Calvin Ernst, K.Wayne Johnston, John M. Porter, Sam Ahn, and Darrell N. Jones. 1997. <span>“Recommended Standards for Reports Dealing with Lower Extremity Ischemia: <span>Revised</span> Version.”</span> <em>Journal of Vascular Surgery</em> 26 (3): 517–38. <a href="https://doi.org/10.1016/S0741-5214(97)70045-4">https://doi.org/10.1016/S0741-5214(97)70045-4</a>.
 </div>
-<div id="ref-saxon2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-saxon2016" class="csl-entry" role="listitem">
 Saxon, David R., and Robert H. Eckel. 2016. <span>“Statin Intolerance: A Literature Review and Management Strategies.”</span> <em>Progress in Cardiovascular Diseases</em> 59 (2): 153–64. <a href="https://doi.org/10.1016/j.pcad.2016.07.009">https://doi.org/10.1016/j.pcad.2016.07.009</a>.
 </div>
-<div id="ref-selvin2006" class="csl-entry" role="doc-biblioentry">
+<div id="ref-selvin2006" class="csl-entry" role="listitem">
 Selvin, Elizabeth, Keattiyoat Wattanakit, Michael W. Steffes, Josef Coresh, and A. Richey Sharrett. 2006. <span>“HbA1c and Peripheral Arterial Disease in Diabetes: The Atherosclerosis Risk in Communities Study.”</span> <em>Diabetes Care</em> 29 (4): 877–82. <a href="https://doi.org/10.2337/diacare.29.04.06.dc05-2018">https://doi.org/10.2337/diacare.29.04.06.dc05-2018</a>.
 </div>
-<div id="ref-setacci2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-setacci2012" class="csl-entry" role="listitem">
 Setacci, C., G. Galzerano, F. Setacci, G. De Donato, P. Sirignano, V. Kamargianni, A. Cannizzaro, and A. Cappelli. 2012. <span>“Endovascular Approach to Leriche Syndrome.”</span> <em>The Journal of Cardiovascular Surgery</em> 53 (3): 301–6.
 </div>
-<div id="ref-siscovick2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-siscovick2017" class="csl-entry" role="listitem">
 Siscovick, David S., Thomas A. Barringer, Amanda M. Fretts, Jason H. Y. Wu, Alice H. Lichtenstein, Rebecca B. Costello, Penny M. Kris-Etherton, et al. 2017. <span>“Omega-3 Polyunsaturated Fatty Acid (Fish Oil) Supplementation and the Prevention of Clinical Cardiovascular Disease: A Science Advisory from the American Heart Association.”</span> <em>Circulation</em> 135 (15): e867–84. <a href="https://doi.org/10.1161/CIR.0000000000000482">https://doi.org/10.1161/CIR.0000000000000482</a>.
 </div>
-<div id="ref-stamler1993" class="csl-entry" role="doc-biblioentry">
+<div id="ref-stamler1993" class="csl-entry" role="listitem">
 Stamler, J., O. Vaccaro, J. D. Neaton, and D. Wentworth. 1993. <span>“Diabetes, Other Risk Factors, and 12-Yr Cardiovascular Mortality for Men Screened in the Multiple Risk Factor Intervention Trial.”</span> <em>Diabetes Care</em> 16 (2): 434–44. <a href="https://doi.org/10.2337/diacare.16.2.434">https://doi.org/10.2337/diacare.16.2.434</a>.
 </div>
-<div id="ref-stevensSystematicReviewEfficacy2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-stevensSystematicReviewEfficacy2012" class="csl-entry" role="listitem">
 Stevens, J W, E Simpson, S Harnan, H Squires, Y Meng, S Thomas, J Michaels, and G Stansby. 2012. <span>“Systematic Review of the Efficacy of Cilostazol, Naftidrofuryl Oxalate and Pentoxifylline for the Treatment of Intermittent Claudication.”</span> <em>British Journal of Surgery</em> 99 (12): 1630–38. <a href="https://doi.org/10.1002/bjs.8895">https://doi.org/10.1002/bjs.8895</a>.
 </div>
-<div id="ref-stone21VascularLaboratory2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-stone21VascularLaboratory2019" class="csl-entry" role="listitem">
 Stone, Patrick A, and Stephen M Hass. 2019. <span>“21. <span>Vascular Laboratory</span>: <span>Arterial Duplex Scanning</span>.”</span> In <em>Rutherford’s <span>Vascular Surgery</span> and <span>Endovascular Therapy</span></em>, Ninth. <span>Elsevier Inc.</span> <a href="https://doi.org/10.1016/B978-0-323-42791-3.00021-9">https://doi.org/10.1016/B978-0-323-42791-3.00021-9</a>.
 </div>
-<div id="ref-strandnessHemodynamicsSurgeons1975a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-strandnessHemodynamicsSurgeons1975a" class="csl-entry" role="listitem">
 Strandness, D. E., and David S. Sumner. 1975. <em>Hemodynamics for Surgeons</em>. Modern Surgical Monographs. <span>New York</span>: <span>Grune &amp; Stratton</span>.
 </div>
-<div id="ref-strobl2013" class="csl-entry" role="doc-biblioentry">
+<div id="ref-strobl2013" class="csl-entry" role="listitem">
 Strobl, Frederik F., Klaus Brechtel, Jörg Schmehl, Thomas Zeller, Maximilian F. Reiser, Claus D. Claussen, and Gunnar Tepe. 2013. <span>“Twelve-Month Results of a Randomized Trial Comparing Mono with Dual Antiplatelet Therapy in Endovascularly Treated Patients with Peripheral Artery Disease.”</span> <em>Journal of Endovascular Therapy: An Official Journal of the International Society of Endovascular Specialists</em> 20 (5): 699–706. <a href="https://doi.org/10.1583/13-4275MR.1">https://doi.org/10.1583/13-4275MR.1</a>.
 </div>
-<div id="ref-tepe2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tepe2012" class="csl-entry" role="listitem">
 Tepe, Gunnar, Rüdiger Bantleon, Klaus Brechtel, Jörg Schmehl, Thomas Zeller, Claus D. Claussen, and Frederik F. Strobl. 2012. <span>“Management of Peripheral Arterial Interventions with Mono or Dual Antiplatelet Therapy–the MIRROR Study: A Randomised and Double-Blinded Clinical Trial.”</span> <em>European Radiology</em> 22 (9): 1998–2006. <a href="https://doi.org/10.1007/s00330-012-2441-2">https://doi.org/10.1007/s00330-012-2441-2</a>.
 </div>
-<div id="ref-thomsen2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-thomsen2014" class="csl-entry" role="listitem">
 Thomsen, Thordis, Nete Villebro, and Ann Merete Møller. 2014. <span>“Interventions for Preoperative Smoking Cessation.”</span> <em>The Cochrane Database of Systematic Reviews</em>, no. 3 (March): CD002294. <a href="https://doi.org/10.1002/14651858.CD002294.pub4">https://doi.org/10.1002/14651858.CD002294.pub4</a>.
 </div>
-<div id="ref-tsimikas2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-tsimikas2005" class="csl-entry" role="listitem">
 Tsimikas, Sotirios, Emmanouil S. Brilakis, Elizabeth R. Miller, Joseph P. McConnell, Ryan J. Lennon, Kenneth S. Kornman, Joseph L. Witztum, and Peter B. Berger. 2005. <span>“Oxidized Phospholipids, Lp(a) Lipoprotein, and Coronary Artery Disease.”</span> <em>The New England Journal of Medicine</em> 353 (1): 46–57. <a href="https://doi.org/10.1056/NEJMoa043175">https://doi.org/10.1056/NEJMoa043175</a>.
 </div>
-<div id="ref-unitedstatessurgeongeneralHealthConsequencesSmoking2014" class="csl-entry" role="doc-biblioentry">
+<div id="ref-unitedstatessurgeongeneralHealthConsequencesSmoking2014" class="csl-entry" role="listitem">
 United States Surgeon General. 2014. <span>“The <span>Health Consequences</span> of <span>Smoking</span> – 50 <span>Years</span> of Progress: <span>A Report</span> of the <span>Surgeon General</span>: (510072014-001).”</span> <span>American Psychological Association</span>. <a href="https://doi.org/10.1037/e510072014-001">https://doi.org/10.1037/e510072014-001</a>.
 </div>
-<div id="ref-societyforvascularsurgerylowerextremityguidelineswritinggroup2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-societyforvascularsurgerylowerextremityguidelineswritinggroup2015" class="csl-entry" role="listitem">
 Vascular Surgery Lower Extremity Guidelines Writing Group, Society for, Michael S. Conte, Frank B. Pomposelli, Daniel G. Clair, Patrick J. Geraghty, James F. McKinsey, Joseph L. Mills, et al. 2015. <span>“Society for Vascular Surgery Practice Guidelines for Atherosclerotic Occlusive Disease of the Lower Extremities: Management of Asymptomatic Disease and Claudication.”</span> <em>Journal of Vascular Surgery</em> 61 (3 Suppl): 2S–41S. <a href="https://doi.org/10.1016/j.jvs.2014.12.009">https://doi.org/10.1016/j.jvs.2014.12.009</a>.
 </div>
-<div id="ref-vogeler2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-vogeler2016" class="csl-entry" role="listitem">
 Vogeler, Tiffany, Claire McClain, and Kirk E. Evoy. 2016. <span>“Combination Bupropion SR and Varenicline for Smoking Cessation: A Systematic Review.”</span> <em>The American Journal of Drug and Alcohol Abuse</em> 42 (2): 129–39. <a href="https://doi.org/10.3109/00952990.2015.1117480">https://doi.org/10.3109/00952990.2015.1117480</a>.
 </div>
-<div id="ref-ward2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ward2019" class="csl-entry" role="listitem">
 Ward, Natalie C., Gerald F. Watts, and Robert H. Eckel. 2019. <span>“Statin Toxicity.”</span> <em>Circulation Research</em> 124 (2): 328–50. <a href="https://doi.org/10.1161/CIRCRESAHA.118.312782">https://doi.org/10.1161/CIRCRESAHA.118.312782</a>.
 </div>
-<div id="ref-wattanakit2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-wattanakit2005" class="csl-entry" role="listitem">
 Wattanakit, Keattiyoat, Aaron R. Folsom, Elizabeth Selvin, Beth D. Weatherley, James S. Pankow, Frederick L. Brancati, and Alan T. Hirsch. 2005. <span>“Risk Factors for Peripheral Arterial Disease Incidence in Persons with Diabetes: The Atherosclerosis Risk in Communities (ARIC) Study.”</span> <em>Atherosclerosis</em> 180 (2): 389–97. <a href="https://doi.org/10.1016/j.atherosclerosis.2004.11.024">https://doi.org/10.1016/j.atherosclerosis.2004.11.024</a>.
 </div>
-<div id="ref-witztum1994" class="csl-entry" role="doc-biblioentry">
+<div id="ref-witztum1994" class="csl-entry" role="listitem">
 Witztum, J. L. 1994. <span>“The Oxidation Hypothesis of Atherosclerosis.”</span> <em>Lancet (London, England)</em> 344 (8925): 793–95. <a href="https://doi.org/10.1016/s0140-6736(94)92346-9">https://doi.org/10.1016/s0140-6736(94)92346-9</a>.
 </div>
-<div id="ref-yaoAnkleSystolicPressure2005" class="csl-entry" role="doc-biblioentry">
+<div id="ref-yaoAnkleSystolicPressure2005" class="csl-entry" role="listitem">
 Yao, S T, J T Hobbs, and W T Irivne. 2005. <span>“Ankle Systolic Pressure Measurements in Arterial Disease Affecting the Lower Extremities.”</span> <em>British Journal of Surgery</em> 56 (9): 676–79. <a href="https://doi.org/10.1002/bjs.1800560910">https://doi.org/10.1002/bjs.1800560910</a>.
 </div>
 </div>
@@ -1234,9 +1273,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1248,7 +1301,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -1276,31 +1346,136 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
@@ -1319,7 +1494,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 
