@@ -44,7 +44,7 @@ Waveform profiles change depending upon the nature of the distal vascular bed be
 
 In contrast, [high resistance waveforms]{.underline} are seen for arteries supplying resting peripheral muscles, fasted mesenteric beds (such as the fasting SMA), and the external carotid artery. High resistance waveforms are characterized by triphasic morphology, with a sharp peak, early diastolic flow reversal, brief forward flow (elastic recoil of the artery, and then no flow during the remainder of the diastolic phase.
 
-![](images/vasc_lab2/Slide4.png){fig-align="\"center"}
+![](images/vasc_lab2/Slide4.png){fig-align="center"}
 
 **How does flow-limiting stenosis change the waveform?**
 
@@ -446,7 +446,7 @@ The renal resistive index (RRI) is calculated as the RA (PSV-EDV)/PSV. The RRI (
 
 [Renal artery aneurysms:]{.underline} Can see a yin-yang sign. [@gutta2008; @ham2014]
 
-## Venous {#sec-venous}
+## Venous {#sec-venous-lab}
 
 **Venous Exam:** Uses a linear transducer. Complete deep venous reflux duplex examination includes color and pulsed wave spectral doppler imaging. Spontaneous Doppler waveforms as well as provocative maneuvers are recorded in the common femoral, femoral, popliteal, and tibial deep veins. Superficial veins (GSV, SSV, and perforator veins) are evaluated with provocative maneuvers to test valve competency. Diameters are also included for superficial veins. Transverse B-mode images are used for vessel compression (as when looking for thrombus) to ensure that the vein is fully compressible under probe pressure as opposed to simply slipping out of view, as may occur in longitudinal views. Reflux exam should be performed with a patient standing, with assessment performed on the non weight-bearing leg.
 

@@ -61,6 +61,7 @@ book:
   twitter-card:
     image: "https://raw.githubusercontent.com/adam-mdmph/vs-examprep/main/images/ab_examprep_cover.png"
   favicon: images/ab_examprep_icon.png
+  downloads: [pdf]
   
 bibliography: references.bib
 
@@ -70,6 +71,7 @@ format:
 
  pdf:
     documentclass: scrreprt
+    toc: true
     include-in-header: 
       text: |
         \usepackage{enumitem}
