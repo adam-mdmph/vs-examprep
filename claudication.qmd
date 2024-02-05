@@ -36,7 +36,7 @@ Check out [our episode with Dr. Melina Kibbe, who is actively researching the ro
 :::
 
 | Classification | Description                                                             |
-|:-------------------:|---------------------------------------------------|
+|:--------------:|-------------------------------------------------------------------------|
 |       0        | Normal artery                                                           |
 |       1        | Initial atherosclerotic lesion                                          |
 |       2        | Fatty streak                                                            |
@@ -190,7 +190,7 @@ The progression of intermittent claudication was historically graded by Fontaine
 Rutherford et al. Ad Hoc Committee on Reporting Standards, SVS/North American Chapter ISCVS:
 
 | Grade | Category |                     Clinical Description                     |
-|:----------------:|:----------------:|:-----------------------------------:|
+|:-----:|:--------:|:------------------------------------------------------------:|
 |   0   |    0     | A symptomatic - no hemodynamic significant occlusive disease |
 |   I   |    1     |                      Mild Claudication                       |
 |   I   |    2     |                    Moderate Claudication                     |
@@ -253,7 +253,7 @@ Furthermore patients with single level iliac disease may present with buttock/th
 **What is the ultrasound duplex criteria for defining PAD?**
 
 | Stenosis Category |       Peak Systolic Velocity       | Velocity Ratio | Distal Artery Spectral Waveform |
-|:----------------:|:-----------------:|:----------------:|:----------------:|
+|:-----------------:|:----------------------------------:|:--------------:|:-------------------------------:|
 |      Normal       |               \<150                |     \<1.5      |      Triphasic, Normal PSV      |
 |      30-49%       |              150-200               |     1.5-2      |      Triphasic, Normal PSV      |
 |      50-75%       |              200-400               |      2-4       |     Monophasic, reduced PSV     |

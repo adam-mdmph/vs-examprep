@@ -2,7 +2,7 @@
 
 Authors: *Adam P Johnson, Nicole Rich, and Kevin Kniery*
 
-Contributors: *Eilidh Gunn, Ronnachai Buppanharun*
+Contributors: *Eilidh Gunn, Ronnachai Buppanharun, Henri Pickard*
 
 ```{r echo=FALSE}
 
@@ -48,7 +48,7 @@ embed_audio("https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Cerebro
 
     -   US is considered the best, least invasive, and cost effective method for detecting carotid stenosis on screening.[@shaalan2008] For more see @sec-extracranial
 
-    -   70-99% stenosis of ICA - Duplex diagnostic criteria:
+    -   70-99% stenosis of ICA - Duplex diagnostic criteria:sec-extracranial
 
         -   PSV \>/= 230 cm/sec
 
@@ -142,7 +142,7 @@ While we are not often directly involved in the management of acute stroke, vasc
 
 -   After 6 hours, there is limited benefit to thrombolytic therapy.
 
-    -   BP management post stroke **without thrombosis** includes an initial period of permissive hypertension, treat only if \>220/120. Slowly lower BP to target of 140/90 over 7-14d - particularly important to go slow in patients with intra- or extra-cranial large vessel stenosis.
+    -   BP management post stroke **without thrombolysis** includes an initial period of permissive hypertension, treat only if \>220/120. Slowly lower BP to target of 140/90 over 7-14d - particularly important to go slow in patients with intra- or extra-cranial large vessel stenosis.
 
         -   Contraindications to permissive hypertension include active CAD, heart failure, aortic dissection, hypertensive encephalopathy.
 
