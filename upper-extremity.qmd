@@ -2,6 +2,8 @@
 
 Authors: *Kush Sharma and Ashraf Mansour*
 
+Contributors: Hattan Alghamdi
+
 ```{r echo=FALSE}
 
 library(embedr)
@@ -86,7 +88,7 @@ Division of the upper extremity into three zones:
 
     -   Confusingly the right subclavian artery, then originates from the aortic arch distal to the left subclavian artery.
 
-    -   To supply the right arm it therefore, needs to pass behind the esophagus.
+    -   To supply the right arm it therefore, needs to pass behind the esophagus and anterior to the spine.
 
 Of note, thoracic aortic disease is associated with aberrant anatomy, with high rates of bovine arch (25%), isolated L vertebral (6-8%), and aberrant R subclavian (1-2%).[@dumfarth2015]
 

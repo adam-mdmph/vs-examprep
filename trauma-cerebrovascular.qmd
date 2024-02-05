@@ -189,7 +189,7 @@ Detailed exposure techniques can be found here[@kwon2019]
 **Denver Grading Scale for Blunt Vascular Carotid Injury (BCVI)**[@biffl2001]
 
 -   Grade I: Luminal irregularity or dissection with \< 25% luminal narrowing
--   Grade II: Dissection or intraluminal hematoma with ≥ 25% luminal narrowing, intraluminal thrombus, or raised intimal flap
+-   Grade II: Dissection or intraluminal hematoma with \> 25% luminal narrowing, intraluminal thrombus, or raised intimal flap
 -   Grade III: Pseudoaneurysm
 -   Grade IV: Occlusion
 -   Grade V: Transection with free extravasation

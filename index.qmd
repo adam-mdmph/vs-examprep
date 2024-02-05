@@ -4,7 +4,7 @@ This content was developed to accompany our Audible Bleeding Exam Prep podcast s
 
 **Editors:** *Adam P Johnson; Matt Smith; and [Audible Bleeding Team](https://www.audiblebleeding.com/about-1/)*
 
-Version 01.25
+Version 01.26
 
 ## Usage
 
@@ -24,10 +24,6 @@ We are excited to provide our readers and listeners a free and open opportunity 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/"><img src="https://i.creativecommons.org/l/by-nc-nd/3.0/us/88x31.png" alt="Creative Commons License" style="border-width:0"/></a><br />This ebook is (and always will be) free, and is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/us/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 United States License</a>.
 
-## Curriculum Calendar
-
-[Vascular Surgery Exam Prep Curriculum Calendar](https://calendar.google.com/calendar/u/0/embed?src=354423c7b5ee5a8d0c3c605f87e975858111d5d4127e4f82820e1d2c09e41d0b@group.calendar.google.com&ctz=America/New_York)
-
 ## Additional Resources
 
 We hope you use this e-book as a high level review for your exam preparation. This resource is by no means comprehensive. We have done our best to reference and link to more comprehensive resources throughout the text so that you can dive deeper into topics that are beyond the scope of this review. We try to prioritize open access publications and free, high quality, unbiased materials. A few highly recommended additional resources include:
@@ -40,7 +36,7 @@ We hope you use this e-book as a high level review for your exam preparation. Th
     -   Many institutional libraries carry this book and can be accessed for free. We would recommend checking with that resource prior to purchasing yourself.
 
     -   Some industry representatives offer text book purchasing programs, so check with them prior to purchasing yourself.
--   [VESAP5](https://vascular.org/vascular-specialists/education-and-meetings/vesap5)
+-   [VESAP6](https://vascular.org/vascular-specialists/education-and-meetings/vesap5)
     -   This is the premier question bank for preparing for the vascular surgery boards.
 
     -   Some industry representatives offer text book purchasing programs and include this as an option, so check with them prior to purchasing yourself.
@@ -64,4 +60,3 @@ knitr::write_bib(c(
 ```
 
 This book is built on [Quarto](https://quarto.org).
-

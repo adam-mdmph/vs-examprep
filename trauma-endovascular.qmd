@@ -108,7 +108,7 @@ Seminal Papers in Blunt Thoracic Aortic Injury (BTAI) outlining the evolution of
 
     -   External contour abnormality, includes pseudoaneurysms
 
-    -   Intimal tear ≥10mm in length or width
+    -   Intimal tear \>10mm in length or width
 
     -   Treatment: Delayed repair, semi-elective
 
