@@ -6,13 +6,10 @@ Contributors: *Sharif Ellozy, Leanna Erete*
 
 This episode was developed as a collaboration between Audible Bleeding and [The Rouleaux Club](https://rouleauxclub.com) in the United Kingdom.
 
-```{r echo=FALSE}
-
-library (embedr)
-
-embed_audio("https://traffic.libsyn.com/audiblebleeding/Exa_m_Prep_2023_-_TAAAau.mp3")
-
-```
+<audio controls>
+  <source src="https://traffic.libsyn.com/audiblebleeding/Exa_m_Prep_2023_-_TAAAau.mp3" type="audio/mpeg">
+</audio>
+[Listen to Episode](https://traffic.libsyn.com/audiblebleeding/Exa_m_Prep_2023_-_TAAAau.mp3)
 
 Treatment for thoracoabdominal aneurysms has become a bit of sub-specialization within vascular surgery, with the best outcomes achieved at high-volume centers with close partnerships with cardiothoracic surgery.[@cowan2003] While the majority of vascular surgeons may not manage these patients in their day to day practice, and many trainees have limited exposure, this topic is still fair game for examinations and should be reviewed. However, endovascular techniques are still evolving and practice varies widely between centers and so covering this topic may not be particularly high yield.
 

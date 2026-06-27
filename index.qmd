@@ -8,13 +8,10 @@ Version 01.26
 
 ## Usage
 
-```{r echo=FALSE}
-
-library(embedr)
-
-embed_audio("https://traffic.libsyn.com/audiblebleeding/1._Exam_Prep_2023_-_Introductionau.mp3")
-
-```
+<audio controls>
+  <source src="https://traffic.libsyn.com/audiblebleeding/1._Exam_Prep_2023_-_Introductionau.mp3" type="audio/mpeg">
+</audio>
+[Listen to Episode](https://traffic.libsyn.com/audiblebleeding/1._Exam_Prep_2023_-_Introductionau.mp3)
 
 This e-book is intended to be a high level, easily accessible review for exam preparation and paired with our podcast content to help streamline your studying.
 
@@ -55,7 +52,7 @@ Please visit our [github page](https://github.com/adam-mdmph/vs-examprep) or [se
 
 ```{r include=FALSE}
 knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'embedr'
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
 

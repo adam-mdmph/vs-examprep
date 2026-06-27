@@ -2,13 +2,10 @@
 
 Authors: *Sammy Siada and Rafael Demarchi Malgor*
 
-```{r echo=FALSE}
-
-library(embedr)
-
-embed_audio("https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Endo_Accessau.mp3")
-
-```
+<audio controls>
+  <source src="https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Endo_Accessau.mp3" type="audio/mpeg">
+</audio>
+[Listen to Episode](https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Endo_Accessau.mp3)
 
 Endovascular procedures are the cornerstone of any modern vascular surgery practice. Because most endovascular procedures are performed percutaneously using arterial or venous access, it is critical that vascular surgeons are facile with various techniques and devices used for endovascular access. Today we'll be discussing the various access sites, techniques for access, closure devices, and complications.
 

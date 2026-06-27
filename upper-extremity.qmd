@@ -1,16 +1,13 @@
-# Upper Extremity
+# Upper Extremity {#sec-upper-extremity}
 
 Authors: *Kush Sharma and Ashraf Mansour*
 
-Contributors: Hattan Alghamdi
+Contributors: *Hattan Alghamdi*
 
-```{r echo=FALSE}
-
-library(embedr)
-
-embed_audio("https://traffic.libsyn.com/audiblebleeding/03_Exam_Prep_2023_-_Upper_Extremityau.mp3")
-
-```
+<audio controls>
+  <source src="https://traffic.libsyn.com/audiblebleeding/03_Exam_Prep_2023_-_Upper_Extremityau.mp3" type="audio/mpeg">
+</audio>
+[Listen to Episode](https://traffic.libsyn.com/audiblebleeding/03_Exam_Prep_2023_-_Upper_Extremityau.mp3)
 
 ## Overview
 

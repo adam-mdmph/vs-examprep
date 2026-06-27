@@ -4,13 +4,10 @@ Authors: *Kevin Kniery, Marlin "Wayne" Causey, Nakia Sarad, and Todd Rasmussen*
 
 These trauma episodes were developed in collaboration with [Behind the Knife: The Premier Surgery Podcast](https://behindtheknife.org). In addition, Dr. Causey is a co-host for [WarDocs: Military Medicine Podcast](https://www.wardocspodcast.com).
 
-```{r echo=FALSE}
-
-library(embedr)
-
-embed_audio("https://traffic.libsyn.com/audiblebleeding/14_Exam_Prep_2023_-_Trauma__Endovascularau.mp3")
-
-```
+<audio controls>
+  <source src="https://traffic.libsyn.com/audiblebleeding/14_Exam_Prep_2023_-_Trauma__Endovascularau.mp3" type="audio/mpeg">
+</audio>
+[Listen to Episode](https://traffic.libsyn.com/audiblebleeding/14_Exam_Prep_2023_-_Trauma__Endovascularau.mp3)
 
 Vascular trauma requires close collaboration between vascular surgeons and trauma surgeons. The decision of which specialty should manage which injuries vary across different centers. Through these trauma chapters we will discuss what management decisions the majority of vascular surgeons should be comfortable managing as a part of a multidisciplinary trauma team.
 

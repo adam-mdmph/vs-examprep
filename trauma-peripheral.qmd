@@ -4,13 +4,10 @@ Authors: *Kevin Kniery, Jason Bingham, Nakia Sarad, and Todd Rasmussen*
 
 These trauma episodes were developed in collaboration with [Behind the Knife: The Premier Surgery Podcast](https://behindtheknife.org).
 
-```{r echo=FALSE}
-
-library(embedr)
-
-embed_audio("https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Trauma__Peripheralau.mp3")
-
-```
+<audio controls>
+  <source src="https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Trauma__Peripheralau.mp3" type="audio/mpeg">
+</audio>
+[Listen to Episode](https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Trauma__Peripheralau.mp3)
 
 **DO NOT GET DISTRACTED**
 

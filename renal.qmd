@@ -1,14 +1,11 @@
-# Renal
+# Renal {#sec-renal}
 
 Authors: *Cullen McCarthy and Matthew Edwards*
 
-```{r echo=FALSE}
-
-library(embedr)
-
-embed_audio("https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Renalau.mp3")
-
-```
+<audio controls>
+  <source src="https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Renalau.mp3" type="audio/mpeg">
+</audio>
+[Listen to Episode](https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Renalau.mp3)
 
 ## Renovascular Ischemic Disease 
 

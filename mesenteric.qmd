@@ -1,14 +1,11 @@
-# Mesenteric Disease
+# Mesenteric Disease {#sec-mesenteric-disease}
 
 Authors: *Matt Chia, MD and Nick Mouawad, MD*
 
-```{r echo=FALSE}
-
-library(embedr)
-
-embed_audio("https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Mesentericau.mp3")
-
-```
+<audio controls>
+  <source src="https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Mesentericau.mp3" type="audio/mpeg">
+</audio>
+[Listen to Episode](https://traffic.libsyn.com/audiblebleeding/Exam_Prep_2023_-_Mesentericau.mp3)
 
 Mesenteric vascular disease can be broken down into three disease states that we'll cover today. There's the arterial disease, which is clearly separated into acute mesenteric ischemia and chronic mesenteric ischemia. Then there is venous disease, which we'll touch on briefly. There are also a handful of somewhat related diseases that we'll also sprinkle into these discussions, like median arcuate ligament syndrome and SMA syndrome, but that's overall where we're headed.
 

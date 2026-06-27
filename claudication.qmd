@@ -1,16 +1,13 @@
-# Medical Management and Claudication
+# Medical Management and Claudication {#sec-claudication}
 
 Authors: *Nedal Katib and Danielle Bajakian*
 
 Contributors: *Eilidh Gunn*
 
-```{r echo=FALSE}
-
-library(embedr)
-
-embed_audio("https://traffic.libsyn.com/audiblebleeding/15_Exam_Prep_2023_-_Medical_Management_and_Claudicationau.mp3")
-
-```
+<audio controls>
+  <source src="https://traffic.libsyn.com/audiblebleeding/15_Exam_Prep_2023_-_Medical_Management_and_Claudicationau.mp3" type="audio/mpeg">
+</audio>
+[Listen to Episode](https://traffic.libsyn.com/audiblebleeding/15_Exam_Prep_2023_-_Medical_Management_and_Claudicationau.mp3)
 
 ## Pathogenesis of peripheral arterial disease
 
